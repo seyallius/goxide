@@ -12,6 +12,8 @@ const CONFIG = {
   themeKey: "goxide-docs-theme",
   themes: ["light", "dark", "neon"],
   themeIcons: { light: "☀️", dark: "🌙", neon: "⚡" },
+  tocSelector: "#toc-list",
+  tocContainer: "#toc",
 };
 
 // ----------------------- Public Functions -----------------------
@@ -50,12 +52,114 @@ async function loadContent(path) {
       hljs.highlightElement(block);
     });
 
+    generateTOC();
+
     window.scrollTo(0, 0);
   } catch (error) {
     contentEl.innerHTML =
       "<h1>404 - Page Not Found</h1><p>Looks like this page wandered off... (╥_╥)</p>";
     console.error("Failed to load content:", error);
+    document.querySelector(CONFIG.tocSelector).innerHTML = "";
   }
+}
+
+// ----------------------- TOC Generation & Scroll Spy -----------------------
+
+/**
+ * Scans the content for H2/H3 headers and builds the TOC sidebar.
+ */
+function generateTOC() {
+  const contentEl = document.querySelector(CONFIG.contentSelector);
+  const tocList = document.querySelector(CONFIG.tocSelector);
+  const headers = contentEl.querySelectorAll("h2, h3");
+
+  tocList.innerHTML = ""; // Clear existing
+
+  if (headers.length === 0) {
+    document.querySelector(CONFIG.tocContainer).style.display = "none";
+    return;
+  } else {
+    // Reset display in case it was hidden (CSS media query handles visibility mostly,
+    // but we ensure inline style doesn't block it on desktop)
+    document.querySelector(CONFIG.tocContainer).style.display = "";
+  }
+
+  headers.forEach((header) => {
+    // Ensure header has an ID for linking
+    if (!header.id) {
+      header.id = header.textContent
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+    }
+
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = `#${header.id}`;
+    a.textContent = header.textContent;
+    a.className = header.tagName.toLowerCase(); // 'h2' or 'h3' for CSS indentation
+
+    // Click handler for smooth scroll and hash update
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = header.id;
+      history.pushState(
+        null,
+        "",
+        `#${window.location.hash.split("#")[1]}?section=${targetId}`,
+      );
+      // Note: Simple hash update might conflict with page routing.
+      // For SPA, we usually just scroll.
+      document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+
+      // Manually set active state immediately
+      document
+        .querySelectorAll("#toc-list a")
+        .forEach((l) => l.classList.remove("active"));
+      a.classList.add("active");
+    });
+
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+
+  // Initialize Scroll Spy
+  setupScrollSpy(headers);
+}
+
+/**
+ * Highlights the TOC link corresponding to the currently visible section.
+ */
+function setupScrollSpy(headers) {
+  // Remove existing listener if any (simple approach: clone node to remove listeners?
+  // Or just rely on the fact that we regenerate TOC on every page load, so old listeners die with old DOM)
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "-60px 0px -80% 0px", // Trigger when header is near top
+    threshold: 0,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        const tocLink = document.querySelector(`#toc-list a[href="#${id}"]`);
+
+        if (tocLink) {
+          document
+            .querySelectorAll("#toc-list a")
+            .forEach((l) => l.classList.remove("active"));
+          tocLink.classList.add("active");
+
+          // Optional: Scroll TOC sidebar to keep active link in view
+          // tocLink.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      }
+    });
+  }, observerOptions);
+
+  headers.forEach((header) => observer.observe(header));
 }
 
 // ----------------------- Routing Engine -----------------------

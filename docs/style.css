@@ -129,6 +129,8 @@ body {
     max-width: 900px;
     margin: 0 auto;
     width: 100%;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 /* ----------------------- Navigation ----------------------- */
@@ -473,4 +475,92 @@ body {
 }
 .content td:first-child {
     min-width: 240px; /* names get room; table scrolls horizontally if needed */
+}
+
+/* ----------------------- Right Sidebar (TOC) ----------------------- */
+.toc {
+    width: 250px;
+    flex-shrink: 0;
+    padding: 2rem 1.5rem;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    border-left: 1px solid var(--border-color);
+    background: var(--bg-color); /* Match main bg or slightly different */
+    display: none; /* Hidden by default on mobile */
+}
+
+/* Show TOC on large screens (e.g., > 1200px to accommodate left + content + right) */
+@media (min-width: 1200px) {
+    .toc {
+        display: block;
+    }
+    .content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.toc-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6e7781;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+#toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 2px solid var(--border-color);
+}
+
+#toc-list li {
+    margin: 0;
+}
+
+#toc-list a {
+    display: block;
+    padding: 0.25rem 0 0.25rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    border-left: 2px solid transparent;
+    margin-left: -2px; /* Overlap the border */
+    transition: all 0.2s;
+}
+
+#toc-list a:hover {
+    color: var(--primary-color);
+}
+
+#toc-list a.active {
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Indent H3s */
+#toc-list a.toc-h3 {
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    color: #6e7781;
+}
+
+/* Neon Theme Overrides for TOC */
+[data-theme="neon"] .toc {
+    border-left: 1px solid var(--border-color);
+    background: rgba(11, 11, 26, 0.5); /* Slight transparency */
+}
+[data-theme="neon"] #toc-list {
+    border-left-color: var(--border-color);
+}
+[data-theme="neon"] #toc-list a.active {
+    color: var(--accent-color);
+    border-left-color: var(--accent-color);
+    text-shadow: 0 0 5px rgba(79, 217, 217, 0.5);
 }
