@@ -1,8 +1,7 @@
-// File: docs/script.js
 /**
  * script.js
- * This file acts as the routing and rendering engine for the zero-build SPA documentation site.
- * It fetches Markdown files, parses them into HTML, and manages the UI state (theme, sidebar).
+ * Routing, rendering, and theme engine for the Goxide zero-build SPA.
+ * Handles hash-based routing to support both sidebar and in-content anchor links.
  */
 
 // ----------------------- Configuration -----------------------
@@ -11,35 +10,29 @@ const CONFIG = {
   contentSelector: "#content",
   sidebarSelector: "#sidebar",
   themeKey: "goxide-docs-theme",
+  themes: ["light", "dark", "neon"],
+  themeIcons: { light: "☀️", dark: "🌙", neon: "⚡" },
 };
 
 // ----------------------- Public Functions -----------------------
 
 /**
  * Initializes the documentation SPA.
- * Sets up event listeners, configures Markdown parser, and loads the initial page.
  */
 function initDocs() {
   configureMarked();
   setupTheme();
   setupNavigation();
 
-  // Load initial page based on URL hash, or default to home
-  const hash = window.location.hash.substring(1);
-  const initialLink =
-    document.querySelector(`.nav-link[href="#${hash}"]`) ||
-    document.querySelector(".nav-link.active");
+  // Listen for URL hash changes (handles browser back/forward AND in-content links)
+  window.addEventListener("hashchange", handleRouteChange);
 
-  if (initialLink) {
-    loadContent(initialLink.getAttribute("data-src"));
-  } else {
-    loadContent(CONFIG.defaultPage);
-  }
+  // Handle initial load
+  handleRouteChange();
 }
 
 /**
  * Loads a markdown file, parses it, and injects it into the DOM.
- * @param {string} path - The relative path to the markdown file.
  */
 async function loadContent(path) {
   const contentEl = document.querySelector(CONFIG.contentSelector);
@@ -51,15 +44,12 @@ async function loadContent(path) {
     if (!response.ok) throw new Error("Page not found");
     const markdown = await response.text();
 
-    // Parse and inject
     contentEl.innerHTML = marked.parse(markdown);
 
-    // Apply syntax highlighting to code blocks
     document.querySelectorAll("pre code").forEach((block) => {
       hljs.highlightElement(block);
     });
 
-    // Scroll to top on page change
     window.scrollTo(0, 0);
   } catch (error) {
     contentEl.innerHTML =
@@ -68,11 +58,46 @@ async function loadContent(path) {
   }
 }
 
-// ----------------------- Private Helpers -----------------------
+// ----------------------- Routing Engine -----------------------
 
 /**
- * Configures the Marked.js parser for GitHub Flavored Markdown.
+ * Reads the current URL hash and loads the corresponding content.
  */
+function handleRouteChange() {
+  const hash = window.location.hash.substring(1);
+  const link = document.querySelector(`.nav-link[href="#${hash}"]`);
+
+  if (link && !link.classList.contains("external")) {
+    // Update active state
+    document
+      .querySelectorAll(".nav-link")
+      .forEach((l) => l.classList.remove("active"));
+    link.classList.add("active");
+
+    // Load content
+    loadContent(link.getAttribute("data-src"));
+
+    // Close mobile menu if open
+    if (window.innerWidth <= 768) {
+      document.querySelector(CONFIG.sidebarSelector).classList.remove("open");
+    }
+  } else if (!hash) {
+    // No hash in URL, default to home
+    const defaultLink =
+      document.querySelector('.nav-link[href="#home"]') ||
+      document.querySelector(".nav-link");
+    if (defaultLink) {
+      document
+        .querySelectorAll(".nav-link")
+        .forEach((l) => l.classList.remove("active"));
+      defaultLink.classList.add("active");
+      loadContent(defaultLink.getAttribute("data-src"));
+    }
+  }
+}
+
+// ----------------------- Private Helpers -----------------------
+
 function configureMarked() {
   marked.setOptions({
     gfm: true,
@@ -81,36 +106,20 @@ function configureMarked() {
   });
 }
 
-/**
- * Sets up event listeners for sidebar navigation.
- */
 function setupNavigation() {
   const sidebar = document.querySelector(CONFIG.sidebarSelector);
 
+  // Sidebar clicks just update the URL hash. The hashchange event does the rest!
   sidebar.addEventListener("click", (e) => {
     const link = e.target.closest(".nav-link");
     if (!link || link.classList.contains("external")) return;
 
     e.preventDefault();
-    const src = link.getAttribute("data-src");
     const hash = link.getAttribute("href");
 
-    // Update active state
-    document
-      .querySelectorAll(".nav-link")
-      .forEach((l) => l.classList.remove("active"));
-    link.classList.add("active");
-
-    // Update URL hash for shareability
+    // Update URL hash -> triggers hashchange -> loads content
     history.pushState(null, "", hash);
-
-    // Load content
-    loadContent(src);
-
-    // Close mobile menu if open
-    if (window.innerWidth <= 768) {
-      sidebar.classList.remove("open");
-    }
+    handleRouteChange();
   });
 
   // Mobile menu toggle
@@ -120,7 +129,7 @@ function setupNavigation() {
 }
 
 /**
- * Initializes and manages the Light/Dark theme toggle.
+ * Cycles through Light -> Dark -> Neon themes.
  */
 function setupTheme() {
   const themeToggle = document.getElementById("theme-toggle");
@@ -128,7 +137,6 @@ function setupTheme() {
   const hljsLight = document.getElementById("hljs-light");
   const hljsDark = document.getElementById("hljs-dark");
 
-  // Check local storage or system preference
   const savedTheme = localStorage.getItem(CONFIG.themeKey);
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
@@ -137,15 +145,20 @@ function setupTheme() {
 
   themeToggle.addEventListener("click", () => {
     const current = html.getAttribute("data-theme");
-    const next = current === "light" ? "dark" : "light";
-    applyTheme(next);
-    localStorage.setItem(CONFIG.themeKey, next);
+    const currentIndex = CONFIG.themes.indexOf(current);
+    const nextIndex = (currentIndex + 1) % CONFIG.themes.length;
+    const nextTheme = CONFIG.themes[nextIndex];
+
+    applyTheme(nextTheme);
+    localStorage.setItem(CONFIG.themeKey, nextTheme);
   });
 
   function applyTheme(theme) {
     html.setAttribute("data-theme", theme);
-    themeToggle.textContent = theme === "light" ? "🌙" : "☀️";
-    hljsLight.disabled = theme === "dark";
+    themeToggle.textContent = CONFIG.themeIcons[theme];
+
+    // Light uses light hljs, Dark and Neon use dark hljs (with neon CSS overrides)
+    hljsLight.disabled = theme !== "light";
     hljsDark.disabled = theme === "light";
   }
 }
