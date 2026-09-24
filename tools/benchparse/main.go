@@ -29,10 +29,15 @@ type BenchResult struct {
 	AllocsPerOp int
 }
 
-// groupRule reroutes a family of benchmarks into a shared comparison group
-// when their names do not follow the <Style><Workload> convention.
+// ----------------------- Configuration (replace the groupRules block) -----------------------
+
+// groupRules maps name substrings to a shared workload key. Substring match
+// on the style-stripped name, first rule wins. A rule may set `exclude` to
+// skip names containing another token — this keeps the CPU "ErrorHandling"
+// group from swallowing the unrelated "DB...ErrorHandling" database benchmark.
 type groupRule struct {
 	contains string
+	exclude  string // if non-empty, names containing this are NOT matched
 	key      string
 }
 
@@ -60,9 +65,11 @@ var (
 	// match on the style-stripped name, first rule wins. Use these for
 	// families whose names diverge from the baseline's naming.
 	groupRules = []groupRule{
-		{contains: "ErrorHandling", key: "ErrorHandling"},
-		{contains: "WithTry", key: "ErrorHandling"},
-		{contains: "WithAndThen", key: "ErrorHandling"},
+		// CPU error-handling workload (divide ops). Exclude any DB benchmark so
+		// the ~16ms database round-trip never lands in this ~1ns group.
+		{contains: "ErrorHandling", exclude: "DB", key: "ErrorHandlingCPU"},
+		{contains: "WithTry", exclude: "DB", key: "ErrorHandlingCPU"},
+		{contains: "WithAndThen", exclude: "DB", key: "ErrorHandlingCPU"},
 	}
 
 	// categories defines the report sections, in display order.
@@ -180,10 +187,12 @@ func trimStylePrefix(key string) string {
 	return key
 }
 
-// applyGroupRules reroutes name families into shared workload keys.
+// applyGroupRules reroutes name families into shared workload keys, honoring
+// each rule's exclude guard so unrelated benchmarks don't collide.
 func applyGroupRules(key string) string {
 	for _, r := range groupRules {
-		if strings.Contains(key, r.contains) {
+		if strings.Contains(key, r.contains) &&
+			(r.exclude == "" || !strings.Contains(key, r.exclude)) {
 			return r.key
 		}
 	}
@@ -363,12 +372,18 @@ func writeMarkdown(path string, groups map[string][]BenchResult, runs int) error
 		p("## %s\n\n", title)
 		for _, k := range keys {
 			rows := groups[k]
-			base, hasBase := 0.0, false
+			base, hasBase, traditionalCount := 0.0, false, 0
 			for _, r := range rows {
 				if r.Style == styles[0] {
-					base, hasBase = r.NsPerOp, true
-					break
+					traditionalCount++
+					if !hasBase || r.NsPerOp < base {
+						base, hasBase = r.NsPerOp, true
+					}
 				}
+			}
+			if traditionalCount > 1 {
+				fmt.Fprintf(os.Stderr,
+					"⚠️  group %q has %d baseline rows — check groupRules\n", k, traditionalCount)
 			}
 
 			p("### %s\n\n", formatName(k))

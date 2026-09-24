@@ -32,6 +32,14 @@ bench count="1":
     @echo "✅ Done! Updated docs/content/benchmarks.md"
     @echo "💡 Don't forget to commit the updated benchmarks.md!"
 
+# Serve the documentation site locally for testing
+[group('Development')]
+serve-docs port="8000":
+    @echo "📚 Serving docs at http://localhost:{{ port }}"
+    @echo "   (Press Ctrl+C to stop)"
+    # We cd into docs/ so that index.html is at the root URL
+    cd docs && python -m http.server {{ port }}
+
 # Run tests
 [group('Development')]
 test:

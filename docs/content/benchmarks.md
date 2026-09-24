@@ -15,14 +15,14 @@ Deltas under 2% are reported as *on par* (benchmark noise).
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional Success` | 733,227,870 | 1.474 | 0 | 0 | baseline |
-| `Result Success` | 502,936,730 | 2.383 | 0 | 0 | 🐢 61.7% slower |
+| `Traditional Success` | 647,150,407 | 1.568 | 0 | 0 | baseline |
+| `Result Success` | 503,776,010 | 2.35 | 0 | 0 | 🐢 49.9% slower |
 
 ### Success Unwrap Or
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Result Success Unwrap Or` | 53,630,384 | 22.46 | 8 | 1 | — |
+| `Result Success Unwrap Or` | 44,920,266 | 25.75 | 8 | 1 | — |
 
 ## 🗄️ Database Operations
 
@@ -30,51 +30,58 @@ Deltas under 2% are reported as *on par* (benchmark noise).
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Chained Operations` | 48 | 24,807,765 | 9,959 | 262 | baseline |
-| `Result DB Chained Operations` | 51 | 22,849,612 | 8,409 | 217 | ⚡ 7.9% faster |
-| `Result DB Chained Operations Bubble Up` | 49 | 20,823,184 | 9,986 | 267 | ⚡ 16.1% faster |
+| `Traditional DB Chained Operations` | 38 | 32,109,029 | 9,945 | 258 | baseline |
+| `Result DB Chained Operations` | 48 | 29,918,279 | 8,412 | 217 | ⚡ 6.8% faster |
+| `Result DB Chained Operations Bubble Up` | 46 | 25,834,170 | 9,991 | 267 | ⚡ 19.5% faster |
 
 ### DB Create User
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Create User` | 85 | 12,573,055 | 4,878 | 116 | baseline |
-| `Result DB Create User` | 80 | 13,324,792 | 4,894 | 117 | 🐢 6.0% slower |
+| `Traditional DB Create User` | 66 | 22,376,648 | 4,887 | 116 | baseline |
+| `Result DB Create User` | 46 | 25,301,478 | 4,900 | 117 | 🐢 13.1% slower |
 
 ### DB Create User Allocs
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Create User Allocs` | 85 | 14,565,829 | 4,884 | 118 | baseline |
-| `Result DB Create User Allocs` | 75 | 15,529,928 | 4,903 | 119 | 🐢 6.6% slower |
+| `Traditional DB Create User Allocs` | 50 | 26,862,068 | 4,896 | 118 | baseline |
+| `Result DB Create User Allocs` | 49 | 24,345,506 | 4,906 | 119 | ⚡ 9.4% faster |
+
+### DB Error Handling With Fallback
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Error Handling With Fallback` | 54 | 18,912,343 | 7,676 | 201 | baseline |
+| `Result DB Error Handling With Fallback` | 78 | 18,424,259 | 7,807 | 205 | ⚡ 2.6% faster |
 
 ### DB Find User
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Find User` | 20,059 | 53,809 | 1,552 | 45 | baseline |
-| `Result DB Find User` | 19,968 | 54,024 | 1,559 | 46 | ≈ on par |
+| `Traditional DB Find User` | 11,355 | 101,811 | 1,520 | 45 | baseline |
+| `Result DB Find User` | 13,603 | 84,690 | 1,559 | 46 | ⚡ 16.8% faster |
 
 ### DB Find User Not Found
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Find User Not Found` | 184 | 6,603,978 | 3,342 | 83 | baseline |
-| `Result DB Find User Not Found` | 177 | 6,620,846 | 3,339 | 83 | ≈ on par |
+| `Traditional DB Find User Not Found` | 100 | 10,693,492 | 3,354 | 83 | baseline |
+| `Result DB Find User Not Found` | 100 | 13,319,521 | 3,351 | 83 | 🐢 24.6% slower |
 
 ### DB Get Or Create User
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Get Or Create User` | 79 | 14,692,204 | 7,702 | 198 | baseline |
-| `Result DB Get Or Create User` | 72 | 16,944,506 | 7,844 | 205 | 🐢 15.3% slower |
+| `Traditional DB Get Or Create User` | 68 | 17,929,472 | 7,711 | 198 | baseline |
+| `Result DB Get Or Create User` | 58 | 20,163,824 | 7,816 | 202 | 🐢 12.5% slower |
 
 ### DB Update User
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Update User` | 164 | 7,407,279 | 1,927 | 47 | baseline |
-| `Result DB Update User` | 169 | 7,167,397 | 1,923 | 48 | ⚡ 3.2% faster |
+| `Traditional DB Update User` | 114 | 9,692,878 | 1,928 | 47 | baseline |
+| `Result DB Update User` | 163 | 8,431,023 | 1,928 | 48 | ⚡ 13.0% faster |
 
 ## 🔗 Chaining & Pipelines
 
@@ -82,8 +89,8 @@ Deltas under 2% are reported as *on par* (benchmark noise).
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional Chained Success` | 450,523,338 | 2.604 | 0 | 0 | baseline |
-| `Result Chained Success` | 18,591,362 | 56.53 | 24 | 3 | 🐢 2070.9% slower |
+| `Traditional Chained Success` | 414,485,722 | 2.949 | 0 | 0 | baseline |
+| `Result Chained Success` | 15,707,443 | 69.49 | 24 | 3 | 🐢 2256.4% slower |
 
 ## 🛟 Error Handling & Recovery
 
@@ -91,16 +98,14 @@ Deltas under 2% are reported as *on par* (benchmark noise).
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional Error` | 573,738,002 | 1.917 | 0 | 0 | baseline |
-| `Result Error` | 45,735,715 | 25.33 | 16 | 1 | 🐢 1221.3% slower |
+| `Traditional Error` | 589,092,943 | 2.089 | 0 | 0 | baseline |
+| `Result Error` | 36,964,135 | 31.86 | 16 | 1 | 🐢 1425.1% slower |
 
-### Error Handling
+### Error Handling CPU
 
 | Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Error Handling With Fallback` | 86 | 15,968,840 | 7,676 | 201 | baseline |
-| `Traditional Error Handling` | 1,000,000,000 | 0.9661 | 0 | 0 | baseline |
-| `Result DB Error Handling With Fallback` | 82 | 15,804,407 | 7,799 | 205 | ≈ on par |
-| `Result With And Then` | 16,721,685 | 66.01 | 24 | 3 | ⚡ 100.0% faster |
-| `Result With Try` | 13,515,993 | 92.76 | 32 | 4 | ⚡ 100.0% faster |
+| `Traditional Error Handling` | 810,737,406 | 1.295 | 0 | 0 | baseline |
+| `Result With And Then` | 12,575,517 | 93.58 | 24 | 3 | 🐢 7126.3% slower |
+| `Result With Try` | 8,925,894 | 114.8 | 32 | 4 | 🐢 8764.9% slower |
 
