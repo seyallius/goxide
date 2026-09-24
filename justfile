@@ -28,7 +28,7 @@ bench count="1":
     @mkdir -p docs
     go test -count={{ count }} -bench=. -benchmem ./rusty/... | tee docs/benchmarks_raw.txt || true
     @echo "📊 Parsing benchmarks into Markdown..."
-    go run ./tools/benchparse/main.go
+    go run ./tools/benchparse/
     @echo "✅ Done! Updated docs/content/benchmarks.md"
     @echo "💡 Don't forget to commit the updated benchmarks.md!"
 

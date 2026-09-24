@@ -6,106 +6,161 @@ Generated from `go test -bench=. -benchmem` via `just bench`.
 Lower `ns/op`, `B/op` and `allocs/op` are better.
 
 Each table compares one workload across implementation styles; the
-**vs Traditional** column is the delta against the baseline style.
+**vs Traditional ** column is the delta against the baseline style.
 Deltas under 2% are reported as *on par* (benchmark noise).
 
 ## ⚡ Basic Operations
 
-### Success
+### Result Success
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional Success` | 647,150,407 | 1.568 | 0 | 0 | baseline |
-| `Result Success` | 503,776,010 | 2.35 | 0 | 0 | 🐢 49.9% slower |
+| `Result Success` | 483,346,692 | 2.51 | 0 | 0 | — |
 
-### Success Unwrap Or
+### Result Success Unwrap Or
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Result Success Unwrap Or` | 44,920,266 | 25.75 | 8 | 1 | — |
+| `Result Success Unwrap Or` | 46,110,040 | 24.11 | 8 | 1 | — |
+
+### Traditional Success
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional Success` | 791,786,533 | 1.564 | 0 | 0 | — |
 
 ## 🗄️ Database Operations
 
-### DB Chained Operations
+### Result DB Chained Operations
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Chained Operations` | 38 | 32,109,029 | 9,945 | 258 | baseline |
-| `Result DB Chained Operations` | 48 | 29,918,279 | 8,412 | 217 | ⚡ 6.8% faster |
-| `Result DB Chained Operations Bubble Up` | 46 | 25,834,170 | 9,991 | 267 | ⚡ 19.5% faster |
+| `Result DB Chained Operations Bubble Up` | 44 | 25,631,150 | 10,000 | 267 | — |
+| `Result DB Chained Operations` | 57 | 24,978,049 | 8,400 | 217 | — |
 
-### DB Create User
+### Result DB Create User
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Create User` | 66 | 22,376,648 | 4,887 | 116 | baseline |
-| `Result DB Create User` | 46 | 25,301,478 | 4,900 | 117 | 🐢 13.1% slower |
+| `Result DB Create User` | 62 | 18,015,324 | 4,889 | 117 | — |
 
-### DB Create User Allocs
+### Result DB Create User Allocs
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Create User Allocs` | 50 | 26,862,068 | 4,896 | 118 | baseline |
-| `Result DB Create User Allocs` | 49 | 24,345,506 | 4,906 | 119 | ⚡ 9.4% faster |
+| `Result DB Create User Allocs` | 60 | 18,216,067 | 4,900 | 119 | — |
 
-### DB Error Handling With Fallback
+### Result DB Error Handling With Fallback
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Error Handling With Fallback` | 54 | 18,912,343 | 7,676 | 201 | baseline |
-| `Result DB Error Handling With Fallback` | 78 | 18,424,259 | 7,807 | 205 | ⚡ 2.6% faster |
+| `Result DB Error Handling With Fallback` | 82 | 17,451,850 | 7,801 | 205 | — |
 
-### DB Find User
+### Result DB Find User
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Find User` | 11,355 | 101,811 | 1,520 | 45 | baseline |
-| `Result DB Find User` | 13,603 | 84,690 | 1,559 | 46 | ⚡ 16.8% faster |
+| `Result DB Find User` | 18,445 | 58,778 | 1,559 | 46 | — |
 
-### DB Find User Not Found
+### Result DB Find User Not Found
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Find User Not Found` | 100 | 10,693,492 | 3,354 | 83 | baseline |
-| `Result DB Find User Not Found` | 100 | 13,319,521 | 3,351 | 83 | 🐢 24.6% slower |
+| `Result DB Find User Not Found` | 139 | 8,298,376 | 3,345 | 83 | — |
 
-### DB Get Or Create User
+### Result DB Get Or Create User
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Get Or Create User` | 68 | 17,929,472 | 7,711 | 198 | baseline |
-| `Result DB Get Or Create User` | 58 | 20,163,824 | 7,816 | 202 | 🐢 12.5% slower |
+| `Result DB Get Or Create User` | 62 | 20,777,613 | 7,818 | 202 | — |
 
-### DB Update User
+### Result DB Update User
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional DB Update User` | 114 | 9,692,878 | 1,928 | 47 | baseline |
-| `Result DB Update User` | 163 | 8,431,023 | 1,928 | 48 | ⚡ 13.0% faster |
+| `Result DB Update User` | 154 | 7,677,797 | 1,924 | 48 | — |
+
+### Traditional DB Chained Operations
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Chained Operations` | 54 | 23,369,624 | 9,926 | 258 | — |
+
+### Traditional DB Create User
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Create User` | 73 | 17,934,388 | 4,888 | 116 | — |
+
+### Traditional DB Create User Allocs
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Create User Allocs` | 80 | 19,539,050 | 4,882 | 118 | — |
+
+### Traditional DB Error Handling With Fallback
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Error Handling With Fallback` | 67 | 19,058,442 | 7,675 | 201 | — |
+
+### Traditional DB Find User
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Find User` | 16,231 | 63,374 | 1,552 | 45 | — |
+
+### Traditional DB Find User Not Found
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Find User Not Found` | 159 | 8,051,542 | 3,344 | 83 | — |
+
+### Traditional DB Get Or Create User
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Get Or Create User` | 33 | 30,518,582 | 7,734 | 198 | — |
+
+### Traditional DB Update User
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional DB Update User` | 135 | 9,293,730 | 1,926 | 47 | — |
 
 ## 🔗 Chaining & Pipelines
 
-### Chained Success
+### Result Chained Success
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional Chained Success` | 414,485,722 | 2.949 | 0 | 0 | baseline |
-| `Result Chained Success` | 15,707,443 | 69.49 | 24 | 3 | 🐢 2256.4% slower |
+| `Result Chained Success` | 20,103,128 | 58.94 | 24 | 3 | — |
+
+### Traditional Chained Success
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional Chained Success` | 455,009,598 | 2.642 | 0 | 0 | — |
 
 ## 🛟 Error Handling & Recovery
 
-### Error
-
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
-|---|---:|---:|---:|---:|---|
-| `Traditional Error` | 589,092,943 | 2.089 | 0 | 0 | baseline |
-| `Result Error` | 36,964,135 | 31.86 | 16 | 1 | 🐢 1425.1% slower |
-
 ### Error Handling CPU
 
-| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional |
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
 |---|---:|---:|---:|---:|---|
-| `Traditional Error Handling` | 810,737,406 | 1.295 | 0 | 0 | baseline |
-| `Result With And Then` | 12,575,517 | 93.58 | 24 | 3 | 🐢 7126.3% slower |
-| `Result With Try` | 8,925,894 | 114.8 | 32 | 4 | 🐢 8764.9% slower |
+| `Result With And Then` | 15,508,684 | 76.51 | 24 | 3 | — |
+| `Result With Try` | 11,818,118 | 96 | 32 | 4 | — |
+| `Traditional Error Handling` | 1,000,000,000 | 0.9975 | 0 | 0 | — |
+
+### Result Error
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Result Error` | 43,698,494 | 28.68 | 16 | 1 | — |
+
+### Traditional Error
+
+| Benchmark | Iterations | ns/op | B/op | allocs/op | vs Traditional  |
+|---|---:|---:|---:|---:|---|
+| `Traditional Error` | 557,011,004 | 2.347 | 0 | 0 | — |
 
