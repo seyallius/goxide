@@ -573,7 +573,7 @@ func BenchmarkTraditionalErrorHandling(b *testing.B) {
 	}
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		_, _ = compute()
 	}
 }
@@ -591,7 +591,7 @@ func BenchmarkResultWithTry(b *testing.B) {
 	}
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		_ = compute()
 	}
 }
@@ -612,7 +612,7 @@ func BenchmarkResultWithAndThen(b *testing.B) {
 	}
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		_ = compute()
 	}
 }

@@ -50,7 +50,7 @@ func resultChainedError(val int) result.Result[int] {
 //	BenchmarkTraditionalSuccess    	1000000000	         0.2457 ns/op	       0 B/op	       0 allocs/op
 func BenchmarkTraditionalSuccess(b *testing.B) {
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		val, err := traditionalSuccess()
 		if err != nil {
 			b.Fatal("unexpected error")
@@ -66,7 +66,7 @@ func BenchmarkTraditionalSuccess(b *testing.B) {
 //	BenchmarkResultSuccess    	1000000000	         0.2448 ns/op	       0 B/op	       0 allocs/op
 func BenchmarkResultSuccess(b *testing.B) {
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		res := resultSuccess()
 		if res.IsErr() {
 			b.Fatal("unexpected error")
@@ -81,7 +81,7 @@ func BenchmarkResultSuccess(b *testing.B) {
 // BenchmarkResultSuccessUnwrapOr    	88363804	        12.75 ns/op	       8 B/op	       1 allocs/op
 func BenchmarkResultSuccessUnwrapOr(b *testing.B) {
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		res := resultSuccess()
 		val := res.UnwrapOr(0)
 		if val != 42 {
@@ -95,7 +95,7 @@ func BenchmarkResultSuccessUnwrapOr(b *testing.B) {
 //	BenchmarkTraditionalError    	1000000000	         0.2427 ns/op	       0 B/op	       0 allocs/op
 func BenchmarkTraditionalError(b *testing.B) {
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		val, err := traditionalError()
 		if err == nil {
 			b.Fatal("expected error")
@@ -111,7 +111,7 @@ func BenchmarkTraditionalError(b *testing.B) {
 //	BenchmarkResultError    	56643303	        20.12 ns/op	      16 B/op	       1 allocs/op
 func BenchmarkResultError(b *testing.B) {
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		res := resultError()
 		if res.IsOk() {
 			b.Fatal("expected error")
@@ -127,7 +127,7 @@ func BenchmarkResultError(b *testing.B) {
 //	BenchmarkTraditionalChainedSuccess    	1000000000	         0.2458 ns/op	       0 B/op	       0 allocs/op
 func BenchmarkTraditionalChainedSuccess(b *testing.B) {
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		val1, err := traditionalSuccess()
 		if err != nil {
 			b.Fatal("unexpected error")
@@ -154,7 +154,7 @@ func BenchmarkTraditionalChainedSuccess(b *testing.B) {
 //	BenchmarkResultChainedSuccess-12    	33059582	        34.23 ns/op	      24 B/op	       3 allocs/op
 func BenchmarkResultChainedSuccess(b *testing.B) {
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 
 		res := chain.Chain2[int, int](resultSuccess()).
 			AndThen(resultChainedSuccess).
@@ -171,7 +171,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 
 //
 //func BenchmarkResultChainedSuccessMap(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		res := resultSuccess().
 //			Map(func(x int) int { return x * 2 }).
 //			Map(func(x int) int { return x * 2 })
@@ -187,7 +187,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: Chained Operations (Error Path)
 //func BenchmarkTraditionalChainedError(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		val1, err := traditionalSuccess()
 //		if err != nil {
 //			b.Fatal("unexpected error")
@@ -202,7 +202,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //}
 //
 //func BenchmarkResultChainedError(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		res := resultSuccess().
 //			AndThen(resultChainedError).
 //			AndThen(resultChainedSuccess) // This won't execute due to error
@@ -215,7 +215,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: BubbleUp with Catch (Success Path)
 //func BenchmarkResultBubbleUpSuccess(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		var res result.Result[int]
 //		func() {
 //			defer result.Catch(&res)
@@ -236,7 +236,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: BubbleUp with Catch (Error Path)
 //func BenchmarkResultBubbleUpError(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		var res result.Result[int]
 //		func() {
 //			defer result.Catch(&res)
@@ -254,7 +254,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: MapError
 //func BenchmarkTraditionalMapError(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		_, err := traditionalError()
 //		if err != nil {
 //			// Traditional way of mapping errors
@@ -267,7 +267,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //}
 //
 //func BenchmarkResultMapError(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		res := resultError().
 //			MapError(func(err error) error {
 //				return errors.New("wrapped: " + err.Error())
@@ -281,7 +281,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: UnwrapOr with default value
 //func BenchmarkTraditionalUnwrapOr(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		val, err := traditionalError()
 //		resultVal := 0
 //		if err != nil {
@@ -296,7 +296,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //}
 //
 //func BenchmarkResultUnwrapOr(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		res := resultError()
 //		val := res.UnwrapOr(100)
 //		if val != 100 {
@@ -307,7 +307,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: Multiple value combination (Map2, Map3)
 //func BenchmarkTraditionalMultiValue(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		val1, err1 := traditionalSuccess()
 //		if err1 != nil {
 //			b.Fatal("unexpected error")
@@ -326,7 +326,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //}
 //
 //func BenchmarkResultMap2(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		res1 := resultSuccess()
 //		res2 := resultSuccess()
 //		res := result.Map2(res1, res2, func(a, b int) int {
@@ -344,7 +344,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: Wrapping traditional functions
 //func BenchmarkTraditionalWrap(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		val, err := traditionalSuccess()
 //		if err != nil {
 //			b.Fatal("unexpected error")
@@ -356,7 +356,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //}
 //
 //func BenchmarkResultWrap(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		res := result.Wrap(traditionalSuccess())
 //		if res.IsErr() {
 //			b.Fatal("unexpected error")
@@ -369,7 +369,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: Option value access
 //func BenchmarkResultOptionValue(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		res := resultSuccess()
 //		opt := res.Value()
 //		if opt.IsNone() {
@@ -384,7 +384,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //
 //// Benchmark: Error checking overhead
 //func BenchmarkTraditionalErrorCheck(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		_, err := traditionalSuccess()
 //		if err != nil {
 //			b.Fatal("unexpected error")
@@ -393,7 +393,7 @@ func BenchmarkResultChainedSuccess(b *testing.B) {
 //}
 //
 //func BenchmarkResultErrorCheck(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
+//	for b.Loop() {
 //		res := resultSuccess()
 //		if res.IsErr() {
 //			b.Fatal("unexpected error")
