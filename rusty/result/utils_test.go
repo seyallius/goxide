@@ -158,7 +158,7 @@ func (r *ResultUserRepo) UpdateUserName(ctx context.Context, id int, name string
 func (r *TraditionalUserRepo) GetOrCreateUser(ctx context.Context, email, name string) (*User, error) {
 	// Try to find existing user
 	user, err := r.FindUserByEmail(ctx, email)
-	if err != nil {
+	if err != nil && !errors.Is(err, sql.ErrNoRows) {
 		return nil, err
 	}
 	if user != nil {

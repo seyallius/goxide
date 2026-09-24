@@ -43,7 +43,7 @@ func DB() *sql.DB { return testDB }
 
 // GoxideSchemaInit maps to snapdb.SchemaInitializer. env.Engine() is nil here.
 func GoxideSchemaInit(env *snapdb.Environment) error {
-	db, err := sql.Open("sqlite", env.DSN())
+	db, err := sql.Open("sqlite", env.DSN()+"&_time_format=sqlite")
 	if err != nil {
 		return fmt.Errorf("schema init: open db: %w", err)
 	}
@@ -54,7 +54,7 @@ func GoxideSchemaInit(env *snapdb.Environment) error {
 			id         INTEGER PRIMARY KEY AUTOINCREMENT,
 			email      TEXT NOT NULL UNIQUE,
 			name       TEXT NOT NULL,
-			created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+			created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 		)
 	`)
 	if err != nil {
@@ -75,7 +75,7 @@ func GoxideEngineInit(env *snapdb.Environment) (snapdb.Engine, error) {
 
 	engineInitOnce.Do(func() {
 		var db *sql.DB
-		db, err = sql.Open("sqlite", env.DSN())
+		db, err = sql.Open("sqlite", env.DSN()+"&_time_format=sqlite")
 		if err != nil {
 			return
 		}

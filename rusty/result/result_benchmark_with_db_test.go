@@ -6,6 +6,7 @@ package result_test
 
 import (
 	"context"
+	"database/sql"
 	"errors"
 	"fmt"
 	"sync"
@@ -40,11 +41,9 @@ func clearUsers(ctx context.Context) {
 	if _, err := tests.DB().ExecContext(ctx, "DELETE FROM users"); err != nil {
 		panic(fmt.Errorf("failed to clear users table: %w", err))
 	}
-	if _, err := tests.DB().ExecContext(ctx,
-		"DELETE FROM sqlite_sequence WHERE name='users'"); err != nil {
-		panic(fmt.Errorf("failed to reset sqlite_sequence: %w", err))
-	}
 }
+
+// -------------------------------------- <Benchmark Tests> ------------------------------------- //
 
 // Database Benchmarks
 
@@ -504,7 +503,32 @@ func BenchmarkResultDBChainedOperationsBubbleUp(b *testing.B) {
 //	BenchmarkTraditionalDBErrorHandlingWithFallback           693           1727367 ns/op            3216 B/op         75 allocs/op
 //	BenchmarkTraditionalDBErrorHandlingWithFallback           721           1788172 ns/op            3216 B/op         75 allocs/op
 func BenchmarkTraditionalDBErrorHandlingWithFallback(b *testing.B) {
+	ctx := context.Background()
+	tradRepo, _ := repos()
+	b.ReportAllocs()
+	b.ResetTimer()
 
+	for b.Loop() {
+		clearUsers(ctx)
+
+		user, err := tradRepo.FindUserByEmail(ctx, "nonexistent@example.com")
+		if err != nil {
+			if !errors.Is(err, sql.ErrNoRows) {
+				b.Fatalf("unexpected error: %v", err)
+			}
+			id, createErr := tradRepo.CreateUser(ctx, "fallback@example.com", "Fallback User")
+			if createErr != nil {
+				b.Fatalf("fallback failed: %v", createErr)
+			}
+			user, err = tradRepo.FindUserByID(ctx, id)
+			if err != nil {
+				b.Fatalf("find after create failed: %v", err)
+			}
+		}
+		if user == nil {
+			b.Fatal("user should not be nil")
+		}
+	}
 }
 
 // Test results:

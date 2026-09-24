@@ -45,6 +45,8 @@ func resultChainedError(val int) result.Result[int] {
 	return result.Err[int](errors.New("chain error"))
 }
 
+// -------------------------------------- <Benchmark Tests> ------------------------------------- //
+
 // Benchmark: Simple Traditional Success Case
 //
 //	BenchmarkTraditionalSuccess    	1000000000	         0.2457 ns/op	       0 B/op	       0 allocs/op
