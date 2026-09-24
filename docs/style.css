@@ -127,7 +127,6 @@ body {
     flex: 1;
     padding: 2rem 3rem;
     max-width: 900px;
-    margin: 0 auto;
     width: 100%;
     margin-left: 0;
     margin-right: auto;
@@ -491,7 +490,6 @@ body {
     display: none; /* Hidden by default on mobile */
 }
 
-/* Show TOC on large screens (e.g., > 1200px to accommodate left + content + right) */
 @media (min-width: 1200px) {
     .toc {
         display: block;
