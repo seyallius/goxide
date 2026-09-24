@@ -12,7 +12,7 @@
 package chain
 
 import (
-	"github.com/seyedali-dev/goxide/rusty/result"
+	"github.com/seyallius/goxide/rusty/result"
 )
 
 // -------------------------------------------- Multi-Step Result Chaining --------------------------------------------

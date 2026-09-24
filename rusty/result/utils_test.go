@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/seyedali-dev/goxide/rusty/result"
+	"github.com/seyallius/goxide/rusty/result"
 )
 
 // User represents a simple database entity

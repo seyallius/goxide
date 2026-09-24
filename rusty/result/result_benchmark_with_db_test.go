@@ -12,9 +12,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/seyedali-dev/goxide/internal/tests"
-	"github.com/seyedali-dev/goxide/rusty/chain"
-	"github.com/seyedali-dev/goxide/rusty/result"
+	"github.com/seyallius/goxide/internal/tests"
+	"github.com/seyallius/goxide/rusty/chain"
+	"github.com/seyallius/goxide/rusty/result"
 )
 
 // Test suite setup

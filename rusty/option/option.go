@@ -12,7 +12,7 @@
 //   - Parsing operations that may fail (instead of returning zero values)
 package option
 
-import "github.com/seyedali-dev/goxide/rusty/types"
+import "github.com/seyallius/goxide/rusty/types"
 
 // -------------------------------------------- Types --------------------------------------------
 

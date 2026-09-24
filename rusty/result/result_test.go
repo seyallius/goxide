@@ -7,7 +7,7 @@
 //
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/seyedali-dev/goxide/rusty/result
+//	pkg: github.com/seyallius/goxide/rusty/result
 //	cpu: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
 package result_test
 
@@ -17,7 +17,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/seyedali-dev/goxide/rusty/result"
+	"github.com/seyallius/goxide/rusty/result"
 )
 
 // -------------------------------------------- Error Definitions --------------------------------------------

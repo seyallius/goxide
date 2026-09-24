@@ -5,7 +5,7 @@ Benchmark tests run with: `go test -bench=. -count=6 -benchmem | tee raw_benchma
 
 goos: linux
 goarch: amd64
-pkg: github.com/seyedali-dev/goxide/rusty/result
+pkg: github.com/seyallius/goxide/rusty/result
 cpu: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
 BenchmarkTraditionalSuccess                        	1000000000	         0.2479 ns/op	       0 B/op	       0 allocs/op
 BenchmarkTraditionalSuccess                        	1000000000	         0.2352 ns/op	       0 B/op	       0 allocs/op
@@ -192,4 +192,4 @@ BenchmarkResultWithAndThen                         	27354570	        41.53 ns/op
 BenchmarkResultWithAndThen                         	25343994	        41.27 ns/op	      24 B/op	       3 allocs/op
 FAIL
 exit status 1
-FAIL	github.com/seyedali-dev/goxide/rusty/result	181.214s
+FAIL	github.com/seyallius/goxide/rusty/result	181.214s

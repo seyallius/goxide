@@ -29,7 +29,7 @@
 package chain
 
 import (
-	"github.com/seyedali-dev/goxide/rusty/result"
+	"github.com/seyallius/goxide/rusty/result"
 )
 
 // -------------------------------------------- Result Chaining --------------------------------------------

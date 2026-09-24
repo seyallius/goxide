@@ -1,4 +1,4 @@
-module github.com/seyedali-dev/goxide
+module github.com/seyallius/goxide
 
 go 1.25.0
 

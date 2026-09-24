@@ -14,7 +14,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/seyedali-dev/goxide/rusty/result"
+	"github.com/seyallius/goxide/rusty/result"
 )
 
 // -------------------------------------------- Domain Types --------------------------------------------
