@@ -6,13 +6,11 @@ package result_test
 
 import (
 	"context"
-	"database/sql"
 	"errors"
 	"fmt"
-	"os"
+	"sync"
 	"testing"
 
-	_ "github.com/lib/pq"
 	"github.com/seyedali-dev/goxide/internal/tests"
 	"github.com/seyedali-dev/goxide/rusty/chain"
 	"github.com/seyedali-dev/goxide/rusty/result"
@@ -20,56 +18,31 @@ import (
 
 // Test suite setup
 var (
-	testDB          *sql.DB
 	traditionalRepo *TraditionalUserRepo
 	resultRepo      *ResultUserRepo
+	reposOnce       sync.Once
 )
 
 func TestMain(m *testing.M) {
-	ctx := context.Background()
-	tc, err := tests.SetupTestContainer(ctx)
-	if err != nil {
-		fmt.Printf("❌ Failed to setup test container: %v\n", err)
-		os.Exit(1)
-	}
-	defer tc.Cleanup(ctx)
-
-	testDB = tc.DB
-
-	setupDatabase(ctx)
-
-	exitCode := m.Run()
-	os.Exit(exitCode)
+	tests.RunGoxideTestMain(m)
 }
 
-func setupDatabase(ctx context.Context) {
-	// Create users table
-	_, err := testDB.ExecContext(ctx, `
-		CREATE TABLE IF NOT EXISTS users (
-			id SERIAL PRIMARY KEY,
-			email VARCHAR(255) UNIQUE NOT NULL,
-			name VARCHAR(255) NOT NULL,
-			created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-		)
-	`)
-	if err != nil {
-		panic(fmt.Sprintf("failed to create users table: %v", err))
-	}
-
-	// Clear any existing data
-	_, err = testDB.ExecContext(ctx, "TRUNCATE TABLE users RESTART IDENTITY")
-	if err != nil {
-		panic(fmt.Sprintf("failed to truncate users table: %v", err))
-	}
-
-	traditionalRepo = NewTraditionalUserRepo(testDB)
-	resultRepo = NewResultUserRepo(testDB)
+func repos() (*TraditionalUserRepo, *ResultUserRepo) {
+	reposOnce.Do(func() {
+		db := tests.DB()
+		traditionalRepo = NewTraditionalUserRepo(db)
+		resultRepo = NewResultUserRepo(db)
+	})
+	return traditionalRepo, resultRepo
 }
 
-func clearUsersTable(ctx context.Context) {
-	_, err := testDB.ExecContext(ctx, "TRUNCATE TABLE users RESTART IDENTITY")
-	if err != nil {
-		panic(fmt.Errorf("failed to truncate users table: %w", err))
+func clearUsers(ctx context.Context) {
+	if _, err := tests.DB().ExecContext(ctx, "DELETE FROM users"); err != nil {
+		panic(fmt.Errorf("failed to clear users table: %w", err))
+	}
+	if _, err := tests.DB().ExecContext(ctx,
+		"DELETE FROM sqlite_sequence WHERE name='users'"); err != nil {
+		panic(fmt.Errorf("failed to reset sqlite_sequence: %w", err))
 	}
 }
 
@@ -85,15 +58,16 @@ func clearUsersTable(ctx context.Context) {
 //	BenchmarkTraditionalDBCreateUser    	     850	   1430383 ns/op	    1133 B/op	      27 allocs/op
 func BenchmarkTraditionalDBCreateUser(b *testing.B) {
 	ctx := context.Background()
+	tradRepo, _ := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		email := fmt.Sprintf("user%d@example.com", i)
-		id, err := traditionalRepo.CreateUser(ctx, email, "Test User")
+		id, err := tradRepo.CreateUser(ctx, email, "Test User")
 		if err != nil {
 			b.Fatalf("unexpected error: %v", err)
 		}
@@ -113,15 +87,16 @@ func BenchmarkTraditionalDBCreateUser(b *testing.B) {
 //	BenchmarkResultDBCreateUser    	     846	   1419076 ns/op	    1138 B/op	      28 allocs/op
 func BenchmarkResultDBCreateUser(b *testing.B) {
 	ctx := context.Background()
+	_, resRepo := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		email := fmt.Sprintf("user%d@example.com", i)
-		res := resultRepo.CreateUser(ctx, email, "Test User")
+		res := resRepo.CreateUser(ctx, email, "Test User")
 		if res.IsErr() {
 			b.Fatalf("unexpected error: %v", res.Err())
 		}
@@ -142,11 +117,12 @@ func BenchmarkResultDBCreateUser(b *testing.B) {
 //	BenchmarkTraditionalDBFindUser    	   10000	    114335 ns/op	    1104 B/op	      27 allocs/op
 func BenchmarkTraditionalDBFindUser(b *testing.B) {
 	ctx := context.Background()
+	tradRepo, _ := repos()
 
 	// Setup: create a user first
 	// Clear table before each iteration to avoid unique constraint violations
-	clearUsersTable(ctx)
-	id, err := traditionalRepo.CreateUser(ctx, "finduser@example.com", "Find User")
+	clearUsers(ctx)
+	id, err := tradRepo.CreateUser(ctx, "finduser@example.com", "Find User")
 	if err != nil {
 		b.Fatalf("setup failed: %v", err)
 	}
@@ -154,9 +130,9 @@ func BenchmarkTraditionalDBFindUser(b *testing.B) {
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 
-		user, err := traditionalRepo.FindUserByID(ctx, id)
+		user, err := tradRepo.FindUserByID(ctx, id)
 		if err != nil {
 			b.Fatalf("unexpected error: %v", err)
 		}
@@ -176,11 +152,12 @@ func BenchmarkTraditionalDBFindUser(b *testing.B) {
 //	BenchmarkResultDBFindUser    	   10000	    124088 ns/op	    1112 B/op	      28 allocs/op
 func BenchmarkResultDBFindUser(b *testing.B) {
 	ctx := context.Background()
+	_, resRepo := repos()
 
 	// Setup: create a user first
 	// Clear table before each iteration to avoid unique constraint violations
-	clearUsersTable(ctx)
-	res := resultRepo.CreateUser(ctx, "finduser@example.com", "Find User")
+	clearUsers(ctx)
+	res := resRepo.CreateUser(ctx, "finduser@example.com", "Find User")
 	if res.IsErr() {
 		b.Fatalf("setup failed: %v", res.Err())
 	}
@@ -189,9 +166,9 @@ func BenchmarkResultDBFindUser(b *testing.B) {
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 
-		userRes := resultRepo.FindUserByID(ctx, id)
+		userRes := resRepo.FindUserByID(ctx, id)
 		if userRes.IsErr() {
 			b.Fatalf("unexpected error: %v", userRes.Err())
 		}
@@ -212,14 +189,15 @@ func BenchmarkResultDBFindUser(b *testing.B) {
 //	BenchmarkTraditionalDBFindUserNotFound    	     890	   1434094 ns/op	    1122 B/op	      27 allocs/op
 func BenchmarkTraditionalDBFindUserNotFound(b *testing.B) {
 	ctx := context.Background()
+	tradRepo, _ := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
-		user, err := traditionalRepo.FindUserByID(ctx, 999999)
+		user, err := tradRepo.FindUserByID(ctx, 999999)
 		if err == nil {
 			b.Fatal("expected error for non-existent user")
 		}
@@ -239,14 +217,15 @@ func BenchmarkTraditionalDBFindUserNotFound(b *testing.B) {
 //	BenchmarkResultDBFindUserNotFound    	     879	   1465590 ns/op	    1122 B/op	      27 allocs/op
 func BenchmarkResultDBFindUserNotFound(b *testing.B) {
 	ctx := context.Background()
+	_, resRepo := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
-		userRes := resultRepo.FindUserByID(ctx, 999999)
+		userRes := resRepo.FindUserByID(ctx, 999999)
 		if userRes.IsOk() {
 			b.Fatal("expected error for non-existent user")
 		}
@@ -266,11 +245,12 @@ func BenchmarkResultDBFindUserNotFound(b *testing.B) {
 //	BenchmarkTraditionalDBUpdateUser    	   10000	    149509 ns/op	     368 B/op	      10 allocs/op
 func BenchmarkTraditionalDBUpdateUser(b *testing.B) {
 	ctx := context.Background()
+	tradRepo, _ := repos()
 
 	// Setup: create a user first
 	// Clear table before each iteration to avoid unique constraint violations
-	clearUsersTable(ctx)
-	id, err := traditionalRepo.CreateUser(ctx, "updateuser@example.com", "Old Name")
+	clearUsers(ctx)
+	id, err := tradRepo.CreateUser(ctx, "updateuser@example.com", "Old Name")
 	if err != nil {
 		b.Fatalf("setup failed: %v", err)
 	}
@@ -278,10 +258,10 @@ func BenchmarkTraditionalDBUpdateUser(b *testing.B) {
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 
 		newName := fmt.Sprintf("New Name %d", i)
-		err := traditionalRepo.UpdateUserName(ctx, id, newName)
+		err := tradRepo.UpdateUserName(ctx, id, newName)
 		if err != nil {
 			b.Fatalf("unexpected error: %v", err)
 		}
@@ -298,11 +278,12 @@ func BenchmarkTraditionalDBUpdateUser(b *testing.B) {
 //	BenchmarkResultDBUpdateUser    	    9250	    134451 ns/op	     376 B/op	      11 allocs/op
 func BenchmarkResultDBUpdateUser(b *testing.B) {
 	ctx := context.Background()
+	_, resRepo := repos()
 
 	// Setup: create a user first
 	// Clear table before each iteration to avoid unique constraint violations
-	clearUsersTable(ctx)
-	res := resultRepo.CreateUser(ctx, "updateuser@example.com", "Old Name")
+	clearUsers(ctx)
+	res := resRepo.CreateUser(ctx, "updateuser@example.com", "Old Name")
 	if res.IsErr() {
 		b.Fatalf("setup failed: %v", res.Err())
 	}
@@ -311,10 +292,10 @@ func BenchmarkResultDBUpdateUser(b *testing.B) {
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 
 		newName := fmt.Sprintf("New Name %d", i)
-		updateRes := resultRepo.UpdateUserName(ctx, id, newName)
+		updateRes := resRepo.UpdateUserName(ctx, id, newName)
 		if updateRes.IsErr() {
 			b.Fatalf("unexpected error: %v", updateRes.Err())
 		}
@@ -334,15 +315,16 @@ func BenchmarkResultDBUpdateUser(b *testing.B) {
 //	BenchmarkTraditionalDBGetOrCreateUser    	     625	   2142520 ns/op	    3284 B/op	      76 allocs/op
 func BenchmarkTraditionalDBGetOrCreateUser(b *testing.B) {
 	ctx := context.Background()
+	tradRepo, _ := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		email := fmt.Sprintf("getorcreate%d@example.com", i)
-		user, err := traditionalRepo.GetOrCreateUser(ctx, email, "Test User")
+		user, err := tradRepo.GetOrCreateUser(ctx, email, "Test User")
 		if err != nil {
 			b.Fatalf("unexpected error: %v", err)
 		}
@@ -362,15 +344,16 @@ func BenchmarkTraditionalDBGetOrCreateUser(b *testing.B) {
 //	BenchmarkResultDBGetOrCreateUser    	     685	   1724771 ns/op	    3372 B/op	      80 allocs/op
 func BenchmarkResultDBGetOrCreateUser(b *testing.B) {
 	ctx := context.Background()
+	_, resRepo := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		email := fmt.Sprintf("getorcreate%d@example.com", i)
-		userRes := resultRepo.GetOrCreateUser(ctx, email, "Test User")
+		userRes := resRepo.GetOrCreateUser(ctx, email, "Test User")
 		if userRes.IsErr() {
 			b.Fatalf("unexpected error: %v", userRes.Err())
 		}
@@ -393,34 +376,35 @@ func BenchmarkResultDBGetOrCreateUser(b *testing.B) {
 //	BenchmarkTraditionalDBChainedOperations           662           1886138 ns/op            3698 B/op         90 allocs/op
 func BenchmarkTraditionalDBChainedOperations(b *testing.B) {
 	ctx := context.Background()
+	tradRepo, _ := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		// Create user
 		email := fmt.Sprintf("chained%d@example.com", i)
-		id, err := traditionalRepo.CreateUser(ctx, email, "Chained User")
+		id, err := tradRepo.CreateUser(ctx, email, "Chained User")
 		if err != nil {
 			b.Fatalf("create failed: %v", err)
 		}
 
 		// Find user
-		user, err := traditionalRepo.FindUserByID(ctx, id)
+		user, err := tradRepo.FindUserByID(ctx, id)
 		if err != nil {
 			b.Fatalf("find failed: %v", err)
 		}
 
 		// Update user
-		err = traditionalRepo.UpdateUserName(ctx, user.ID, "Updated Name")
+		err = tradRepo.UpdateUserName(ctx, user.ID, "Updated Name")
 		if err != nil {
 			b.Fatalf("update failed: %v", err)
 		}
 
 		// Find again to verify
-		updatedUser, err := traditionalRepo.FindUserByID(ctx, user.ID)
+		updatedUser, err := tradRepo.FindUserByID(ctx, user.ID)
 		if err != nil {
 			b.Fatalf("second find failed: %v", err)
 		}
@@ -440,20 +424,21 @@ func BenchmarkTraditionalDBChainedOperations(b *testing.B) {
 //	BenchmarkResultDBChainedOperations                        712           1730262 ns/op            2603 B/op         66 allocs/op
 func BenchmarkResultDBChainedOperations(b *testing.B) {
 	ctx := context.Background()
+	_, resRepo := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		// Using AndThen for chained operations
-		finalResult := chain.Chain2[bool, *User, int](resultRepo.CreateUser(ctx, fmt.Sprintf("chained%d@example.com", i), "Chained User")).
+		finalResult := chain.Chain2[bool, *User, int](resRepo.CreateUser(ctx, fmt.Sprintf("chained%d@example.com", i), "Chained User")).
 			AndThen(func(id int) result.Result[*User] {
-				return resultRepo.FindUserByID(ctx, id)
+				return resRepo.FindUserByID(ctx, id)
 			}).
 			AndThen(func(user *User) result.Result[bool] {
-				return resultRepo.UpdateUserName(ctx, user.ID, "Updated Name")
+				return resRepo.UpdateUserName(ctx, user.ID, "Updated Name")
 			})
 
 		if finalResult.IsErr() {
@@ -472,12 +457,13 @@ func BenchmarkResultDBChainedOperations(b *testing.B) {
 //	BenchmarkResultDBChainedOperationsBubbleUp                667           1888982 ns/op            3722 B/op         95 allocs/op
 func BenchmarkResultDBChainedOperationsBubbleUp(b *testing.B) {
 	ctx := context.Background()
+	_, resRepo := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		var finalResult result.Result[*User]
 
@@ -485,19 +471,19 @@ func BenchmarkResultDBChainedOperationsBubbleUp(b *testing.B) {
 			defer result.Catch(&finalResult)
 
 			// Create user
-			id := resultRepo.CreateUser(ctx, fmt.Sprintf("bubbleup%d@example.com", i), "BubbleUp User").BubbleUp()
+			id := resRepo.CreateUser(ctx, fmt.Sprintf("bubbleup%d@example.com", i), "BubbleUp User").BubbleUp()
 
 			// Find user
-			user := resultRepo.FindUserByID(ctx, id).BubbleUp()
+			user := resRepo.FindUserByID(ctx, id).BubbleUp()
 
 			// Update user
-			updated := resultRepo.UpdateUserName(ctx, user.ID, "Updated Name").BubbleUp()
+			updated := resRepo.UpdateUserName(ctx, user.ID, "Updated Name").BubbleUp()
 			if !updated {
 				panic(errors.New("update failed"))
 			}
 
 			// Find again to verify
-			finalUser := resultRepo.FindUserByID(ctx, user.ID).BubbleUp()
+			finalUser := resRepo.FindUserByID(ctx, user.ID).BubbleUp()
 			finalResult = result.Ok(finalUser)
 		}()
 
@@ -518,38 +504,7 @@ func BenchmarkResultDBChainedOperationsBubbleUp(b *testing.B) {
 //	BenchmarkTraditionalDBErrorHandlingWithFallback           693           1727367 ns/op            3216 B/op         75 allocs/op
 //	BenchmarkTraditionalDBErrorHandlingWithFallback           721           1788172 ns/op            3216 B/op         75 allocs/op
 func BenchmarkTraditionalDBErrorHandlingWithFallback(b *testing.B) {
-	ctx := context.Background()
-	b.ResetTimer()
 
-	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
-		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
-
-		var user *User
-
-		// Try to find existing user
-		existingUser, err := traditionalRepo.FindUserByEmail(ctx, "nonexistent@example.com")
-		if err != nil {
-			// Fallback: create new user
-			id, createErr := traditionalRepo.CreateUser(ctx, "fallback@example.com", "Fallback User")
-			if createErr != nil {
-				b.Fatalf("fallback failed: %v", createErr)
-			}
-
-			newUser, findErr := traditionalRepo.FindUserByID(ctx, id)
-			if findErr != nil {
-				b.Fatalf("find after create failed: %v", findErr)
-			}
-			user = newUser
-		} else {
-			user = existingUser
-		}
-
-		if user == nil {
-			b.Fatal("user should not be nil")
-		}
-	}
 }
 
 // Test results:
@@ -562,18 +517,19 @@ func BenchmarkTraditionalDBErrorHandlingWithFallback(b *testing.B) {
 //	BenchmarkResultDBErrorHandlingWithFallback                708           1734439 ns/op            3306 B/op         79 allocs/op
 func BenchmarkResultDBErrorHandlingWithFallback(b *testing.B) {
 	ctx := context.Background()
+	_, resRepo := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for b.Loop() {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
-		userRes := resultRepo.FindUserByEmail(ctx, "nonexistent@example.com").
+		userRes := resRepo.FindUserByEmail(ctx, "nonexistent@example.com").
 			UnwrapOrElse(func(err error) *User {
 				// Fallback: create new user
-				id := resultRepo.CreateUser(ctx, "fallback@example.com", "Fallback User").Unwrap()
-				return resultRepo.FindUserByID(ctx, id).Unwrap()
+				id := resRepo.CreateUser(ctx, "fallback@example.com", "Fallback User").Unwrap()
+				return resRepo.FindUserByID(ctx, id).Unwrap()
 			})
 
 		if userRes == nil {
@@ -595,15 +551,16 @@ func BenchmarkResultDBErrorHandlingWithFallback(b *testing.B) {
 func BenchmarkTraditionalDBCreateUserAllocs(b *testing.B) {
 	ctx := context.Background()
 	b.ReportAllocs()
+	tradRepo, _ := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		email := fmt.Sprintf("alloc%d@example.com", i)
-		id, err := traditionalRepo.CreateUser(ctx, email, "Test User")
+		id, err := tradRepo.CreateUser(ctx, email, "Test User")
 		if err != nil {
 			b.Fatalf("unexpected error: %v", err)
 		}
@@ -624,15 +581,16 @@ func BenchmarkTraditionalDBCreateUserAllocs(b *testing.B) {
 func BenchmarkResultDBCreateUserAllocs(b *testing.B) {
 	ctx := context.Background()
 	b.ReportAllocs()
+	_, resRepo := repos()
 	b.ResetTimer()
 
 	b.ReportAllocs()
-	for i := 0; i < b.N; i++ {
+	for i := 0; b.Loop(); i++ {
 		// Clear table before each iteration to avoid unique constraint violations
-		clearUsersTable(ctx)
+		clearUsers(ctx)
 
 		email := fmt.Sprintf("alloc%d@example.com", i)
-		res := resultRepo.CreateUser(ctx, email, "Test User")
+		res := resRepo.CreateUser(ctx, email, "Test User")
 		if res.IsErr() {
 			b.Fatalf("unexpected error: %v", res.Err())
 		}

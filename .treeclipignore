@@ -10,7 +10,7 @@ go.sum
 README.md
 TreeClip
 treeclip_temp.txt
-*.txt
+goxide.txt
 README.md
 ***.mod
 ***.sum
@@ -19,3 +19,4 @@ README.md
 ***target
 ***.idea
 ignore
+testdata
