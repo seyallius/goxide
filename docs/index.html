@@ -1,0 +1,180 @@
+<!-- index.html is the single-page shell for the Goxide documentation site. -->
+<!-- It provides the layout (header, sidebar, content area) and loads the -->
+<!-- Markdown rendering engine. All actual content lives in content/*.md files. -->
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Goxide Documentation</title>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Highlight.js Themes (Light/Dark) -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+            id="hljs-light"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+            id="hljs-dark"
+            disabled
+        />
+
+        <!-- Markdown Parser & Syntax Highlighter -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    </head>
+    <body>
+        <header class="top-bar">
+            <button id="menu-toggle" class="icon-btn" aria-label="Toggle Menu">
+                ☰
+            </button>
+            <h1 class="logo">🦀🐹 Goxide <span class="version">docs</span></h1>
+            <div class="top-bar-actions">
+                <button
+                    id="theme-toggle"
+                    class="icon-btn"
+                    aria-label="Toggle Theme"
+                >
+                    🌙
+                </button>
+                <a
+                    href="https://github.com/seyallius/goxide"
+                    target="_blank"
+                    class="icon-btn"
+                    >GitHub ↗</a
+                >
+            </div>
+        </header>
+
+        <div class="layout">
+            <aside id="sidebar" class="sidebar">
+                <nav>
+                    <ul>
+                        <!-- Getting Started -->
+                        <li class="nav-section">Getting Started</li>
+                        <li>
+                            <a
+                                href="#home"
+                                class="nav-link active"
+                                data-src="content/home.md"
+                                >Introduction</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#installation"
+                                class="nav-link"
+                                data-src="content/installation.md"
+                                >Installation</a
+                            >
+                        </li>
+
+                        <!-- Core Concepts -->
+                        <li class="nav-section">Core Concepts</li>
+                        <li>
+                            <a
+                                href="#core-concepts"
+                                class="nav-link"
+                                data-src="content/guide/core-concepts.md"
+                                >Result &amp; Option</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#bubble-up"
+                                class="nav-link"
+                                data-src="content/guide/bubble-up.md"
+                                >The BubbleUp Pattern</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#chaining"
+                                class="nav-link"
+                                data-src="content/guide/chaining.md"
+                                >Fluent Chaining</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#option-patterns"
+                                class="nav-link"
+                                data-src="content/guide/option-patterns.md"
+                                >Option Patterns</a
+                            >
+                        </li>
+
+                        <!-- Advanced Patterns -->
+                        <li class="nav-section">Advanced Patterns</li>
+                        <li>
+                            <a
+                                href="#recovery"
+                                class="nav-link"
+                                data-src="content/guide/recovery.md"
+                                >Error Recovery &amp; Fallbacks</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#migration"
+                                class="nav-link"
+                                data-src="content/guide/migration.md"
+                                >Migration Guide</a
+                            >
+                        </li>
+
+                        <!-- Worked Examples -->
+                        <li class="nav-section">Worked Examples</li>
+                        <li>
+                            <a
+                                href="#ex-database"
+                                class="nav-link"
+                                data-src="content/examples/database.md"
+                                >Database Operations</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#ex-http"
+                                class="nav-link"
+                                data-src="content/examples/http-handlers.md"
+                                >HTTP Handlers</a
+                            >
+                        </li>
+
+                        <!-- External -->
+                        <li class="nav-section">API Reference</li>
+                        <li>
+                            <a
+                                href="https://pkg.go.dev/github.com/seyallius/goxide"
+                                target="_blank"
+                                class="nav-link external"
+                                >pkg.go.dev ↗</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/seyallius/goxide"
+                                target="_blank"
+                                class="nav-link external"
+                                >Source Code ↗</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main id="content" class="content">
+                <div class="loading">Loading documentation... (๑•̀ㅂ•́)و✧</div>
+            </main>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,6 +1,6 @@
 # Goxide - Rust patterns in GO?
 
-[![GoDoc](https://godoc.org/github.com/lib/pq?status.svg)](https://pkg.go.dev/github.com/lib/pq?tab=doc)
+[![GoDoc](https://godoc.org/github.com/lib/pq?status.svg)](https://pkg.go.dev/github.com/seyallius/goxide?tab=doc)
 ![Go Version](https://img.shields.io/badge/Go-1.25%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
@@ -10,12 +10,12 @@
   <img src="./goxide2.png" alt="goxide logo 2" width="400" style="display:inline-block;"/>
 </p>
 
-
 A comprehensive Go utilities library inspired by Rust's safety and expressiveness, providing robust error handling, reflection utilities, and functional programming patterns.
 
 ## 📦 Packages Overview
 
 ### Rust-Inspired Patterns (`rusty` package)
+
 - **[`result`](./rusty/result/README_RESULT.md)**: Rust-like Result type with Try/Catch patterns (equivalent to Rust's `?` operator)
 - **[`option`](./rusty/option/README_OPTION.md)**: Optional value handling without nil panics
 - **[`chain`](./rusty/chain/README_CHAIN.md)**: Fluent method chaining for Result and Option types
@@ -26,26 +26,26 @@ A comprehensive Go utilities library inspired by Rust's safety and expressivenes
 ### Installation
 
 ```bash
-go get github.com/seyedali-dev/goxide
+go get github.com/seyallius/goxide
 ```
 
 ### Basic Usage
 
 ```go
 import (
-    "github.com/seyedali-dev/goxide/rusty/result"
-    "github.com/seyedali-dev/goxide/rusty/option"
-    "github.com/seyedali-dev/goxide/rusty/chain"
-    "github.com/seyedali-dev/goxide/reflect"
+    "github.com/seyallius/goxide/rusty/result"
+    "github.com/seyallius/goxide/rusty/option"
+    "github.com/seyallius/goxide/rusty/chain"
+    "github.com/seyallius/goxide/reflect"
 )
 
 // Result pattern for error handling (Rust's ? equivalent)
 func GetUser(id int) (res result.Result[User]) {
     defer result.Catch(&res)
-    
+
     user := db.FindUser(id).BubbleUp() // Early return on error
     profile := db.FindProfile(user.ID).BubbleUp() // ? - bubbleup error and return
-    
+
     return result.Ok(profile)
 }
 
@@ -69,62 +69,72 @@ func GetStructTags(user User) []string {
 }
 ```
 
-## 🎯 Key Features
+## ✨ Key Features
 
-### 🔒 Type Safety
+### 🛡️ Type Safety
+
 - Compiler-enforced error handling
 - No nil pointer dereferences
 - Explicit optional values
 
-### 🛠️ Error Handling
+### 🔧 Error Handling
+
 - **Rust-like Result type** with `BubbleUp()` for early returns (equivalent to Rust's `?` operator)
 - **Error recovery** with `CatchWith` and `Fallback`
 - **Functional composition** with `Map`, `AndThen`, `FlatMap`
 
 ### 🔍 Reflection Made Safe
+
 - **Type-safe struct operations**
 - **Compile-time field validation**
 - **Struct tag parsing and validation**
 
 ### 🔗 Fluent APIs
+
 - **Method chaining** for complex operations
 - **Pipeline-style programming** with the chain package
 - **Readable sequential operations**
 
-## 📚 Package Details
+## 📖 Package Details
 
 ### [Result Package](./rusty/result/README_RESULT.md)
+
 Rust-inspired error handling with early returns and error recovery patterns.
 
 **Key Features:**
+
 - `BubbleUp()` method equivalent to Rust's `?` operator
 - Error-specific recovery with `CatchWith`
 - Functional composition with `Map` and `AndThen`
 - Multi-error combination with `Map2` and `Map3`
 
 **Example:**
+
 ```go
 func ProcessOrder(orderID int) (res result.Result[Receipt]) {
     defer result.Catch(&res)
-    
+
     order := FindOrder(orderID).BubbleUp()
     payment := ProcessPayment(order).BubbleUp()
     receipt := GenerateReceipt(payment).BubbleUp()
-    
+
     return result.Ok(receipt)
 }
 ```
 
 ### [Option Package](./rusty/option/README_OPTION.md)
+
 Safe optional value handling without nil pointer panics.
 
 **Key Features:**
+
 - Explicit Some/None semantics
 - Safe value extraction with fallbacks
 - Functional transformation with `Map` and `FlatMap`
 - Type-safe optional operations
 
 **Example:**
+
 ```go
 func GetUserEmail(userID int) option.Option[string] {
     userOpt := cache.GetUser(userID)
@@ -135,15 +145,18 @@ func GetUserEmail(userID int) option.Option[string] {
 ```
 
 ### [Chain Package](./rusty/chain/README_CHAIN.md) (work in progress)
+
 Fluent method chaining for Result and Option types.
 
 **Key Features:**
+
 - Pipeline-style operation sequencing
 - Type-safe transformation chains
 - No nested Map/AndThen calls
 - Better readability for complex operations
 
 **Example:**
+
 ```go
 chain.Chain(findUser(123)).
     Map(func(u User) string { return u.Name }).
@@ -151,15 +164,18 @@ chain.Chain(findUser(123)).
 ```
 
 ### [Types Package](./rusty/types/README_TYPES.md)
+
 Generic functional programming helpers.
 
 **Key Features:**
+
 - Identity function and constant generators
 - Function composition utilities
 - Higher-order function support
 - Integration with Result and Option
 
 **Example:**
+
 ```go
 // Function composition
 process := types.Compose(strings.TrimSpace, strings.ToUpper)
@@ -169,70 +185,79 @@ result := process("  hello  ") // "HELLO"
 ## 🏗️ Architecture Principles
 
 ### 1. **Explicit Over Implicit**
+
 - No hidden nil checks
 - Clear error propagation
 - Explicit optional values
 
 ### 2. **Type Safety First**
+
 - Compiler-enforced patterns
 - Generic type constraints
 - Runtime safety guarantees
 
 ### 3. **Multiple Patterns**
+
 - Choose between traditional, functional, or early-return styles
 - Gradual adoption path
 - No lock-in to single approach
 
 ### 4. **Performance Conscious**
+
 - Zero allocations in happy paths
 - Minimal overhead over traditional patterns
 - Benchmark-driven optimizations
 
-## 📖 Examples
+## 📚 Documentation
 
-Comprehensive examples are available in the [`examples`](./rusty/examples) package:
+For in-depth guides, tutorials, and worked examples, visit the **[Goxide Documentation Site](https://seyallius.github.io/goxide/)**.
 
-- [Database operations with fallbacks](./rusty/examples/examples.go)
-- [HTTP handlers with error handling](./rusty/examples/examples.go)
-- [Validation chains](./rusty/examples/examples.go)
-- [Transaction handling](./rusty/examples/examples.go)
-- [Fluent method chaining](./rusty/chain/README_CHAIN.md#examples)
+You can also find detailed explanations in each sub-package's README:
 
-You can also find more detailed explanation in each sub-packages e.g., [Result Package](./rusty/result/README_RESULT.md), [Option Package](./rusty/option/README_OPTION.md), [Chain Package](./rusty/chain/README_CHAIN.md), [Types Package](./rusty/types/README_TYPES.md) (some might not have as the docstring explanation suffices).
-## 🔧 Migration Guide
+- [Result Package](./rusty/result/README_RESULT.md)
+- [Option Package](./rusty/option/README_OPTION.md)
+- [Chain Package](./rusty/chain/README_CHAIN.md)
+- [Types Package](./rusty/types/README_TYPES.md)
+
+Comprehensive code examples are available in the [`examples`](./rusty/examples) package.
+
+## 🔄 Migration Guide
 
 ### From Traditional Go
 
 **Before:**
+
 ```go
 func GetUserData(id int) (UserData, error) {
     user, err := db.FindUser(id)
     if err != nil {
         return UserData{}, err
     }
-    
+
     profile, err := db.FindProfile(user.ID)
     if err != nil {
         return UserData{}, err
     }
-    
+
     return ProcessData(user, profile), nil
 }
 ```
 
-**After (with Try pattern):**
+**After (with BubbleUp pattern):**
+
 ```go
 func GetUserData(id int) (res result.Result[UserData]) {
     defer result.Catch(&res)
-    
+
     user := db.FindUser(id).BubbleUp()
     profile := db.FindProfile(user.ID).BubbleUp()
-    
+
     return result.Ok(ProcessData(user, profile))
 }
 ```
 
 **After (with Chain pattern):**
+
 ```go
 func GetUserData(id int) result.Result[UserData] {
     return chain.Chain(db.FindUser(id)).
@@ -259,15 +284,15 @@ func MixedUsage(id int) (User, error) {
     var user User
     var err error
     defer result.CatchErr(&user, &err)
-    
+
     config := loadConfig().BubbleUp()
     user = findUser(id).BubbleUp()
-    
+
     return user, nil
 }
 ```
 
-## 📊 Performance
+## ⚡ Performance
 
 Benchmarks show minimal overhead:
 
@@ -280,6 +305,7 @@ Option operations:            5-10 ns/op
 ```
 
 **Recommendations:**
+
 - Use `BubbleUp()` for business logic where clarity matters
 - Use `Chain` for complex operation sequences
 - Use traditional patterns in performance-critical loops
@@ -292,8 +318,8 @@ You're welcome for contributions! Please see our [Contributing Guide](CONTRIBUTI
 ### Development Setup
 
 ```bash
-git clone https://github.com/seyedali-dev/goxide
-cd gopherbox
+git clone https://github.com/seyallius/goxide
+cd goxide
 go test ./...
 ```
 
@@ -326,15 +352,15 @@ Inspired by:
 - **Go**'s simplicity and pragmatism
 - The Go community's best practices
 
-## 📞 Support
+## 📬 Support
 
 - 📧 **Email**: [seyedali.dev@gmail.com](mailto:seyedali.dev@gmail.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/seyedali-dev/goxide/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/seyedali-dev/goxide/discussions)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/seyallius/goxide/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/seyallius/goxide/discussions)
 
-## 🚀 Roadmap
+## 🗺️ Roadmap
 
-- [ ] **v.15.0**: Improve the result to avoid memory allocation
+- [ ] **v0.15.0**: Improve the result to avoid memory allocation
 - [ ] **v1.0.0**: Enhanced chaining
 - [ ] **v1.1.0**: Enhanced collection utilities
 - [ ] **v1.2.0**: Async/await patterns for Go
@@ -346,6 +372,6 @@ Inspired by:
 
 **Built with ❤️ for the Go community**
 
-*Making Go development safer, more expressive, and more enjoyable*
+_Making Go development safer, more expressive, and more enjoyable_
 
 </div>
