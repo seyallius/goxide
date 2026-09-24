@@ -413,3 +413,64 @@ body {
         display: none;
     }
 }
+
+/* File: docs/style.css (append at the end) */
+/* ----------------------- Tables ----------------------- */
+.content table {
+    border-collapse: collapse;
+    margin: 0 0 1.5rem 0;
+    font-size: 0.9rem;
+    width: max-content; /* shrink-to-fit... */
+    max-width: 100%; /* ...but never overflow the column */
+    display: block; /* enables horizontal scroll on mobile */
+    overflow-x: auto;
+}
+.content th,
+.content td {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 0.9rem;
+    font-variant-numeric: tabular-nums; /* digits line up vertically */
+}
+.content th {
+    background: var(--sidebar-bg);
+    font-weight: 600;
+    white-space: nowrap;
+}
+.content tbody tr:nth-child(even) td {
+    background: rgba(0, 0, 0, 0.025);
+}
+.content tbody tr:hover td {
+    background: rgba(9, 105, 218, 0.07);
+}
+[data-theme="dark"] .content tbody tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.03);
+}
+[data-theme="dark"] .content tbody tr:hover td {
+    background: rgba(88, 166, 255, 0.08);
+}
+
+/* ----------------------- Neon Tables ----------------------- */
+[data-theme="neon"] .content th {
+    background: rgba(217, 79, 217, 0.1);
+    color: #f0d8f0;
+    border-color: rgba(79, 217, 217, 0.3);
+    text-shadow: 0 0 6px rgba(217, 79, 217, 0.35);
+}
+[data-theme="neon"] .content td {
+    border-color: var(--border-color);
+}
+[data-theme="neon"] .content tbody tr:nth-child(even) td {
+    background: rgba(79, 217, 217, 0.035);
+}
+[data-theme="neon"] .content tbody tr:hover td {
+    background: rgba(217, 79, 217, 0.09);
+    box-shadow: inset 0 0 12px rgba(217, 79, 217, 0.08);
+}
+
+/* ----------------------- Benchmark Table Polish ----------------------- */
+.content td:last-child {
+    white-space: nowrap; /* keep "⚡ 9.6% faster" on one line */
+}
+.content td:first-child {
+    min-width: 240px; /* names get room; table scrolls horizontally if needed */
+}
