@@ -1,0 +1,13 @@
+File: result.test
+Build ID: 95e780aa1df740892212b9ab44b6be3b4b16c4d1
+Type: alloc_objects
+Time: 2026-09-29 22:22:40 +0330
+Showing nodes accounting for 47481556, 100% of 47493893 total
+Dropped 21 nodes (cum <= 237469)
+      flat  flat%   sum%        cum   cum%
+  47481556   100%   100%   47481556   100%  github.com/seyallius/goxide/rusty/result.Ok[go.shape.int] (inline)
+         0     0%   100%   35947044 75.69%  github.com/seyallius/goxide/rusty/result.Wrap[go.shape.int] (inline)
+         0     0%   100%   47481556   100%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry
+         0     0%   100%   47481556   100%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1
+         0     0%   100%   47481556   100%  testing.(*B).run1.func1
+         0     0%   100%   47481556   100%  testing.(*B).runN

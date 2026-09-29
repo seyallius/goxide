@@ -1,47 +1,18 @@
 PASS
-ok  	github.com/seyallius/goxide/rusty/chain	0.567s
+ok  	github.com/seyallius/goxide/rusty/chain	0.002s
 ?   	github.com/seyallius/goxide/rusty/examples	[no test files]
 ?   	github.com/seyallius/goxide/rusty/option	[no test files]
 
 ===> 🚀 Test Container Setup
 	├── Start Container:                    0s
-	├── Initialize Schema (Slow Path):      12ms
+	├── Initialize Schema (Slow Path):      3ms
 	├── Initialize Data (Slow Path):        0s
 	├── Initialize Engine:                  0s
-	├── Verify Database Connection:         3ms
-	└── ✅ Test Container Ready!            15ms
+	├── Verify Database Connection:         0s
+	└── ✅ Test Container Ready!            3ms
 
-goos: windows
+goos: linux
 goarch: amd64
 pkg: github.com/seyallius/goxide/rusty/result
 cpu: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
-BenchmarkTraditionalSuccess-12                        	791786533	         1.564 ns/op	       0 B/op	       0 allocs/op
-BenchmarkResultSuccess-12                             	483346692	         2.510 ns/op	       0 B/op	       0 allocs/op
-BenchmarkResultSuccessUnwrapOr-12                     	46110040	        24.11 ns/op	       8 B/op	       1 allocs/op
-BenchmarkTraditionalError-12                          	557011004	         2.347 ns/op	       0 B/op	       0 allocs/op
-BenchmarkResultError-12                               	43698494	        28.68 ns/op	      16 B/op	       1 allocs/op
-BenchmarkTraditionalChainedSuccess-12                 	455009598	         2.642 ns/op	       0 B/op	       0 allocs/op
-BenchmarkResultChainedSuccess-12                      	20103128	        58.94 ns/op	      24 B/op	       3 allocs/op
-BenchmarkTraditionalDBCreateUser-12                   	      73	  17934388 ns/op	    4888 B/op	     116 allocs/op
-BenchmarkResultDBCreateUser-12                        	      62	  18015324 ns/op	    4889 B/op	     117 allocs/op
-BenchmarkTraditionalDBFindUser-12                     	   16231	     63374 ns/op	    1552 B/op	      45 allocs/op
-BenchmarkResultDBFindUser-12                          	   18445	     58778 ns/op	    1559 B/op	      46 allocs/op
-BenchmarkTraditionalDBFindUserNotFound-12             	     159	   8051542 ns/op	    3344 B/op	      83 allocs/op
-BenchmarkResultDBFindUserNotFound-12                  	     139	   8298376 ns/op	    3345 B/op	      83 allocs/op
-BenchmarkTraditionalDBUpdateUser-12                   	     135	   9293730 ns/op	    1926 B/op	      47 allocs/op
-BenchmarkResultDBUpdateUser-12                        	     154	   7677797 ns/op	    1924 B/op	      48 allocs/op
-BenchmarkTraditionalDBGetOrCreateUser-12              	      33	  30518582 ns/op	    7734 B/op	     198 allocs/op
-BenchmarkResultDBGetOrCreateUser-12                   	      62	  20777613 ns/op	    7818 B/op	     202 allocs/op
-BenchmarkTraditionalDBChainedOperations-12            	      54	  23369624 ns/op	    9926 B/op	     258 allocs/op
-BenchmarkResultDBChainedOperations-12                 	      57	  24978049 ns/op	    8400 B/op	     217 allocs/op
-BenchmarkResultDBChainedOperationsBubbleUp-12         	      44	  25631150 ns/op	   10000 B/op	     267 allocs/op
-BenchmarkTraditionalDBErrorHandlingWithFallback-12    	      67	  19058442 ns/op	    7675 B/op	     201 allocs/op
-BenchmarkResultDBErrorHandlingWithFallback-12         	      82	  17451850 ns/op	    7801 B/op	     205 allocs/op
-BenchmarkTraditionalDBCreateUserAllocs-12             	      80	  19539050 ns/op	    4882 B/op	     118 allocs/op
-BenchmarkResultDBCreateUserAllocs-12                  	      60	  18216067 ns/op	    4900 B/op	     119 allocs/op
-BenchmarkTraditionalErrorHandling-12                  	1000000000	         0.9975 ns/op	       0 B/op	       0 allocs/op
-BenchmarkResultWithTry-12                             	11818118	        96.00 ns/op	      32 B/op	       4 allocs/op
-BenchmarkResultWithAndThen-12                         	15508684	        76.51 ns/op	      24 B/op	       3 allocs/op
-PASS
-ok  	github.com/seyallius/goxide/rusty/result	33.955s
-?   	github.com/seyallius/goxide/rusty/types	[no test files]
+BenchmarkTraditionalSuccess-12                        	794530788	         1.570 ns/op	       0 B/op	       0 allocs/op

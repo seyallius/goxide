@@ -1,0 +1,29 @@
+File: result.test
+Build ID: 95e780aa1df740892212b9ab44b6be3b4b16c4d1
+Type: cpu
+Time: 2026-09-29 22:20:30 +0330
+Duration: 30.93s, Total samples = 15360ms (49.67%)
+Showing nodes accounting for 10060ms, 65.49% of 15360ms total
+Dropped 430 nodes (cum <= 76.80ms)
+Showing top 20 nodes out of 221
+      flat  flat%   sum%        cum   cum%
+    1240ms  8.07%  8.07%     1240ms  8.07%  runtime.nextFreeFast (inline)
+    1180ms  7.68% 15.76%     1180ms  7.68%  testing.(*B).Loop (inline)
+     870ms  5.66% 21.42%      870ms  5.66%  internal/runtime/syscall.Syscall6
+     820ms  5.34% 26.76%     2220ms 14.45%  runtime.mallocgcTiny
+     810ms  5.27% 32.03%     5250ms 34.18%  runtime.mallocgc
+     540ms  3.52% 35.55%      540ms  3.52%  github.com/seyallius/goxide/rusty/result_test.traditionalSuccess
+     530ms  3.45% 39.00%     1230ms  8.01%  github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalChainedSuccess
+     480ms  3.12% 42.12%     5650ms 36.78%  runtime.newobject
+     450ms  2.93% 45.05%     2180ms 14.19%  runtime.mallocgcSmallScanNoHeader
+     420ms  2.73% 47.79%      420ms  2.73%  github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)
+     400ms  2.60% 50.39%     1220ms  7.94%  github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalErrorHandling
+     390ms  2.54% 52.93%      450ms  2.93%  runtime.(*mspan).writeHeapBitsSmall
+     380ms  2.47% 55.40%      640ms  4.17%  github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalErrorHandling.func1
+     270ms  1.76% 57.16%     1160ms  7.55%  github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalSuccess
+     260ms  1.69% 58.85%      260ms  1.69%  github.com/seyallius/goxide/rusty/result_test.divide (inline)
+     220ms  1.43% 60.29%      220ms  1.43%  runtime.acquirem (inline)
+     210ms  1.37% 61.65%      530ms  3.45%  github.com/seyallius/goxide/rusty/result.Result[go.shape.int].UnwrapOr
+     200ms  1.30% 62.96%     1170ms  7.62%  github.com/seyallius/goxide/rusty/result.AndThen[go.shape.int,go.shape.int]
+     200ms  1.30% 64.26%      200ms  1.30%  github.com/seyallius/goxide/rusty/result_test.traditionalChainedSuccess
+     190ms  1.24% 65.49%      190ms  1.24%  runtime.getMCache (inline)
