@@ -6,7 +6,7 @@ Generated from `go test -bench=. -benchmem` via `just bench`.
 Lower `ns/op`, `B/op` and `allocs/op` are better.
 
 Each table compares one workload across implementation styles; the
-**vs Traditional ** column is the delta against the baseline style.
+**vs Traditional** column is the delta against the baseline style.
 Deltas under 2% are reported as *on par* (benchmark noise).
 
 ## ⚡ Basic Operations
