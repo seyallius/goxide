@@ -44,6 +44,10 @@ func writeHeader(w *bufio.Writer, runs int, cfg Config) {
 	}
 	fmt.Fprintln(w, "Lower `ns/op`, `B/op` and `allocs/op` are better.")
 	fmt.Fprintln(w)
+	if hw := hardwareBlock(); hw != "" {
+		fmt.Fprintln(w, hw)
+	}
+	fmt.Fprintln(w)
 	fmt.Fprintln(w, "Each table compares one workload across implementation styles; the")
 	fmt.Fprintf(w, "**vs %s** column is the delta against the baseline style.\n", strings.TrimSpace(cfg.Styles[0]))
 	fmt.Fprintln(w, "Deltas under 2% are reported as *on par* (benchmark noise).")
@@ -152,4 +156,17 @@ func formatComparison(r BenchResult, baselineNs float64, hasBaseline bool, cfg C
 		return "—"
 	}
 	return CompareLabel(r.NsPerOp, baselineNs)
+}
+
+// hardwareBlock reads docs/hardware.txt and returns a hardware info string.
+func hardwareBlock() string {
+	data, err := os.ReadFile("docs/hardware.txt")
+	if err != nil {
+		return ""
+	}
+	s := strings.TrimRight(string(data), "\n")
+	if s == "" {
+		return ""
+	}
+	return "## 🖥️ Test Environment\n\n```\n" + s + "\n```\n\n"
 }
