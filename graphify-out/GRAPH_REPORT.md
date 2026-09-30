@@ -1,17 +1,17 @@
 # Graph Report - goxide  (2026-09-30)
 
 ## Corpus Check
-- 47 files · ~155,889 words
+- 50 files · ~166,259 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 11 file(s) not represented in the graph (top: (none) 6, .css 4, .toml 1)
 
 ## Summary
-- 696 nodes · 1538 edges · 37 communities (20 shown, 17 thin omitted)
+- 729 nodes · 1570 edges · 37 communities (23 shown, 14 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 55 edges (avg confidence: 0.83)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `662be091`
+- Built from commit: `884eecd8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,7 +21,7 @@
 - testing.B
 - result_test.go
 - Result Chaining
-- context.Context
+- T
 - T
 - Goxide README
 - Fluent Chain Pipeline
@@ -40,11 +40,11 @@
 - ie
 - .parseInline
 - ce
-- re
-- compare.md
-- timeline.md
-- sqlEngine
 - marked.min.js
+- compare.md
+- Timeline
+- sqlEngine
+- ⚡ Basic operations
 
 ## God Nodes (most connected - your core abstractions)
 1. `Result` - 65 edges
@@ -83,11 +83,11 @@
 - **Composable functional pipeline concepts** — rusty_chain_readme_chain_fluent_method_chaining, rusty_result_readme_result_and_then, rusty_types_readme_types_function_composition, rusty_types_readme_types_higher_order_functions [INFERRED 0.75]
 - **Result benchmark profiling family** — docs_profiles_cpu_full_result_benchmark_profile, docs_profiles_mem_objects_full_result_benchmark_allocation_profile, docs_profiles_mem_space_full_result_benchmark_allocation_space_profile, rusty_result_raw_benchmarks_result_chained_operations [INFERRED 0.75]
 
-## Communities (37 total, 17 thin omitted)
+## Communities (37 total, 14 thin omitted)
 
 ### Community 1 - "Result"
 Cohesion: 0.07
-Nodes (51): Cache, Order, User, Result[T], tryError, TestResultChain_MultipleOperations(), chargePayment(), chargePaymentTraditional() (+43 more)
+Nodes (46): Cache, Order, User, ResultUserRepo, TraditionalUserRepo, User, TestResultChain_MultipleOperations(), failOnOdd() (+38 more)
 
 ### Community 2 - "highlight.min.js"
 Cohesion: 0.06
@@ -95,19 +95,19 @@ Nodes (36): a(), b(), be(), d(), e(), f(), b(), c() (+28 more)
 
 ### Community 3 - "testing.B"
 Cohesion: 0.06
-Nodes (52): ApplyToResult2, DB(), RunGoxideTestMain(), Chain(), TestProfile(), BenchmarkChainedSuccess(), BenchmarkDBChainedOperations(), BenchmarkDBCreateUser() (+44 more)
+Nodes (58): Profile, User, DB(), RunGoxideTestMain(), tryError, TestResultChain_AndThen(), TestResultChain_AndThen3_ErrorFromFunction(), TestResultChain_AndThen4_ErrorPropagation() (+50 more)
 
 ### Community 4 - "result_test.go"
-Cohesion: 0.10
-Nodes (52): Profile, User, Config, failOnOdd(), TestResultChain_AndThen(), TestResultChain_AndThen2(), TestResultChain_AndThen3_ErrorFromFunction(), TestResultChain_AndThen4_ErrorPropagation() (+44 more)
+Cohesion: 0.14
+Nodes (41): Config, ExecuteTransaction(), fetchData(), FetchWithTimeout(), loadConfigFromFile(), LoadConfiguration(), recordTransaction(), updateBalance() (+33 more)
 
 ### Community 5 - "Result Chaining"
 Cohesion: 0.07
 Nodes (29): CPU Profile: BenchmarkResultWithTry, Full CPU Profile: Result Benchmarks, Allocation Objects Profile: BenchmarkResultWithTry, Full Allocation Objects Profile: Result Benchmarks, Allocation Space Profile: BenchmarkResultWithTry, Full Allocation Space Profile: Result Benchmarks, Chain2 Multi-Step Chaining, Chain Package (+21 more)
 
-### Community 6 - "context.Context"
-Cohesion: 0.31
-Nodes (4): ResultUserRepo, TraditionalUserRepo, User, NewTraditionalUserRepo()
+### Community 6 - "T"
+Cohesion: 0.18
+Nodes (12): Result[T], TestResultChain_AndThen2(), AndThen(), FlatMap(), If(), Map(), Map2(), Map3() (+4 more)
 
 ### Community 7 - "T"
 Cohesion: 0.16
@@ -126,8 +126,8 @@ Cohesion: 0.10
 Nodes (46): addCopyButtons(), addHeadingAnchors(), appendCell(), applyFilter(), applySiteSettings(), applyTheme(), bindGlobalHandlers(), boot() (+38 more)
 
 ### Community 11 - "ApplyToResult"
-Cohesion: 0.24
-Nodes (4): ApplyToResult, ApplyToResult2[Out1, Out2, T], ApplyToResult[Out, In], Chain2()
+Cohesion: 0.18
+Nodes (6): ApplyToResult, ApplyToResult2, ApplyToResult2[Out1, Out2, T], ApplyToResult[Out, In], Chain2(), Chain()
 
 ### Community 12 - "script.js"
 Cohesion: 0.33
@@ -158,36 +158,48 @@ Cohesion: 0.08
 Nodes (3): ne(), se, te()
 
 ### Community 23 - "ie"
-Cohesion: 0.12
+Cohesion: 0.11
 Nodes (3): ie, W(), Y()
+
+### Community 26 - "marked.min.js"
+Cohesion: 0.21
+Nodes (3): ee(), re, t()
+
+### Community 28 - "Timeline"
+Cohesion: 0.17
+Nodes (11): Headline (geometric mean of the median ratios), Headline (geometric mean of the median ratios), Headline (geometric mean of the median ratios), Index chart, Index chart, Index chart, Milestones, Timeline (+3 more)
 
 ### Community 35 - "sqlEngine"
 Cohesion: 0.20
 Nodes (4): GoxideDataInit(), GoxideEngineInit(), GoxideSchemaInit(), sqlEngine
+
+### Community 36 - "⚡ Basic operations"
+Cohesion: 0.09
+Nodes (22): ⚡ Basic operations, Benchmarks — m001 — baseline, 🔗 Chain, ChainedSuccess, DBChainedOperations, DBCreateUser, DBCreateUserAllocs, DBErrorHandlingWithFallback (+14 more)
 
 ## Ambiguous Edges - Review These
 - `Chain Package` → `Chain Package in Option Documentation`  [AMBIGUOUS]
   rusty/option/README_OPTION.md · relation: semantically_similar_to
 
 ## Knowledge Gaps
-- **80 isolated node(s):** `CONFIG`, `github.com/seyallius/goxide`, `Build, Test, and Development Commands`, `Coding Style & Naming Conventions`, `Commit & Pull Request Guidelines` (+75 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 169 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **107 isolated node(s):** `How to read this`, `ChainedSuccess`, `DBChainedOperations`, `DBCreateUser`, `DBCreateUserAllocs` (+102 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 196 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Chain Package` and `Chain Package in Option Documentation`?**
   _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
-- **Why does `Result` connect `Result` to `testing.B`, `result_test.go`, `context.Context`, `T`, `ApplyToResult`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+- **Why does `Result` connect `Result` to `testing.B`, `result_test.go`, `T`, `T`, `ApplyToResult`?**
+  _High betweenness centrality (0.038) - this node is a cross-community bridge._
 - **Why does `pe()` connect `highlight.min.js` to `.parseInline`, `marked.min.js`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **What connects `CONFIG`, `github.com/seyallius/goxide`, `Build, Test, and Development Commands` to the rest of the system?**
-  _80 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **What connects `How to read this`, `ChainedSuccess`, `DBChainedOperations` to the rest of the system?**
+  _107 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Result` be split into smaller, more focused modules?**
-  _Cohesion score 0.07314814814814814 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07246376811594203 - nodes in this community are weakly interconnected._
 - **Should `highlight.min.js` be split into smaller, more focused modules?**
   _Cohesion score 0.06151062867480778 - nodes in this community are weakly interconnected._
 - **Should `testing.B` be split into smaller, more focused modules?**
-  _Cohesion score 0.062317429406037 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05994397759103642 - nodes in this community are weakly interconnected._

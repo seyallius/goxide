@@ -267,7 +267,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 26,
-      "community_name": "re",
+      "community_name": "marked.min.js",
       "file_type": "code",
       "norm_label": "re",
       "source_file": "docs/assets/benchbook/vendor/marked.min.js",
@@ -2338,6 +2338,18 @@
       "source_location": "L6"
     },
     {
+      "id": "docs_assets_benchbook_vendor_marked_min_ce_onerror",
+      "label": ".onError()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "ie",
+      "file_type": "code",
+      "norm_label": ".onerror()",
+      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
+      "source_location": "L6"
+    },
+    {
       "id": "docs_assets_benchbook_vendor_marked_min_ie_br",
       "label": ".br()",
       "_callable": true,
@@ -2866,18 +2878,6 @@
       "source_location": "L6"
     },
     {
-      "id": "docs_assets_benchbook_vendor_marked_min_ce_onerror",
-      "label": ".onError()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 25,
-      "community_name": "ce",
-      "file_type": "code",
-      "norm_label": ".onerror()",
-      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
-      "source_location": "L6"
-    },
-    {
       "id": "docs_assets_benchbook_vendor_marked_min_ce_parsemarkdown",
       "label": ".parseMarkdown()",
       "_callable": true,
@@ -2926,83 +2926,11 @@
       "source_location": "L6"
     },
     {
-      "id": "docs_assets_benchbook_vendor_marked_min_re_blocktokens",
-      "label": ".blockTokens()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "re",
-      "file_type": "code",
-      "norm_label": ".blocktokens()",
-      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
-      "source_location": "L6"
-    },
-    {
-      "id": "docs_assets_benchbook_vendor_marked_min_re_inline",
-      "label": ".inline()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "re",
-      "file_type": "code",
-      "norm_label": ".inline()",
-      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
-      "source_location": "L6"
-    },
-    {
-      "id": "docs_assets_benchbook_vendor_marked_min_re_inlinetokens",
-      "label": ".inlineTokens()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "re",
-      "file_type": "code",
-      "norm_label": ".inlinetokens()",
-      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
-      "source_location": "L6"
-    },
-    {
-      "id": "docs_assets_benchbook_vendor_marked_min_re_lex",
-      "label": ".lex()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "re",
-      "file_type": "code",
-      "norm_label": ".lex()",
-      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
-      "source_location": "L6"
-    },
-    {
-      "id": "docs_assets_benchbook_vendor_marked_min_re_lexinline",
-      "label": ".lexInline()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "re",
-      "file_type": "code",
-      "norm_label": ".lexinline()",
-      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
-      "source_location": "L6"
-    },
-    {
-      "id": "docs_assets_benchbook_vendor_marked_min_re_rules",
-      "label": ".rules()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "re",
-      "file_type": "code",
-      "norm_label": ".rules()",
-      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
-      "source_location": "L6"
-    },
-    {
       "id": "docs_assets_benchbook_vendor_marked_min_ee",
       "label": "ee()",
       "_callable": true,
       "_origin": "ast",
-      "community": 36,
+      "community": 26,
       "community_name": "marked.min.js",
       "file_type": "code",
       "norm_label": "ee()",
@@ -3014,7 +2942,7 @@
       "label": "n()",
       "_callable": true,
       "_origin": "ast",
-      "community": 36,
+      "community": 26,
       "community_name": "marked.min.js",
       "file_type": "code",
       "norm_label": "n()",
@@ -3026,10 +2954,82 @@
       "label": "r()",
       "_callable": true,
       "_origin": "ast",
-      "community": 36,
+      "community": 26,
       "community_name": "marked.min.js",
       "file_type": "code",
       "norm_label": "r()",
+      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "docs_assets_benchbook_vendor_marked_min_re_blocktokens",
+      "label": ".blockTokens()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "marked.min.js",
+      "file_type": "code",
+      "norm_label": ".blocktokens()",
+      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "docs_assets_benchbook_vendor_marked_min_re_inline",
+      "label": ".inline()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "marked.min.js",
+      "file_type": "code",
+      "norm_label": ".inline()",
+      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "docs_assets_benchbook_vendor_marked_min_re_inlinetokens",
+      "label": ".inlineTokens()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "marked.min.js",
+      "file_type": "code",
+      "norm_label": ".inlinetokens()",
+      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "docs_assets_benchbook_vendor_marked_min_re_lex",
+      "label": ".lex()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "marked.min.js",
+      "file_type": "code",
+      "norm_label": ".lex()",
+      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "docs_assets_benchbook_vendor_marked_min_re_lexinline",
+      "label": ".lexInline()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "marked.min.js",
+      "file_type": "code",
+      "norm_label": ".lexinline()",
+      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "docs_assets_benchbook_vendor_marked_min_re_rules",
+      "label": ".rules()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "marked.min.js",
+      "file_type": "code",
+      "norm_label": ".rules()",
       "source_file": "docs/assets/benchbook/vendor/marked.min.js",
       "source_location": "L6"
     },
@@ -3038,7 +3038,7 @@
       "label": ".table()",
       "_callable": true,
       "_origin": "ast",
-      "community": 36,
+      "community": 26,
       "community_name": "marked.min.js",
       "file_type": "code",
       "norm_label": ".table()",
@@ -3050,23 +3050,12 @@
       "label": "t()",
       "_callable": true,
       "_origin": "ast",
-      "community": 36,
+      "community": 26,
       "community_name": "marked.min.js",
       "file_type": "code",
       "norm_label": "t()",
       "source_file": "docs/assets/benchbook/vendor/marked.min.js",
       "source_location": "L6"
-    },
-    {
-      "id": "a",
-      "label": "A",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "a",
-      "source_file": "",
-      "source_location": ""
     },
     {
       "id": "examples_cache",
@@ -3124,6 +3113,17 @@
       "source_location": "L22"
     },
     {
+      "id": "go_type_context_context",
+      "label": "context.Context",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": "context.context",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "go_type_database_sql_db",
       "label": "database/sql.DB",
       "_origin": "ast",
@@ -3179,158 +3179,147 @@
       "source_location": ""
     },
     {
-      "id": "result_result_t",
-      "label": "Result[T]",
+      "id": "result_resultuserrepo",
+      "label": "ResultUserRepo",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": "result[t]",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L157"
+      "norm_label": "resultuserrepo",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L95"
     },
     {
-      "id": "result_result_t_bubbleup",
-      "label": ".BubbleUp()",
+      "id": "result_resultuserrepo_createuser",
+      "label": ".CreateUser()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".bubbleup()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L257"
+      "norm_label": ".createuser()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L103"
     },
     {
-      "id": "result_result_t_err",
-      "label": ".Err()",
+      "id": "result_resultuserrepo_finduserbyemail",
+      "label": ".FindUserByEmail()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".err()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L218"
+      "norm_label": ".finduserbyemail()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L127"
     },
     {
-      "id": "result_result_t_expect",
-      "label": ".Expect()",
+      "id": "result_resultuserrepo_finduserbyid",
+      "label": ".FindUserByID()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".expect()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L485"
+      "norm_label": ".finduserbyid()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L112"
     },
     {
-      "id": "result_result_t_expecterr",
-      "label": ".ExpectErr()",
+      "id": "result_resultuserrepo_getorcreateuser",
+      "label": ".GetOrCreateUser()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".expecterr()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L756"
-    },
-    {
-      "id": "result_result_t_iserr",
-      "label": ".IsErr()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": ".iserr()",
-      "source_file": "rusty/result/result.go",
+      "norm_label": ".getorcreateuser()",
+      "source_file": "rusty/result/utils_test.go",
       "source_location": "L178"
     },
     {
-      "id": "result_result_t_isok",
-      "label": ".IsOk()",
+      "id": "result_resultuserrepo_updateusername",
+      "label": ".UpdateUserName()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".isok()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L157"
+      "norm_label": ".updateusername()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L142"
     },
     {
-      "id": "result_result_t_maperror",
-      "label": ".MapError()",
+      "id": "result_traditionaluserrepo",
+      "label": "TraditionalUserRepo",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".maperror()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L791"
+      "norm_label": "traditionaluserrepo",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L26"
     },
     {
-      "id": "result_result_t_ok",
-      "label": ".Ok()",
+      "id": "result_traditionaluserrepo_createuser",
+      "label": ".CreateUser()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".ok()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L825"
+      "norm_label": ".createuser()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L34"
     },
     {
-      "id": "result_result_t_unwrap",
-      "label": ".Unwrap()",
+      "id": "result_traditionaluserrepo_finduserbyemail",
+      "label": ".FindUserByEmail()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".unwrap()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L670"
+      "norm_label": ".finduserbyemail()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L61"
     },
     {
-      "id": "result_result_t_unwrapor",
-      "label": ".UnwrapOr()",
+      "id": "result_traditionaluserrepo_finduserbyid",
+      "label": ".FindUserByID()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".unwrapor()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L696"
+      "norm_label": ".finduserbyid()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L46"
     },
     {
-      "id": "result_result_t_unwraporelse",
-      "label": ".UnwrapOrElse()",
+      "id": "result_traditionaluserrepo_getorcreateuser",
+      "label": ".GetOrCreateUser()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".unwraporelse()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L729"
+      "norm_label": ".getorcreateuser()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L158"
     },
     {
-      "id": "result_result_t_value",
-      "label": ".Value()",
+      "id": "result_traditionaluserrepo_updateusername",
+      "label": ".UpdateUserName()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": ".value()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L196"
+      "norm_label": ".updateusername()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L76"
     },
     {
-      "id": "result_tryerror",
-      "label": "tryError",
+      "id": "result_user",
+      "label": "User",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": "tryerror",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L71"
+      "norm_label": "user",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L18"
     },
     {
       "id": "rusty_chain_result_chain2_test_testresultchain_multipleoperations",
@@ -3342,6 +3331,17 @@
       "norm_label": "testresultchain_multipleoperations()",
       "source_file": "rusty/chain/result_chain2_test.go",
       "source_location": "L14"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_failonodd",
+      "label": "failOnOdd()",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Result",
+      "file_type": "code",
+      "norm_label": "failonodd()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L42"
     },
     {
       "id": "rusty_examples_examples",
@@ -3685,37 +3685,26 @@
       "source_location": "L360"
     },
     {
-      "id": "rusty_result_result",
-      "label": "result.go",
+      "id": "rusty_result_result_benchmark_test_resultchainederror",
+      "label": "resultChainedError()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": "result.go",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L1"
+      "norm_label": "resultchainederror()",
+      "source_file": "rusty/result/result_benchmark_test.go",
+      "source_location": "L44"
     },
     {
-      "id": "rusty_result_result_andthen",
-      "label": "AndThen()",
+      "id": "rusty_result_result_benchmark_test_resultchainedsuccess",
+      "label": "resultChainedSuccess()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": "andthen()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L976"
-    },
-    {
-      "id": "rusty_result_result_catcherr",
-      "label": "CatchErr()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "catcherr()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L439"
+      "norm_label": "resultchainedsuccess()",
+      "source_file": "rusty/result/result_benchmark_test.go",
+      "source_location": "L40"
     },
     {
       "id": "rusty_result_result_err",
@@ -3729,28 +3718,6 @@
       "source_location": "L131"
     },
     {
-      "id": "rusty_result_result_flatmap",
-      "label": "FlatMap()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "flatmap()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L938"
-    },
-    {
-      "id": "rusty_result_result_go_out",
-      "label": "Out",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "out",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "rusty_result_result_go_result_result",
       "label": "Result",
       "_origin": "ast",
@@ -3760,83 +3727,6 @@
       "norm_label": "result",
       "source_file": "rusty/result/result.go",
       "source_location": "L65"
-    },
-    {
-      "id": "rusty_result_result_go_t",
-      "label": "T",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "t",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "rusty_result_result_go_u",
-      "label": "U",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "u",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "rusty_result_result_go_v",
-      "label": "V",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "v",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "rusty_result_result_if",
-      "label": "If()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "if()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L869"
-    },
-    {
-      "id": "rusty_result_result_map",
-      "label": "Map()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "map()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L905"
-    },
-    {
-      "id": "rusty_result_result_map2",
-      "label": "Map2()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "map2()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L1007"
-    },
-    {
-      "id": "rusty_result_result_map3",
-      "label": "Map3()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "map3()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L1052"
     },
     {
       "id": "rusty_result_result_ok",
@@ -3861,59 +3751,26 @@
       "source_location": "L573"
     },
     {
-      "id": "rusty_result_result_wrapfunc1",
-      "label": "WrapFunc1()",
+      "id": "rusty_result_utils_test_newresultuserrepo",
+      "label": "NewResultUserRepo()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": "wrapfunc1()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L619"
+      "norm_label": "newresultuserrepo()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L99"
     },
     {
-      "id": "rusty_result_result_wrapptr",
-      "label": "WrapPtr()",
+      "id": "rusty_result_utils_test_newtraditionaluserrepo",
+      "label": "NewTraditionalUserRepo()",
       "_origin": "ast",
       "community": 1,
       "community_name": "Result",
       "file_type": "code",
-      "norm_label": "wrapptr()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L538"
-    },
-    {
-      "id": "rusty_result_result_wrapptrfunc",
-      "label": "WrapPtrFunc()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "wrapptrfunc()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L598"
-    },
-    {
-      "id": "rusty_result_result_wrapptrfunc1",
-      "label": "WrapPtrFunc1()",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "wrapptrfunc1()",
-      "source_file": "rusty/result/result.go",
-      "source_location": "L647"
-    },
-    {
-      "id": "w",
-      "label": "W",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Result",
-      "file_type": "code",
-      "norm_label": "w",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "newtraditionaluserrepo()",
+      "source_file": "rusty/result/utils_test.go",
+      "source_location": "L30"
     },
     {
       "id": "docs_assets_benchbook_app",
@@ -3936,6 +3793,17 @@
       "norm_label": "applytoresult",
       "source_file": "rusty/chain/result_chain.go",
       "source_location": "L39"
+    },
+    {
+      "id": "chain_applytoresult2",
+      "label": "ApplyToResult2",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "ApplyToResult",
+      "file_type": "code",
+      "norm_label": "applytoresult2",
+      "source_file": "rusty/chain/result_chain2.go",
+      "source_location": "L21"
     },
     {
       "id": "chain_applytoresult2_out1_out2_t",
@@ -4081,6 +3949,17 @@
       "source_location": "L27"
     },
     {
+      "id": "rusty_chain_result_chain2_go_in",
+      "label": "In",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "ApplyToResult",
+      "file_type": "code",
+      "norm_label": "in",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "rusty_chain_result_chain2_go_t",
       "label": "T",
       "_origin": "ast",
@@ -4090,6 +3969,17 @@
       "norm_label": "t",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "rusty_chain_result_chain_chain",
+      "label": "Chain()",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "ApplyToResult",
+      "file_type": "code",
+      "norm_label": "chain()",
+      "source_file": "rusty/chain/result_chain.go",
+      "source_location": "L53"
     },
     {
       "id": "rusty_chain_result_chain_go_in",
@@ -4110,6 +4000,17 @@
       "community_name": "ApplyToResult",
       "file_type": "code",
       "norm_label": "out",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "rusty_chain_result_chain_go_t",
+      "label": "T",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "ApplyToResult",
+      "file_type": "code",
+      "norm_label": "t",
       "source_file": "",
       "source_location": ""
     },
@@ -4527,7 +4428,7 @@
       "file_type": "code",
       "norm_label": "options",
       "source_file": "docs/manifest.json",
-      "source_location": "L99"
+      "source_location": "L104"
     },
     {
       "id": "docs_manifest_options_alpha",
@@ -4538,7 +4439,7 @@
       "file_type": "code",
       "norm_label": "alpha",
       "source_file": "docs/manifest.json",
-      "source_location": "L100"
+      "source_location": "L105"
     },
     {
       "id": "docs_manifest_options_min_effect_pct",
@@ -4549,7 +4450,7 @@
       "file_type": "code",
       "norm_label": "min_effect_pct",
       "source_file": "docs/manifest.json",
-      "source_location": "L101"
+      "source_location": "L106"
     },
     {
       "id": "docs_manifest_options_min_samples",
@@ -4560,7 +4461,7 @@
       "file_type": "code",
       "norm_label": "min_samples",
       "source_file": "docs/manifest.json",
-      "source_location": "L102"
+      "source_location": "L107"
     },
     {
       "id": "docs_manifest_project",
@@ -4571,7 +4472,7 @@
       "file_type": "code",
       "norm_label": "project",
       "source_file": "docs/manifest.json",
-      "source_location": "L104"
+      "source_location": "L109"
     },
     {
       "id": "docs_manifest_project_emoji",
@@ -4582,7 +4483,7 @@
       "file_type": "code",
       "norm_label": "emoji",
       "source_file": "docs/manifest.json",
-      "source_location": "L105"
+      "source_location": "L110"
     },
     {
       "id": "docs_manifest_project_name",
@@ -4593,7 +4494,7 @@
       "file_type": "code",
       "norm_label": "name",
       "source_file": "docs/manifest.json",
-      "source_location": "L106"
+      "source_location": "L111"
     },
     {
       "id": "docs_manifest_project_repo_url",
@@ -4604,7 +4505,7 @@
       "file_type": "code",
       "norm_label": "repo_url",
       "source_file": "docs/manifest.json",
-      "source_location": "L107"
+      "source_location": "L112"
     },
     {
       "id": "docs_manifest_schema_version",
@@ -4615,7 +4516,7 @@
       "file_type": "code",
       "norm_label": "schema_version",
       "source_file": "docs/manifest.json",
-      "source_location": "L109"
+      "source_location": "L114"
     },
     {
       "id": "docs_manifest_site",
@@ -4626,7 +4527,7 @@
       "file_type": "code",
       "norm_label": "site",
       "source_file": "docs/manifest.json",
-      "source_location": "L110"
+      "source_location": "L115"
     },
     {
       "id": "docs_manifest_site_default_theme",
@@ -4637,7 +4538,7 @@
       "file_type": "code",
       "norm_label": "default_theme",
       "source_file": "docs/manifest.json",
-      "source_location": "L111"
+      "source_location": "L116"
     },
     {
       "id": "docs_manifest_site_extra_css",
@@ -4648,7 +4549,7 @@
       "file_type": "code",
       "norm_label": "extra_css",
       "source_file": "docs/manifest.json",
-      "source_location": "L112"
+      "source_location": "L117"
     },
     {
       "id": "docs_manifest_site_highlight_langs",
@@ -4659,7 +4560,7 @@
       "file_type": "code",
       "norm_label": "highlight_langs",
       "source_file": "docs/manifest.json",
-      "source_location": "L113"
+      "source_location": "L118"
     },
     {
       "id": "docs_manifest_site_loading_text",
@@ -4670,7 +4571,7 @@
       "file_type": "code",
       "norm_label": "loading_text",
       "source_file": "docs/manifest.json",
-      "source_location": "L120"
+      "source_location": "L125"
     },
     {
       "id": "docs_manifest_site_not_found_text",
@@ -4681,7 +4582,7 @@
       "file_type": "code",
       "norm_label": "not_found_text",
       "source_file": "docs/manifest.json",
-      "source_location": "L121"
+      "source_location": "L126"
     },
     {
       "id": "docs_manifest_site_theme_storage_key",
@@ -4692,7 +4593,7 @@
       "file_type": "code",
       "norm_label": "theme_storage_key",
       "source_file": "docs/manifest.json",
-      "source_location": "L122"
+      "source_location": "L127"
     },
     {
       "id": "docs_manifest_site_title",
@@ -4703,7 +4604,7 @@
       "file_type": "code",
       "norm_label": "title",
       "source_file": "docs/manifest.json",
-      "source_location": "L123"
+      "source_location": "L128"
     },
     {
       "id": "docs_assets_benchbook_compare",
@@ -4714,6 +4615,17 @@
       "file_type": "code",
       "norm_label": "compare.js",
       "source_file": "docs/assets/benchbook/compare.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_assets_benchbook_vendor_marked_min",
+      "label": "marked.min.js",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "marked.min.js",
+      "file_type": "code",
+      "norm_label": "marked.min.js",
+      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
       "source_location": "L1"
     },
     {
@@ -4745,7 +4657,7 @@
       "label": "timeline.md",
       "_origin": "ast",
       "community": 28,
-      "community_name": "timeline.md",
+      "community_name": "Timeline",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "timeline.md",
@@ -4753,11 +4665,95 @@
       "source_location": "L1"
     },
     {
+      "id": "docs_content_timeline_headline_geometric_mean_of_the_median_ratios",
+      "label": "Headline (geometric mean of the median ratios)",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "headline (geometric mean of the median ratios)",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "docs_content_timeline_headline_geometric_mean_of_the_median_ratios_132",
+      "label": "Headline (geometric mean of the median ratios)",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "headline (geometric mean of the median ratios)",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L132"
+    },
+    {
+      "id": "docs_content_timeline_headline_geometric_mean_of_the_median_ratios_79",
+      "label": "Headline (geometric mean of the median ratios)",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "headline (geometric mean of the median ratios)",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L79"
+    },
+    {
+      "id": "docs_content_timeline_index_chart",
+      "label": "Index chart",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "index chart",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "docs_content_timeline_index_chart_148",
+      "label": "Index chart",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "index chart",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L148"
+    },
+    {
+      "id": "docs_content_timeline_index_chart_95",
+      "label": "Index chart",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "index chart",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L95"
+    },
+    {
+      "id": "docs_content_timeline_milestones",
+      "label": "Milestones",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "milestones",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L183"
+    },
+    {
       "id": "docs_content_timeline_timeline",
       "label": "Timeline",
       "_origin": "ast",
       "community": 28,
-      "community_name": "timeline.md",
+      "community_name": "Timeline",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "timeline",
@@ -4765,15 +4761,62 @@
       "source_location": "L3"
     },
     {
-      "id": "chain_applytoresult2",
-      "label": "ApplyToResult2",
+      "id": "docs_content_timeline_tracked_benchmarks",
+      "label": "Tracked benchmarks",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tracked benchmarks",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "docs_content_timeline_tracked_benchmarks_138",
+      "label": "Tracked benchmarks",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tracked benchmarks",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L138"
+    },
+    {
+      "id": "docs_content_timeline_tracked_benchmarks_85",
+      "label": "Tracked benchmarks",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "Timeline",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tracked benchmarks",
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L85"
+    },
+    {
+      "id": "chain_profile",
+      "label": "Profile",
       "_origin": "ast",
       "community": 3,
       "community_name": "testing.B",
       "file_type": "code",
-      "norm_label": "applytoresult2",
-      "source_file": "rusty/chain/result_chain2.go",
-      "source_location": "L21"
+      "norm_label": "profile",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L24"
+    },
+    {
+      "id": "chain_user",
+      "label": "User",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "user",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L18"
     },
     {
       "id": "go_type_testing_b",
@@ -4831,6 +4874,17 @@
       "source_location": "L29"
     },
     {
+      "id": "result_tryerror",
+      "label": "tryError",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "tryerror",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L71"
+    },
+    {
       "id": "resultuserrepo",
       "label": "ResultUserRepo",
       "_origin": "ast",
@@ -4864,17 +4918,6 @@
       "source_location": "L1"
     },
     {
-      "id": "rusty_chain_result_chain2_go_in",
-      "label": "In",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "testing.B",
-      "file_type": "code",
-      "norm_label": "in",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "rusty_chain_result_chain2_test",
       "label": "result_chain2_test.go",
       "_origin": "ast",
@@ -4886,26 +4929,125 @@
       "source_location": "L1"
     },
     {
-      "id": "rusty_chain_result_chain_chain",
-      "label": "Chain()",
+      "id": "rusty_chain_result_chain_test",
+      "label": "result_chain_test.go",
       "_origin": "ast",
       "community": 3,
       "community_name": "testing.B",
       "file_type": "code",
-      "norm_label": "chain()",
-      "source_file": "rusty/chain/result_chain.go",
-      "source_location": "L53"
+      "norm_label": "result_chain_test.go",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L1"
     },
     {
-      "id": "rusty_chain_result_chain_go_t",
-      "label": "T",
+      "id": "rusty_chain_result_chain_test_double",
+      "label": "double()",
       "_origin": "ast",
       "community": 3,
       "community_name": "testing.B",
       "file_type": "code",
-      "norm_label": "t",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "double()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L38"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_inttostring",
+      "label": "intToString()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "inttostring()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L40"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_testresultchain_andthen",
+      "label": "TestResultChain_AndThen()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "testresultchain_andthen()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L101"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_testresultchain_andthen3_errorfromfunction",
+      "label": "TestResultChain_AndThen3_ErrorFromFunction()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "testresultchain_andthen3_errorfromfunction()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L145"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_testresultchain_andthen4_errorpropagation",
+      "label": "TestResultChain_AndThen4_ErrorPropagation()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "testresultchain_andthen4_errorpropagation()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L159"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_testresultchain_map",
+      "label": "TestResultChain_Map()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "testresultchain_map()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L51"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_testresultchain_map_errorpropagation",
+      "label": "TestResultChain_Map_ErrorPropagation()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "testresultchain_map_errorpropagation()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L68"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_testresultchain_map_errorpropagation2",
+      "label": "TestResultChain_Map_ErrorPropagation2()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "testresultchain_map_errorpropagation2()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L80"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_testresultchain_maperror",
+      "label": "TestResultChain_MapError()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "testresultchain_maperror()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L173"
+    },
+    {
+      "id": "rusty_chain_result_chain_test_testresultchain_maperror4_transformserror",
+      "label": "TestResultChain_MapError4_TransformsError()",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "testresultchain_maperror4_transformserror()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L189"
     },
     {
       "id": "rusty_result_profiling_test",
@@ -4928,6 +5070,17 @@
       "norm_label": "testprofile()",
       "source_file": "rusty/result/profiling_test.go",
       "source_location": "L20"
+    },
+    {
+      "id": "rusty_result_result",
+      "label": "result.go",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "testing.B",
+      "file_type": "code",
+      "norm_label": "result.go",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L1"
     },
     {
       "id": "rusty_result_result_benchmark_groups_test",
@@ -5159,28 +5312,6 @@
       "norm_label": "benchmarktraditionalsuccess()",
       "source_file": "rusty/result/result_benchmark_test.go",
       "source_location": "L53"
-    },
-    {
-      "id": "rusty_result_result_benchmark_test_resultchainederror",
-      "label": "resultChainedError()",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "testing.B",
-      "file_type": "code",
-      "norm_label": "resultchainederror()",
-      "source_file": "rusty/result/result_benchmark_test.go",
-      "source_location": "L44"
-    },
-    {
-      "id": "rusty_result_result_benchmark_test_resultchainedsuccess",
-      "label": "resultChainedSuccess()",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "testing.B",
-      "file_type": "code",
-      "norm_label": "resultchainedsuccess()",
-      "source_file": "rusty/result/result_benchmark_test.go",
-      "source_location": "L40"
     },
     {
       "id": "rusty_result_result_benchmark_test_resulterror",
@@ -5491,17 +5622,6 @@
       "source_location": "L1"
     },
     {
-      "id": "rusty_result_utils_test_newresultuserrepo",
-      "label": "NewResultUserRepo()",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "testing.B",
-      "file_type": "code",
-      "norm_label": "newresultuserrepo()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L99"
-    },
-    {
       "id": "traditionaluserrepo",
       "label": "TraditionalUserRepo",
       "_origin": "ast",
@@ -5645,37 +5765,280 @@
       "source_location": "L96"
     },
     {
-      "id": "docs_assets_benchbook_vendor_marked_min",
-      "label": "marked.min.js",
+      "id": "docs_content_milestones_m001",
+      "label": "m001.md",
       "_origin": "ast",
       "community": 36,
-      "community_name": "marked.min.js",
-      "file_type": "code",
-      "norm_label": "marked.min.js",
-      "source_file": "docs/assets/benchbook/vendor/marked.min.js",
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "m001.md",
+      "source_file": "docs/content/milestones/m001.md",
       "source_location": "L1"
     },
     {
-      "id": "chain_profile",
-      "label": "Profile",
+      "id": "docs_content_milestones_m001_basic_operations",
+      "label": "\u26a1 Basic operations",
       "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "profile",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L24"
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u26a1 basic operations",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L31"
     },
     {
-      "id": "chain_user",
-      "label": "User",
+      "id": "docs_content_milestones_m001_benchmarks_m001_baseline",
+      "label": "Benchmarks \u2014 m001 \u2014 baseline",
       "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "user",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L18"
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "benchmarks \u2014 m001 \u2014 baseline",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "docs_content_milestones_m001_chain",
+      "label": "\ud83d\udd17 Chain",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udd17 chain",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L14"
+    },
+    {
+      "id": "docs_content_milestones_m001_chainedsuccess",
+      "label": "ChainedSuccess",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "chainedsuccess",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L16"
+    },
+    {
+      "id": "docs_content_milestones_m001_dbchainedoperations",
+      "label": "DBChainedOperations",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dbchainedoperations",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "docs_content_milestones_m001_dbcreateuser",
+      "label": "DBCreateUser",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dbcreateuser",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "docs_content_milestones_m001_dbcreateuserallocs",
+      "label": "DBCreateUserAllocs",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dbcreateuserallocs",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L40"
+    },
+    {
+      "id": "docs_content_milestones_m001_dberrorhandlingwithfallback",
+      "label": "DBErrorHandlingWithFallback",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dberrorhandlingwithfallback",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L47"
+    },
+    {
+      "id": "docs_content_milestones_m001_dbfinduser",
+      "label": "DBFindUser",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dbfinduser",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L54"
+    },
+    {
+      "id": "docs_content_milestones_m001_dbfindusernotfound",
+      "label": "DBFindUserNotFound",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dbfindusernotfound",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L61"
+    },
+    {
+      "id": "docs_content_milestones_m001_dbgetorcreateuser",
+      "label": "DBGetOrCreateUser",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dbgetorcreateuser",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L68"
+    },
+    {
+      "id": "docs_content_milestones_m001_dbupdateuser",
+      "label": "DBUpdateUser",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "dbupdateuser",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L75"
+    },
+    {
+      "id": "docs_content_milestones_m001_error",
+      "label": "Error",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "error",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L82"
+    },
+    {
+      "id": "docs_content_milestones_m001_errorhandling",
+      "label": "ErrorHandling",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "errorhandling",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L89"
+    },
+    {
+      "id": "docs_content_milestones_m001_full_suite",
+      "label": "Full Suite",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "full suite",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L133"
+    },
+    {
+      "id": "docs_content_milestones_m001_hardware_toolchain",
+      "label": "Hardware & toolchain",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "hardware & toolchain",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L113"
+    },
+    {
+      "id": "docs_content_milestones_m001_hardware_toolchain_253",
+      "label": "Hardware & toolchain",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "hardware & toolchain",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L253"
+    },
+    {
+      "id": "docs_content_milestones_m001_how_to_read_this",
+      "label": "How to read this",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "how to read this",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "docs_content_milestones_m001_per_benchmark",
+      "label": "Per-Benchmark",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "per-benchmark",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L250"
+    },
+    {
+      "id": "docs_content_milestones_m001_profiles",
+      "label": "Profiles",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "profiles",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L105"
+    },
+    {
+      "id": "docs_content_milestones_m001_profiling_m001_baseline",
+      "label": "Profiling \u2014 m001 \u2014 baseline",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "profiling \u2014 m001 \u2014 baseline",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L129"
+    },
+    {
+      "id": "docs_content_milestones_m001_success",
+      "label": "Success",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "\u26a1 Basic operations",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "success",
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L97"
     },
     {
       "id": "examples_config",
@@ -5720,149 +6083,6 @@
       "norm_label": "time.duration",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "rusty_chain_result_chain_test",
-      "label": "result_chain_test.go",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "result_chain_test.go",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L1"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_double",
-      "label": "double()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "double()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L38"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_failonodd",
-      "label": "failOnOdd()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "failonodd()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L42"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_inttostring",
-      "label": "intToString()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "inttostring()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L40"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_andthen",
-      "label": "TestResultChain_AndThen()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_andthen()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L101"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_andthen2",
-      "label": "TestResultChain_AndThen2()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_andthen2()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L115"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_andthen3_errorfromfunction",
-      "label": "TestResultChain_AndThen3_ErrorFromFunction()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_andthen3_errorfromfunction()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L145"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_andthen4_errorpropagation",
-      "label": "TestResultChain_AndThen4_ErrorPropagation()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_andthen4_errorpropagation()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L159"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_map",
-      "label": "TestResultChain_Map()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_map()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L51"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_map_errorpropagation",
-      "label": "TestResultChain_Map_ErrorPropagation()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_map_errorpropagation()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L68"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_map_errorpropagation2",
-      "label": "TestResultChain_Map_ErrorPropagation2()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_map_errorpropagation2()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L80"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_maperror",
-      "label": "TestResultChain_MapError()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_maperror()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L173"
-    },
-    {
-      "id": "rusty_chain_result_chain_test_testresultchain_maperror4_transformserror",
-      "label": "TestResultChain_MapError4_TransformsError()",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "result_test.go",
-      "file_type": "code",
-      "norm_label": "testresultchain_maperror4_transformserror()",
-      "source_file": "rusty/chain/result_chain_test.go",
-      "source_location": "L189"
     },
     {
       "id": "rusty_examples_examples_executetransaction",
@@ -5951,6 +6171,17 @@
       "norm_label": "catch()",
       "source_file": "rusty/result/result.go",
       "source_location": "L292"
+    },
+    {
+      "id": "rusty_result_result_catcherr",
+      "label": "CatchErr()",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "result_test.go",
+      "file_type": "code",
+      "norm_label": "catcherr()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L439"
     },
     {
       "id": "rusty_result_result_catchwith",
@@ -6305,169 +6536,334 @@
       "source_location": "L510"
     },
     {
-      "id": "go_type_context_context",
-      "label": "context.Context",
+      "id": "a",
+      "label": "A",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": "context.context",
+      "norm_label": "a",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "result_resultuserrepo",
-      "label": "ResultUserRepo",
+      "id": "result_result_t",
+      "label": "Result[T]",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": "resultuserrepo",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L95"
+      "norm_label": "result[t]",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L157"
     },
     {
-      "id": "result_resultuserrepo_createuser",
-      "label": ".CreateUser()",
+      "id": "result_result_t_bubbleup",
+      "label": ".BubbleUp()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".createuser()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L103"
+      "norm_label": ".bubbleup()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L257"
     },
     {
-      "id": "result_resultuserrepo_finduserbyemail",
-      "label": ".FindUserByEmail()",
+      "id": "result_result_t_err",
+      "label": ".Err()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".finduserbyemail()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L127"
+      "norm_label": ".err()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L218"
     },
     {
-      "id": "result_resultuserrepo_finduserbyid",
-      "label": ".FindUserByID()",
+      "id": "result_result_t_expect",
+      "label": ".Expect()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".finduserbyid()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L112"
+      "norm_label": ".expect()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L485"
     },
     {
-      "id": "result_resultuserrepo_getorcreateuser",
-      "label": ".GetOrCreateUser()",
+      "id": "result_result_t_expecterr",
+      "label": ".ExpectErr()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".getorcreateuser()",
-      "source_file": "rusty/result/utils_test.go",
+      "norm_label": ".expecterr()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L756"
+    },
+    {
+      "id": "result_result_t_iserr",
+      "label": ".IsErr()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": ".iserr()",
+      "source_file": "rusty/result/result.go",
       "source_location": "L178"
     },
     {
-      "id": "result_resultuserrepo_updateusername",
-      "label": ".UpdateUserName()",
+      "id": "result_result_t_isok",
+      "label": ".IsOk()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".updateusername()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L142"
+      "norm_label": ".isok()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L157"
     },
     {
-      "id": "result_traditionaluserrepo",
-      "label": "TraditionalUserRepo",
+      "id": "result_result_t_maperror",
+      "label": ".MapError()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": "traditionaluserrepo",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L26"
+      "norm_label": ".maperror()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L791"
     },
     {
-      "id": "result_traditionaluserrepo_createuser",
-      "label": ".CreateUser()",
+      "id": "result_result_t_ok",
+      "label": ".Ok()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".createuser()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L34"
+      "norm_label": ".ok()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L825"
     },
     {
-      "id": "result_traditionaluserrepo_finduserbyemail",
-      "label": ".FindUserByEmail()",
+      "id": "result_result_t_unwrap",
+      "label": ".Unwrap()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".finduserbyemail()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L61"
+      "norm_label": ".unwrap()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L670"
     },
     {
-      "id": "result_traditionaluserrepo_finduserbyid",
-      "label": ".FindUserByID()",
+      "id": "result_result_t_unwrapor",
+      "label": ".UnwrapOr()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".finduserbyid()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L46"
+      "norm_label": ".unwrapor()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L696"
     },
     {
-      "id": "result_traditionaluserrepo_getorcreateuser",
-      "label": ".GetOrCreateUser()",
+      "id": "result_result_t_unwraporelse",
+      "label": ".UnwrapOrElse()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".getorcreateuser()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L158"
+      "norm_label": ".unwraporelse()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L729"
     },
     {
-      "id": "result_traditionaluserrepo_updateusername",
-      "label": ".UpdateUserName()",
+      "id": "result_result_t_value",
+      "label": ".Value()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": ".updateusername()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L76"
+      "norm_label": ".value()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L196"
     },
     {
-      "id": "result_user",
-      "label": "User",
+      "id": "rusty_chain_result_chain_test_testresultchain_andthen2",
+      "label": "TestResultChain_AndThen2()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": "user",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L18"
+      "norm_label": "testresultchain_andthen2()",
+      "source_file": "rusty/chain/result_chain_test.go",
+      "source_location": "L115"
     },
     {
-      "id": "rusty_result_utils_test_newtraditionaluserrepo",
-      "label": "NewTraditionalUserRepo()",
+      "id": "rusty_result_result_andthen",
+      "label": "AndThen()",
       "_origin": "ast",
       "community": 6,
-      "community_name": "context.Context",
+      "community_name": "T",
       "file_type": "code",
-      "norm_label": "newtraditionaluserrepo()",
-      "source_file": "rusty/result/utils_test.go",
-      "source_location": "L30"
+      "norm_label": "andthen()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L976"
+    },
+    {
+      "id": "rusty_result_result_flatmap",
+      "label": "FlatMap()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "flatmap()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L938"
+    },
+    {
+      "id": "rusty_result_result_go_out",
+      "label": "Out",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "out",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "rusty_result_result_go_t",
+      "label": "T",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "t",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "rusty_result_result_go_u",
+      "label": "U",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "u",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "rusty_result_result_go_v",
+      "label": "V",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "v",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "rusty_result_result_if",
+      "label": "If()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "if()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L869"
+    },
+    {
+      "id": "rusty_result_result_map",
+      "label": "Map()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "map()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L905"
+    },
+    {
+      "id": "rusty_result_result_map2",
+      "label": "Map2()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "map2()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L1007"
+    },
+    {
+      "id": "rusty_result_result_map3",
+      "label": "Map3()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "map3()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L1052"
+    },
+    {
+      "id": "rusty_result_result_wrapfunc1",
+      "label": "WrapFunc1()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "wrapfunc1()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L619"
+    },
+    {
+      "id": "rusty_result_result_wrapptr",
+      "label": "WrapPtr()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "wrapptr()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L538"
+    },
+    {
+      "id": "rusty_result_result_wrapptrfunc",
+      "label": "WrapPtrFunc()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "wrapptrfunc()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L598"
+    },
+    {
+      "id": "rusty_result_result_wrapptrfunc1",
+      "label": "WrapPtrFunc1()",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "wrapptrfunc1()",
+      "source_file": "rusty/result/result.go",
+      "source_location": "L647"
+    },
+    {
+      "id": "w",
+      "label": "W",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "T",
+      "file_type": "code",
+      "norm_label": "w",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "option_option_t",
@@ -8184,6 +8580,18 @@
       "type": "external"
     },
     {
+      "id": "go_pkg_context",
+      "label": "go_pkg_context",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "Result",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "go_pkg_context",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "go_pkg_encoding_json",
       "label": "go_pkg_encoding_json",
       "_origin": "semantic",
@@ -8220,6 +8628,18 @@
       "type": "external"
     },
     {
+      "id": "go_pkg_time",
+      "label": "go_pkg_time",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "Result",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "go_pkg_time",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "go_pkg_path_filepath",
       "label": "go_pkg_path_filepath",
       "_origin": "semantic",
@@ -8240,18 +8660,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "go_pkg_os_exec",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "go_pkg_context",
-      "label": "go_pkg_context",
-      "_origin": "semantic",
-      "community": 3,
-      "community_name": "testing.B",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "go_pkg_context",
       "source_file": "",
       "type": "external"
     },
@@ -8360,18 +8768,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "go_pkg_testing",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "go_pkg_time",
-      "label": "go_pkg_time",
-      "_origin": "semantic",
-      "community": 3,
-      "community_name": "testing.B",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "go_pkg_time",
       "source_file": "",
       "type": "external"
     },
@@ -20500,6 +20896,248 @@
       "weight": 1.0
     },
     {
+      "source": "docs_content_milestones_m001",
+      "target": "docs_content_milestones_m001_profiling_m001_baseline",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001",
+      "target": "docs_content_milestones_m001_benchmarks_m001_baseline",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_dbcreateuser",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_dbcreateuserallocs",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_dberrorhandlingwithfallback",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_dbfinduser",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_dbfindusernotfound",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_dbgetorcreateuser",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_dbupdateuser",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_error",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_errorhandling",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_basic_operations",
+      "target": "docs_content_milestones_m001_success",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_benchmarks_m001_baseline",
+      "target": "docs_content_milestones_m001_profiles",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_benchmarks_m001_baseline",
+      "target": "docs_content_milestones_m001_hardware_toolchain",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_benchmarks_m001_baseline",
+      "target": "docs_content_milestones_m001_chain",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_benchmarks_m001_baseline",
+      "target": "docs_content_milestones_m001_basic_operations",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_benchmarks_m001_baseline",
+      "target": "docs_content_milestones_m001_how_to_read_this",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_chain",
+      "target": "docs_content_milestones_m001_chainedsuccess",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_chain",
+      "target": "docs_content_milestones_m001_dbchainedoperations",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_profiling_m001_baseline",
+      "target": "docs_content_milestones_m001_full_suite",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_profiling_m001_baseline",
+      "target": "docs_content_milestones_m001_per_benchmark",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_milestones_m001_profiling_m001_baseline",
+      "target": "docs_content_milestones_m001_hardware_toolchain_253",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/milestones/m001.md",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
       "source": "docs_content_timeline",
       "target": "docs_content_timeline_timeline",
       "relation": "contains",
@@ -20511,8 +21149,118 @@
       "weight": 1.0
     },
     {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_headline_geometric_mean_of_the_median_ratios",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_headline_geometric_mean_of_the_median_ratios_132",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_tracked_benchmarks_138",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_index_chart_148",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L148",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_tracked_benchmarks",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_milestones",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_index_chart",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_headline_geometric_mean_of_the_median_ratios_79",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_tracked_benchmarks_85",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_content_timeline_timeline",
+      "target": "docs_content_timeline_index_chart_95",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/content/timeline.md",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
       "source": "docs_manifest",
-      "target": "docs_manifest_project",
+      "target": "docs_manifest_options",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -20523,7 +21271,7 @@
     },
     {
       "source": "docs_manifest",
-      "target": "docs_manifest_schema_version",
+      "target": "docs_manifest_project",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -20534,13 +21282,24 @@
     },
     {
       "source": "docs_manifest",
+      "target": "docs_manifest_schema_version",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/manifest.json",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_manifest",
       "target": "docs_manifest_site",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L110",
+      "source_location": "L115",
       "weight": 1.0
     },
     {
@@ -20607,17 +21366,6 @@
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
       "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_manifest",
-      "target": "docs_manifest_options",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/manifest.json",
-      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -20815,7 +21563,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L100",
+      "source_location": "L105",
       "weight": 1.0
     },
     {
@@ -20826,7 +21574,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L101",
+      "source_location": "L106",
       "weight": 1.0
     },
     {
@@ -20837,7 +21585,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L102",
+      "source_location": "L107",
       "weight": 1.0
     },
     {
@@ -20848,7 +21596,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L105",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
@@ -20859,7 +21607,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L106",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -20870,7 +21618,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L107",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
@@ -20881,7 +21629,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L111",
+      "source_location": "L116",
       "weight": 1.0
     },
     {
@@ -20892,7 +21640,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L112",
+      "source_location": "L117",
       "weight": 1.0
     },
     {
@@ -20903,7 +21651,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L113",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -20914,7 +21662,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L120",
+      "source_location": "L125",
       "weight": 1.0
     },
     {
@@ -20925,7 +21673,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L121",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -20936,7 +21684,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L122",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -20947,7 +21695,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/manifest.json",
-      "source_location": "L123",
+      "source_location": "L128",
       "weight": 1.0
     },
     {
@@ -26407,5 +27155,5 @@
       "source_file": "docs/profiles/cpu_full.txt"
     }
   ],
-  "built_at_commit": "662be091ba123faaaf87a9ab9d35fd488dcda2fc"
+  "built_at_commit": "884eecd888fd07bf714d1201152d3b1ef475b3f8"
 }
