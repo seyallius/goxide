@@ -1,219 +1,50 @@
-<!-- index.html is the single-page shell for the Goxide documentation site. -->
-<!-- It provides the layout (header, sidebar, content area) and loads the -->
-<!-- Markdown rendering engine. All actual content lives in content/*.md files. -->
 <!doctype html>
+<!-- benchbook documentation shell - tool-owned, overwritten on every `benchbook build`.
+     Contains no documentation content and no navigation: everything project-specific
+     comes from manifest.json at runtime. -->
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Goxide Documentation</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documentation</title>
+    <link id="bb-theme-light" rel="stylesheet" href="assets/benchbook/vendor/styles/github.min.css" />
+    <link id="bb-theme-dark" rel="stylesheet" href="assets/benchbook/vendor/styles/github-dark.min.css" disabled />
+    <link rel="stylesheet" href="assets/benchbook/style.css" />
+    <link id="bb-extra-css" rel="stylesheet" href="" disabled />
+  </head>
+  <body>
+    <a class="bb-skip-link" href="#bb-content">Skip to content</a>
+    <header class="bb-header">
+      <button id="bb-sidebar-toggle" class="bb-icon-button" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <a class="bb-brand" href="#/">
+        <span id="bb-brand-emoji" class="bb-brand-emoji" aria-hidden="true"></span>
+        <span id="bb-brand-title" class="bb-brand-title">Documentation</span>
+      </a>
+      <nav class="bb-header-actions" aria-label="Site actions">
+        <a id="bb-repo-link" class="bb-header-link" href="#" hidden>Repository</a>
+        <button id="bb-theme-toggle" class="bb-icon-button" type="button" aria-label="Switch colour theme">🌗</button>
+      </nav>
+    </header>
 
-        <!-- Favicon: Crab + Hamster emoji as SVG data URI -->
-        <link
-            rel="icon"
-            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦀🐹</text></svg>"
-        />
+    <div class="bb-layout">
+      <aside id="bb-sidebar" class="bb-sidebar" aria-label="Site navigation">
+        <label class="bb-visually-hidden" for="bb-filter">Filter navigation</label>
+        <input id="bb-filter" class="bb-filter" type="search" placeholder="Filter pages…" autocomplete="off" />
+        <nav id="bb-nav" class="bb-nav"></nav>
+      </aside>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="style.css" />
+      <main id="bb-content" class="bb-main" tabindex="-1">
+        <div id="bb-loading" class="bb-status">Loading documentation…</div>
+        <article id="bb-article" class="bb-markdown" hidden></article>
+        <div id="bb-error" class="bb-status bb-status-error" hidden></div>
+      </main>
 
-        <!-- Highlight.js Themes (Light/Dark) -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
-            id="hljs-light"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
-            id="hljs-dark"
-            disabled
-        />
+      <nav id="bb-toc" class="bb-toc" aria-label="On this page"></nav>
+    </div>
 
-        <!-- Markdown Parser & Syntax Highlighter -->
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
-    </head>
-    <body>
-        <header class="top-bar">
-            <button id="menu-toggle" class="icon-btn" aria-label="Toggle Menu">
-                ☰
-            </button>
-            <h1 class="logo">🦀🐹 Goxide <span class="version">docs</span></h1>
-            <div class="top-bar-actions">
-                <button
-                    id="theme-toggle"
-                    class="icon-btn"
-                    aria-label="Toggle Theme"
-                >
-                    🌙
-                </button>
-                <a
-                    href="https://github.com/seyallius/goxide"
-                    target="_blank"
-                    class="icon-btn"
-                    >GitHub ↗</a
-                >
-            </div>
-        </header>
-
-        <div class="layout">
-            <!-- Left Sidebar (Navigation) -->
-            <aside id="sidebar" class="sidebar">
-                <nav>
-                    <ul>
-                        <!-- Getting Started -->
-                        <li class="nav-section">Getting Started</li>
-                        <li>
-                            <a
-                                href="#home"
-                                class="nav-link active"
-                                data-src="content/home.md"
-                                >Introduction</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#installation"
-                                class="nav-link"
-                                data-src="content/installation.md"
-                                >Installation</a
-                            >
-                        </li>
-
-                        <!-- Core Concepts -->
-                        <li class="nav-section">Core Concepts</li>
-                        <li>
-                            <a
-                                href="#core-concepts"
-                                class="nav-link"
-                                data-src="content/guide/core-concepts.md"
-                                >Result &amp; Option</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#bubble-up"
-                                class="nav-link"
-                                data-src="content/guide/bubble-up.md"
-                                >The BubbleUp Pattern</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#chaining"
-                                class="nav-link"
-                                data-src="content/guide/chaining.md"
-                                >Fluent Chaining</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#option-patterns"
-                                class="nav-link"
-                                data-src="content/guide/option-patterns.md"
-                                >Option Patterns</a
-                            >
-                        </li>
-
-                        <!-- Advanced Patterns -->
-                        <li class="nav-section">Advanced Patterns</li>
-                        <li>
-                            <a
-                                href="#recovery"
-                                class="nav-link"
-                                data-src="content/guide/recovery.md"
-                                >Error Recovery &amp; Fallbacks</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#migration"
-                                class="nav-link"
-                                data-src="content/guide/migration.md"
-                                >Migration Guide</a
-                            >
-                        </li>
-
-                        <li class="nav-section">Worked Examples</li>
-                        <li>
-                            <a
-                                href="#cookbook"
-                                class="nav-link"
-                                data-src="content/examples/cookbook.md"
-                                >📖 Quick Cookbook</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#ex-database"
-                                class="nav-link"
-                                data-src="content/examples/database.md"
-                                >Database Operations</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#ex-http"
-                                class="nav-link"
-                                data-src="content/examples/http-handlers.md"
-                                >HTTP Handlers</a
-                            >
-                        </li>
-
-                        <li class="nav-section">Performance</li>
-                        <li>
-                            <a
-                                href="#benchmarks"
-                                class="nav-link"
-                                data-src="content/benchmarks.md"
-                                >⚡ Benchmarks</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    href="#profiling"
-                                    class="nav-link"
-                                    data-src="content/profiling.md"
-                            >🔬 Profiling</a
-                            >
-                        </li>
-
-                        <!-- External -->
-                        <li class="nav-section">API Reference</li>
-                        <li>
-                            <a
-                                href="https://pkg.go.dev/github.com/seyallius/goxide"
-                                target="_blank"
-                                class="nav-link external"
-                                >pkg.go.dev ↗</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="https://github.com/seyallius/goxide"
-                                target="_blank"
-                                class="nav-link external"
-                                >Source Code ↗</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
-
-            <!-- Main Content -->
-            <main id="content" class="content">
-                <div class="loading">Loading documentation... (๑•̀ㅂ•́)و✧</div>
-            </main>
-
-            <!-- Right Sidebar (Table of Contents) -->
-            <aside id="toc" class="toc">
-                <div class="toc-header">On This Page</div>
-                <ul id="toc-list"></ul>
-            </aside>
-        </div>
-
-        <script src="script.js"></script>
-    </body>
+    <script src="assets/benchbook/vendor/highlight.min.js"></script>
+    <script src="assets/benchbook/vendor/marked.min.js"></script>
+    <script src="assets/benchbook/compare.js"></script>
+    <script src="assets/benchbook/app.js"></script>
+  </body>
 </html>
