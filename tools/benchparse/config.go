@@ -11,7 +11,7 @@ import "regexp"
 type BenchResult struct {
 	RawName     string
 	PrettyName  string
-	Style       string // implementation style token, e.g. "Result "
+	Style       string // implementation style token, e.g. "Result"
 	GroupKey    string // workload key shared by comparable benchmarks
 	Iterations  int
 	NsPerOp     float64
@@ -60,7 +60,7 @@ func DefaultConfig() Config {
 	return Config{
 		RawFile: "docs/benchmarks_raw.txt",
 		MDFile:  "docs/content/benchmarks.md",
-		Styles:  []string{"Traditional ", "Result ", "Option ", "BubbleUp"},
+		Styles:  []string{"Traditional", "Result", "Option", "BubbleUp"},
 		GroupRules: []GroupRule{
 			{Contains: "ErrorHandling", Exclude: "DB", Key: "ErrorHandlingCPU"},
 			{Contains: "WithTry", Exclude: "DB", Key: "ErrorHandlingCPU"},
