@@ -1,28 +1,20 @@
 File: result.test
-Build ID: 95e780aa1df740892212b9ab44b6be3b4b16c4d1
+Build ID: 30d716753733466feda24cf2009de638f593b78c
 Type: cpu
-Time: 2026-09-29 22:22:02 +0330
-Duration: 1.30s, Total samples = 1.28s (98.18%)
-Showing nodes accounting for 1.15s, 89.84% of 1.28s total
-Showing top 20 nodes out of 75
+Time: 2026-09-29 23:28:15 +0330
+Duration: 1.20s, Total samples = 1.03s (85.61%)
+Showing nodes accounting for 1.03s, 100% of 1.03s total
       flat  flat%   sum%        cum   cum%
-     0.19s 14.84% 14.84%      0.46s 35.94%  runtime.mallocgcTiny
-     0.17s 13.28% 28.12%      0.17s 13.28%  github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)
-     0.15s 11.72% 39.84%      0.15s 11.72%  runtime.nextFreeFast (inline)
-     0.12s  9.38% 49.22%      0.68s 53.12%  runtime.newobject
-     0.10s  7.81% 57.03%      0.56s 43.75%  runtime.mallocgc
-     0.09s  7.03% 64.06%      0.26s 20.31%  github.com/seyallius/goxide/rusty/result.Result[go.shape.int].BubbleUp
-     0.07s  5.47% 69.53%      1.09s 85.16%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1
-     0.05s  3.91% 73.44%      0.05s  3.91%  runtime.acquirem (inline)
-     0.04s  3.12% 76.56%      0.72s 56.25%  github.com/seyallius/goxide/rusty/result.Ok[go.shape.int] (inline)
-     0.04s  3.12% 79.69%      0.04s  3.12%  runtime.scanblock
-     0.03s  2.34% 82.03%      0.03s  2.34%  github.com/seyallius/goxide/rusty/result.Catch[go.shape.int]
-     0.02s  1.56% 83.59%      0.02s  1.56%  runtime.getMCache (inline)
-     0.01s  0.78% 84.38%      0.57s 44.53%  github.com/seyallius/goxide/rusty/result.Wrap[go.shape.int] (inline)
-     0.01s  0.78% 85.16%      0.01s  0.78%  internal/runtime/atomic.(*Uint64).CompareAndSwap (inline)
-     0.01s  0.78% 85.94%      0.01s  0.78%  runtime.(*lfstack).pop
-     0.01s  0.78% 86.72%      0.01s  0.78%  runtime.(*m).clearAllpSnapshot
-     0.01s  0.78% 87.50%      0.02s  1.56%  runtime.(*mheap).allocSpan
-     0.01s  0.78% 88.28%      0.01s  0.78%  runtime.(*mheap).freeSpanLocked
-     0.01s  0.78% 89.06%      0.02s  1.56%  runtime.(*scavengerState).run
-     0.01s  0.78% 89.84%      0.02s  1.56%  runtime.(*spanSet).pop
+     0.44s 42.72% 42.72%      0.56s 54.37%  github.com/seyallius/goxide/rusty/result.Result[go.shape.int].BubbleUp
+     0.27s 26.21% 68.93%      0.96s 93.20%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1
+     0.10s  9.71% 78.64%      0.11s 10.68%  github.com/seyallius/goxide/rusty/result.Catch[go.shape.int]
+     0.09s  8.74% 87.38%      0.11s 10.68%  github.com/seyallius/goxide/rusty/result.Result[go.shape.int].Unwrap (inline)
+     0.04s  3.88% 91.26%      0.04s  3.88%  testing.(*B).Loop (inline)
+     0.03s  2.91% 94.17%      1.03s   100%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry
+     0.02s  1.94% 96.12%      0.02s  1.94%  github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)
+     0.02s  1.94% 98.06%      0.02s  1.94%  github.com/seyallius/goxide/rusty/result_test.divide (inline)
+     0.01s  0.97% 99.03%      0.01s  0.97%  github.com/seyallius/goxide/rusty/result.Result[go.shape.int].IsErr (inline)
+     0.01s  0.97%   100%      0.01s  0.97%  runtime.gorecover
+         0     0%   100%      0.02s  1.94%  github.com/seyallius/goxide/rusty/result.Result[go.shape.int].Expect (inline)
+         0     0%   100%      1.03s   100%  testing.(*B).run1.func1
+         0     0%   100%      1.03s   100%  testing.(*B).runN

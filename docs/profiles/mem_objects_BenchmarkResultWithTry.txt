@@ -1,13 +1,27 @@
 File: result.test
-Build ID: 95e780aa1df740892212b9ab44b6be3b4b16c4d1
+Build ID: 30d716753733466feda24cf2009de638f593b78c
 Type: alloc_objects
-Time: 2026-09-29 22:22:40 +0330
-Showing nodes accounting for 47481556, 100% of 47493893 total
-Dropped 21 nodes (cum <= 237469)
+Time: 2026-09-29 23:28:22 +0330
+Showing nodes accounting for 5486, 100% of 5486 total
+Showing top 20 nodes out of 34
       flat  flat%   sum%        cum   cum%
-  47481556   100%   100%   47481556   100%  github.com/seyallius/goxide/rusty/result.Ok[go.shape.int] (inline)
-         0     0%   100%   35947044 75.69%  github.com/seyallius/goxide/rusty/result.Wrap[go.shape.int] (inline)
-         0     0%   100%   47481556   100%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry
-         0     0%   100%   47481556   100%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1
-         0     0%   100%   47481556   100%  testing.(*B).run1.func1
-         0     0%   100%   47481556   100%  testing.(*B).runN
+      4681 85.33% 85.33%       4681 85.33%  context.(*cancelCtx).Done
+       512  9.33% 94.66%        512  9.33%  runtime.allocm
+       293  5.34%   100%        293  5.34%  sync.(*Pool).pinSlow
+         0     0%   100%       4681 85.33%  database/sql.(*DB).connectionOpener
+         0     0%   100%        293  5.34%  github.com/seyallius/goxide/internal/tests.RunGoxideTestMain
+         0     0%   100%        293  5.34%  github.com/seyallius/goxide/rusty/result_test.TestMain (inline)
+         0     0%   100%        293  5.34%  github.com/seyallius/snapdb.Run
+         0     0%   100%        293  5.34%  main.main
+         0     0%   100%        293  5.34%  regexp.(*Regexp).MatchString (inline)
+         0     0%   100%        293  5.34%  regexp.(*Regexp).backtrack
+         0     0%   100%        293  5.34%  regexp.(*Regexp).doExecute
+         0     0%   100%        293  5.34%  regexp.(*Regexp).doMatch (inline)
+         0     0%   100%        293  5.34%  regexp.newBitState (inline)
+         0     0%   100%        293  5.34%  runtime.main
+         0     0%   100%        256  4.67%  runtime.mcall
+         0     0%   100%        256  4.67%  runtime.mstart
+         0     0%   100%        256  4.67%  runtime.mstart0
+         0     0%   100%        256  4.67%  runtime.mstart1
+         0     0%   100%        512  9.33%  runtime.newm
+         0     0%   100%        256  4.67%  runtime.park_m

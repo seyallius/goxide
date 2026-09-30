@@ -1,28 +1,28 @@
 File: result.test
-Build ID: 95e780aa1df740892212b9ab44b6be3b4b16c4d1
+Build ID: 30d716753733466feda24cf2009de638f593b78c
 Type: alloc_objects
-Time: 2026-09-29 22:21:32 +0330
-Showing nodes accounting for 335779217, 98.94% of 339363204 total
-Dropped 69 nodes (cum <= 1696816)
-Showing top 20 nodes out of 37
+Time: 2026-09-30 07:46:35 +0330
+Showing nodes accounting for 148486229, 98.62% of 150570433 total
+Dropped 69 nodes (cum <= 752852)
+Showing top 20 nodes out of 34
       flat  flat%   sum%        cum   cum%
- 202869780 59.78% 59.78%  202869780 59.78%  github.com/seyallius/goxide/rusty/result.Ok[go.shape.int] (inline)
- 106727004 31.45% 91.23%  106727004 31.45%  errors.New
-  13074831  3.85% 95.08%   13074831  3.85%  github.com/seyallius/goxide/rusty/chain.Chain[go.shape.int,go.shape.int] (inline)
-  12845448  3.79% 98.87%   12845448  3.79%  github.com/seyallius/goxide/rusty/chain.Chain2[go.shape.int,go.shape.int,go.shape.int]
-    106502 0.031% 98.90%    1945942  0.57%  github.com/seyallius/goxide/rusty/result_test.(*ResultUserRepo).FindUserByID
-     98305 0.029% 98.93%    1708382   0.5%  database/sql.(*DB).query
-     57347 0.017% 98.94%    1868937  0.55%  github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID
-         0     0% 98.94%    1708382   0.5%  database/sql.(*DB).QueryContext
-         0     0% 98.94%    1708382   0.5%  database/sql.(*DB).QueryContext.func1
-         0     0% 98.94%    1708382   0.5%  database/sql.(*DB).QueryRowContext (inline)
-         0     0% 98.94%    1708382   0.5%  database/sql.(*DB).retry
-         0     0% 98.94%    1814852  0.53%  database/sql.(*Row).Scan
-         0     0% 98.94%    2956319  0.87%  database/sql.withLock
-         0     0% 98.94%    6848616  2.02%  github.com/seyallius/goxide/rusty/chain.(*ApplyToResult[go.shape.int,go.shape.int]).AndThen
-         0     0% 98.94%   19988984  5.89%  github.com/seyallius/goxide/rusty/chain.ApplyToResult2[go.shape.int,go.shape.int,go.shape.int].AndThen
-         0     0% 98.94%   46236352 13.62%  github.com/seyallius/goxide/rusty/result.AndThen[go.shape.int,go.shape.int]
-         0     0% 98.94%   46236352 13.62%  github.com/seyallius/goxide/rusty/result.If[go.shape.struct { github.com/seyallius/goxide/rusty/result.value github.com/seyallius/goxide/rusty/option.Option[go.shape.int]; github.com/seyallius/goxide/rusty/result.err error },go.shape.int]
-         0     0% 98.94%   83330294 24.55%  github.com/seyallius/goxide/rusty/result.Wrap[go.shape.int] (inline)
-         0     0% 98.94%   46629970 13.74%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultChainedSuccess
-         0     0% 98.94%    1937750  0.57%  github.com/seyallius/goxide/rusty/result_test.BenchmarkResultDBFindUser
+ 105776718 70.25% 70.25%  105776718 70.25%  errors.New
+  20824699 13.83% 84.08%   20824699 13.83%  github.com/seyallius/goxide/rusty/chain.Chain2[go.shape.int,go.shape.int,go.shape.int]
+  19628631 13.04% 97.12%   19628631 13.04%  github.com/seyallius/goxide/rusty/chain.Chain[go.shape.int,go.shape.int]
+    851980  0.57% 97.68%     851980  0.57%  modernc.org/libc.GoString
+    581677  0.39% 98.07%    1433657  0.95%  modernc.org/sqlite.newRows
+    196610  0.13% 98.20%    2075945  1.38%  database/sql.(*DB).query
+    183528  0.12% 98.32%    1879335  1.25%  database/sql.(*DB).queryDC
+    131079 0.087% 98.41%    1452760  0.96%  database/sql.(*Rows).nextLocked
+    131073 0.087% 98.50%    1321681  0.88%  modernc.org/sqlite.(*rows).Next
+     90117  0.06% 98.56%    1900345  1.26%  github.com/seyallius/goxide/rusty/result_test.(*ResultUserRepo).FindUserByID
+     90117  0.06% 98.62%    2390234  1.59%  github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID
+         0     0% 98.62%    2075945  1.38%  database/sql.(*DB).QueryContext
+         0     0% 98.62%    2075945  1.38%  database/sql.(*DB).QueryContext.func1
+         0     0% 98.62%    2075945  1.38%  database/sql.(*DB).QueryRowContext (inline)
+         0     0% 98.62%    1695807  1.13%  database/sql.(*DB).queryDC.func1
+         0     0% 98.62%    2075945  1.38%  database/sql.(*DB).retry
+         0     0% 98.62%    2042592  1.36%  database/sql.(*Row).Scan
+         0     0% 98.62%    1452760  0.96%  database/sql.(*Rows).Next
+         0     0% 98.62%    1452760  0.96%  database/sql.(*Rows).Next.func1
+         0     0% 98.62%    1608423  1.07%  database/sql.ctxDriverQuery

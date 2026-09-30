@@ -16,7 +16,7 @@ host:   uwu
 kernel: 7.0.0-34-generic
 ```
 
-_Generated: 2026-09-29 23:03:43_
+_Generated: 2026-09-30 07:46:36_
 
 ## Full Suite
 
@@ -27,37 +27,37 @@ _Generated: 2026-09-29 23:03:43_
 ```
 File: result.test
 Type: cpu
-Time: 2026-09-29 22:20:30 +0330
-Duration: 30.93s, Total samples = 15360ms (49.67%)
-Showing nodes accounting for 10060ms, 65.49% of 15360ms total
-Dropped 430 nodes (cum <= 76.80ms)
-Showing top 20 nodes out of 221
+Time: 2026-09-30 07:45:31 +0330
+Duration: 31.87s, Total samples = 15630ms (49.05%)
+Showing nodes accounting for 10170ms, 65.07% of 15630ms total
+Dropped 421 nodes (cum <= 78.15ms)
+Showing top 20 nodes out of 197
 ```
 
 </details>
 
 | Function | flat | flat% | cum | cum% |
 |---|---:|---:|---:|---:|
-| `runtime.nextFreeFast (inline)` | 1240ms | 8.07% | 1240ms | 8.07% |
-| `testing.(*B).Loop (inline)` | 1180ms | 7.68% | 1180ms | 7.68% |
-| `internal/runtime/syscall.Syscall6` | 870ms | 5.66% | 870ms | 5.66% |
-| `runtime.mallocgcTiny` | 820ms | 5.34% | 2220ms | 14.45% |
-| `runtime.mallocgc` | 810ms | 5.27% | 5250ms | 34.18% |
-| `github.com/seyallius/goxide/rusty/result_test.traditionalSuccess` | 540ms | 3.52% | 540ms | 3.52% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalChainedSuccess` | 530ms | 3.45% | 1230ms | 8.01% |
-| `runtime.newobject` | 480ms | 3.12% | 5650ms | 36.78% |
-| `runtime.mallocgcSmallScanNoHeader` | 450ms | 2.93% | 2180ms | 14.19% |
-| `github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)` | 420ms | 2.73% | 420ms | 2.73% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalErrorHandling` | 400ms | 2.60% | 1220ms | 7.94% |
-| `runtime.(*mspan).writeHeapBitsSmall` | 390ms | 2.54% | 450ms | 2.93% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalErrorHandling.func1` | 380ms | 2.47% | 640ms | 4.17% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalSuccess` | 270ms | 1.76% | 1160ms | 7.55% |
-| `github.com/seyallius/goxide/rusty/result_test.divide (inline)` | 260ms | 1.69% | 260ms | 1.69% |
-| `runtime.acquirem (inline)` | 220ms | 1.43% | 220ms | 1.43% |
-| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].UnwrapOr` | 210ms | 1.37% | 530ms | 3.45% |
-| `github.com/seyallius/goxide/rusty/result.AndThen[go.shape.int,go.shape.int]` | 200ms | 1.30% | 1170ms | 7.62% |
-| `github.com/seyallius/goxide/rusty/result_test.traditionalChainedSuccess` | 200ms | 1.30% | 200ms | 1.30% |
-| `runtime.getMCache (inline)` | 190ms | 1.24% | 190ms | 1.24% |
+| `testing.(*B).Loop (inline)` | 1570ms | 10.04% | 1570ms | 10.04% |
+| `internal/runtime/syscall.Syscall6` | 870ms | 5.57% | 870ms | 5.57% |
+| `github.com/seyallius/goxide/rusty/result.If[go.shape.int,go.shape.int]` | 630ms | 4.03% | 760ms | 4.86% |
+| `github.com/seyallius/goxide/rusty/result.If[go.shape.struct { github.com/seyallius/goxide/rusty/result.value github.com/seyallius/goxide/rusty/option.Option[go.shape.int]; github.com/seyallius/goxide/rusty/result.err error },go.shape.int]` | 620ms | 3.97% | 880ms | 5.63% |
+| `github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalChainedSuccess` | 580ms | 3.71% | 1170ms | 7.49% |
+| `runtime.nextFreeFast (inline)` | 560ms | 3.58% | 560ms | 3.58% |
+| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].UnwrapOr` | 530ms | 3.39% | 1290ms | 8.25% |
+| `runtime.mallocgcSmallScanNoHeader` | 530ms | 3.39% | 2620ms | 16.76% |
+| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1` | 480ms | 3.07% | 1120ms | 7.17% |
+| `runtime.(*mspan).writeHeapBitsSmall` | 440ms | 2.82% | 480ms | 3.07% |
+| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].BubbleUp` | 430ms | 2.75% | 470ms | 3.01% |
+| `github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)` | 420ms | 2.69% | 420ms | 2.69% |
+| `github.com/seyallius/goxide/rusty/result_test.traditionalSuccess` | 420ms | 2.69% | 420ms | 2.69% |
+| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultSuccess` | 380ms | 2.43% | 1290ms | 8.25% |
+| `github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalErrorHandling` | 370ms | 2.37% | 1110ms | 7.10% |
+| `github.com/seyallius/goxide/rusty/result_test.BenchmarkTraditionalErrorHandling.func1` | 330ms | 2.11% | 520ms | 3.33% |
+| `runtime.mallocgc` | 320ms | 2.05% | 3030ms | 19.39% |
+| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].Unwrap (partial-inline)` | 250ms | 1.60% | 690ms | 4.41% |
+| `github.com/seyallius/goxide/rusty/result_test.divide (inline)` | 250ms | 1.60% | 250ms | 1.60% |
+| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].IsErr (partial-inline)` | 190ms | 1.22% | 220ms | 1.41% |
 
 ### Memory — alloc_space (bytes) — full suite
 
@@ -66,36 +66,36 @@ Showing top 20 nodes out of 221
 ```
 File: result.test
 Type: alloc_space
-Time: 2026-09-29 22:21:32 +0330
-Showing nodes accounting for 5601.60MB, 98.74% of 5673.16MB total
-Dropped 58 nodes (cum <= 28.37MB)
-Showing top 20 nodes out of 48
+Time: 2026-09-30 07:46:35 +0330
+Showing nodes accounting for 2991.07MB, 98.83% of 3026.61MB total
+Dropped 64 nodes (cum <= 15.13MB)
+Showing top 20 nodes out of 39
 ```
 
 </details>
 
 | Function | flat | flat% | cum | cum% |
 |---|---:|---:|---:|---:|
-| `github.com/seyallius/goxide/rusty/result.Ok[go.shape.int]` | 3095.55MB | 54.56% | 3095.55MB | 54.56% |
-| `errors.New` | 1628.52MB | 28.71% | 1628.52MB | 28.71% |
-| `github.com/seyallius/goxide/rusty/chain.Chain[go.shape.int,go.shape.int]` | 399.01MB | 7.03% | 399.01MB | 7.03% |
-| `github.com/seyallius/goxide/rusty/chain.Chain2[go.shape.int,go.shape.int,go.shape.int]` | 392.01MB | 6.91% | 392.01MB | 6.91% |
-| `modernc.org/sqlite.newRows` | 35.50MB | 0.63% | 45MB | 0.79% |
-| `database/sql.(*DB).queryDC` | 26.50MB | 0.47% | 82.01MB | 1.45% |
-| `database/sql.(*Rows).nextLocked` | 10.50MB | 0.19% | 53.50MB | 0.94% |
-| `github.com/seyallius/goxide/rusty/result_test.(*ResultUserRepo).FindUserByID` | 6.50MB | 0.11% | 77.01MB | 1.36% |
-| `github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID` | 3.50MB | 0.062% | 75.01MB | 1.32% |
-| `modernc.org/sqlite.(*rows).Next` | 2.50MB | 0.044% | 43MB | 0.76% |
-| `database/sql.(*DB).query` | 1.50MB | 0.026% | 83.51MB | 1.47% |
-| `database/sql.(*DB).QueryContext` | 0 | 0% | 83.51MB | 1.47% |
-| `database/sql.(*DB).QueryContext.func1` | 0 | 0% | 83.51MB | 1.47% |
-| `database/sql.(*DB).QueryRowContext (inline)` | 0 | 0% | 83.51MB | 1.47% |
-| `database/sql.(*DB).queryDC.func1` | 0 | 0% | 55.50MB | 0.98% |
-| `database/sql.(*DB).retry` | 0 | 0% | 83.51MB | 1.47% |
-| `database/sql.(*Row).Scan` | 0 | 0% | 58MB | 1.02% |
-| `database/sql.(*Rows).Next` | 0 | 0% | 53.50MB | 0.94% |
-| `database/sql.(*Rows).Next.func1` | 0 | 0% | 53.50MB | 0.94% |
-| `database/sql.ctxDriverQuery` | 0 | 0% | 50MB | 0.88% |
+| `errors.New` | 1614.02MB | 53.33% | 1614.02MB | 53.33% |
+| `github.com/seyallius/goxide/rusty/chain.Chain2[go.shape.int,go.shape.int,go.shape.int]` | 635.52MB | 21.00% | 635.52MB | 21.00% |
+| `github.com/seyallius/goxide/rusty/chain.Chain[go.shape.int,go.shape.int]` | 599.02MB | 19.79% | 599.02MB | 19.79% |
+| `modernc.org/sqlite.newRows` | 47.50MB | 1.57% | 60.50MB | 2.00% |
+| `database/sql.(*DB).queryDC` | 28MB | 0.93% | 96.51MB | 3.19% |
+| `time.newParseError (inline)` | 23MB | 0.76% | 23MB | 0.76% |
+| `modernc.org/sqlite.(*conn).columnText` | 16MB | 0.53% | 16MB | 0.53% |
+| `database/sql.(*Rows).nextLocked` | 8MB | 0.26% | 53MB | 1.75% |
+| `github.com/seyallius/goxide/rusty/result_test.(*ResultUserRepo).FindUserByID` | 5.50MB | 0.18% | 79.51MB | 2.63% |
+| `github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID` | 5.50MB | 0.18% | 92.01MB | 3.04% |
+| `database/sql.(*DB).query` | 3MB | 0.099% | 99.51MB | 3.29% |
+| `modernc.org/sqlite.(*conn).parseTime` | 2.50MB | 0.083% | 27MB | 0.89% |
+| `modernc.org/sqlite.(*rows).Next` | 2MB | 0.066% | 45MB | 1.49% |
+| `modernc.org/sqlite.(*conn).parseTimeString` | 1.50MB | 0.05% | 24.50MB | 0.81% |
+| `database/sql.(*DB).QueryContext` | 0 | 0% | 99.51MB | 3.29% |
+| `database/sql.(*DB).QueryContext.func1` | 0 | 0% | 99.51MB | 3.29% |
+| `database/sql.(*DB).QueryRowContext (inline)` | 0 | 0% | 99.51MB | 3.29% |
+| `database/sql.(*DB).queryDC.func1` | 0 | 0% | 68.50MB | 2.26% |
+| `database/sql.(*DB).retry` | 0 | 0% | 99.51MB | 3.29% |
+| `database/sql.(*Row).Scan` | 0 | 0% | 62MB | 2.05% |
 
 ### Memory — alloc_objects (count) — full suite
 
@@ -104,36 +104,36 @@ Showing top 20 nodes out of 48
 ```
 File: result.test
 Type: alloc_objects
-Time: 2026-09-29 22:21:32 +0330
-Showing nodes accounting for 335779217, 98.94% of 339363204 total
-Dropped 69 nodes (cum <= 1696816)
-Showing top 20 nodes out of 37
+Time: 2026-09-30 07:46:35 +0330
+Showing nodes accounting for 148486229, 98.62% of 150570433 total
+Dropped 69 nodes (cum <= 752852)
+Showing top 20 nodes out of 34
 ```
 
 </details>
 
 | Function | flat | flat% | cum | cum% |
 |---|---:|---:|---:|---:|
-| `github.com/seyallius/goxide/rusty/result.Ok[go.shape.int] (inline)` | 202869780 | 59.78% | 202869780 | 59.78% |
-| `errors.New` | 106727004 | 31.45% | 106727004 | 31.45% |
-| `github.com/seyallius/goxide/rusty/chain.Chain[go.shape.int,go.shape.int] (inline)` | 13074831 | 3.85% | 13074831 | 3.85% |
-| `github.com/seyallius/goxide/rusty/chain.Chain2[go.shape.int,go.shape.int,go.shape.int]` | 12845448 | 3.79% | 12845448 | 3.79% |
-| `github.com/seyallius/goxide/rusty/result_test.(*ResultUserRepo).FindUserByID` | 106502 | 0.031% | 1945942 | 0.57% |
-| `database/sql.(*DB).query` | 98305 | 0.029% | 1708382 | 0.5% |
-| `github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID` | 57347 | 0.017% | 1868937 | 0.55% |
-| `database/sql.(*DB).QueryContext` | 0 | 0% | 1708382 | 0.5% |
-| `database/sql.(*DB).QueryContext.func1` | 0 | 0% | 1708382 | 0.5% |
-| `database/sql.(*DB).QueryRowContext (inline)` | 0 | 0% | 1708382 | 0.5% |
-| `database/sql.(*DB).retry` | 0 | 0% | 1708382 | 0.5% |
-| `database/sql.(*Row).Scan` | 0 | 0% | 1814852 | 0.53% |
-| `database/sql.withLock` | 0 | 0% | 2956319 | 0.87% |
-| `github.com/seyallius/goxide/rusty/chain.(*ApplyToResult[go.shape.int,go.shape.int]).AndThen` | 0 | 0% | 6848616 | 2.02% |
-| `github.com/seyallius/goxide/rusty/chain.ApplyToResult2[go.shape.int,go.shape.int,go.shape.int].AndThen` | 0 | 0% | 19988984 | 5.89% |
-| `github.com/seyallius/goxide/rusty/result.AndThen[go.shape.int,go.shape.int]` | 0 | 0% | 46236352 | 13.62% |
-| `github.com/seyallius/goxide/rusty/result.If[go.shape.struct { github.com/seyallius/goxide/rusty/result.value github.com/seyallius/goxide/rusty/option.Option[go.shape.int]; github.com/seyallius/goxide/rusty/result.err error },go.shape.int]` | 0 | 0% | 46236352 | 13.62% |
-| `github.com/seyallius/goxide/rusty/result.Wrap[go.shape.int] (inline)` | 0 | 0% | 83330294 | 24.55% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultChainedSuccess` | 0 | 0% | 46629970 | 13.74% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultDBFindUser` | 0 | 0% | 1937750 | 0.57% |
+| `errors.New` | 105776718 | 70.25% | 105776718 | 70.25% |
+| `github.com/seyallius/goxide/rusty/chain.Chain2[go.shape.int,go.shape.int,go.shape.int]` | 20824699 | 13.83% | 20824699 | 13.83% |
+| `github.com/seyallius/goxide/rusty/chain.Chain[go.shape.int,go.shape.int]` | 19628631 | 13.04% | 19628631 | 13.04% |
+| `modernc.org/libc.GoString` | 851980 | 0.57% | 851980 | 0.57% |
+| `modernc.org/sqlite.newRows` | 581677 | 0.39% | 1433657 | 0.95% |
+| `database/sql.(*DB).query` | 196610 | 0.13% | 2075945 | 1.38% |
+| `database/sql.(*DB).queryDC` | 183528 | 0.12% | 1879335 | 1.25% |
+| `database/sql.(*Rows).nextLocked` | 131079 | 0.087% | 1452760 | 0.96% |
+| `modernc.org/sqlite.(*rows).Next` | 131073 | 0.087% | 1321681 | 0.88% |
+| `github.com/seyallius/goxide/rusty/result_test.(*ResultUserRepo).FindUserByID` | 90117 | 0.06% | 1900345 | 1.26% |
+| `github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID` | 90117 | 0.06% | 2390234 | 1.59% |
+| `database/sql.(*DB).QueryContext` | 0 | 0% | 2075945 | 1.38% |
+| `database/sql.(*DB).QueryContext.func1` | 0 | 0% | 2075945 | 1.38% |
+| `database/sql.(*DB).QueryRowContext (inline)` | 0 | 0% | 2075945 | 1.38% |
+| `database/sql.(*DB).queryDC.func1` | 0 | 0% | 1695807 | 1.13% |
+| `database/sql.(*DB).retry` | 0 | 0% | 2075945 | 1.38% |
+| `database/sql.(*Row).Scan` | 0 | 0% | 2042592 | 1.36% |
+| `database/sql.(*Rows).Next` | 0 | 0% | 1452760 | 0.96% |
+| `database/sql.(*Rows).Next.func1` | 0 | 0% | 1452760 | 0.96% |
+| `database/sql.ctxDriverQuery` | 0 | 0% | 1608423 | 1.07% |
 
 ## Per-Benchmark
 
@@ -144,36 +144,28 @@ Showing top 20 nodes out of 37
 ```
 File: result.test
 Type: cpu
-Time: 2026-09-29 22:22:02 +0330
-Duration: 1.30s, Total samples = 1.28s (98.18%)
-Showing nodes accounting for 1.15s, 89.84% of 1.28s total
-Showing top 20 nodes out of 75
+Time: 2026-09-29 23:28:15 +0330
+Duration: 1.20s, Total samples = 1.03s (85.61%)
+Showing nodes accounting for 1.03s, 100% of 1.03s total
 ```
 
 </details>
 
 | Function | flat | flat% | cum | cum% |
 |---|---:|---:|---:|---:|
-| `runtime.mallocgcTiny` | 0.19s | 14.84% | 0.46s | 35.94% |
-| `github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)` | 0.17s | 13.28% | 0.17s | 13.28% |
-| `runtime.nextFreeFast (inline)` | 0.15s | 11.72% | 0.15s | 11.72% |
-| `runtime.newobject` | 0.12s | 9.38% | 0.68s | 53.12% |
-| `runtime.mallocgc` | 0.10s | 7.81% | 0.56s | 43.75% |
-| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].BubbleUp` | 0.09s | 7.03% | 0.26s | 20.31% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1` | 0.07s | 5.47% | 1.09s | 85.16% |
-| `runtime.acquirem (inline)` | 0.05s | 3.91% | 0.05s | 3.91% |
-| `github.com/seyallius/goxide/rusty/result.Ok[go.shape.int] (inline)` | 0.04s | 3.12% | 0.72s | 56.25% |
-| `runtime.scanblock` | 0.04s | 3.12% | 0.04s | 3.12% |
-| `github.com/seyallius/goxide/rusty/result.Catch[go.shape.int]` | 0.03s | 2.34% | 0.03s | 2.34% |
-| `runtime.getMCache (inline)` | 0.02s | 1.56% | 0.02s | 1.56% |
-| `github.com/seyallius/goxide/rusty/result.Wrap[go.shape.int] (inline)` | 0.01s | 0.78% | 0.57s | 44.53% |
-| `internal/runtime/atomic.(*Uint64).CompareAndSwap (inline)` | 0.01s | 0.78% | 0.01s | 0.78% |
-| `runtime.(*lfstack).pop` | 0.01s | 0.78% | 0.01s | 0.78% |
-| `runtime.(*m).clearAllpSnapshot` | 0.01s | 0.78% | 0.01s | 0.78% |
-| `runtime.(*mheap).allocSpan` | 0.01s | 0.78% | 0.02s | 1.56% |
-| `runtime.(*mheap).freeSpanLocked` | 0.01s | 0.78% | 0.01s | 0.78% |
-| `runtime.(*scavengerState).run` | 0.01s | 0.78% | 0.02s | 1.56% |
-| `runtime.(*spanSet).pop` | 0.01s | 0.78% | 0.02s | 1.56% |
+| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].BubbleUp` | 0.44s | 42.72% | 0.56s | 54.37% |
+| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1` | 0.27s | 26.21% | 0.96s | 93.20% |
+| `github.com/seyallius/goxide/rusty/result.Catch[go.shape.int]` | 0.10s | 9.71% | 0.11s | 10.68% |
+| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].Unwrap (inline)` | 0.09s | 8.74% | 0.11s | 10.68% |
+| `testing.(*B).Loop (inline)` | 0.04s | 3.88% | 0.04s | 3.88% |
+| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry` | 0.03s | 2.91% | 1.03s | 100% |
+| `github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)` | 0.02s | 1.94% | 0.02s | 1.94% |
+| `github.com/seyallius/goxide/rusty/result_test.divide (inline)` | 0.02s | 1.94% | 0.02s | 1.94% |
+| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].IsErr (inline)` | 0.01s | 0.97% | 0.01s | 0.97% |
+| `runtime.gorecover` | 0.01s | 0.97% | 0.01s | 0.97% |
+| `github.com/seyallius/goxide/rusty/result.Result[go.shape.int].Expect (inline)` | 0 | 0% | 0.02s | 1.94% |
+| `testing.(*B).run1.func1` | 0 | 0% | 1.03s | 100% |
+| `testing.(*B).runN` | 0 | 0% | 1.03s | 100% |
 
 ### Memory — alloc_space (bytes) — BenchmarkResultWithTry
 
@@ -182,21 +174,35 @@ Showing top 20 nodes out of 75
 ```
 File: result.test
 Type: alloc_space
-Time: 2026-09-29 22:22:40 +0330
-Showing nodes accounting for 724.51MB, 99.52% of 728.02MB total
-Dropped 21 nodes (cum <= 3.64MB)
+Time: 2026-09-29 23:28:22 +0330
+Showing nodes accounting for 2050.93kB, 100% of 2050.93kB total
+Showing top 20 nodes out of 34
 ```
 
 </details>
 
 | Function | flat | flat% | cum | cum% |
 |---|---:|---:|---:|---:|
-| `github.com/seyallius/goxide/rusty/result.Ok[go.shape.int] (inline)` | 724.51MB | 99.52% | 724.51MB | 99.52% |
-| `github.com/seyallius/goxide/rusty/result.Wrap[go.shape.int] (inline)` | 0 | 0% | 548.51MB | 75.34% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry` | 0 | 0% | 724.51MB | 99.52% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1` | 0 | 0% | 724.51MB | 99.52% |
-| `testing.(*B).run1.func1` | 0 | 0% | 724.51MB | 99.52% |
-| `testing.(*B).runN` | 0 | 0% | 724.51MB | 99.52% |
+| `runtime.allocm` | 1026kB | 50.03% | 1026kB | 50.03% |
+| `sync.(*Pool).pinSlow` | 512.88kB | 25.01% | 512.88kB | 25.01% |
+| `context.(*cancelCtx).Done` | 512.05kB | 24.97% | 512.05kB | 24.97% |
+| `database/sql.(*DB).connectionOpener` | 0 | 0% | 512.05kB | 24.97% |
+| `github.com/seyallius/goxide/internal/tests.RunGoxideTestMain` | 0 | 0% | 512.88kB | 25.01% |
+| `github.com/seyallius/goxide/rusty/result_test.TestMain (inline)` | 0 | 0% | 512.88kB | 25.01% |
+| `github.com/seyallius/snapdb.Run` | 0 | 0% | 512.88kB | 25.01% |
+| `main.main` | 0 | 0% | 512.88kB | 25.01% |
+| `regexp.(*Regexp).MatchString (inline)` | 0 | 0% | 512.88kB | 25.01% |
+| `regexp.(*Regexp).backtrack` | 0 | 0% | 512.88kB | 25.01% |
+| `regexp.(*Regexp).doExecute` | 0 | 0% | 512.88kB | 25.01% |
+| `regexp.(*Regexp).doMatch (inline)` | 0 | 0% | 512.88kB | 25.01% |
+| `regexp.newBitState (inline)` | 0 | 0% | 512.88kB | 25.01% |
+| `runtime.main` | 0 | 0% | 512.88kB | 25.01% |
+| `runtime.mcall` | 0 | 0% | 513kB | 25.01% |
+| `runtime.mstart` | 0 | 0% | 513kB | 25.01% |
+| `runtime.mstart0` | 0 | 0% | 513kB | 25.01% |
+| `runtime.mstart1` | 0 | 0% | 513kB | 25.01% |
+| `runtime.newm` | 0 | 0% | 1026kB | 50.03% |
+| `runtime.park_m` | 0 | 0% | 513kB | 25.01% |
 
 ### Memory — alloc_objects (count) — BenchmarkResultWithTry
 
@@ -205,19 +211,33 @@ Dropped 21 nodes (cum <= 3.64MB)
 ```
 File: result.test
 Type: alloc_objects
-Time: 2026-09-29 22:22:40 +0330
-Showing nodes accounting for 47481556, 100% of 47493893 total
-Dropped 21 nodes (cum <= 237469)
+Time: 2026-09-29 23:28:22 +0330
+Showing nodes accounting for 5486, 100% of 5486 total
+Showing top 20 nodes out of 34
 ```
 
 </details>
 
 | Function | flat | flat% | cum | cum% |
 |---|---:|---:|---:|---:|
-| `github.com/seyallius/goxide/rusty/result.Ok[go.shape.int] (inline)` | 47481556 | 100% | 47481556 | 100% |
-| `github.com/seyallius/goxide/rusty/result.Wrap[go.shape.int] (inline)` | 0 | 0% | 35947044 | 75.69% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry` | 0 | 0% | 47481556 | 100% |
-| `github.com/seyallius/goxide/rusty/result_test.BenchmarkResultWithTry.func1` | 0 | 0% | 47481556 | 100% |
-| `testing.(*B).run1.func1` | 0 | 0% | 47481556 | 100% |
-| `testing.(*B).runN` | 0 | 0% | 47481556 | 100% |
+| `context.(*cancelCtx).Done` | 4681 | 85.33% | 4681 | 85.33% |
+| `runtime.allocm` | 512 | 9.33% | 512 | 9.33% |
+| `sync.(*Pool).pinSlow` | 293 | 5.34% | 293 | 5.34% |
+| `database/sql.(*DB).connectionOpener` | 0 | 0% | 4681 | 85.33% |
+| `github.com/seyallius/goxide/internal/tests.RunGoxideTestMain` | 0 | 0% | 293 | 5.34% |
+| `github.com/seyallius/goxide/rusty/result_test.TestMain (inline)` | 0 | 0% | 293 | 5.34% |
+| `github.com/seyallius/snapdb.Run` | 0 | 0% | 293 | 5.34% |
+| `main.main` | 0 | 0% | 293 | 5.34% |
+| `regexp.(*Regexp).MatchString (inline)` | 0 | 0% | 293 | 5.34% |
+| `regexp.(*Regexp).backtrack` | 0 | 0% | 293 | 5.34% |
+| `regexp.(*Regexp).doExecute` | 0 | 0% | 293 | 5.34% |
+| `regexp.(*Regexp).doMatch (inline)` | 0 | 0% | 293 | 5.34% |
+| `regexp.newBitState (inline)` | 0 | 0% | 293 | 5.34% |
+| `runtime.main` | 0 | 0% | 293 | 5.34% |
+| `runtime.mcall` | 0 | 0% | 256 | 4.67% |
+| `runtime.mstart` | 0 | 0% | 256 | 4.67% |
+| `runtime.mstart0` | 0 | 0% | 256 | 4.67% |
+| `runtime.mstart1` | 0 | 0% | 256 | 4.67% |
+| `runtime.newm` | 0 | 0% | 512 | 9.33% |
+| `runtime.park_m` | 0 | 0% | 256 | 4.67% |
 

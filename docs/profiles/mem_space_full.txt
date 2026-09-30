@@ -1,28 +1,28 @@
 File: result.test
-Build ID: 95e780aa1df740892212b9ab44b6be3b4b16c4d1
+Build ID: 30d716753733466feda24cf2009de638f593b78c
 Type: alloc_space
-Time: 2026-09-29 22:21:32 +0330
-Showing nodes accounting for 5601.60MB, 98.74% of 5673.16MB total
-Dropped 58 nodes (cum <= 28.37MB)
-Showing top 20 nodes out of 48
+Time: 2026-09-30 07:46:35 +0330
+Showing nodes accounting for 2991.07MB, 98.83% of 3026.61MB total
+Dropped 64 nodes (cum <= 15.13MB)
+Showing top 20 nodes out of 39
       flat  flat%   sum%        cum   cum%
- 3095.55MB 54.56% 54.56%  3095.55MB 54.56%  github.com/seyallius/goxide/rusty/result.Ok[go.shape.int]
- 1628.52MB 28.71% 83.27%  1628.52MB 28.71%  errors.New
-  399.01MB  7.03% 90.30%   399.01MB  7.03%  github.com/seyallius/goxide/rusty/chain.Chain[go.shape.int,go.shape.int]
-  392.01MB  6.91% 97.21%   392.01MB  6.91%  github.com/seyallius/goxide/rusty/chain.Chain2[go.shape.int,go.shape.int,go.shape.int]
-   35.50MB  0.63% 97.84%       45MB  0.79%  modernc.org/sqlite.newRows
-   26.50MB  0.47% 98.31%    82.01MB  1.45%  database/sql.(*DB).queryDC
-   10.50MB  0.19% 98.49%    53.50MB  0.94%  database/sql.(*Rows).nextLocked
-    6.50MB  0.11% 98.61%    77.01MB  1.36%  github.com/seyallius/goxide/rusty/result_test.(*ResultUserRepo).FindUserByID
-    3.50MB 0.062% 98.67%    75.01MB  1.32%  github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID
-    2.50MB 0.044% 98.71%       43MB  0.76%  modernc.org/sqlite.(*rows).Next
-    1.50MB 0.026% 98.74%    83.51MB  1.47%  database/sql.(*DB).query
-         0     0% 98.74%    83.51MB  1.47%  database/sql.(*DB).QueryContext
-         0     0% 98.74%    83.51MB  1.47%  database/sql.(*DB).QueryContext.func1
-         0     0% 98.74%    83.51MB  1.47%  database/sql.(*DB).QueryRowContext (inline)
-         0     0% 98.74%    55.50MB  0.98%  database/sql.(*DB).queryDC.func1
-         0     0% 98.74%    83.51MB  1.47%  database/sql.(*DB).retry
-         0     0% 98.74%       58MB  1.02%  database/sql.(*Row).Scan
-         0     0% 98.74%    53.50MB  0.94%  database/sql.(*Rows).Next
-         0     0% 98.74%    53.50MB  0.94%  database/sql.(*Rows).Next.func1
-         0     0% 98.74%       50MB  0.88%  database/sql.ctxDriverQuery
+ 1614.02MB 53.33% 53.33%  1614.02MB 53.33%  errors.New
+  635.52MB 21.00% 74.33%   635.52MB 21.00%  github.com/seyallius/goxide/rusty/chain.Chain2[go.shape.int,go.shape.int,go.shape.int]
+  599.02MB 19.79% 94.12%   599.02MB 19.79%  github.com/seyallius/goxide/rusty/chain.Chain[go.shape.int,go.shape.int]
+   47.50MB  1.57% 95.69%    60.50MB  2.00%  modernc.org/sqlite.newRows
+      28MB  0.93% 96.61%    96.51MB  3.19%  database/sql.(*DB).queryDC
+      23MB  0.76% 97.37%       23MB  0.76%  time.newParseError (inline)
+      16MB  0.53% 97.90%       16MB  0.53%  modernc.org/sqlite.(*conn).columnText
+       8MB  0.26% 98.16%       53MB  1.75%  database/sql.(*Rows).nextLocked
+    5.50MB  0.18% 98.35%    79.51MB  2.63%  github.com/seyallius/goxide/rusty/result_test.(*ResultUserRepo).FindUserByID
+    5.50MB  0.18% 98.53%    92.01MB  3.04%  github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID
+       3MB 0.099% 98.63%    99.51MB  3.29%  database/sql.(*DB).query
+    2.50MB 0.083% 98.71%       27MB  0.89%  modernc.org/sqlite.(*conn).parseTime
+       2MB 0.066% 98.78%       45MB  1.49%  modernc.org/sqlite.(*rows).Next
+    1.50MB  0.05% 98.83%    24.50MB  0.81%  modernc.org/sqlite.(*conn).parseTimeString
+         0     0% 98.83%    99.51MB  3.29%  database/sql.(*DB).QueryContext
+         0     0% 98.83%    99.51MB  3.29%  database/sql.(*DB).QueryContext.func1
+         0     0% 98.83%    99.51MB  3.29%  database/sql.(*DB).QueryRowContext (inline)
+         0     0% 98.83%    68.50MB  2.26%  database/sql.(*DB).queryDC.func1
+         0     0% 98.83%    99.51MB  3.29%  database/sql.(*DB).retry
+         0     0% 98.83%       62MB  2.05%  database/sql.(*Row).Scan

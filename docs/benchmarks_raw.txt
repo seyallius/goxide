@@ -5,14 +5,43 @@ ok  	github.com/seyallius/goxide/rusty/chain	0.002s
 
 ===> 🚀 Test Container Setup
 	├── Start Container:                    0s
-	├── Initialize Schema (Slow Path):      3ms
+	├── Initialize Schema (Slow Path):      21ms
 	├── Initialize Data (Slow Path):        0s
 	├── Initialize Engine:                  0s
 	├── Verify Database Connection:         0s
-	└── ✅ Test Container Ready!            3ms
+	└── ✅ Test Container Ready!            21ms
 
 goos: linux
 goarch: amd64
 pkg: github.com/seyallius/goxide/rusty/result
 cpu: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
-BenchmarkTraditionalSuccess-12                        	794530788	         1.570 ns/op	       0 B/op	       0 allocs/op
+BenchmarkTraditionalSuccess-12                        	674030040	         1.769 ns/op	       0 B/op	       0 allocs/op
+BenchmarkResultSuccess-12                             	407982481	         2.947 ns/op	       0 B/op	       0 allocs/op
+BenchmarkResultSuccessUnwrapOr-12                     	293602723	         4.099 ns/op	       0 B/op	       0 allocs/op
+BenchmarkTraditionalError-12                          	56507396	        18.64 ns/op	      16 B/op	       1 allocs/op
+BenchmarkResultError-12                               	47845983	        22.90 ns/op	      16 B/op	       1 allocs/op
+BenchmarkTraditionalChainedSuccess-12                 	327122150	         3.639 ns/op	       0 B/op	       0 allocs/op
+BenchmarkResultChainedSuccess-12                      	21873204	        54.20 ns/op	      64 B/op	       2 allocs/op
+BenchmarkTraditionalDBCreateUser-12                   	      52	  19439984 ns/op	     931 B/op	      30 allocs/op
+BenchmarkResultDBCreateUser-12                        	     402	   2893698 ns/op	     845 B/op	      31 allocs/op
+BenchmarkTraditionalDBFindUser-12                     	   80142	     14673 ns/op	    1048 B/op	      36 allocs/op
+BenchmarkResultDBFindUser-12                          	   74344	     14767 ns/op	    1048 B/op	      36 allocs/op
+BenchmarkTraditionalDBFindUserNotFound-12             	     842	   1420464 ns/op	     906 B/op	      30 allocs/op
+BenchmarkResultDBFindUserNotFound-12                  	     832	   1546810 ns/op	     906 B/op	      30 allocs/op
+BenchmarkTraditionalDBUpdateUser-12                   	     835	   1617492 ns/op	     230 B/op	      12 allocs/op
+BenchmarkResultDBUpdateUser-12                        	     835	   1546475 ns/op	     230 B/op	      12 allocs/op
+BenchmarkTraditionalDBGetOrCreateUser-12              	     384	   2990805 ns/op	    2665 B/op	      92 allocs/op
+BenchmarkResultDBGetOrCreateUser-12                   	     403	   3259343 ns/op	    2746 B/op	      94 allocs/op
+BenchmarkTraditionalDBChainedOperations-12            	     282	   4260277 ns/op	    3167 B/op	     115 allocs/op
+BenchmarkResultDBChainedOperations-12                 	     285	   4206062 ns/op	    2177 B/op	      81 allocs/op
+BenchmarkResultDBChainedOperationsBubbleUp-12         	     258	   4747652 ns/op	    3168 B/op	     115 allocs/op
+BenchmarkTraditionalDBErrorHandlingWithFallback-12    	     374	   3111797 ns/op	    2624 B/op	      91 allocs/op
+BenchmarkResultDBErrorHandlingWithFallback-12         	     386	   3135161 ns/op	    2711 B/op	      93 allocs/op
+BenchmarkTraditionalDBCreateUserAllocs-12             	     378	   3299471 ns/op	     848 B/op	      32 allocs/op
+BenchmarkResultDBCreateUserAllocs-12                  	     385	  12529255 ns/op	     849 B/op	      32 allocs/op
+BenchmarkTraditionalErrorHandling-12                  	825600068	         1.442 ns/op	       0 B/op	       0 allocs/op
+BenchmarkResultWithTry-12                             	131970481	         9.187 ns/op	       0 B/op	       0 allocs/op
+BenchmarkResultWithAndThen-12                         	146864630	         8.087 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/seyallius/goxide/rusty/result	35.875s
+?   	github.com/seyallius/goxide/rusty/types	[no test files]
