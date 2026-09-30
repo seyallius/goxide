@@ -22,26 +22,26 @@ Showing top 20 nodes out of 204
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.(*mspan).specialFindSplicePoint (inline) | 2.86 s | 18.48% | 2.86 s | 18.48% | — |
-| testing.(*B).Loop (inline) | 1.56 s | 10.08% | 1.56 s | 10.08% | — |
-| runtime.pcvalue | 1.33 s | 8.59% | 2.62 s | 16.93% | — |
-| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalChainedSuccess | 960 ms | 6.20% | 1.19 s | 7.69% | — |
-| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalError | 790 ms | 5.10% | 1.17 s | 7.56% | — |
-| runtime.step | 660 ms | 4.26% | 740 ms | 4.78% | — |
-| github.com/seyallius/goxide/rusty/result_test.benchmarkResultSuccess | 630 ms | 4.07% | 1.07 s | 6.91% | — |
-| internal/runtime/syscall/linux.Syscall6 | 590 ms | 3.81% | 590 ms | 3.81% | — |
-| runtime.findfunc | 430 ms | 2.78% | 490 ms | 3.17% | — |
-| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalSuccess | 420 ms | 2.71% | 850 ms | 5.49% | — |
-| runtime.tracebackPCs | 380 ms | 2.45% | 4.51 s | 29.13% | — |
-| runtime.(*unwinder).resolveInternal | 300 ms | 1.94% | 1.4 s | 9.04% | — |
-| runtime.(*moduledata).textAddr | 280 ms | 1.81% | 280 ms | 1.81% | — |
-| runtime.markrootSpans | 270 ms | 1.74% | 270 ms | 1.74% | — |
-| runtime.(*fixalloc).alloc | 260 ms | 1.68% | 260 ms | 1.68% | — |
-| runtime.unlock2 | 250 ms | 1.61% | 270 ms | 1.74% | — |
-| runtime.addspecial | 210 ms | 1.36% | 3.16 s | 20.41% | — |
-| runtime.(*unwinder).next | 180 ms | 1.16% | 2.01 s | 12.98% | — |
-| runtime.funcInfo.entry (inline) | 170 ms | 1.10% | 450 ms | 2.91% | — |
-| runtime.(*sweepLocked).sweep | 150 ms | 0.97% | 480 ms | 3.10% | — |
+| runtime.(*mspan).specialFindSplicePoint (inline) | 2.86 s | 18.48% | 2.86 s | 18.48% | ~ |
+| testing.(*B).Loop (inline) | 1.56 s | 10.08% | 1.56 s | 10.08% | ~ |
+| runtime.pcvalue | 1.33 s | 8.59% | 2.62 s | 16.93% | ~ |
+| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalChainedSuccess | 960 ms | 6.20% | 1.19 s | 7.69% | ~ |
+| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalError | 790 ms | 5.10% | 1.17 s | 7.56% | ~ |
+| runtime.step | 660 ms | 4.26% | 740 ms | 4.78% | ~ |
+| github.com/seyallius/goxide/rusty/result_test.benchmarkResultSuccess | 630 ms | 4.07% | 1.07 s | 6.91% | ~ |
+| internal/runtime/syscall/linux.Syscall6 | 590 ms | 3.81% | 590 ms | 3.81% | ~ |
+| runtime.findfunc | 430 ms | 2.78% | 490 ms | 3.17% | ~ |
+| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalSuccess | 420 ms | 2.71% | 850 ms | 5.49% | ~ |
+| runtime.tracebackPCs | 380 ms | 2.45% | 4.51 s | 29.13% | ~ |
+| runtime.(*unwinder).resolveInternal | 300 ms | 1.94% | 1.4 s | 9.04% | ~ |
+| runtime.(*moduledata).textAddr | 280 ms | 1.81% | 280 ms | 1.81% | ~ |
+| runtime.markrootSpans | 270 ms | 1.74% | 270 ms | 1.74% | ~ |
+| runtime.(*fixalloc).alloc | 260 ms | 1.68% | 260 ms | 1.68% | ~ |
+| runtime.unlock2 | 250 ms | 1.61% | 270 ms | 1.74% | ~ |
+| runtime.addspecial | 210 ms | 1.36% | 3.16 s | 20.41% | ~ |
+| runtime.(*unwinder).next | 180 ms | 1.16% | 2.01 s | 12.98% | ~ |
+| runtime.funcInfo.entry (inline) | 170 ms | 1.10% | 450 ms | 2.91% | ~ |
+| runtime.(*sweepLocked).sweep | 150 ms | 0.97% | 480 ms | 3.10% | ~ |
 
 </details>
 
@@ -59,26 +59,26 @@ Showing top 20 nodes out of 165
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.mallocgc | 84 | 61.31% | 95 | 69.34% | — |
-| testing.(*B).run1 | 9 | 6.57% | 9 | 6.57% | — |
-| runtime.mallocgcSmallScanNoHeaderSC1 | 7 | 5.11% | 7 | 5.11% | — |
-| runtime.mallocgcSmallScanNoHeaderSC2 | 4 | 2.92% | 4 | 2.92% | — |
-| os.newFile | 3 | 2.19% | 3 | 2.19% | — |
-| database/sql.convertAssignRows | 2 | 1.46% | 2 | 1.46% | — |
-| time.LoadLocationFromTZData | 2 | 1.46% | 4 | 2.92% | — |
-| time.byteString (inline) | 2 | 1.46% | 2 | 1.46% | — |
-| time.newTimer | 2 | 1.46% | 2 | 1.46% | — |
-| database/sql.(*DB).execDC | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql.(*DB).queryDC | 1 | 0.73% | 9 | 6.57% | — |
-| database/sql.(*Rows).nextLocked | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql.(*Rows).scanLocked | 1 | 0.73% | 3 | 2.19% | — |
-| database/sql.(*driverConn).resetSession | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql.(*driverConn).validateConnection | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql.driverArgsConnLocked | 1 | 0.73% | 3 | 2.19% | — |
-| database/sql/driver.IsValue (inline) | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql/driver.defaultConverter.ConvertValue | 1 | 0.73% | 2 | 1.46% | — |
-| github.com/seyallius/goxide/rusty/result_test.NewResultUserRepo | 1 | 0.73% | 1 | 0.73% | — |
-| github.com/seyallius/goxide/rusty/result_test.NewTraditionalUserRepo | 1 | 0.73% | 1 | 0.73% | — |
+| runtime.mallocgc | 84 | 61.31% | 95 | 69.34% | ~ |
+| testing.(*B).run1 | 9 | 6.57% | 9 | 6.57% | ~ |
+| runtime.mallocgcSmallScanNoHeaderSC1 | 7 | 5.11% | 7 | 5.11% | ~ |
+| runtime.mallocgcSmallScanNoHeaderSC2 | 4 | 2.92% | 4 | 2.92% | ~ |
+| os.newFile | 3 | 2.19% | 3 | 2.19% | ~ |
+| database/sql.convertAssignRows | 2 | 1.46% | 2 | 1.46% | ~ |
+| time.LoadLocationFromTZData | 2 | 1.46% | 4 | 2.92% | ~ |
+| time.byteString (inline) | 2 | 1.46% | 2 | 1.46% | ~ |
+| time.newTimer | 2 | 1.46% | 2 | 1.46% | ~ |
+| database/sql.(*DB).execDC | 1 | 0.73% | 1 | 0.73% | ~ |
+| database/sql.(*DB).queryDC | 1 | 0.73% | 9 | 6.57% | ~ |
+| database/sql.(*Rows).nextLocked | 1 | 0.73% | 1 | 0.73% | ~ |
+| database/sql.(*Rows).scanLocked | 1 | 0.73% | 3 | 2.19% | ~ |
+| database/sql.(*driverConn).resetSession | 1 | 0.73% | 1 | 0.73% | ~ |
+| database/sql.(*driverConn).validateConnection | 1 | 0.73% | 1 | 0.73% | ~ |
+| database/sql.driverArgsConnLocked | 1 | 0.73% | 3 | 2.19% | ~ |
+| database/sql/driver.IsValue (inline) | 1 | 0.73% | 1 | 0.73% | ~ |
+| database/sql/driver.defaultConverter.ConvertValue | 1 | 0.73% | 2 | 1.46% | ~ |
+| github.com/seyallius/goxide/rusty/result_test.NewResultUserRepo | 1 | 0.73% | 1 | 0.73% | ~ |
+| github.com/seyallius/goxide/rusty/result_test.NewTraditionalUserRepo | 1 | 0.73% | 1 | 0.73% | ~ |
 
 </details>
 
@@ -97,26 +97,26 @@ Showing top 20 nodes out of 83
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.mallocgc | 57.4 kB | 82.44% | 57.5 kB | 82.60% | — |
-| hash/crc32.slicingMakeTable | 8 kB | 11.48% | 8 kB | 11.48% | — |
-| time.LoadLocationFromTZData | 1.38 kB | 1.97% | 1.41 kB | 2.02% | — |
-| testing.(*B).run1 | 1004 B | 1.41% | 1004 B | 1.41% | — |
-| regexp.compile | 164 B | 0.22% | 389 B | 0.54% | — |
-| testing.(*B).runN | 113 B | 0.16% | 3.14 kB | 4.51% | — |
-| database/sql.(*DB).queryDC | 51.2 B | 0.07% | 1.64 kB | 2.36% | — |
-| compress/gzip.(*Writer).Write | 0 B | 0.00% | 8 kB | 11.48% | — |
-| database/sql.(*DB).QueryContext | 0 B | 0.00% | 1.69 kB | 2.42% | — |
-| database/sql.(*DB).QueryContext.func1 | 0 B | 0.00% | 1.69 kB | 2.42% | — |
-| database/sql.(*DB).QueryRowContext (inline) | 0 B | 0.00% | 1.69 kB | 2.42% | — |
-| database/sql.(*DB).query | 0 B | 0.00% | 1.69 kB | 2.42% | — |
-| database/sql.(*DB).queryDC.func1 | 0 B | 0.00% | 1.59 kB | 2.29% | — |
-| database/sql.(*DB).retry | 0 B | 0.00% | 1.73 kB | 2.49% | — |
-| database/sql.ctxDriverQuery | 0 B | 0.00% | 1.42 kB | 2.04% | — |
-| database/sql.withLock | 0 B | 0.00% | 1.59 kB | 2.29% | — |
-| github.com/seyallius/goxide/internal/tests.RunGoxideTestMain | 0 B | 0.00% | 1.09 kB | 1.56% | — |
-| github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).CreateUser | 0 B | 0.00% | 1.42 kB | 2.04% | — |
-| github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID | 0 B | 0.00% | 532 B | 0.74% | — |
-| github.com/seyallius/goxide/rusty/result_test.TestMain | 0 B | 0.00% | 1.09 kB | 1.56% | — |
+| runtime.mallocgc | 57.4 kB | 82.44% | 57.5 kB | 82.60% | ~ |
+| hash/crc32.slicingMakeTable | 8 kB | 11.48% | 8 kB | 11.48% | ~ |
+| time.LoadLocationFromTZData | 1.38 kB | 1.97% | 1.41 kB | 2.02% | ~ |
+| testing.(*B).run1 | 1004 B | 1.41% | 1004 B | 1.41% | ~ |
+| regexp.compile | 164 B | 0.22% | 389 B | 0.54% | ~ |
+| testing.(*B).runN | 113 B | 0.16% | 3.14 kB | 4.51% | ~ |
+| database/sql.(*DB).queryDC | 51.2 B | 0.07% | 1.64 kB | 2.36% | ~ |
+| compress/gzip.(*Writer).Write | 0 B | 0.00% | 8 kB | 11.48% | new |
+| database/sql.(*DB).QueryContext | 0 B | 0.00% | 1.69 kB | 2.42% | new |
+| database/sql.(*DB).QueryContext.func1 | 0 B | 0.00% | 1.69 kB | 2.42% | new |
+| database/sql.(*DB).QueryRowContext (inline) | 0 B | 0.00% | 1.69 kB | 2.42% | new |
+| database/sql.(*DB).query | 0 B | 0.00% | 1.69 kB | 2.42% | new |
+| database/sql.(*DB).queryDC.func1 | 0 B | 0.00% | 1.59 kB | 2.29% | new |
+| database/sql.(*DB).retry | 0 B | 0.00% | 1.73 kB | 2.49% | new |
+| database/sql.ctxDriverQuery | 0 B | 0.00% | 1.42 kB | 2.04% | new |
+| database/sql.withLock | 0 B | 0.00% | 1.59 kB | 2.29% | new |
+| github.com/seyallius/goxide/internal/tests.RunGoxideTestMain | 0 B | 0.00% | 1.09 kB | 1.56% | new |
+| github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).CreateUser | 0 B | 0.00% | 1.42 kB | 2.04% | new |
+| github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID | 0 B | 0.00% | 532 B | 0.74% | new |
+| github.com/seyallius/goxide/rusty/result_test.TestMain | 0 B | 0.00% | 1.09 kB | 1.56% | new |
 
 </details>
 

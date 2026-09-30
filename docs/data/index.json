@@ -25,11 +25,30 @@
   "runs": [
     {
       "badges": [
+        "dirty",
+        "forced"
+      ],
+      "date": "2026-09-30",
+      "file": "data/m001.json",
+      "headline": {},
+      "id": "m001",
+      "is_current": false,
+      "label": "baseline",
+      "seq": 1,
+      "sha": "cc3a8ed",
+      "title": "m001 · baseline"
+    },
+    {
+      "badges": [
         "dirty"
       ],
       "date": "2026-09-30",
       "file": "data/current.json",
-      "headline": {},
+      "headline": {
+        "allocs_op": 0,
+        "bytes_op": 0,
+        "ns_op": 0
+      },
       "id": "current",
       "is_current": true,
       "label": "",

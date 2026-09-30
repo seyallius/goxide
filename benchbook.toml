@@ -14,14 +14,14 @@ raw_dir = "benchbook/raw"
 [bench]
 packages = ["./rusty/..."]
 args = ["-benchmem"]
-count = 6
+count = 3
 timeout = "30m"
 baseline_variant = "traditional"
 
 [stats]
 alpha = 0.05
 min_effect_pct = 1.0
-min_samples = 6
+min_samples = 3
 noise_floor_note = true
 
 [[category]]
@@ -41,9 +41,9 @@ title = "⚡ Basic operations"
 
 [tracked]
 benchmarks = [
-  "Success",
-  "Error",
-  "ChainedSuccess",
+  "Success/traditional",
+  "Error/traditional",
+  "ChainedSuccess/traditional",
   "ErrorHandling/result_with_try",
   "DBFindUser/result",
 ]
