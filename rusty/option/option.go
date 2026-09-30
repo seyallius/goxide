@@ -24,9 +24,10 @@ import "github.com/seyallius/goxide/rusty/types"
 //   - Type-safe: The compiler forces you to handle both Some and None cases
 //   - Explicit: Function signatures clearly show when a value might be absent
 //   - Chainable: Methods like Map and FlatMap enable functional composition
+//   - Allocation-free: The value is stored inline, not behind a pointer
 type Option[T any] struct {
 	isSome bool
-	value  *T
+	value  T
 }
 
 // -------------------------------------------- Public Functions --------------------------------------------
@@ -50,7 +51,7 @@ type Option[T any] struct {
 func Some[T any](value T) Option[T] {
 	return Option[T]{
 		isSome: true,
-		value:  &value,
+		value:  value,
 	}
 }
 
@@ -151,7 +152,7 @@ func (optn Option[T]) IsNone() bool {
 //	}
 func (optn Option[T]) Expect(panicMsg string) T {
 	if optn.IsSome() {
-		return *optn.value
+		return optn.value
 	}
 	panic(panicMsg)
 }
@@ -259,7 +260,7 @@ func (optn Option[T]) UnwrapOrElse(fn func() T) T {
 //	}
 func (optn Option[T]) Some(out *T) bool {
 	if optn.IsSome() {
-		*out = optn.Unwrap()
+		*out = optn.value
 		return true
 	}
 	return false
