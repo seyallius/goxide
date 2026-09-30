@@ -7,7 +7,7 @@ This is a Go 1.25 module (`github.com/seyallius/goxide`) that provides Rust-insp
 - `rusty/chain`, `rusty/option`, `rusty/result`, and `rusty/types`: library packages and their tests/benchmarks.
 - `rusty/examples`: runnable usage examples.
 - `internal/tests`: shared database and test setup helpers.
-- `tools/benchparse`, `tools/profparse`, and `tools/sysinfo`: benchmark, profile, and hardware-report tooling.
+- `benchbook.toml`: project configuration for the reusable `benchbook` benchmark and profile documentation tool.
 - `docs/content`: user guides and generated benchmark/profile pages; `docs/`: documentation-site assets and raw measurements.
 - `testdata`: fixtures used by tests.
 
@@ -15,7 +15,7 @@ This is a Go 1.25 module (`github.com/seyallius/goxide`) that provides Rust-insp
 
 Run `go test ./...` for the full test suite and `go test -cover ./...` for coverage. Run `go test -bench=. ./rusty/... -benchmem` for benchmarks. `just test` and `just test-cover` provide the standard shortcuts.
 
-Use `just serve-docs` to serve the documentation site locally. Regenerate performance documentation with `just perf-docs`; narrower commands include `just benchparse`, `just profparse`, `just profile-cpu`, and `just profile-mem`. These commands update files under `docs/` and `docs/content/`.
+Use `just serve-docs` to serve the documentation site locally. Regenerate performance documentation with `just perf-docs`; `just bench` records benchmark results and `just profile` captures CPU and memory profiles through `benchbook`. These commands update files under `benchbook/` and `docs/`.
 
 ## Coding Style & Naming Conventions
 
@@ -27,4 +27,4 @@ Add behavioral tests beside the package they cover, using descriptive `Test...` 
 
 ## Commit & Pull Request Guidelines
 
-Use short, imperative, scoped messages following the repository’s history, such as `feat(benchparse): ...`, `fix(result): ...`, or `docs(benchmarks): ...`. Pull requests should explain the behavior change, list validation commands, and include updated generated documentation when benchmarks or profiles change. Include screenshots for documentation-site or visual changes when useful.
+Use short, imperative, scoped messages following the repository’s history, such as `feat(benchbook): ...`, `fix(result): ...`, or `docs(benchmarks): ...`. Pull requests should explain the behavior change, list validation commands, and include updated generated documentation when benchmarks or profiles change. Include screenshots for documentation-site or visual changes when useful.

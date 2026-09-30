@@ -212,6 +212,13 @@ result := process("  hello  ") // "HELLO"
 
 For in-depth guides, tutorials, and worked examples, visit the **[Goxide Documentation Site](https://seyallius.github.io/goxide/)**.
 
+Performance documentation is maintained by the reusable
+[`benchbook`](https://github.com/seyallius/benchbook) tool. Install it with
+`go install github.com/seyallius/benchbook/cmd/benchbook@latest`, then use
+`just bench`, `just profile`, or `just perf-docs`. The project-specific settings
+live in [`benchbook.toml`](./benchbook.toml); set `BENCHBOOK` when using a local
+checkout of benchbook.
+
 You can also find detailed explanations in each sub-package's README:
 
 - [Result Package](./rusty/result/README_RESULT.md)

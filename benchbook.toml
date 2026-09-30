@@ -1,0 +1,76 @@
+# Benchmark and profile documentation for Goxide.
+# The implementation lives in the reusable github.com/seyallius/benchbook tool.
+
+[project]
+name = "goxide"
+emoji = "🦀🐹"
+repo_url = "https://github.com/seyallius/goxide"
+
+[paths]
+data_dir = "benchbook"
+site_dir = "docs"
+raw_dir = "benchbook/raw"
+
+[bench]
+packages = ["./rusty/..."]
+args = ["-benchmem"]
+count = 6
+timeout = "30m"
+baseline_variant = "traditional"
+
+[stats]
+alpha = 0.05
+min_effect_pct = 1.0
+min_samples = 6
+noise_floor_note = true
+
+[[category]]
+title = "🧠 Result"
+match = ["Result"]
+
+[[category]]
+title = "🔎 Option"
+match = ["Option"]
+
+[[category]]
+title = "🔗 Chain"
+match = ["Chain"]
+
+[category_default]
+title = "⚡ Basic operations"
+
+[tracked]
+benchmarks = [
+  "Success",
+  "Error",
+  "ChainedSuccess",
+  "ErrorHandling/result_with_try",
+  "DBFindUser/result",
+]
+
+[profile]
+package = "./rusty/result"
+top = 20
+kinds = ["cpu", "mem_space", "mem_objects"]
+
+[site]
+title = "Goxide performance"
+default_theme = "light"
+highlight_langs = ["go", "bash", "toml", "json", "diff"]
+
+[[nav]]
+section = "Getting Started"
+pages = [
+  { title = "Introduction", path = "content/home.md" },
+  { title = "Installation", path = "content/installation.md" },
+  { title = "Core Concepts", path = "content/guide/core-concepts.md" },
+]
+
+[[nav]]
+section = "Guides"
+pages = [
+  { title = "Chaining", path = "content/guide/chaining.md" },
+  { title = "Bubble Up", path = "content/guide/bubble-up.md" },
+  { title = "Recovery", path = "content/guide/recovery.md" },
+  { title = "Migration", path = "content/guide/migration.md" },
+]
