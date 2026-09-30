@@ -10,12 +10,12 @@ import (
 //
 // Usage (usually via `just profile`):
 //
-//	PROFILE=cpu  go test -run TestProfile -bench=BenchmarkResultWithTry -cpuprofile=cpu.prof
+//	PROFILE=cpu  go test -run TestProfile -bench='BenchmarkErrorHandling/result_with_try' -cpuprofile=cpu.prof
 //	PROFILE=mem  go test -run TestProfile -bench=.                  -memprofile=mem.prof
 //
 // Or explicitly:
 //
-//	go test -run TestProfile -bench=BenchmarkResultWithTry \
+//	go test -run TestProfile -bench='BenchmarkErrorHandling/result_with_try' \
 //	    -cpuprofile=cpu.prof -memprofile=mem.prof ./rusty/result/
 func TestProfile(t *testing.T) {
 	if os.Getenv("PROFILE") == "" {

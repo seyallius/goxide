@@ -55,7 +55,7 @@ func clearUsers(ctx context.Context) {
 //	BenchmarkTraditionalDBCreateUser    	     837	   1424413 ns/op	    1133 B/op	      27 allocs/op
 //	BenchmarkTraditionalDBCreateUser    	     847	   1412738 ns/op	    1133 B/op	      27 allocs/op
 //	BenchmarkTraditionalDBCreateUser    	     850	   1430383 ns/op	    1133 B/op	      27 allocs/op
-func BenchmarkTraditionalDBCreateUser(b *testing.B) {
+func benchmarkTraditionalDBCreateUser(b *testing.B) {
 	ctx := context.Background()
 	tradRepo, _ := repos()
 	b.ResetTimer()
@@ -84,7 +84,7 @@ func BenchmarkTraditionalDBCreateUser(b *testing.B) {
 //	BenchmarkResultDBCreateUser    	     831	   1627161 ns/op	    1138 B/op	      28 allocs/op
 //	BenchmarkResultDBCreateUser    	     836	   1419551 ns/op	    1138 B/op	      28 allocs/op
 //	BenchmarkResultDBCreateUser    	     846	   1419076 ns/op	    1138 B/op	      28 allocs/op
-func BenchmarkResultDBCreateUser(b *testing.B) {
+func benchmarkResultDBCreateUser(b *testing.B) {
 	ctx := context.Background()
 	_, resRepo := repos()
 	b.ResetTimer()
@@ -114,7 +114,7 @@ func BenchmarkResultDBCreateUser(b *testing.B) {
 //	BenchmarkTraditionalDBFindUser    	   10000	    132449 ns/op	    1104 B/op	      27 allocs/op
 //	BenchmarkTraditionalDBFindUser    	   10000	    112932 ns/op	    1104 B/op	      27 allocs/op
 //	BenchmarkTraditionalDBFindUser    	   10000	    114335 ns/op	    1104 B/op	      27 allocs/op
-func BenchmarkTraditionalDBFindUser(b *testing.B) {
+func benchmarkTraditionalDBFindUser(b *testing.B) {
 	ctx := context.Background()
 	tradRepo, _ := repos()
 
@@ -149,7 +149,7 @@ func BenchmarkTraditionalDBFindUser(b *testing.B) {
 //	BenchmarkResultDBFindUser    	   10000	    120670 ns/op	    1112 B/op	      28 allocs/op
 //	BenchmarkResultDBFindUser    	   10000	    125825 ns/op	    1112 B/op	      28 allocs/op
 //	BenchmarkResultDBFindUser    	   10000	    124088 ns/op	    1112 B/op	      28 allocs/op
-func BenchmarkResultDBFindUser(b *testing.B) {
+func benchmarkResultDBFindUser(b *testing.B) {
 	ctx := context.Background()
 	_, resRepo := repos()
 
@@ -186,7 +186,7 @@ func BenchmarkResultDBFindUser(b *testing.B) {
 //	BenchmarkTraditionalDBFindUserNotFound    	     873	   1496532 ns/op	    1122 B/op	      27 allocs/op
 //	BenchmarkTraditionalDBFindUserNotFound    	     880	   1364513 ns/op	    1122 B/op	      27 allocs/op
 //	BenchmarkTraditionalDBFindUserNotFound    	     890	   1434094 ns/op	    1122 B/op	      27 allocs/op
-func BenchmarkTraditionalDBFindUserNotFound(b *testing.B) {
+func benchmarkTraditionalDBFindUserNotFound(b *testing.B) {
 	ctx := context.Background()
 	tradRepo, _ := repos()
 	b.ResetTimer()
@@ -214,7 +214,7 @@ func BenchmarkTraditionalDBFindUserNotFound(b *testing.B) {
 //	BenchmarkResultDBFindUserNotFound    	     853	   1392572 ns/op	    1123 B/op	      27 allocs/op
 //	BenchmarkResultDBFindUserNotFound    	     855	   1659572 ns/op	    1122 B/op	      27 allocs/op
 //	BenchmarkResultDBFindUserNotFound    	     879	   1465590 ns/op	    1122 B/op	      27 allocs/op
-func BenchmarkResultDBFindUserNotFound(b *testing.B) {
+func benchmarkResultDBFindUserNotFound(b *testing.B) {
 	ctx := context.Background()
 	_, resRepo := repos()
 	b.ResetTimer()
@@ -242,7 +242,7 @@ func BenchmarkResultDBFindUserNotFound(b *testing.B) {
 //	BenchmarkTraditionalDBUpdateUser    	    9532	    127135 ns/op	     368 B/op	      10 allocs/op
 //	BenchmarkTraditionalDBUpdateUser    	    9856	    132048 ns/op	     368 B/op	      10 allocs/op
 //	BenchmarkTraditionalDBUpdateUser    	   10000	    149509 ns/op	     368 B/op	      10 allocs/op
-func BenchmarkTraditionalDBUpdateUser(b *testing.B) {
+func benchmarkTraditionalDBUpdateUser(b *testing.B) {
 	ctx := context.Background()
 	tradRepo, _ := repos()
 
@@ -275,7 +275,7 @@ func BenchmarkTraditionalDBUpdateUser(b *testing.B) {
 //	BenchmarkResultDBUpdateUser    	    9338	    138504 ns/op	     376 B/op	      11 allocs/op
 //	BenchmarkResultDBUpdateUser    	    9675	    141047 ns/op	     376 B/op	      11 allocs/op
 //	BenchmarkResultDBUpdateUser    	    9250	    134451 ns/op	     376 B/op	      11 allocs/op
-func BenchmarkResultDBUpdateUser(b *testing.B) {
+func benchmarkResultDBUpdateUser(b *testing.B) {
 	ctx := context.Background()
 	_, resRepo := repos()
 
@@ -312,7 +312,7 @@ func BenchmarkResultDBUpdateUser(b *testing.B) {
 //	BenchmarkTraditionalDBGetOrCreateUser    	     619	   2169874 ns/op	    3284 B/op	      76 allocs/op
 //	BenchmarkTraditionalDBGetOrCreateUser    	     622	   1970512 ns/op	    3284 B/op	      76 allocs/op
 //	BenchmarkTraditionalDBGetOrCreateUser    	     625	   2142520 ns/op	    3284 B/op	      76 allocs/op
-func BenchmarkTraditionalDBGetOrCreateUser(b *testing.B) {
+func benchmarkTraditionalDBGetOrCreateUser(b *testing.B) {
 	ctx := context.Background()
 	tradRepo, _ := repos()
 	b.ResetTimer()
@@ -341,7 +341,7 @@ func BenchmarkTraditionalDBGetOrCreateUser(b *testing.B) {
 //	BenchmarkResultDBGetOrCreateUser    	     658	   1813511 ns/op	    3372 B/op	      80 allocs/op
 //	BenchmarkResultDBGetOrCreateUser    	     679	   1720880 ns/op	    3372 B/op	      80 allocs/op
 //	BenchmarkResultDBGetOrCreateUser    	     685	   1724771 ns/op	    3372 B/op	      80 allocs/op
-func BenchmarkResultDBGetOrCreateUser(b *testing.B) {
+func benchmarkResultDBGetOrCreateUser(b *testing.B) {
 	ctx := context.Background()
 	_, resRepo := repos()
 	b.ResetTimer()
@@ -373,7 +373,7 @@ func BenchmarkResultDBGetOrCreateUser(b *testing.B) {
 //	BenchmarkTraditionalDBChainedOperations           650           1793920 ns/op            3698 B/op         90 allocs/op
 //	BenchmarkTraditionalDBChainedOperations           654           1840567 ns/op            3699 B/op         90 allocs/op
 //	BenchmarkTraditionalDBChainedOperations           662           1886138 ns/op            3698 B/op         90 allocs/op
-func BenchmarkTraditionalDBChainedOperations(b *testing.B) {
+func benchmarkTraditionalDBChainedOperations(b *testing.B) {
 	ctx := context.Background()
 	tradRepo, _ := repos()
 	b.ResetTimer()
@@ -421,7 +421,7 @@ func BenchmarkTraditionalDBChainedOperations(b *testing.B) {
 //	BenchmarkResultDBChainedOperations                        706           1706408 ns/op            2602 B/op         66 allocs/op
 //	BenchmarkResultDBChainedOperations                        710           1699925 ns/op            2602 B/op         66 allocs/op
 //	BenchmarkResultDBChainedOperations                        712           1730262 ns/op            2603 B/op         66 allocs/op
-func BenchmarkResultDBChainedOperations(b *testing.B) {
+func benchmarkResultDBChainedOperations(b *testing.B) {
 	ctx := context.Background()
 	_, resRepo := repos()
 	b.ResetTimer()
@@ -454,7 +454,7 @@ func BenchmarkResultDBChainedOperations(b *testing.B) {
 //	BenchmarkResultDBChainedOperationsBubbleUp                651           1841983 ns/op            3723 B/op         95 allocs/op
 //	BenchmarkResultDBChainedOperationsBubbleUp                655           1836290 ns/op            3723 B/op         95 allocs/op
 //	BenchmarkResultDBChainedOperationsBubbleUp                667           1888982 ns/op            3722 B/op         95 allocs/op
-func BenchmarkResultDBChainedOperationsBubbleUp(b *testing.B) {
+func benchmarkResultDBChainedOperationsBubbleUp(b *testing.B) {
 	ctx := context.Background()
 	_, resRepo := repos()
 	b.ResetTimer()
@@ -502,7 +502,7 @@ func BenchmarkResultDBChainedOperationsBubbleUp(b *testing.B) {
 //	BenchmarkTraditionalDBErrorHandlingWithFallback           693           1674359 ns/op            3216 B/op         75 allocs/op
 //	BenchmarkTraditionalDBErrorHandlingWithFallback           693           1727367 ns/op            3216 B/op         75 allocs/op
 //	BenchmarkTraditionalDBErrorHandlingWithFallback           721           1788172 ns/op            3216 B/op         75 allocs/op
-func BenchmarkTraditionalDBErrorHandlingWithFallback(b *testing.B) {
+func benchmarkTraditionalDBErrorHandlingWithFallback(b *testing.B) {
 	ctx := context.Background()
 	tradRepo, _ := repos()
 	b.ReportAllocs()
@@ -539,7 +539,7 @@ func BenchmarkTraditionalDBErrorHandlingWithFallback(b *testing.B) {
 //	BenchmarkResultDBErrorHandlingWithFallback                681           1729803 ns/op            3306 B/op         79 allocs/op
 //	BenchmarkResultDBErrorHandlingWithFallback                684           1785772 ns/op            3307 B/op         79 allocs/op
 //	BenchmarkResultDBErrorHandlingWithFallback                708           1734439 ns/op            3306 B/op         79 allocs/op
-func BenchmarkResultDBErrorHandlingWithFallback(b *testing.B) {
+func benchmarkResultDBErrorHandlingWithFallback(b *testing.B) {
 	ctx := context.Background()
 	_, resRepo := repos()
 	b.ResetTimer()
@@ -572,7 +572,7 @@ func BenchmarkResultDBErrorHandlingWithFallback(b *testing.B) {
 // BenchmarkTraditionalDBCreateUserAllocs            836           1437072 ns/op            1133 B/op         27 allocs/op
 // BenchmarkTraditionalDBCreateUserAllocs            836           1454589 ns/op            1133 B/op         27 allocs/op
 // BenchmarkTraditionalDBCreateUserAllocs            844           1425961 ns/op            1133 B/op         27 allocs/op
-func BenchmarkTraditionalDBCreateUserAllocs(b *testing.B) {
+func benchmarkTraditionalDBCreateUserAllocs(b *testing.B) {
 	ctx := context.Background()
 	b.ReportAllocs()
 	tradRepo, _ := repos()
@@ -602,7 +602,7 @@ func BenchmarkTraditionalDBCreateUserAllocs(b *testing.B) {
 //	BenchmarkResultDBCreateUserAllocs                 810           1569651 ns/op            1138 B/op         28 allocs/op
 //	BenchmarkResultDBCreateUserAllocs                 824           1509752 ns/op            1138 B/op         28 allocs/op
 //	BenchmarkResultDBCreateUserAllocs                 844           1598817 ns/op            1138 B/op         28 allocs/op
-func BenchmarkResultDBCreateUserAllocs(b *testing.B) {
+func benchmarkResultDBCreateUserAllocs(b *testing.B) {
 	ctx := context.Background()
 	b.ReportAllocs()
 	_, resRepo := repos()

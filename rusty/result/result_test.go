@@ -555,7 +555,7 @@ func TestEdgeCase_CatchWithReThrow(t *testing.T) {
 // Test result:
 //
 //	BenchmarkTraditionalErrorHandling    	1000000000	         0.2497 ns/op	       0 B/op
-func BenchmarkTraditionalErrorHandling(b *testing.B) {
+func benchmarkTraditionalErrorHandling(b *testing.B) {
 	compute := func() (int, error) {
 		val1, err := divide(100, 2)
 		if err != nil {
@@ -581,7 +581,7 @@ func BenchmarkTraditionalErrorHandling(b *testing.B) {
 // Test result:
 //
 //	BenchmarkResultWithTry    	25683512	        45.96 ns/op	      32 B/op	       4 allocs/op
-func BenchmarkResultWithTry(b *testing.B) {
+func benchmarkResultWithTry(b *testing.B) {
 	compute := func() (res result.Result[int]) {
 		defer result.Catch(&res)
 		val1 := result.Wrap(divide(100, 2)).BubbleUp()
@@ -599,7 +599,7 @@ func BenchmarkResultWithTry(b *testing.B) {
 // Test result:
 //
 //	BenchmarkResultWithAndThen    	28387802	        41.85 ns/op	      24 B/op	       3 allocs/op
-func BenchmarkResultWithAndThen(b *testing.B) {
+func benchmarkResultWithAndThen(b *testing.B) {
 	compute := func() result.Result[int] {
 		wrappedResult := result.Wrap(divide(100, 2))
 		wrappedDivideResult := result.AndThen(wrappedResult, func(v int) result.Result[int] {

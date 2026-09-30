@@ -50,7 +50,7 @@ func resultChainedError(val int) result.Result[int] {
 // Benchmark: Simple Traditional Success Case
 //
 //	BenchmarkTraditionalSuccess    	1000000000	         0.2457 ns/op	       0 B/op	       0 allocs/op
-func BenchmarkTraditionalSuccess(b *testing.B) {
+func benchmarkTraditionalSuccess(b *testing.B) {
 	b.ReportAllocs()
 	for b.Loop() {
 		val, err := traditionalSuccess()
@@ -66,7 +66,7 @@ func BenchmarkTraditionalSuccess(b *testing.B) {
 // Benchmark: Simple Result Success Case
 //
 //	BenchmarkResultSuccess    	1000000000	         0.2448 ns/op	       0 B/op	       0 allocs/op
-func BenchmarkResultSuccess(b *testing.B) {
+func benchmarkResultSuccess(b *testing.B) {
 	b.ReportAllocs()
 	for b.Loop() {
 		res := resultSuccess()
@@ -81,7 +81,7 @@ func BenchmarkResultSuccess(b *testing.B) {
 }
 
 // BenchmarkResultSuccessUnwrapOr    	88363804	        12.75 ns/op	       8 B/op	       1 allocs/op
-func BenchmarkResultSuccessUnwrapOr(b *testing.B) {
+func benchmarkResultSuccessUnwrapOr(b *testing.B) {
 	b.ReportAllocs()
 	for b.Loop() {
 		res := resultSuccess()
@@ -95,7 +95,7 @@ func BenchmarkResultSuccessUnwrapOr(b *testing.B) {
 // Benchmark: Simple Traditional Error Case
 //
 //	BenchmarkTraditionalError    	1000000000	         0.2427 ns/op	       0 B/op	       0 allocs/op
-func BenchmarkTraditionalError(b *testing.B) {
+func benchmarkTraditionalError(b *testing.B) {
 	b.ReportAllocs()
 	for b.Loop() {
 		val, err := traditionalError()
@@ -111,7 +111,7 @@ func BenchmarkTraditionalError(b *testing.B) {
 // Benchmark: Simple Result Error Case
 //
 //	BenchmarkResultError    	56643303	        20.12 ns/op	      16 B/op	       1 allocs/op
-func BenchmarkResultError(b *testing.B) {
+func benchmarkResultError(b *testing.B) {
 	b.ReportAllocs()
 	for b.Loop() {
 		res := resultError()
@@ -127,7 +127,7 @@ func BenchmarkResultError(b *testing.B) {
 // Benchmark: Chained Traditional Operations (Success Path)
 //
 //	BenchmarkTraditionalChainedSuccess    	1000000000	         0.2458 ns/op	       0 B/op	       0 allocs/op
-func BenchmarkTraditionalChainedSuccess(b *testing.B) {
+func benchmarkTraditionalChainedSuccess(b *testing.B) {
 	b.ReportAllocs()
 	for b.Loop() {
 		val1, err := traditionalSuccess()
@@ -154,7 +154,7 @@ func BenchmarkTraditionalChainedSuccess(b *testing.B) {
 // Benchmark: Chained Result Operations (Success Path)
 //
 //	BenchmarkResultChainedSuccess-12    	33059582	        34.23 ns/op	      24 B/op	       3 allocs/op
-func BenchmarkResultChainedSuccess(b *testing.B) {
+func benchmarkResultChainedSuccess(b *testing.B) {
 	b.ReportAllocs()
 	for b.Loop() {
 
