@@ -9,43 +9,43 @@
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 181444126,
-          "ns_op": 6.664
+          "iterations": 391472172,
+          "ns_op": 3.048
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 177046681,
-          "ns_op": 6.769
+          "iterations": 398138944,
+          "ns_op": 3.032
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 176063124,
-          "ns_op": 6.786
+          "iterations": 394923328,
+          "ns_op": 3.079
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 168853190,
-          "ns_op": 6.894
+          "iterations": 396866470,
+          "ns_op": 3.061
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 174602570,
-          "ns_op": 6.78
+          "iterations": 400624698,
+          "ns_op": 2.986
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 182606904,
-          "ns_op": 6.494
+          "iterations": 396482721,
+          "ns_op": 2.999
         }
       ],
       "variant": "FlatMapNoneInt",
@@ -57,46 +57,46 @@
       "package": "github.com/seyallius/goxide/rusty/option",
       "samples": [
         {
-          "allocs_op": 2,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 38208829,
-          "ns_op": 30.41
+          "iterations": 311043057,
+          "ns_op": 3.83
         },
         {
-          "allocs_op": 2,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 39042639,
-          "ns_op": 30.54
+          "iterations": 313403407,
+          "ns_op": 3.813
         },
         {
-          "allocs_op": 2,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 39382314,
-          "ns_op": 31.19
+          "iterations": 315353120,
+          "ns_op": 3.795
         },
         {
-          "allocs_op": 2,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 39508990,
-          "ns_op": 30.27
+          "iterations": 313935367,
+          "ns_op": 3.802
         },
         {
-          "allocs_op": 2,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 38899821,
-          "ns_op": 30.38
+          "iterations": 320417140,
+          "ns_op": 3.777
         },
         {
-          "allocs_op": 2,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 40838654,
-          "ns_op": 30.4
+          "iterations": 316241814,
+          "ns_op": 3.808
         }
       ],
       "variant": "FlatMapSomeInt",
@@ -111,43 +111,43 @@
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 310870219,
-          "ns_op": 3.897
+          "iterations": 600481579,
+          "ns_op": 1.897
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 332074603,
-          "ns_op": 3.592
+          "iterations": 648842382,
+          "ns_op": 1.932
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 333691087,
-          "ns_op": 3.635
+          "iterations": 621692401,
+          "ns_op": 1.844
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 323665084,
-          "ns_op": 3.713
+          "iterations": 656084614,
+          "ns_op": 1.812
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 325823343,
-          "ns_op": 3.712
+          "iterations": 668438850,
+          "ns_op": 1.879
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 328050108,
-          "ns_op": 3.635
+          "iterations": 652991479,
+          "ns_op": 1.807
         }
       ],
       "variant": "MapNoneInt",
@@ -159,46 +159,46 @@
       "package": "github.com/seyallius/goxide/rusty/option",
       "samples": [
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 77883676,
-          "ns_op": 15.2
+          "iterations": 483255457,
+          "ns_op": 2.473
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 79003876,
-          "ns_op": 15.3
+          "iterations": 478426054,
+          "ns_op": 2.618
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 75809268,
-          "ns_op": 15.39
+          "iterations": 475261437,
+          "ns_op": 2.496
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 81183387,
-          "ns_op": 15.1
+          "iterations": 494857977,
+          "ns_op": 2.428
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 77352200,
-          "ns_op": 15.34
+          "iterations": 466346160,
+          "ns_op": 2.564
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 79917279,
-          "ns_op": 15.45
+          "iterations": 496744135,
+          "ns_op": 2.475
         }
       ],
       "variant": "MapSomeInt",
@@ -214,42 +214,42 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.7787
+          "ns_op": 0.5633
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.7299
+          "ns_op": 0.5715
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.7664
+          "ns_op": 0.5441
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.811
+          "ns_op": 0.5438
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.7757
+          "ns_op": 0.5586
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.7969
+          "ns_op": 0.5333
         }
       ],
       "variant": "NoneInt",
@@ -261,46 +261,46 @@
       "package": "github.com/seyallius/goxide/rusty/option",
       "samples": [
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 100000000,
-          "ns_op": 10.38
+          "iterations": 1000000000,
+          "ns_op": 0.5937
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 130551504,
-          "ns_op": 9.16
+          "iterations": 1000000000,
+          "ns_op": 0.5481
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 129572172,
-          "ns_op": 9.196
+          "iterations": 1000000000,
+          "ns_op": 0.5273
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 133382436,
-          "ns_op": 9.007
+          "iterations": 1000000000,
+          "ns_op": 0.5367
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 134601907,
-          "ns_op": 8.908
+          "iterations": 1000000000,
+          "ns_op": 0.5405
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 135941811,
-          "ns_op": 9.039
+          "iterations": 1000000000,
+          "ns_op": 0.5454
         }
       ],
       "variant": "SomeInt",
@@ -312,46 +312,46 @@
       "package": "github.com/seyallius/goxide/rusty/option",
       "samples": [
         {
-          "allocs_op": 1,
-          "bytes_op": 256,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 21720903,
-          "ns_op": 49.96
+          "iterations": 53500573,
+          "ns_op": 22.91
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 256,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 26276659,
-          "ns_op": 46.8
+          "iterations": 51758980,
+          "ns_op": 22.95
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 256,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 26043643,
-          "ns_op": 45.28
+          "iterations": 53395832,
+          "ns_op": 23
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 256,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 24816200,
-          "ns_op": 46
+          "iterations": 51772330,
+          "ns_op": 23
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 256,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 25147693,
-          "ns_op": 45.29
+          "iterations": 51461904,
+          "ns_op": 23.09
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 256,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 26106801,
-          "ns_op": 47.2
+          "iterations": 52449583,
+          "ns_op": 23.03
         }
       ],
       "variant": "SomeLarge",
@@ -367,42 +367,42 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.5072
+          "ns_op": 0.5
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.5692
+          "ns_op": 0.5123
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.527
+          "ns_op": 0.5138
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.5318
+          "ns_op": 0.4964
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.5534
+          "ns_op": 0.5289
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.5394
+          "ns_op": 0.5204
         }
       ],
       "variant": "UnwrapInt",
@@ -417,43 +417,43 @@
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 186815352,
-          "ns_op": 6.336
+          "iterations": 76508845,
+          "ns_op": 15.6
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 177930702,
-          "ns_op": 6.633
+          "iterations": 82425818,
+          "ns_op": 16.76
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 173174875,
-          "ns_op": 6.851
+          "iterations": 80271799,
+          "ns_op": 16.01
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 182997756,
-          "ns_op": 6.587
+          "iterations": 76328608,
+          "ns_op": 15.34
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 167692312,
-          "ns_op": 7.129
+          "iterations": 78297176,
+          "ns_op": 16.64
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 180384046,
-          "ns_op": 6.618
+          "iterations": 73750400,
+          "ns_op": 15.66
         }
       ],
       "variant": "UnwrapLarge",
@@ -468,43 +468,43 @@
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 359113597,
-          "ns_op": 3.24
+          "iterations": 969069771,
+          "ns_op": 1.272
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 369092514,
-          "ns_op": 3.156
+          "iterations": 921789643,
+          "ns_op": 1.273
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 365746992,
-          "ns_op": 3.247
+          "iterations": 773236495,
+          "ns_op": 1.338
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 349864615,
-          "ns_op": 3.266
+          "iterations": 920696186,
+          "ns_op": 1.303
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 365546594,
-          "ns_op": 3.38
+          "iterations": 863723504,
+          "ns_op": 1.278
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 346381558,
-          "ns_op": 3.405
+          "iterations": 990406518,
+          "ns_op": 1.186
         }
       ],
       "variant": "UnwrapOrNone",
@@ -516,46 +516,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 32939380,
-          "ns_op": 36.72
+          "iterations": 129007280,
+          "ns_op": 9.717
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 33810907,
-          "ns_op": 36.08
+          "iterations": 147130674,
+          "ns_op": 8.136
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 33310047,
-          "ns_op": 36.11
+          "iterations": 149139266,
+          "ns_op": 8.041
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 33237418,
-          "ns_op": 37.59
+          "iterations": 152673999,
+          "ns_op": 7.853
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 27924802,
-          "ns_op": 38.41
+          "iterations": 153034046,
+          "ns_op": 7.846
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 31888194,
-          "ns_op": 36.66
+          "iterations": 151504930,
+          "ns_op": 7.917
         }
       ],
       "variant": "result",
@@ -570,43 +570,43 @@
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 714731590,
-          "ns_op": 1.612
+          "iterations": 735999265,
+          "ns_op": 1.613
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 746603842,
-          "ns_op": 1.618
+          "iterations": 699722718,
+          "ns_op": 1.64
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 733510724,
-          "ns_op": 1.637
+          "iterations": 749448541,
+          "ns_op": 1.646
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 748798538,
-          "ns_op": 1.615
+          "iterations": 710447592,
+          "ns_op": 1.668
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 736828707,
-          "ns_op": 1.629
+          "iterations": 755226477,
+          "ns_op": 1.611
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 743404045,
-          "ns_op": 1.588
+          "iterations": 749776036,
+          "ns_op": 1.662
         }
       ],
       "variant": "traditional",
@@ -618,46 +618,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 82,
-          "bytes_op": 2206,
+          "allocs_op": 79,
+          "bytes_op": 2192,
+          "extra": {},
+          "iterations": 36,
+          "ns_op": 31537012
+        },
+        {
+          "allocs_op": 79,
+          "bytes_op": 2202,
           "extra": {},
           "iterations": 38,
-          "ns_op": 31149746
+          "ns_op": 32038988
         },
         {
-          "allocs_op": 82,
-          "bytes_op": 2216,
+          "allocs_op": 79,
+          "bytes_op": 2204,
+          "extra": {},
+          "iterations": 36,
+          "ns_op": 33365601
+        },
+        {
+          "allocs_op": 79,
+          "bytes_op": 2187,
           "extra": {},
           "iterations": 39,
-          "ns_op": 34772228
+          "ns_op": 30474572
         },
         {
-          "allocs_op": 82,
-          "bytes_op": 2225,
-          "extra": {},
-          "iterations": 34,
-          "ns_op": 32153207
-        },
-        {
-          "allocs_op": 82,
-          "bytes_op": 2211,
+          "allocs_op": 79,
+          "bytes_op": 2184,
           "extra": {},
           "iterations": 38,
-          "ns_op": 30590683
+          "ns_op": 30256515
         },
         {
-          "allocs_op": 82,
-          "bytes_op": 2210,
+          "allocs_op": 79,
+          "bytes_op": 2184,
           "extra": {},
-          "iterations": 39,
-          "ns_op": 31188254
-        },
-        {
-          "allocs_op": 82,
-          "bytes_op": 2223,
-          "extra": {},
-          "iterations": 34,
-          "ns_op": 32905486
+          "iterations": 38,
+          "ns_op": 32070275
         }
       ],
       "variant": "result",
@@ -669,46 +669,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 120,
-          "bytes_op": 3302,
+          "allocs_op": 115,
+          "bytes_op": 3278,
+          "extra": {},
+          "iterations": 36,
+          "ns_op": 31595404
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3274,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 31999716
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3267,
+          "extra": {},
+          "iterations": 31,
+          "ns_op": 35103561
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3276,
           "extra": {},
           "iterations": 37,
-          "ns_op": 31110410
+          "ns_op": 30776293
         },
         {
-          "allocs_op": 120,
-          "bytes_op": 3294,
+          "allocs_op": 115,
+          "bytes_op": 3268,
           "extra": {},
           "iterations": 38,
-          "ns_op": 34162806
+          "ns_op": 30685054
         },
         {
-          "allocs_op": 120,
-          "bytes_op": 3319,
+          "allocs_op": 115,
+          "bytes_op": 3282,
           "extra": {},
-          "iterations": 32,
-          "ns_op": 32096943
-        },
-        {
-          "allocs_op": 120,
-          "bytes_op": 3294,
-          "extra": {},
-          "iterations": 38,
-          "ns_op": 30433826
-        },
-        {
-          "allocs_op": 120,
-          "bytes_op": 3288,
-          "extra": {},
-          "iterations": 38,
-          "ns_op": 30643612
-        },
-        {
-          "allocs_op": 120,
-          "bytes_op": 3300,
-          "extra": {},
-          "iterations": 38,
-          "ns_op": 33695203
+          "iterations": 34,
+          "ns_op": 32442602
         }
       ],
       "variant": "result_bubble_up",
@@ -721,45 +721,45 @@
       "samples": [
         {
           "allocs_op": 115,
-          "bytes_op": 3272,
+          "bytes_op": 3276,
           "extra": {},
-          "iterations": 38,
-          "ns_op": 30762026
+          "iterations": 36,
+          "ns_op": 31768833
         },
         {
           "allocs_op": 115,
-          "bytes_op": 3260,
+          "bytes_op": 3267,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 32810167
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3278,
+          "extra": {},
+          "iterations": 32,
+          "ns_op": 33834833
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3273,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 30560898
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3266,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 31331042
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3270,
           "extra": {},
           "iterations": 39,
-          "ns_op": 35156169
-        },
-        {
-          "allocs_op": 115,
-          "bytes_op": 3272,
-          "extra": {},
-          "iterations": 38,
-          "ns_op": 31201303
-        },
-        {
-          "allocs_op": 115,
-          "bytes_op": 3272,
-          "extra": {},
-          "iterations": 38,
-          "ns_op": 31316368
-        },
-        {
-          "allocs_op": 115,
-          "bytes_op": 3280,
-          "extra": {},
-          "iterations": 34,
-          "ns_op": 32166568
-        },
-        {
-          "allocs_op": 115,
-          "bytes_op": 3269,
-          "extra": {},
-          "iterations": 33,
-          "ns_op": 33616815
+          "ns_op": 32897808
         }
       ],
       "variant": "traditional",
@@ -771,46 +771,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 33,
-          "bytes_op": 879,
+          "allocs_op": 32,
+          "bytes_op": 864,
           "extra": {},
-          "iterations": 418,
-          "ns_op": 2866535
+          "iterations": 410,
+          "ns_op": 2842183
         },
         {
-          "allocs_op": 33,
-          "bytes_op": 880,
+          "allocs_op": 32,
+          "bytes_op": 865,
+          "extra": {},
+          "iterations": 410,
+          "ns_op": 2853160
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 865,
           "extra": {},
           "iterations": 421,
-          "ns_op": 2825400
+          "ns_op": 2809554
         },
         {
-          "allocs_op": 33,
-          "bytes_op": 879,
+          "allocs_op": 32,
+          "bytes_op": 865,
           "extra": {},
-          "iterations": 430,
-          "ns_op": 2881504
+          "iterations": 414,
+          "ns_op": 2864823
         },
         {
-          "allocs_op": 33,
-          "bytes_op": 879,
+          "allocs_op": 32,
+          "bytes_op": 863,
           "extra": {},
-          "iterations": 409,
-          "ns_op": 2915253
+          "iterations": 400,
+          "ns_op": 2966169
         },
         {
-          "allocs_op": 33,
-          "bytes_op": 880,
+          "allocs_op": 32,
+          "bytes_op": 864,
           "extra": {},
-          "iterations": 408,
-          "ns_op": 2881945
-        },
-        {
-          "allocs_op": 33,
-          "bytes_op": 883,
-          "extra": {},
-          "iterations": 152,
-          "ns_op": 13078304
+          "iterations": 402,
+          "ns_op": 2974582
         }
       ],
       "variant": "result",
@@ -825,43 +825,43 @@
           "allocs_op": 31,
           "bytes_op": 867,
           "extra": {},
-          "iterations": 388,
-          "ns_op": 2985108
-        },
-        {
-          "allocs_op": 32,
-          "bytes_op": 865,
-          "extra": {},
-          "iterations": 406,
-          "ns_op": 2897228
+          "iterations": 370,
+          "ns_op": 3115220
         },
         {
           "allocs_op": 32,
           "bytes_op": 863,
           "extra": {},
-          "iterations": 410,
-          "ns_op": 2950953
+          "iterations": 386,
+          "ns_op": 3078663
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 865,
+          "extra": {},
+          "iterations": 378,
+          "ns_op": 2918423
         },
         {
           "allocs_op": 32,
           "bytes_op": 864,
           "extra": {},
-          "iterations": 391,
-          "ns_op": 3111603
+          "iterations": 421,
+          "ns_op": 2844521
         },
         {
           "allocs_op": 32,
           "bytes_op": 864,
           "extra": {},
-          "iterations": 393,
-          "ns_op": 3075640
+          "iterations": 417,
+          "ns_op": 2893842
         },
         {
           "allocs_op": 32,
           "bytes_op": 864,
           "extra": {},
-          "iterations": 399,
-          "ns_op": 3078048
+          "iterations": 396,
+          "ns_op": 3035939
         }
       ],
       "variant": "traditional",
@@ -873,46 +873,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 33,
-          "bytes_op": 909,
-          "extra": {},
-          "iterations": 54,
-          "ns_op": 21191083
-        },
-        {
-          "allocs_op": 33,
-          "bytes_op": 903,
+          "allocs_op": 32,
+          "bytes_op": 899,
           "extra": {},
           "iterations": 58,
-          "ns_op": 20903090
+          "ns_op": 21754858
         },
         {
-          "allocs_op": 33,
-          "bytes_op": 917,
-          "extra": {},
-          "iterations": 49,
-          "ns_op": 23325119
-        },
-        {
-          "allocs_op": 33,
-          "bytes_op": 914,
-          "extra": {},
-          "iterations": 58,
-          "ns_op": 20832079
-        },
-        {
-          "allocs_op": 33,
-          "bytes_op": 911,
-          "extra": {},
-          "iterations": 57,
-          "ns_op": 20499549
-        },
-        {
-          "allocs_op": 33,
-          "bytes_op": 916,
+          "allocs_op": 32,
+          "bytes_op": 893,
           "extra": {},
           "iterations": 55,
-          "ns_op": 21433186
+          "ns_op": 21086911
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 898,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 21988889
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 905,
+          "extra": {},
+          "iterations": 51,
+          "ns_op": 22608179
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 895,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20444151
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 892,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20484804
         }
       ],
       "variant": "result",
@@ -925,45 +925,45 @@
       "samples": [
         {
           "allocs_op": 32,
-          "bytes_op": 900,
+          "bytes_op": 905,
           "extra": {},
-          "iterations": 55,
-          "ns_op": 21514666
+          "iterations": 50,
+          "ns_op": 22895313
         },
         {
           "allocs_op": 32,
-          "bytes_op": 889,
+          "bytes_op": 894,
           "extra": {},
-          "iterations": 57,
-          "ns_op": 21569132
+          "iterations": 54,
+          "ns_op": 20975288
         },
         {
           "allocs_op": 32,
-          "bytes_op": 903,
+          "bytes_op": 895,
           "extra": {},
-          "iterations": 48,
-          "ns_op": 23066376
+          "iterations": 58,
+          "ns_op": 22079874
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 895,
+          "extra": {},
+          "iterations": 52,
+          "ns_op": 22240757
         },
         {
           "allocs_op": 32,
           "bytes_op": 892,
           "extra": {},
-          "iterations": 56,
-          "ns_op": 20870690
+          "iterations": 58,
+          "ns_op": 20357795
         },
         {
           "allocs_op": 32,
-          "bytes_op": 888,
+          "bytes_op": 898,
           "extra": {},
           "iterations": 58,
-          "ns_op": 20871249
-        },
-        {
-          "allocs_op": 32,
-          "bytes_op": 891,
-          "extra": {},
-          "iterations": 58,
-          "ns_op": 21519806
+          "ns_op": 20555934
         }
       ],
       "variant": "traditional",
@@ -975,46 +975,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 95,
-          "bytes_op": 2812,
+          "allocs_op": 93,
+          "bytes_op": 2801,
           "extra": {},
           "iterations": 52,
-          "ns_op": 20943116
+          "ns_op": 22170808
         },
         {
-          "allocs_op": 95,
-          "bytes_op": 2799,
+          "allocs_op": 93,
+          "bytes_op": 2793,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 20645975
+        },
+        {
+          "allocs_op": 93,
+          "bytes_op": 2795,
           "extra": {},
           "iterations": 58,
-          "ns_op": 21644672
+          "ns_op": 22239741
         },
         {
-          "allocs_op": 95,
-          "bytes_op": 2803,
-          "extra": {},
-          "iterations": 51,
-          "ns_op": 22077355
-        },
-        {
-          "allocs_op": 95,
-          "bytes_op": 2819,
+          "allocs_op": 93,
+          "bytes_op": 2788,
           "extra": {},
           "iterations": 50,
-          "ns_op": 20520109
+          "ns_op": 21688048
         },
         {
-          "allocs_op": 95,
-          "bytes_op": 2812,
-          "extra": {},
-          "iterations": 58,
-          "ns_op": 20407971
-        },
-        {
-          "allocs_op": 95,
-          "bytes_op": 2799,
+          "allocs_op": 93,
+          "bytes_op": 2792,
           "extra": {},
           "iterations": 57,
-          "ns_op": 21903087
+          "ns_op": 20638717
+        },
+        {
+          "allocs_op": 93,
+          "bytes_op": 2790,
+          "extra": {},
+          "iterations": 60,
+          "ns_op": 20466349
         }
       ],
       "variant": "result",
@@ -1029,43 +1029,43 @@
           "allocs_op": 91,
           "bytes_op": 2672,
           "extra": {},
+          "iterations": 46,
+          "ns_op": 22384166
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
           "iterations": 55,
-          "ns_op": 21028116
+          "ns_op": 20597150
         },
         {
           "allocs_op": 91,
           "bytes_op": 2672,
           "extra": {},
           "iterations": 57,
-          "ns_op": 21750128
+          "ns_op": 23111245
         },
         {
           "allocs_op": 91,
           "bytes_op": 2672,
           "extra": {},
           "iterations": 51,
-          "ns_op": 21889390
+          "ns_op": 21270880
         },
         {
           "allocs_op": 91,
           "bytes_op": 2672,
           "extra": {},
           "iterations": 57,
-          "ns_op": 20809158
+          "ns_op": 21342618
         },
         {
           "allocs_op": 91,
           "bytes_op": 2672,
           "extra": {},
           "iterations": 58,
-          "ns_op": 20433632
-        },
-        {
-          "allocs_op": 91,
-          "bytes_op": 2672,
-          "extra": {},
-          "iterations": 58,
-          "ns_op": 22134404
+          "ns_op": 20727281
         }
       ],
       "variant": "traditional",
@@ -1077,46 +1077,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 37,
-          "bytes_op": 1072,
+          "allocs_op": 36,
+          "bytes_op": 1064,
           "extra": {},
-          "iterations": 74306,
-          "ns_op": 16096
+          "iterations": 82224,
+          "ns_op": 14939
         },
         {
-          "allocs_op": 37,
-          "bytes_op": 1072,
+          "allocs_op": 36,
+          "bytes_op": 1064,
           "extra": {},
-          "iterations": 72181,
-          "ns_op": 16257
+          "iterations": 76509,
+          "ns_op": 15423
         },
         {
-          "allocs_op": 37,
-          "bytes_op": 1072,
+          "allocs_op": 36,
+          "bytes_op": 1064,
           "extra": {},
-          "iterations": 75540,
-          "ns_op": 16151
+          "iterations": 79026,
+          "ns_op": 15041
         },
         {
-          "allocs_op": 37,
-          "bytes_op": 1072,
+          "allocs_op": 36,
+          "bytes_op": 1064,
           "extra": {},
-          "iterations": 73856,
-          "ns_op": 16305
+          "iterations": 81610,
+          "ns_op": 14848
         },
         {
-          "allocs_op": 37,
-          "bytes_op": 1072,
+          "allocs_op": 36,
+          "bytes_op": 1064,
           "extra": {},
-          "iterations": 74076,
-          "ns_op": 16338
+          "iterations": 80271,
+          "ns_op": 15067
         },
         {
-          "allocs_op": 37,
-          "bytes_op": 1072,
+          "allocs_op": 36,
+          "bytes_op": 1064,
           "extra": {},
-          "iterations": 72402,
-          "ns_op": 15242
+          "iterations": 76999,
+          "ns_op": 15453
         }
       ],
       "variant": "result",
@@ -1131,43 +1131,43 @@
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
-          "iterations": 72013,
-          "ns_op": 16362
+          "iterations": 77011,
+          "ns_op": 15023
         },
         {
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
-          "iterations": 72591,
-          "ns_op": 16181
+          "iterations": 78716,
+          "ns_op": 14914
         },
         {
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
-          "iterations": 74193,
-          "ns_op": 16003
+          "iterations": 79932,
+          "ns_op": 15010
         },
         {
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
-          "iterations": 75837,
-          "ns_op": 16157
+          "iterations": 79494,
+          "ns_op": 15045
         },
         {
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
-          "iterations": 73580,
-          "ns_op": 16016
+          "iterations": 78266,
+          "ns_op": 15037
         },
         {
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
-          "iterations": 73888,
-          "ns_op": 16132
+          "iterations": 80710,
+          "ns_op": 14837
         }
       ],
       "variant": "traditional",
@@ -1180,45 +1180,45 @@
       "samples": [
         {
           "allocs_op": 30,
-          "bytes_op": 940,
+          "bytes_op": 945,
           "extra": {},
           "iterations": 100,
-          "ns_op": 10412634
-        },
-        {
-          "allocs_op": 30,
-          "bytes_op": 943,
-          "extra": {},
-          "iterations": 100,
-          "ns_op": 10370375
+          "ns_op": 11005248
         },
         {
           "allocs_op": 30,
           "bytes_op": 945,
           "extra": {},
           "iterations": 100,
-          "ns_op": 10306611
+          "ns_op": 10517637
         },
         {
           "allocs_op": 30,
-          "bytes_op": 940,
+          "bytes_op": 945,
           "extra": {},
           "iterations": 100,
-          "ns_op": 11092775
+          "ns_op": 10331680
         },
         {
           "allocs_op": 30,
-          "bytes_op": 943,
+          "bytes_op": 945,
           "extra": {},
           "iterations": 100,
-          "ns_op": 10386963
+          "ns_op": 10869464
         },
         {
           "allocs_op": 30,
-          "bytes_op": 943,
+          "bytes_op": 945,
           "extra": {},
           "iterations": 100,
-          "ns_op": 10576599
+          "ns_op": 10828767
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10216308
         }
       ],
       "variant": "result",
@@ -1231,45 +1231,45 @@
       "samples": [
         {
           "allocs_op": 30,
-          "bytes_op": 944,
+          "bytes_op": 923,
           "extra": {},
-          "iterations": 108,
-          "ns_op": 10668985
+          "iterations": 756,
+          "ns_op": 1488465
         },
         {
           "allocs_op": 30,
-          "bytes_op": 946,
+          "bytes_op": 923,
           "extra": {},
-          "iterations": 100,
-          "ns_op": 10369037
+          "iterations": 756,
+          "ns_op": 1505965
         },
         {
           "allocs_op": 30,
-          "bytes_op": 945,
+          "bytes_op": 923,
           "extra": {},
-          "iterations": 100,
-          "ns_op": 11360942
+          "iterations": 762,
+          "ns_op": 1514831
         },
         {
           "allocs_op": 30,
-          "bytes_op": 943,
+          "bytes_op": 923,
           "extra": {},
-          "iterations": 100,
-          "ns_op": 10891741
+          "iterations": 748,
+          "ns_op": 1524010
         },
         {
           "allocs_op": 30,
-          "bytes_op": 946,
+          "bytes_op": 923,
           "extra": {},
-          "iterations": 100,
-          "ns_op": 10707013
+          "iterations": 770,
+          "ns_op": 1539474
         },
         {
           "allocs_op": 30,
-          "bytes_op": 945,
+          "bytes_op": 923,
           "extra": {},
-          "iterations": 100,
-          "ns_op": 11571086
+          "iterations": 784,
+          "ns_op": 2209592
         }
       ],
       "variant": "traditional",
@@ -1281,46 +1281,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 96,
-          "bytes_op": 2852,
+          "allocs_op": 94,
+          "bytes_op": 2826,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 21138919
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2814,
+          "extra": {},
+          "iterations": 56,
+          "ns_op": 22138866
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2825,
+          "extra": {},
+          "iterations": 49,
+          "ns_op": 21925987
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2818,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20706159
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2829,
           "extra": {},
           "iterations": 57,
-          "ns_op": 20609649
+          "ns_op": 20459370
         },
         {
-          "allocs_op": 96,
-          "bytes_op": 2851,
-          "extra": {},
-          "iterations": 52,
-          "ns_op": 23811448
-        },
-        {
-          "allocs_op": 96,
-          "bytes_op": 2847,
+          "allocs_op": 94,
+          "bytes_op": 2829,
           "extra": {},
           "iterations": 57,
-          "ns_op": 20843125
-        },
-        {
-          "allocs_op": 96,
-          "bytes_op": 2847,
-          "extra": {},
-          "iterations": 57,
-          "ns_op": 20773092
-        },
-        {
-          "allocs_op": 96,
-          "bytes_op": 2852,
-          "extra": {},
-          "iterations": 57,
-          "ns_op": 21144456
-        },
-        {
-          "allocs_op": 96,
-          "bytes_op": 2854,
-          "extra": {},
-          "iterations": 54,
-          "ns_op": 21765327
+          "ns_op": 22470003
         }
       ],
       "variant": "result",
@@ -1333,45 +1333,45 @@
       "samples": [
         {
           "allocs_op": 92,
-          "bytes_op": 2744,
+          "bytes_op": 2747,
           "extra": {},
-          "iterations": 58,
-          "ns_op": 22730876
+          "iterations": 55,
+          "ns_op": 20873191
         },
         {
           "allocs_op": 92,
-          "bytes_op": 2755,
+          "bytes_op": 2739,
           "extra": {},
-          "iterations": 42,
-          "ns_op": 25059500
+          "iterations": 55,
+          "ns_op": 24003367
         },
         {
           "allocs_op": 92,
-          "bytes_op": 2744,
+          "bytes_op": 2752,
+          "extra": {},
+          "iterations": 49,
+          "ns_op": 21641557
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2738,
           "extra": {},
           "iterations": 57,
-          "ns_op": 20576393
+          "ns_op": 20841605
         },
         {
           "allocs_op": 92,
-          "bytes_op": 2744,
+          "bytes_op": 2740,
           "extra": {},
           "iterations": 58,
-          "ns_op": 20940768
+          "ns_op": 20792415
         },
         {
           "allocs_op": 92,
-          "bytes_op": 2733,
+          "bytes_op": 2742,
           "extra": {},
-          "iterations": 57,
-          "ns_op": 21638848
-        },
-        {
-          "allocs_op": 92,
-          "bytes_op": 2743,
-          "extra": {},
-          "iterations": 54,
-          "ns_op": 21655270
+          "iterations": 56,
+          "ns_op": 22295235
         }
       ],
       "variant": "traditional",
@@ -1383,46 +1383,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 13,
-          "bytes_op": 236,
+          "allocs_op": 12,
+          "bytes_op": 234,
           "extra": {},
           "iterations": 100,
-          "ns_op": 11275725
+          "ns_op": 10566266
         },
         {
-          "allocs_op": 13,
-          "bytes_op": 236,
+          "allocs_op": 12,
+          "bytes_op": 234,
           "extra": {},
-          "iterations": 97,
-          "ns_op": 10699266
+          "iterations": 100,
+          "ns_op": 11327839
         },
         {
-          "allocs_op": 13,
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10311875
+        },
+        {
+          "allocs_op": 12,
           "bytes_op": 240,
           "extra": {},
           "iterations": 100,
-          "ns_op": 10328291
+          "ns_op": 10142968
         },
         {
-          "allocs_op": 13,
-          "bytes_op": 234,
-          "extra": {},
-          "iterations": 100,
-          "ns_op": 10321561
-        },
-        {
-          "allocs_op": 13,
-          "bytes_op": 234,
-          "extra": {},
-          "iterations": 100,
-          "ns_op": 10853821
-        },
-        {
-          "allocs_op": 13,
+          "allocs_op": 12,
           "bytes_op": 238,
           "extra": {},
           "iterations": 100,
-          "ns_op": 10584220
+          "ns_op": 10722129
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11188897
         }
       ],
       "variant": "result",
@@ -1438,42 +1438,42 @@
           "bytes_op": 240,
           "extra": {},
           "iterations": 100,
-          "ns_op": 11220003
-        },
-        {
-          "allocs_op": 12,
-          "bytes_op": 234,
-          "extra": {},
-          "iterations": 100,
-          "ns_op": 10229373
-        },
-        {
-          "allocs_op": 12,
-          "bytes_op": 236,
-          "extra": {},
-          "iterations": 100,
-          "ns_op": 10405655
-        },
-        {
-          "allocs_op": 12,
-          "bytes_op": 238,
-          "extra": {},
-          "iterations": 100,
-          "ns_op": 10574185
-        },
-        {
-          "allocs_op": 12,
-          "bytes_op": 236,
-          "extra": {},
-          "iterations": 100,
-          "ns_op": 10838736
+          "ns_op": 11303610
         },
         {
           "allocs_op": 12,
           "bytes_op": 240,
           "extra": {},
           "iterations": 100,
-          "ns_op": 10209906
+          "ns_op": 10522215
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 240,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10201365
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10181788
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11023099
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10567553
         }
       ],
       "variant": "traditional",
@@ -1488,43 +1488,43 @@
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
-          "iterations": 70408238,
-          "ns_op": 16.46
+          "iterations": 71388992,
+          "ns_op": 15.27
         },
         {
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
-          "iterations": 71459953,
-          "ns_op": 15.65
+          "iterations": 76851062,
+          "ns_op": 15.71
         },
         {
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
-          "iterations": 73298239,
-          "ns_op": 15.94
+          "iterations": 80991092,
+          "ns_op": 15.22
         },
         {
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
-          "iterations": 70899865,
-          "ns_op": 16.36
+          "iterations": 75906796,
+          "ns_op": 15.17
         },
         {
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
-          "iterations": 74635772,
-          "ns_op": 16.71
+          "iterations": 80966780,
+          "ns_op": 16.31
         },
         {
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
-          "iterations": 76865905,
-          "ns_op": 15.89
+          "iterations": 80132490,
+          "ns_op": 15.23
         }
       ],
       "variant": "result",
@@ -1540,42 +1540,42 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 1.172
+          "ns_op": 1.193
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 1.17
+          "ns_op": 1.173
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 1.159
-        },
-        {
-          "allocs_op": 0,
-          "bytes_op": 0,
-          "extra": {},
-          "iterations": 999369805,
-          "ns_op": 1.175
+          "ns_op": 1.171
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 1.174
+          "ns_op": 1.171
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 1000000000,
-          "ns_op": 1.169
+          "iterations": 983229625,
+          "ns_op": 1.199
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 995012713,
+          "ns_op": 1.206
         }
       ],
       "variant": "traditional",
@@ -1587,46 +1587,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 30388059,
-          "ns_op": 39.8
+          "iterations": 92299426,
+          "ns_op": 13.13
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 31086860,
-          "ns_op": 39.88
+          "iterations": 91544101,
+          "ns_op": 13.21
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 30323506,
-          "ns_op": 39.98
+          "iterations": 94091182,
+          "ns_op": 13.12
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 31214118,
-          "ns_op": 38.11
+          "iterations": 93577159,
+          "ns_op": 13.1
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 29960204,
-          "ns_op": 41.54
+          "iterations": 93029154,
+          "ns_op": 12.9
         },
         {
-          "allocs_op": 3,
-          "bytes_op": 24,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 29985534,
-          "ns_op": 40.47
+          "iterations": 93581874,
+          "ns_op": 12.68
         }
       ],
       "variant": "result_with_and_then",
@@ -1638,46 +1638,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 4,
-          "bytes_op": 32,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 25017552,
-          "ns_op": 45.75
+          "iterations": 100000000,
+          "ns_op": 10.3
         },
         {
-          "allocs_op": 4,
-          "bytes_op": 32,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 26649484,
-          "ns_op": 45.49
+          "iterations": 100000000,
+          "ns_op": 10.25
         },
         {
-          "allocs_op": 4,
-          "bytes_op": 32,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 26488617,
-          "ns_op": 45.88
+          "iterations": 100000000,
+          "ns_op": 10.43
         },
         {
-          "allocs_op": 4,
-          "bytes_op": 32,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 26507587,
-          "ns_op": 44.09
+          "iterations": 100000000,
+          "ns_op": 10.22
         },
         {
-          "allocs_op": 4,
-          "bytes_op": 32,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 27257731,
-          "ns_op": 46.85
+          "iterations": 100000000,
+          "ns_op": 10.31
         },
         {
-          "allocs_op": 4,
-          "bytes_op": 32,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 25881760,
-          "ns_op": 46.47
+          "iterations": 100000000,
+          "ns_op": 10.13
         }
       ],
       "variant": "result_with_try",
@@ -1693,20 +1693,6 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.5534
-        },
-        {
-          "allocs_op": 0,
-          "bytes_op": 0,
-          "extra": {},
-          "iterations": 1000000000,
-          "ns_op": 0.5475
-        },
-        {
-          "allocs_op": 0,
-          "bytes_op": 0,
-          "extra": {},
-          "iterations": 1000000000,
           "ns_op": 0.5331
         },
         {
@@ -1714,21 +1700,35 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.533
+          "ns_op": 0.5487
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.5306
+          "ns_op": 0.5268
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.5347
+          "ns_op": 0.5416
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5288
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5358
         }
       ],
       "variant": "traditional",
@@ -1743,43 +1743,43 @@
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 687219645,
-          "ns_op": 1.771
+          "iterations": 993411890,
+          "ns_op": 1.26
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 856556139,
-          "ns_op": 1.464
+          "iterations": 984374901,
+          "ns_op": 1.226
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 845923506,
-          "ns_op": 1.43
+          "iterations": 970834819,
+          "ns_op": 1.223
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 856070671,
-          "ns_op": 1.416
+          "iterations": 952402494,
+          "ns_op": 1.286
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 808966939,
-          "ns_op": 1.479
+          "iterations": 953600068,
+          "ns_op": 1.241
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
-          "iterations": 844808763,
-          "ns_op": 1.466
+          "iterations": 988437772,
+          "ns_op": 1.233
         }
       ],
       "variant": "result",
@@ -1791,46 +1791,46 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 77960880,
-          "ns_op": 15.05
+          "iterations": 277054202,
+          "ns_op": 4.368
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 67482685,
-          "ns_op": 14.96
+          "iterations": 268195916,
+          "ns_op": 4.483
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 75482050,
-          "ns_op": 15.99
+          "iterations": 268379394,
+          "ns_op": 4.465
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 76658658,
-          "ns_op": 16
+          "iterations": 270201810,
+          "ns_op": 4.444
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 72689377,
-          "ns_op": 15.7
+          "iterations": 273007729,
+          "ns_op": 4.364
         },
         {
-          "allocs_op": 1,
-          "bytes_op": 8,
+          "allocs_op": 0,
+          "bytes_op": 0,
           "extra": {},
-          "iterations": 81983440,
-          "ns_op": 14.72
+          "iterations": 272475714,
+          "ns_op": 4.531
         }
       ],
       "variant": "result_unwrap_or",
@@ -1846,50 +1846,50 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.8891
+          "ns_op": 0.848
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.9098
-        },
-        {
-          "allocs_op": 0,
-          "bytes_op": 0,
-          "extra": {},
-          "iterations": 998760886,
-          "ns_op": 1.238
+          "ns_op": 0.8844
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.8745
-        },
-        {
-          "allocs_op": 0,
-          "bytes_op": 0,
-          "extra": {},
-          "iterations": 953455345,
-          "ns_op": 1.238
+          "ns_op": 0.9212
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
-          "ns_op": 0.8527
+          "ns_op": 0.8713
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.8744
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.9078
         }
       ],
       "variant": "traditional",
       "workload": "Success"
     }
   ],
-  "content_hash": "f81e0fb992e1ddb14cd17bc6f8095eadf18b7112554f9ed862281141cceb9ae9",
-  "created_at": "2026-10-02T10:46:00Z",
+  "content_hash": "f1afc6807d3799e7799f05aa531f6e1d2480b657e9ccf0028588c20c8203f41d",
+  "created_at": "2026-10-02T10:57:26Z",
   "forced": false,
   "id": "",
   "indicative_only": false,
@@ -1900,174 +1900,174 @@
       "kind": "cpu",
       "meta": [
         "File: option.test",
-        "Build ID: 081e05f6035863cb22252f9e0e33c366e372289b",
+        "Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7",
         "Type: cpu",
-        "Time: 2026-10-02 14:19:14 +0330",
-        "Duration: 11.23s, Total samples = 11920ms (106.19%)",
-        "Showing nodes accounting for 9460ms, 79.36% of 11920ms total",
-        "Dropped 79 nodes (cum \u003c= 59.60ms)",
-        "Showing top 20 nodes out of 77"
+        "Time: 2026-10-02 14:29:04 +0330",
+        "Duration: 9.98s, Total samples = 9990ms (100.11%)",
+        "Showing nodes accounting for 9630ms, 96.40% of 9990ms total",
+        "Dropped 13 nodes (cum \u003c= 49.95ms)",
+        "Showing top 20 nodes out of 28"
       ],
       "rows": [
         {
-          "cum": 1460000000,
-          "cum_pct": 12.25,
-          "flat": 1460000000,
-          "flat_pct": 12.25,
-          "name": "runtime.(*mspan).specialFindSplicePoint (inline)",
-          "sum_pct": 12.25
-        },
-        {
-          "cum": 1320000000,
-          "cum_pct": 11.07,
-          "flat": 1320000000,
-          "flat_pct": 11.07,
+          "cum": 2900000000,
+          "cum_pct": 29.03,
+          "flat": 2900000000,
+          "flat_pct": 29.03,
           "name": "testing.(*B).Loop (inline)",
-          "sum_pct": 23.32
+          "sum_pct": 29.03
         },
         {
-          "cum": 1210000000,
-          "cum_pct": 10.15,
-          "flat": 1130000000,
-          "flat_pct": 9.48,
+          "cum": 1220000000,
+          "cum_pct": 12.21,
+          "flat": 1090000000,
+          "flat_pct": 10.91,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge",
+          "sum_pct": 39.94
+        },
+        {
+          "cum": 1310000000,
+          "cum_pct": 13.11,
+          "flat": 1000000000,
+          "flat_pct": 10.01,
           "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapLarge",
-          "sum_pct": 32.8
+          "sum_pct": 49.95
         },
         {
-          "cum": 1300000000,
-          "cum_pct": 10.91,
-          "flat": 730000000,
-          "flat_pct": 6.12,
-          "name": "runtime.pcvalue",
-          "sum_pct": 38.93
+          "cum": 1800000000,
+          "cum_pct": 18.02,
+          "flat": 690000000,
+          "flat_pct": 6.91,
+          "name": "github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int]",
+          "sum_pct": 56.86
         },
         {
-          "cum": 570000000,
-          "cum_pct": 4.78,
-          "flat": 500000000,
-          "flat_pct": 4.19,
-          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int]",
-          "sum_pct": 43.12
-        },
-        {
-          "cum": 810000000,
-          "cum_pct": 6.8,
-          "flat": 450000000,
-          "flat_pct": 3.78,
-          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionNoneInt",
-          "sum_pct": 46.9
-        },
-        {
-          "cum": 1970000000,
-          "cum_pct": 16.53,
-          "flat": 440000000,
-          "flat_pct": 3.69,
+          "cum": 1580000000,
+          "cum_pct": 15.82,
+          "flat": 630000000,
+          "flat_pct": 6.31,
           "name": "github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.int]",
-          "sum_pct": 50.59
+          "sum_pct": 63.16
         },
         {
-          "cum": 910000000,
-          "cum_pct": 7.63,
-          "flat": 340000000,
-          "flat_pct": 2.85,
+          "cum": 1070000000,
+          "cum_pct": 10.71,
+          "flat": 410000000,
+          "flat_pct": 4.1,
+          "name": "github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }]",
+          "sum_pct": 67.27
+        },
+        {
+          "cum": 540000000,
+          "cum_pct": 5.41,
+          "flat": 360000000,
+          "flat_pct": 3.6,
           "name": "github.com/seyallius/goxide/rusty/option.Option[go.shape.int].UnwrapOr",
-          "sum_pct": 53.44
-        },
-        {
-          "cum": 1630000000,
-          "cum_pct": 13.67,
-          "flat": 330000000,
-          "flat_pct": 2.77,
-          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int } },go.shape.int]",
-          "sum_pct": 56.21
-        },
-        {
-          "cum": 370000000,
-          "cum_pct": 3.1,
-          "flat": 300000000,
-          "flat_pct": 2.52,
-          "name": "runtime.step",
-          "sum_pct": 58.72
-        },
-        {
-          "cum": 1440000000,
-          "cum_pct": 12.08,
-          "flat": 290000000,
-          "flat_pct": 2.43,
-          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int },go.shape.int]",
-          "sum_pct": 61.16
-        },
-        {
-          "cum": 300000000,
-          "cum_pct": 2.52,
-          "flat": 290000000,
-          "flat_pct": 2.43,
-          "name": "runtime.unlock2",
-          "sum_pct": 63.59
-        },
-        {
-          "cum": 530000000,
-          "cum_pct": 4.45,
-          "flat": 270000000,
-          "flat_pct": 2.27,
-          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapInt",
-          "sum_pct": 65.86
+          "sum_pct": 70.87
         },
         {
           "cum": 950000000,
-          "cum_pct": 7.97,
-          "flat": 270000000,
-          "flat_pct": 2.27,
-          "name": "runtime.(*unwinder).resolveInternal",
-          "sum_pct": 68.12
+          "cum_pct": 9.51,
+          "flat": 320000000,
+          "flat_pct": 3.2,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.int] (inline)",
+          "sum_pct": 74.07
         },
         {
-          "cum": 270000000,
-          "cum_pct": 2.27,
+          "cum": 310000000,
+          "cum_pct": 3.1,
+          "flat": 300000000,
+          "flat_pct": 3,
+          "name": "github.com/seyallius/goxide/rusty/option.Option[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }].Unwrap (inline)",
+          "sum_pct": 77.08
+        },
+        {
+          "cum": 520000000,
+          "cum_pct": 5.21,
+          "flat": 280000000,
+          "flat_pct": 2.8,
+          "name": "github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }].func1 (inline)",
+          "sum_pct": 79.88
+        },
+        {
+          "cum": 660000000,
+          "cum_pct": 6.61,
           "flat": 250000000,
-          "flat_pct": 2.1,
-          "name": "runtime.findfunc",
-          "sum_pct": 70.22
+          "flat_pct": 2.5,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } },go.shape.int] (inline)",
+          "sum_pct": 82.38
         },
         {
-          "cum": 2320000000,
-          "cum_pct": 19.46,
-          "flat": 230000000,
-          "flat_pct": 1.93,
-          "name": "github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int]",
-          "sum_pct": 72.15
+          "cum": 240000000,
+          "cum_pct": 2.4,
+          "flat": 240000000,
+          "flat_pct": 2.4,
+          "name": "github.com/seyallius/goxide/rusty/option_test.incrementOptionInt",
+          "sum_pct": 84.78
         },
         {
           "cum": 230000000,
-          "cum_pct": 1.93,
+          "cum_pct": 2.3,
           "flat": 230000000,
-          "flat_pct": 1.93,
-          "name": "runtime.procyieldAsm",
-          "sum_pct": 74.08
+          "flat_pct": 2.3,
+          "name": "github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)",
+          "sum_pct": 87.09
         },
         {
-          "cum": 1890000000,
-          "cum_pct": 15.86,
-          "flat": 220000000,
-          "flat_pct": 1.85,
-          "name": "github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int }]",
-          "sum_pct": 75.92
+          "cum": 170000000,
+          "cum_pct": 1.7,
+          "flat": 170000000,
+          "flat_pct": 1.7,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int] (inline)",
+          "sum_pct": 88.79
         },
         {
-          "cum": 450000000,
-          "cum_pct": 3.78,
-          "flat": 210000000,
-          "flat_pct": 1.76,
-          "name": "runtime.lock2",
-          "sum_pct": 77.68
+          "cum": 150000000,
+          "cum_pct": 1.5,
+          "flat": 150000000,
+          "flat_pct": 1.5,
+          "name": "github.com/seyallius/goxide/rusty/option_test.someIncrementedOptionInt",
+          "sum_pct": 90.29
         },
         {
-          "cum": 200000000,
-          "cum_pct": 1.68,
-          "flat": 200000000,
-          "flat_pct": 1.68,
-          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int }]",
-          "sum_pct": 79.36
+          "cum": 290000000,
+          "cum_pct": 2.9,
+          "flat": 140000000,
+          "flat_pct": 1.4,
+          "name": "github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } }].func1 (inline)",
+          "sum_pct": 91.69
+        },
+        {
+          "cum": 130000000,
+          "cum_pct": 1.3,
+          "flat": 130000000,
+          "flat_pct": 1.3,
+          "name": "github.com/seyallius/goxide/rusty/option.Some[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }] (inline)",
+          "sum_pct": 92.99
+        },
+        {
+          "cum": 1240000000,
+          "cum_pct": 12.41,
+          "flat": 130000000,
+          "flat_pct": 1.3,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionFlatMapNoneInt",
+          "sum_pct": 94.29
+        },
+        {
+          "cum": 1160000000,
+          "cum_pct": 11.61,
+          "flat": 110000000,
+          "flat_pct": 1.1,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionMapNoneInt",
+          "sum_pct": 95.4
+        },
+        {
+          "cum": 500000000,
+          "cum_pct": 5.01,
+          "flat": 100000000,
+          "flat_pct": 1,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeInt",
+          "sum_pct": 96.4
         }
       ],
       "target": "full"
@@ -2076,171 +2076,171 @@
       "kind": "mem_objects",
       "meta": [
         "File: option.test",
-        "Build ID: 081e05f6035863cb22252f9e0e33c366e372289b",
+        "Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7",
         "Type: inuse_objects",
-        "Time: 2026-10-02 14:19:25 +0330",
-        "Showing nodes accounting for 113, 100% of 113 total",
-        "Showing top 20 nodes out of 119"
+        "Time: 2026-10-02 14:29:14 +0330",
+        "Showing nodes accounting for 94, 100% of 94 total",
+        "Showing top 20 nodes out of 117"
       ],
       "rows": [
         {
-          "cum": 91,
-          "cum_pct": 80.53,
-          "flat": 82,
-          "flat_pct": 72.57,
+          "cum": 74,
+          "cum_pct": 78.72,
+          "flat": 67,
+          "flat_pct": 71.28,
           "name": "runtime.mallocgc",
-          "sum_pct": 72.57
+          "sum_pct": 71.28
         },
         {
           "cum": 7,
-          "cum_pct": 6.19,
+          "cum_pct": 7.45,
           "flat": 7,
-          "flat_pct": 6.19,
+          "flat_pct": 7.45,
           "name": "runtime.mallocgcSmallScanNoHeaderSC1",
-          "sum_pct": 78.76
+          "sum_pct": 78.72
         },
         {
           "cum": 3,
-          "cum_pct": 2.65,
+          "cum_pct": 3.19,
           "flat": 3,
-          "flat_pct": 2.65,
+          "flat_pct": 3.19,
           "name": "os.newFile",
-          "sum_pct": 81.42
+          "sum_pct": 81.91
         },
         {
           "cum": 2,
-          "cum_pct": 1.77,
+          "cum_pct": 2.13,
           "flat": 2,
-          "flat_pct": 1.77,
-          "name": "runtime.mallocgcSmallScanNoHeaderSC2",
-          "sum_pct": 83.19
-        },
-        {
-          "cum": 2,
-          "cum_pct": 1.77,
-          "flat": 2,
-          "flat_pct": 1.77,
+          "flat_pct": 2.13,
           "name": "sync.(*Pool).pinSlow",
-          "sum_pct": 84.96
+          "sum_pct": 84.04
         },
         {
           "cum": 2,
-          "cum_pct": 1.77,
+          "cum_pct": 2.13,
           "flat": 2,
-          "flat_pct": 1.77,
-          "name": "testing.(*B).run1",
-          "sum_pct": 86.73
-        },
-        {
-          "cum": 2,
-          "cum_pct": 1.77,
-          "flat": 2,
-          "flat_pct": 1.77,
+          "flat_pct": 2.13,
           "name": "time.newTimer",
-          "sum_pct": 88.5
+          "sum_pct": 86.17
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
-          "name": "fmt.(*buffer).write",
-          "sum_pct": 89.38
+          "flat_pct": 1.06,
+          "name": "fmt.(*buffer).write (inline)",
+          "sum_pct": 87.23
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "fmt.init.func1",
-          "sum_pct": 90.27
+          "sum_pct": 88.3
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
-          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge",
-          "sum_pct": 91.15
-        },
-        {
-          "cum": 1,
-          "cum_pct": 0.88,
-          "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "hash/crc32.slicingMakeTable",
-          "sum_pct": 92.04
+          "sum_pct": 89.36
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "internal/cpu.Name",
-          "sum_pct": 92.92
+          "sum_pct": 90.43
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "internal/sync.newIndirectNode[go.shape.interface {},go.shape.interface {}]",
-          "sum_pct": 93.81
+          "sum_pct": 91.49
         },
         {
           "cum": 4,
-          "cum_pct": 3.54,
+          "cum_pct": 4.26,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "regexp.compile",
-          "sum_pct": 94.69
+          "sum_pct": 92.55
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "regexp/syntax.(*Regexp).CapNames",
-          "sum_pct": 95.58
+          "sum_pct": 93.62
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "regexp/syntax.(*compiler).init (inline)",
-          "sum_pct": 96.46
+          "sum_pct": 94.68
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "regexp/syntax.(*compiler).inst (inline)",
-          "sum_pct": 97.35
+          "sum_pct": 95.74
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
+          "name": "runtime/pprof.(*profileBuilder).emitLocation",
+          "sum_pct": 96.81
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
           "name": "runtime/pprof.StartCPUProfile",
-          "sum_pct": 98.23
+          "sum_pct": 97.87
         },
         {
           "cum": 1,
-          "cum_pct": 0.88,
+          "cum_pct": 1.06,
           "flat": 1,
-          "flat_pct": 0.88,
-          "name": "runtime/pprof.allFrames",
-          "sum_pct": 99.12
+          "flat_pct": 1.06,
+          "name": "testing.(*B).run1",
+          "sum_pct": 98.94
         },
         {
           "cum": 3,
-          "cum_pct": 2.65,
+          "cum_pct": 3.19,
           "flat": 1,
-          "flat_pct": 0.88,
+          "flat_pct": 1.06,
           "name": "testing.(*M).startAlarm",
+          "sum_pct": 100
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "compress/gzip.(*Writer).Write",
+          "sum_pct": 100
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "fmt.(*fmt).fmtInteger",
           "sum_pct": 100
         }
       ],
@@ -2250,173 +2250,173 @@
       "kind": "mem_space",
       "meta": [
         "File: option.test",
-        "Build ID: 081e05f6035863cb22252f9e0e33c366e372289b",
+        "Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7",
         "Type: inuse_space",
-        "Time: 2026-10-02 14:19:25 +0330",
-        "Showing nodes accounting for 67.55kB, 97.58% of 69.22kB total",
-        "Dropped 54 nodes (cum \u003c= 0.35kB)",
-        "Showing top 20 nodes out of 65"
+        "Time: 2026-10-02 14:29:14 +0330",
+        "Showing nodes accounting for 61.74kB, 97.97% of 63.02kB total",
+        "Dropped 57 nodes (cum \u003c= 0.31kB)",
+        "Showing top 20 nodes out of 60"
       ],
       "rows": [
         {
-          "cum": 59105.28,
-          "cum_pct": 83.39,
-          "flat": 59013.12,
-          "flat_pct": 83.26,
+          "cum": 53125.12,
+          "cum_pct": 82.32,
+          "flat": 53073.92,
+          "flat_pct": 82.24,
           "name": "runtime.mallocgc",
-          "sum_pct": 83.26
+          "sum_pct": 82.24
         },
         {
           "cum": 8192,
-          "cum_pct": 11.56,
+          "cum_pct": 12.69,
           "flat": 8192,
-          "flat_pct": 11.56,
+          "flat_pct": 12.69,
           "name": "hash/crc32.slicingMakeTable",
-          "sum_pct": 94.82
+          "sum_pct": 94.93
         },
         {
           "cum": 1802.24,
-          "cum_pct": 2.54,
+          "cum_pct": 2.79,
           "flat": 1802.24,
-          "flat_pct": 2.54,
+          "flat_pct": 2.79,
           "name": "sync.(*Pool).pinSlow",
-          "sum_pct": 97.36
+          "sum_pct": 97.72
         },
         {
           "cum": 389.12,
-          "cum_pct": 0.54,
+          "cum_pct": 0.6,
           "flat": 163.84,
-          "flat_pct": 0.23,
+          "flat_pct": 0.25,
           "name": "regexp.compile",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 8192,
-          "cum_pct": 11.56,
+          "cum_pct": 12.69,
           "flat": 0,
           "flat_pct": 0,
           "name": "compress/gzip.(*Writer).Write",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 2037.76,
-          "cum_pct": 2.88,
+          "cum_pct": 3.16,
           "flat": 0,
           "flat_pct": 0,
           "name": "fmt.Sprintf",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 1976.32,
-          "cum_pct": 2.79,
+          "cum_pct": 3.06,
           "flat": 0,
           "flat_pct": 0,
           "name": "fmt.newPrinter",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
-          "cum": 2201.6,
-          "cum_pct": 3.1,
+          "cum": 2088.96,
+          "cum_pct": 3.24,
           "flat": 0,
           "flat_pct": 0,
           "name": "github.com/seyallius/goxide/rusty/option_test.BenchmarkOption",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 8192,
-          "cum_pct": 11.56,
+          "cum_pct": 12.69,
           "flat": 0,
           "flat_pct": 0,
           "name": "hash/crc32.Update (inline)",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 8192,
-          "cum_pct": 11.56,
+          "cum_pct": 12.69,
           "flat": 0,
           "flat_pct": 0,
           "name": "hash/crc32.archInitIEEE (inline)",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 8192,
-          "cum_pct": 11.56,
+          "cum_pct": 12.69,
           "flat": 0,
           "flat_pct": 0,
           "name": "hash/crc32.init.func2",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 8192,
-          "cum_pct": 11.56,
+          "cum_pct": 12.69,
           "flat": 0,
           "flat_pct": 0,
           "name": "hash/crc32.update",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 1116.16,
-          "cum_pct": 1.57,
+          "cum_pct": 1.72,
           "flat": 0,
           "flat_pct": 0,
           "name": "main.main",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 389.12,
-          "cum_pct": 0.54,
+          "cum_pct": 0.6,
           "flat": 0,
           "flat_pct": 0,
           "name": "regexp.Compile (inline)",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
-          "cum": 788.48,
-          "cum_pct": 1.11,
-          "flat": 0,
-          "flat_pct": 0,
-          "name": "runtime.acquireSudog",
-          "sum_pct": 97.58
-        },
-        {
-          "cum": 44605.44,
-          "cum_pct": 62.93,
+          "cum": 39290.88,
+          "cum_pct": 60.88,
           "flat": 0,
           "flat_pct": 0,
           "name": "runtime.allocm",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
-          "cum": 6932.48,
-          "cum_pct": 9.77,
+          "cum": 6369.28,
+          "cum_pct": 9.87,
           "flat": 0,
           "flat_pct": 0,
           "name": "runtime.gcBgMarkWorker",
-          "sum_pct": 97.58
-        },
-        {
-          "cum": 788.48,
-          "cum_pct": 1.11,
-          "flat": 0,
-          "flat_pct": 0,
-          "name": "runtime.gcMarkDone",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
           "cum": 10639.36,
-          "cum_pct": 15.01,
+          "cum_pct": 16.49,
           "flat": 0,
           "flat_pct": 0,
           "name": "runtime.gcStart.func4",
-          "sum_pct": 97.58
+          "sum_pct": 97.97
         },
         {
-          "cum": 368.64,
-          "cum_pct": 0.52,
+          "cum": 16128,
+          "cum_pct": 24.99,
           "flat": 0,
           "flat_pct": 0,
-          "name": "runtime.growslice",
-          "sum_pct": 97.58
+          "name": "runtime.mProfStackInit (inline)",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 1116.16,
+          "cum_pct": 1.72,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.main",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 16128,
+          "cum_pct": 24.99,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.makeProfStackFP (inline)",
+          "sum_pct": 97.97
         }
       ],
       "target": "full"
@@ -2428,7 +2428,7 @@
     "cpu_model": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
     "git_branch": "codex/option-baseline",
     "git_dirty": false,
-    "git_sha": "69f2b383180cd7c77a5bbb60299b418cd7d0c2b0",
+    "git_sha": "a5bd892b4058cd5633bd9e2589d5478cca3d0b47",
     "go_version": "go1.27.1",
     "goarch": "amd64",
     "goos": "linux",

@@ -33,43 +33,43 @@ significance test plus a minimum effect, never from a bare percentage.
 <svg class="bb-chart" viewBox="0 0 900 320" role="img" aria-label="ns/op (time per operation) across milestones — y axis is an index, the first milestone is 100" xmlns="http://www.w3.org/2000/svg">
 <title>ns/op (time per operation) across milestones</title>
 <rect class="bb-chart-frame" x="64" y="24" width="812" height="248" fill="none" stroke="currentColor" stroke-opacity="0.75"/>
-<line class="bb-chart-grid" x1="64" y1="247.20" x2="876" y2="247.20" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="247.20" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">96</text>
-<line class="bb-chart-grid" x1="64" y1="197.60" x2="876" y2="197.60" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="197.60" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">98</text>
-<line class="bb-chart-grid" x1="64" y1="148" x2="876" y2="148" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="148" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
-<line class="bb-chart-grid" x1="64" y1="98.40" x2="876" y2="98.40" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="98.40" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">102</text>
-<line class="bb-chart-grid" x1="64" y1="48.80" x2="876" y2="48.80" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="48.80" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">104</text>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-1, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-1, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-2, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-2, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-3, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-3, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-4, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-4, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-5, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-5, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-6, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-6, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-7, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-7, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-7, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-8, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-8, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-8, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-1, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-1, currentColor)"/>
+<line class="bb-chart-grid" x1="64" y1="260.47" x2="876" y2="260.47" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="260.47" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">-0</text>
+<line class="bb-chart-grid" x1="64" y1="208.21" x2="876" y2="208.21" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="208.21" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">25</text>
+<line class="bb-chart-grid" x1="64" y1="155.95" x2="876" y2="155.95" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="155.95" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">50</text>
+<line class="bb-chart-grid" x1="64" y1="103.69" x2="876" y2="103.69" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="103.69" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">75</text>
+<line class="bb-chart-grid" x1="64" y1="51.43" x2="876" y2="51.43" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="51.43" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,56.09" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="56.09" r="4" fill="var(--bb-chart-1, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,49.28" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-2, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="49.28" r="4" fill="var(--bb-chart-2, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,48" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-3, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="48" r="4" fill="var(--bb-chart-3, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,213.59" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-4, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="213.59" r="4" fill="var(--bb-chart-4, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,66.26" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-5, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="66.26" r="4" fill="var(--bb-chart-5, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,248" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-6, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="248" r="4" fill="var(--bb-chart-6, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,156.85" fill="none" stroke="var(--bb-chart-7, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-7, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="156.85" r="4" fill="var(--bb-chart-7, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,226.56" fill="none" stroke="var(--bb-chart-8, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-8, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="226.56" r="4" fill="var(--bb-chart-8, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,234.31" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="234.31" r="4" fill="var(--bb-chart-1, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
@@ -125,49 +125,24 @@ _The dotted final point is the unpromoted current run._
 <svg class="bb-chart" viewBox="0 0 900 320" role="img" aria-label="B/op (bytes allocated) across milestones — y axis is an index, the first milestone is 100" xmlns="http://www.w3.org/2000/svg">
 <title>B/op (bytes allocated) across milestones</title>
 <rect class="bb-chart-frame" x="64" y="24" width="812" height="248" fill="none" stroke="currentColor" stroke-opacity="0.75"/>
-<line class="bb-chart-grid" x1="64" y1="247.20" x2="876" y2="247.20" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="247.20" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">96</text>
-<line class="bb-chart-grid" x1="64" y1="197.60" x2="876" y2="197.60" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="197.60" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">98</text>
-<line class="bb-chart-grid" x1="64" y1="148" x2="876" y2="148" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="148" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
-<line class="bb-chart-grid" x1="64" y1="98.40" x2="876" y2="98.40" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="98.40" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">102</text>
-<line class="bb-chart-grid" x1="64" y1="48.80" x2="876" y2="48.80" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="48.80" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">104</text>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-1, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-1, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-2, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-2, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-3, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-3, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-4, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-4, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-5, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-5, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-6, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-6, currentColor)"/>
+<line class="bb-chart-grid" x1="64" y1="262.40" x2="876" y2="262.40" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="262.40" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">99</text>
+<line class="bb-chart-grid" x1="64" y1="208.80" x2="876" y2="208.80" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="208.80" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">99</text>
+<line class="bb-chart-grid" x1="64" y1="155.20" x2="876" y2="155.20" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="155.20" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
+<line class="bb-chart-grid" x1="64" y1="101.60" x2="876" y2="101.60" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="101.60" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
+<line class="bb-chart-grid" x1="64" y1="48" x2="876" y2="48" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="48" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
+<polyline class="bb-chart-line bb-chart-current" points="64,48 876,248" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="48" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="248" r="4" fill="var(--bb-chart-1, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
 <rect class="bb-chart-swatch" x="64" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-1, currentColor)"/>
-<text class="bb-chart-legend-label" x="84" y="310" font-size="12.50" fill="currentColor">ErrorHandling/result_with_try</text>
-<rect class="bb-chart-swatch" x="470" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-2, currentColor)"/>
-<text class="bb-chart-legend-label" x="490" y="310" font-size="12.50" fill="currentColor">DBFindUser/result</text>
-<rect class="bb-chart-swatch" x="64" y="320" width="10" height="10" rx="1" fill="var(--bb-chart-3, currentColor)"/>
-<text class="bb-chart-legend-label" x="84" y="328" font-size="12.50" fill="currentColor">Option/SomeInt</text>
-<rect class="bb-chart-swatch" x="470" y="320" width="10" height="10" rx="1" fill="var(--bb-chart-4, currentColor)"/>
-<text class="bb-chart-legend-label" x="490" y="328" font-size="12.50" fill="currentColor">Option/SomeLarge</text>
-<rect class="bb-chart-swatch" x="64" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-5, currentColor)"/>
-<text class="bb-chart-legend-label" x="84" y="346" font-size="12.50" fill="currentColor">Option/MapSomeInt</text>
-<rect class="bb-chart-swatch" x="470" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-6, currentColor)"/>
-<text class="bb-chart-legend-label" x="490" y="346" font-size="12.50" fill="currentColor">Option/FlatMapSomeInt</text>
+<text class="bb-chart-legend-label" x="84" y="310" font-size="12.50" fill="currentColor">DBFindUser/result</text>
 </svg>
 
 _The dotted final point is the unpromoted current run._
@@ -202,49 +177,22 @@ _The dotted final point is the unpromoted current run._
 <svg class="bb-chart" viewBox="0 0 900 320" role="img" aria-label="allocs/op (allocations) across milestones — y axis is an index, the first milestone is 100" xmlns="http://www.w3.org/2000/svg">
 <title>allocs/op (allocations) across milestones</title>
 <rect class="bb-chart-frame" x="64" y="24" width="812" height="248" fill="none" stroke="currentColor" stroke-opacity="0.75"/>
-<line class="bb-chart-grid" x1="64" y1="247.20" x2="876" y2="247.20" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="247.20" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">96</text>
-<line class="bb-chart-grid" x1="64" y1="197.60" x2="876" y2="197.60" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="197.60" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">98</text>
-<line class="bb-chart-grid" x1="64" y1="148" x2="876" y2="148" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="148" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
-<line class="bb-chart-grid" x1="64" y1="98.40" x2="876" y2="98.40" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="98.40" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">102</text>
-<line class="bb-chart-grid" x1="64" y1="48.80" x2="876" y2="48.80" stroke="currentColor" stroke-opacity="0.18"/>
-<text class="bb-chart-axis-label" x="54" y="48.80" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">104</text>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-1, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-1, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-2, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-2, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-3, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-3, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-4, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-4, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-5, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-5, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
-<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-6, currentColor)"/>
-<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-6, currentColor)"/>
+<line class="bb-chart-grid" x1="64" y1="270" x2="876" y2="270" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="270" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">97</text>
+<line class="bb-chart-grid" x1="64" y1="196" x2="876" y2="196" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="196" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">98</text>
+<line class="bb-chart-grid" x1="64" y1="122" x2="876" y2="122" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="122" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">99</text>
+<line class="bb-chart-grid" x1="64" y1="48" x2="876" y2="48" stroke="currentColor" stroke-opacity="0.18"/>
+<text class="bb-chart-axis-label" x="54" y="48" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
+<polyline class="bb-chart-line bb-chart-current" points="64,48 876,248" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="48" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="248" r="4" fill="var(--bb-chart-1, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
 <rect class="bb-chart-swatch" x="64" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-1, currentColor)"/>
-<text class="bb-chart-legend-label" x="84" y="310" font-size="12.50" fill="currentColor">ErrorHandling/result_with_try</text>
-<rect class="bb-chart-swatch" x="470" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-2, currentColor)"/>
-<text class="bb-chart-legend-label" x="490" y="310" font-size="12.50" fill="currentColor">DBFindUser/result</text>
-<rect class="bb-chart-swatch" x="64" y="320" width="10" height="10" rx="1" fill="var(--bb-chart-3, currentColor)"/>
-<text class="bb-chart-legend-label" x="84" y="328" font-size="12.50" fill="currentColor">Option/SomeInt</text>
-<rect class="bb-chart-swatch" x="470" y="320" width="10" height="10" rx="1" fill="var(--bb-chart-4, currentColor)"/>
-<text class="bb-chart-legend-label" x="490" y="328" font-size="12.50" fill="currentColor">Option/SomeLarge</text>
-<rect class="bb-chart-swatch" x="64" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-5, currentColor)"/>
-<text class="bb-chart-legend-label" x="84" y="346" font-size="12.50" fill="currentColor">Option/MapSomeInt</text>
-<rect class="bb-chart-swatch" x="470" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-6, currentColor)"/>
-<text class="bb-chart-legend-label" x="490" y="346" font-size="12.50" fill="currentColor">Option/FlatMapSomeInt</text>
+<text class="bb-chart-legend-label" x="84" y="310" font-size="12.50" fill="currentColor">DBFindUser/result</text>
 </svg>
 
 _The dotted final point is the unpromoted current run._

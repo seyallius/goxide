@@ -11,37 +11,37 @@ Values are printed in the unit of the profile: nanoseconds for CPU, bytes for he
 
 ````
 File: option.test
-Build ID: 081e05f6035863cb22252f9e0e33c366e372289b
+Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7
 Type: cpu
-Time: 2026-10-02 14:19:14 +0330
-Duration: 11.23s, Total samples = 11920ms (106.19%)
-Showing nodes accounting for 9460ms, 79.36% of 11920ms total
-Dropped 79 nodes (cum <= 59.60ms)
-Showing top 20 nodes out of 77
+Time: 2026-10-02 14:29:04 +0330
+Duration: 9.98s, Total samples = 9990ms (100.11%)
+Showing nodes accounting for 9630ms, 96.40% of 9990ms total
+Dropped 13 nodes (cum <= 49.95ms)
+Showing top 20 nodes out of 28
 ````
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.(*mspan).specialFindSplicePoint (inline) | 1.46 s | 12.25% | 1.46 s | 12.25% | ~ |
-| testing.(*B).Loop (inline) | 1.32 s | 11.07% | 1.32 s | 11.07% | ~ |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapLarge | 1.13 s | 9.48% | 1.21 s | 10.15% | ~ |
-| runtime.pcvalue | 730 ms | 6.12% | 1.3 s | 10.91% | ~ |
-| github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int] | 500 ms | 4.19% | 570 ms | 4.78% | ~ |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionNoneInt | 450 ms | 3.78% | 810 ms | 6.80% | ~ |
-| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.int] | 440 ms | 3.69% | 1.97 s | 16.53% | ~ |
-| github.com/seyallius/goxide/rusty/option.Option[go.shape.int].UnwrapOr | 340 ms | 2.85% | 910 ms | 7.63% | ~ |
-| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int } },go.shape.int] | 330 ms | 2.77% | 1.63 s | 13.67% | ~ |
-| runtime.step | 300 ms | 2.52% | 370 ms | 3.10% | ~ |
-| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int },go.shape.int] | 290 ms | 2.43% | 1.44 s | 12.08% | ~ |
-| runtime.unlock2 | 290 ms | 2.43% | 300 ms | 2.52% | ~ |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapInt | 270 ms | 2.27% | 530 ms | 4.45% | ~ |
-| runtime.(*unwinder).resolveInternal | 270 ms | 2.27% | 950 ms | 7.97% | ~ |
-| runtime.findfunc | 250 ms | 2.10% | 270 ms | 2.27% | ~ |
-| github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int] | 230 ms | 1.93% | 2.32 s | 19.46% | ~ |
-| runtime.procyieldAsm | 230 ms | 1.93% | 230 ms | 1.93% | ~ |
-| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int }] | 220 ms | 1.85% | 1.89 s | 15.86% | ~ |
-| runtime.lock2 | 210 ms | 1.76% | 450 ms | 3.78% | ~ |
-| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int }] | 200 ms | 1.68% | 200 ms | 1.68% | ~ |
+| testing.(*B).Loop (inline) | 2.9 s | 29.03% | 2.9 s | 29.03% | 🐢 +119.7% |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge | 1.09 s | 10.91% | 1.22 s | 12.21% | new |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapLarge | 1 s | 10.01% | 1.31 s | 13.11% | ⚡ 11.5% |
+| github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int] | 690 ms | 6.91% | 1.8 s | 18.02% | 🐢 +200.0% |
+| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.int] | 630 ms | 6.31% | 1.58 s | 15.82% | 🐢 +43.2% |
+| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }] | 410 ms | 4.10% | 1.07 s | 10.71% | new |
+| github.com/seyallius/goxide/rusty/option.Option[go.shape.int].UnwrapOr | 360 ms | 3.60% | 540 ms | 5.41% | 🐢 +5.9% |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.int] (inline) | 320 ms | 3.20% | 950 ms | 9.51% | new |
+| github.com/seyallius/goxide/rusty/option.Option[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }].Unwrap (inline) | 300 ms | 3.00% | 310 ms | 3.10% | new |
+| github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }].func1 (inline) | 280 ms | 2.80% | 520 ms | 5.21% | new |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } },go.shape.int] (inline) | 250 ms | 2.50% | 660 ms | 6.61% | new |
+| github.com/seyallius/goxide/rusty/option_test.incrementOptionInt | 240 ms | 2.40% | 240 ms | 2.40% | new |
+| github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline) | 230 ms | 2.30% | 230 ms | 2.30% | new |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int] (inline) | 170 ms | 1.70% | 170 ms | 1.70% | new |
+| github.com/seyallius/goxide/rusty/option_test.someIncrementedOptionInt | 150 ms | 1.50% | 150 ms | 1.50% | new |
+| github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } }].func1 (inline) | 140 ms | 1.40% | 290 ms | 2.90% | new |
+| github.com/seyallius/goxide/rusty/option.Some[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }] (inline) | 130 ms | 1.30% | 130 ms | 1.30% | new |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionFlatMapNoneInt | 130 ms | 1.30% | 1.24 s | 12.41% | new |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionMapNoneInt | 110 ms | 1.10% | 1.16 s | 11.61% | new |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeInt | 100 ms | 1.00% | 500 ms | 5.01% | new |
 
 </details>
 
@@ -50,35 +50,35 @@ Showing top 20 nodes out of 77
 
 ````
 File: option.test
-Build ID: 081e05f6035863cb22252f9e0e33c366e372289b
+Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7
 Type: inuse_objects
-Time: 2026-10-02 14:19:25 +0330
-Showing nodes accounting for 113, 100% of 113 total
-Showing top 20 nodes out of 119
+Time: 2026-10-02 14:29:14 +0330
+Showing nodes accounting for 94, 100% of 94 total
+Showing top 20 nodes out of 117
 ````
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.mallocgc | 82 | 72.57% | 91 | 80.53% | ~ |
-| runtime.mallocgcSmallScanNoHeaderSC1 | 7 | 6.19% | 7 | 6.19% | ~ |
-| os.newFile | 3 | 2.65% | 3 | 2.65% | ~ |
-| runtime.mallocgcSmallScanNoHeaderSC2 | 2 | 1.77% | 2 | 1.77% | ~ |
-| sync.(*Pool).pinSlow | 2 | 1.77% | 2 | 1.77% | ~ |
-| testing.(*B).run1 | 2 | 1.77% | 2 | 1.77% | ~ |
-| time.newTimer | 2 | 1.77% | 2 | 1.77% | ~ |
-| fmt.(*buffer).write | 1 | 0.88% | 1 | 0.88% | ~ |
-| fmt.init.func1 | 1 | 0.88% | 1 | 0.88% | ~ |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge | 1 | 0.88% | 1 | 0.88% | ~ |
-| hash/crc32.slicingMakeTable | 1 | 0.88% | 1 | 0.88% | ~ |
-| internal/cpu.Name | 1 | 0.88% | 1 | 0.88% | ~ |
-| internal/sync.newIndirectNode[go.shape.interface {},go.shape.interface {}] | 1 | 0.88% | 1 | 0.88% | ~ |
-| regexp.compile | 1 | 0.88% | 4 | 3.54% | ~ |
-| regexp/syntax.(*Regexp).CapNames | 1 | 0.88% | 1 | 0.88% | ~ |
-| regexp/syntax.(*compiler).init (inline) | 1 | 0.88% | 1 | 0.88% | ~ |
-| regexp/syntax.(*compiler).inst (inline) | 1 | 0.88% | 1 | 0.88% | ~ |
-| runtime/pprof.StartCPUProfile | 1 | 0.88% | 1 | 0.88% | ~ |
-| runtime/pprof.allFrames | 1 | 0.88% | 1 | 0.88% | ~ |
-| testing.(*M).startAlarm | 1 | 0.88% | 3 | 2.65% | ~ |
+| runtime.mallocgc | 67 | 71.28% | 74 | 78.72% | ⚡ 18.3% |
+| runtime.mallocgcSmallScanNoHeaderSC1 | 7 | 7.45% | 7 | 7.45% | ~ |
+| os.newFile | 3 | 3.19% | 3 | 3.19% | ~ |
+| sync.(*Pool).pinSlow | 2 | 2.13% | 2 | 2.13% | ~ |
+| time.newTimer | 2 | 2.13% | 2 | 2.13% | ~ |
+| fmt.(*buffer).write (inline) | 1 | 1.06% | 1 | 1.06% | new |
+| fmt.init.func1 | 1 | 1.06% | 1 | 1.06% | ~ |
+| hash/crc32.slicingMakeTable | 1 | 1.06% | 1 | 1.06% | ~ |
+| internal/cpu.Name | 1 | 1.06% | 1 | 1.06% | ~ |
+| internal/sync.newIndirectNode[go.shape.interface {},go.shape.interface {}] | 1 | 1.06% | 1 | 1.06% | ~ |
+| regexp.compile | 1 | 1.06% | 4 | 4.26% | ~ |
+| regexp/syntax.(*Regexp).CapNames | 1 | 1.06% | 1 | 1.06% | ~ |
+| regexp/syntax.(*compiler).init (inline) | 1 | 1.06% | 1 | 1.06% | ~ |
+| regexp/syntax.(*compiler).inst (inline) | 1 | 1.06% | 1 | 1.06% | ~ |
+| runtime/pprof.(*profileBuilder).emitLocation | 1 | 1.06% | 1 | 1.06% | new |
+| runtime/pprof.StartCPUProfile | 1 | 1.06% | 1 | 1.06% | ~ |
+| testing.(*B).run1 | 1 | 1.06% | 1 | 1.06% | ⚡ 50.0% |
+| testing.(*M).startAlarm | 1 | 1.06% | 3 | 3.19% | ~ |
+| compress/gzip.(*Writer).Write | 0 | 0.00% | 1 | 1.06% | new |
+| fmt.(*fmt).fmtInteger | 0 | 0.00% | 1 | 1.06% | new |
 
 </details>
 
@@ -87,36 +87,36 @@ Showing top 20 nodes out of 119
 
 ````
 File: option.test
-Build ID: 081e05f6035863cb22252f9e0e33c366e372289b
+Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7
 Type: inuse_space
-Time: 2026-10-02 14:19:25 +0330
-Showing nodes accounting for 67.55kB, 97.58% of 69.22kB total
-Dropped 54 nodes (cum <= 0.35kB)
-Showing top 20 nodes out of 65
+Time: 2026-10-02 14:29:14 +0330
+Showing nodes accounting for 61.74kB, 97.97% of 63.02kB total
+Dropped 57 nodes (cum <= 0.31kB)
+Showing top 20 nodes out of 60
 ````
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.mallocgc | 57.6 kB | 83.26% | 57.7 kB | 83.39% | ~ |
-| hash/crc32.slicingMakeTable | 8 kB | 11.56% | 8 kB | 11.56% | ~ |
-| sync.(*Pool).pinSlow | 1.76 kB | 2.54% | 1.76 kB | 2.54% | ~ |
-| regexp.compile | 164 B | 0.23% | 389 B | 0.54% | ~ |
-| compress/gzip.(*Writer).Write | 0 B | 0.00% | 8 kB | 11.56% | new |
-| fmt.Sprintf | 0 B | 0.00% | 1.99 kB | 2.88% | new |
-| fmt.newPrinter | 0 B | 0.00% | 1.93 kB | 2.79% | new |
-| github.com/seyallius/goxide/rusty/option_test.BenchmarkOption | 0 B | 0.00% | 2.15 kB | 3.10% | new |
-| hash/crc32.Update (inline) | 0 B | 0.00% | 8 kB | 11.56% | new |
-| hash/crc32.archInitIEEE (inline) | 0 B | 0.00% | 8 kB | 11.56% | new |
-| hash/crc32.init.func2 | 0 B | 0.00% | 8 kB | 11.56% | new |
-| hash/crc32.update | 0 B | 0.00% | 8 kB | 11.56% | new |
-| main.main | 0 B | 0.00% | 1.09 kB | 1.57% | new |
-| regexp.Compile (inline) | 0 B | 0.00% | 389 B | 0.54% | new |
-| runtime.acquireSudog | 0 B | 0.00% | 788 B | 1.11% | new |
-| runtime.allocm | 0 B | 0.00% | 43.6 kB | 62.93% | new |
-| runtime.gcBgMarkWorker | 0 B | 0.00% | 6.77 kB | 9.77% | new |
-| runtime.gcMarkDone | 0 B | 0.00% | 788 B | 1.11% | new |
-| runtime.gcStart.func4 | 0 B | 0.00% | 10.4 kB | 15.01% | new |
-| runtime.growslice | 0 B | 0.00% | 369 B | 0.52% | new |
+| runtime.mallocgc | 51.8 kB | 82.24% | 51.9 kB | 82.32% | ⚡ 10.1% |
+| hash/crc32.slicingMakeTable | 8 kB | 12.69% | 8 kB | 12.69% | ~ |
+| sync.(*Pool).pinSlow | 1.76 kB | 2.79% | 1.76 kB | 2.79% | ~ |
+| regexp.compile | 164 B | 0.25% | 389 B | 0.60% | ~ |
+| compress/gzip.(*Writer).Write | 0 B | 0.00% | 8 kB | 12.69% | new |
+| fmt.Sprintf | 0 B | 0.00% | 1.99 kB | 3.16% | new |
+| fmt.newPrinter | 0 B | 0.00% | 1.93 kB | 3.06% | new |
+| github.com/seyallius/goxide/rusty/option_test.BenchmarkOption | 0 B | 0.00% | 2.04 kB | 3.24% | new |
+| hash/crc32.Update (inline) | 0 B | 0.00% | 8 kB | 12.69% | new |
+| hash/crc32.archInitIEEE (inline) | 0 B | 0.00% | 8 kB | 12.69% | new |
+| hash/crc32.init.func2 | 0 B | 0.00% | 8 kB | 12.69% | new |
+| hash/crc32.update | 0 B | 0.00% | 8 kB | 12.69% | new |
+| main.main | 0 B | 0.00% | 1.09 kB | 1.72% | new |
+| regexp.Compile (inline) | 0 B | 0.00% | 389 B | 0.60% | new |
+| runtime.allocm | 0 B | 0.00% | 38.4 kB | 60.88% | new |
+| runtime.gcBgMarkWorker | 0 B | 0.00% | 6.22 kB | 9.87% | new |
+| runtime.gcStart.func4 | 0 B | 0.00% | 10.4 kB | 16.49% | new |
+| runtime.mProfStackInit (inline) | 0 B | 0.00% | 15.8 kB | 24.99% | new |
+| runtime.main | 0 B | 0.00% | 1.09 kB | 1.72% | new |
+| runtime.makeProfStackFP (inline) | 0 B | 0.00% | 15.8 kB | 24.99% | new |
 
 </details>
 
@@ -135,6 +135,6 @@ _none recorded_
 | Memory | 23.2 GB |
 | Hardware fingerprint | `67d6ec7308d9a4b34eb0c3f140869b9c946f086d4177b754bbf81750eb2822a0` |
 | Benchmark flags | `-run '^$' -bench=. -benchmem -count=6` |
-| Git commit | `69f2b383` |
+| Git commit | `a5bd892b` |
 | Git branch | codex/option-baseline |
 | Working tree | clean |

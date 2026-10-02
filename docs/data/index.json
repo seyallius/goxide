@@ -40,15 +40,15 @@
       "date": "2026-10-02",
       "file": "data/current.json",
       "headline": {
-        "allocs_op": 0,
-        "bytes_op": 0,
-        "ns_op": 0
+        "allocs_op": -1.6044713109489739,
+        "bytes_op": -0.563808732989568,
+        "ns_op": -36.846006073571914
       },
       "id": "current",
       "is_current": true,
       "label": "",
       "seq": 0,
-      "sha": "69f2b38",
+      "sha": "a5bd892",
       "title": "current"
     }
   ],
