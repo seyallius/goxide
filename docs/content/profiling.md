@@ -22,26 +22,26 @@ Showing top 20 nodes out of 28
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| testing.(*B).Loop (inline) | 2.9 s | 29.03% | 2.9 s | 29.03% | 🐢 +119.7% |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge | 1.09 s | 10.91% | 1.22 s | 12.21% | new |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapLarge | 1 s | 10.01% | 1.31 s | 13.11% | ⚡ 11.5% |
-| github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int] | 690 ms | 6.91% | 1.8 s | 18.02% | 🐢 +200.0% |
-| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.int] | 630 ms | 6.31% | 1.58 s | 15.82% | 🐢 +43.2% |
-| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }] | 410 ms | 4.10% | 1.07 s | 10.71% | new |
-| github.com/seyallius/goxide/rusty/option.Option[go.shape.int].UnwrapOr | 360 ms | 3.60% | 540 ms | 5.41% | 🐢 +5.9% |
-| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.int] (inline) | 320 ms | 3.20% | 950 ms | 9.51% | new |
-| github.com/seyallius/goxide/rusty/option.Option[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }].Unwrap (inline) | 300 ms | 3.00% | 310 ms | 3.10% | new |
-| github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }].func1 (inline) | 280 ms | 2.80% | 520 ms | 5.21% | new |
-| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } },go.shape.int] (inline) | 250 ms | 2.50% | 660 ms | 6.61% | new |
-| github.com/seyallius/goxide/rusty/option_test.incrementOptionInt | 240 ms | 2.40% | 240 ms | 2.40% | new |
-| github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline) | 230 ms | 2.30% | 230 ms | 2.30% | new |
-| github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int] (inline) | 170 ms | 1.70% | 170 ms | 1.70% | new |
-| github.com/seyallius/goxide/rusty/option_test.someIncrementedOptionInt | 150 ms | 1.50% | 150 ms | 1.50% | new |
-| github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } }].func1 (inline) | 140 ms | 1.40% | 290 ms | 2.90% | new |
-| github.com/seyallius/goxide/rusty/option.Some[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }] (inline) | 130 ms | 1.30% | 130 ms | 1.30% | new |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionFlatMapNoneInt | 130 ms | 1.30% | 1.24 s | 12.41% | new |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionMapNoneInt | 110 ms | 1.10% | 1.16 s | 11.61% | new |
-| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeInt | 100 ms | 1.00% | 500 ms | 5.01% | new |
+| testing.(*B).Loop (inline) | 2.9 s | 29.03% | 2.9 s | 29.03% | ~ |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge | 1.09 s | 10.91% | 1.22 s | 12.21% | ~ |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapLarge | 1 s | 10.01% | 1.31 s | 13.11% | ~ |
+| github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int] | 690 ms | 6.91% | 1.8 s | 18.02% | ~ |
+| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.int] | 630 ms | 6.31% | 1.58 s | 15.82% | ~ |
+| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }] | 410 ms | 4.10% | 1.07 s | 10.71% | ~ |
+| github.com/seyallius/goxide/rusty/option.Option[go.shape.int].UnwrapOr | 360 ms | 3.60% | 540 ms | 5.41% | ~ |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.int] (inline) | 320 ms | 3.20% | 950 ms | 9.51% | ~ |
+| github.com/seyallius/goxide/rusty/option.Option[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }].Unwrap (inline) | 300 ms | 3.00% | 310 ms | 3.10% | ~ |
+| github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }].func1 (inline) | 280 ms | 2.80% | 520 ms | 5.21% | ~ |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } },go.shape.int] (inline) | 250 ms | 2.50% | 660 ms | 6.61% | ~ |
+| github.com/seyallius/goxide/rusty/option_test.incrementOptionInt | 240 ms | 2.40% | 240 ms | 2.40% | ~ |
+| github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline) | 230 ms | 2.30% | 230 ms | 2.30% | ~ |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int] (inline) | 170 ms | 1.70% | 170 ms | 1.70% | ~ |
+| github.com/seyallius/goxide/rusty/option_test.someIncrementedOptionInt | 150 ms | 1.50% | 150 ms | 1.50% | ~ |
+| github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } }].func1 (inline) | 140 ms | 1.40% | 290 ms | 2.90% | ~ |
+| github.com/seyallius/goxide/rusty/option.Some[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }] (inline) | 130 ms | 1.30% | 130 ms | 1.30% | ~ |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionFlatMapNoneInt | 130 ms | 1.30% | 1.24 s | 12.41% | ~ |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionMapNoneInt | 110 ms | 1.10% | 1.16 s | 11.61% | ~ |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeInt | 100 ms | 1.00% | 500 ms | 5.01% | ~ |
 
 </details>
 
@@ -59,12 +59,12 @@ Showing top 20 nodes out of 117
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.mallocgc | 67 | 71.28% | 74 | 78.72% | ⚡ 18.3% |
+| runtime.mallocgc | 67 | 71.28% | 74 | 78.72% | ~ |
 | runtime.mallocgcSmallScanNoHeaderSC1 | 7 | 7.45% | 7 | 7.45% | ~ |
 | os.newFile | 3 | 3.19% | 3 | 3.19% | ~ |
 | sync.(*Pool).pinSlow | 2 | 2.13% | 2 | 2.13% | ~ |
 | time.newTimer | 2 | 2.13% | 2 | 2.13% | ~ |
-| fmt.(*buffer).write (inline) | 1 | 1.06% | 1 | 1.06% | new |
+| fmt.(*buffer).write (inline) | 1 | 1.06% | 1 | 1.06% | ~ |
 | fmt.init.func1 | 1 | 1.06% | 1 | 1.06% | ~ |
 | hash/crc32.slicingMakeTable | 1 | 1.06% | 1 | 1.06% | ~ |
 | internal/cpu.Name | 1 | 1.06% | 1 | 1.06% | ~ |
@@ -73,9 +73,9 @@ Showing top 20 nodes out of 117
 | regexp/syntax.(*Regexp).CapNames | 1 | 1.06% | 1 | 1.06% | ~ |
 | regexp/syntax.(*compiler).init (inline) | 1 | 1.06% | 1 | 1.06% | ~ |
 | regexp/syntax.(*compiler).inst (inline) | 1 | 1.06% | 1 | 1.06% | ~ |
-| runtime/pprof.(*profileBuilder).emitLocation | 1 | 1.06% | 1 | 1.06% | new |
+| runtime/pprof.(*profileBuilder).emitLocation | 1 | 1.06% | 1 | 1.06% | ~ |
 | runtime/pprof.StartCPUProfile | 1 | 1.06% | 1 | 1.06% | ~ |
-| testing.(*B).run1 | 1 | 1.06% | 1 | 1.06% | ⚡ 50.0% |
+| testing.(*B).run1 | 1 | 1.06% | 1 | 1.06% | ~ |
 | testing.(*M).startAlarm | 1 | 1.06% | 3 | 3.19% | ~ |
 | compress/gzip.(*Writer).Write | 0 | 0.00% | 1 | 1.06% | new |
 | fmt.(*fmt).fmtInteger | 0 | 0.00% | 1 | 1.06% | new |
@@ -97,7 +97,7 @@ Showing top 20 nodes out of 60
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.mallocgc | 51.8 kB | 82.24% | 51.9 kB | 82.32% | ⚡ 10.1% |
+| runtime.mallocgc | 51.8 kB | 82.24% | 51.9 kB | 82.32% | ~ |
 | hash/crc32.slicingMakeTable | 8 kB | 12.69% | 8 kB | 12.69% | ~ |
 | sync.(*Pool).pinSlow | 1.76 kB | 2.79% | 1.76 kB | 2.79% | ~ |
 | regexp.compile | 164 B | 0.25% | 389 B | 0.60% | ~ |

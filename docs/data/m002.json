@@ -1,0 +1,2441 @@
+{
+  "benchmarks": [
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/FlatMapNoneInt",
+      "name": "BenchmarkOption/FlatMapNoneInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 391472172,
+          "ns_op": 3.048
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 398138944,
+          "ns_op": 3.032
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 394923328,
+          "ns_op": 3.079
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 396866470,
+          "ns_op": 3.061
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 400624698,
+          "ns_op": 2.986
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 396482721,
+          "ns_op": 2.999
+        }
+      ],
+      "variant": "FlatMapNoneInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/FlatMapSomeInt",
+      "name": "BenchmarkOption/FlatMapSomeInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 311043057,
+          "ns_op": 3.83
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 313403407,
+          "ns_op": 3.813
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 315353120,
+          "ns_op": 3.795
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 313935367,
+          "ns_op": 3.802
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 320417140,
+          "ns_op": 3.777
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 316241814,
+          "ns_op": 3.808
+        }
+      ],
+      "variant": "FlatMapSomeInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/MapNoneInt",
+      "name": "BenchmarkOption/MapNoneInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 600481579,
+          "ns_op": 1.897
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 648842382,
+          "ns_op": 1.932
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 621692401,
+          "ns_op": 1.844
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 656084614,
+          "ns_op": 1.812
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 668438850,
+          "ns_op": 1.879
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 652991479,
+          "ns_op": 1.807
+        }
+      ],
+      "variant": "MapNoneInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/MapSomeInt",
+      "name": "BenchmarkOption/MapSomeInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 483255457,
+          "ns_op": 2.473
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 478426054,
+          "ns_op": 2.618
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 475261437,
+          "ns_op": 2.496
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 494857977,
+          "ns_op": 2.428
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 466346160,
+          "ns_op": 2.564
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 496744135,
+          "ns_op": 2.475
+        }
+      ],
+      "variant": "MapSomeInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/NoneInt",
+      "name": "BenchmarkOption/NoneInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5633
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5715
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5441
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5438
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5586
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5333
+        }
+      ],
+      "variant": "NoneInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/SomeInt",
+      "name": "BenchmarkOption/SomeInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5937
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5481
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5273
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5367
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5405
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5454
+        }
+      ],
+      "variant": "SomeInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/SomeLarge",
+      "name": "BenchmarkOption/SomeLarge",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 53500573,
+          "ns_op": 22.91
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 51758980,
+          "ns_op": 22.95
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 53395832,
+          "ns_op": 23
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 51772330,
+          "ns_op": 23
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 51461904,
+          "ns_op": 23.09
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 52449583,
+          "ns_op": 23.03
+        }
+      ],
+      "variant": "SomeLarge",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/UnwrapInt",
+      "name": "BenchmarkOption/UnwrapInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5123
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5138
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.4964
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5289
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5204
+        }
+      ],
+      "variant": "UnwrapInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/UnwrapLarge",
+      "name": "BenchmarkOption/UnwrapLarge",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 76508845,
+          "ns_op": 15.6
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 82425818,
+          "ns_op": 16.76
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 80271799,
+          "ns_op": 16.01
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 76328608,
+          "ns_op": 15.34
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 78297176,
+          "ns_op": 16.64
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 73750400,
+          "ns_op": 15.66
+        }
+      ],
+      "variant": "UnwrapLarge",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/UnwrapOrNone",
+      "name": "BenchmarkOption/UnwrapOrNone",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 969069771,
+          "ns_op": 1.272
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 921789643,
+          "ns_op": 1.273
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 773236495,
+          "ns_op": 1.338
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 920696186,
+          "ns_op": 1.303
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 863723504,
+          "ns_op": 1.278
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 990406518,
+          "ns_op": 1.186
+        }
+      ],
+      "variant": "UnwrapOrNone",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkChainedSuccess/result",
+      "name": "BenchmarkChainedSuccess/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 129007280,
+          "ns_op": 9.717
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 147130674,
+          "ns_op": 8.136
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 149139266,
+          "ns_op": 8.041
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 152673999,
+          "ns_op": 7.853
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 153034046,
+          "ns_op": 7.846
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 151504930,
+          "ns_op": 7.917
+        }
+      ],
+      "variant": "result",
+      "workload": "ChainedSuccess"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkChainedSuccess/traditional",
+      "name": "BenchmarkChainedSuccess/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 735999265,
+          "ns_op": 1.613
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 699722718,
+          "ns_op": 1.64
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 749448541,
+          "ns_op": 1.646
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 710447592,
+          "ns_op": 1.668
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 755226477,
+          "ns_op": 1.611
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 749776036,
+          "ns_op": 1.662
+        }
+      ],
+      "variant": "traditional",
+      "workload": "ChainedSuccess"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBChainedOperations/result",
+      "name": "BenchmarkDBChainedOperations/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 79,
+          "bytes_op": 2192,
+          "extra": {},
+          "iterations": 36,
+          "ns_op": 31537012
+        },
+        {
+          "allocs_op": 79,
+          "bytes_op": 2202,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 32038988
+        },
+        {
+          "allocs_op": 79,
+          "bytes_op": 2204,
+          "extra": {},
+          "iterations": 36,
+          "ns_op": 33365601
+        },
+        {
+          "allocs_op": 79,
+          "bytes_op": 2187,
+          "extra": {},
+          "iterations": 39,
+          "ns_op": 30474572
+        },
+        {
+          "allocs_op": 79,
+          "bytes_op": 2184,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 30256515
+        },
+        {
+          "allocs_op": 79,
+          "bytes_op": 2184,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 32070275
+        }
+      ],
+      "variant": "result",
+      "workload": "DBChainedOperations"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBChainedOperations/result_bubble_up",
+      "name": "BenchmarkDBChainedOperations/result_bubble_up",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 115,
+          "bytes_op": 3278,
+          "extra": {},
+          "iterations": 36,
+          "ns_op": 31595404
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3274,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 31999716
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3267,
+          "extra": {},
+          "iterations": 31,
+          "ns_op": 35103561
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3276,
+          "extra": {},
+          "iterations": 37,
+          "ns_op": 30776293
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3268,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 30685054
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3282,
+          "extra": {},
+          "iterations": 34,
+          "ns_op": 32442602
+        }
+      ],
+      "variant": "result_bubble_up",
+      "workload": "DBChainedOperations"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBChainedOperations/traditional",
+      "name": "BenchmarkDBChainedOperations/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 115,
+          "bytes_op": 3276,
+          "extra": {},
+          "iterations": 36,
+          "ns_op": 31768833
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3267,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 32810167
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3278,
+          "extra": {},
+          "iterations": 32,
+          "ns_op": 33834833
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3273,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 30560898
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3266,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 31331042
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3270,
+          "extra": {},
+          "iterations": 39,
+          "ns_op": 32897808
+        }
+      ],
+      "variant": "traditional",
+      "workload": "DBChainedOperations"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBCreateUser/result",
+      "name": "BenchmarkDBCreateUser/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 32,
+          "bytes_op": 864,
+          "extra": {},
+          "iterations": 410,
+          "ns_op": 2842183
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 865,
+          "extra": {},
+          "iterations": 410,
+          "ns_op": 2853160
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 865,
+          "extra": {},
+          "iterations": 421,
+          "ns_op": 2809554
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 865,
+          "extra": {},
+          "iterations": 414,
+          "ns_op": 2864823
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 863,
+          "extra": {},
+          "iterations": 400,
+          "ns_op": 2966169
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 864,
+          "extra": {},
+          "iterations": 402,
+          "ns_op": 2974582
+        }
+      ],
+      "variant": "result",
+      "workload": "DBCreateUser"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBCreateUser/traditional",
+      "name": "BenchmarkDBCreateUser/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 31,
+          "bytes_op": 867,
+          "extra": {},
+          "iterations": 370,
+          "ns_op": 3115220
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 863,
+          "extra": {},
+          "iterations": 386,
+          "ns_op": 3078663
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 865,
+          "extra": {},
+          "iterations": 378,
+          "ns_op": 2918423
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 864,
+          "extra": {},
+          "iterations": 421,
+          "ns_op": 2844521
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 864,
+          "extra": {},
+          "iterations": 417,
+          "ns_op": 2893842
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 864,
+          "extra": {},
+          "iterations": 396,
+          "ns_op": 3035939
+        }
+      ],
+      "variant": "traditional",
+      "workload": "DBCreateUser"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBCreateUserAllocs/result",
+      "name": "BenchmarkDBCreateUserAllocs/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 32,
+          "bytes_op": 899,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 21754858
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 893,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 21086911
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 898,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 21988889
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 905,
+          "extra": {},
+          "iterations": 51,
+          "ns_op": 22608179
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 895,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20444151
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 892,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20484804
+        }
+      ],
+      "variant": "result",
+      "workload": "DBCreateUserAllocs"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBCreateUserAllocs/traditional",
+      "name": "BenchmarkDBCreateUserAllocs/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 32,
+          "bytes_op": 905,
+          "extra": {},
+          "iterations": 50,
+          "ns_op": 22895313
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 894,
+          "extra": {},
+          "iterations": 54,
+          "ns_op": 20975288
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 895,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 22079874
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 895,
+          "extra": {},
+          "iterations": 52,
+          "ns_op": 22240757
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 892,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20357795
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 898,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20555934
+        }
+      ],
+      "variant": "traditional",
+      "workload": "DBCreateUserAllocs"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBErrorHandlingWithFallback/result",
+      "name": "BenchmarkDBErrorHandlingWithFallback/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 93,
+          "bytes_op": 2801,
+          "extra": {},
+          "iterations": 52,
+          "ns_op": 22170808
+        },
+        {
+          "allocs_op": 93,
+          "bytes_op": 2793,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 20645975
+        },
+        {
+          "allocs_op": 93,
+          "bytes_op": 2795,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 22239741
+        },
+        {
+          "allocs_op": 93,
+          "bytes_op": 2788,
+          "extra": {},
+          "iterations": 50,
+          "ns_op": 21688048
+        },
+        {
+          "allocs_op": 93,
+          "bytes_op": 2792,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20638717
+        },
+        {
+          "allocs_op": 93,
+          "bytes_op": 2790,
+          "extra": {},
+          "iterations": 60,
+          "ns_op": 20466349
+        }
+      ],
+      "variant": "result",
+      "workload": "DBErrorHandlingWithFallback"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBErrorHandlingWithFallback/traditional",
+      "name": "BenchmarkDBErrorHandlingWithFallback/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 46,
+          "ns_op": 22384166
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 20597150
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 23111245
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 51,
+          "ns_op": 21270880
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 21342618
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20727281
+        }
+      ],
+      "variant": "traditional",
+      "workload": "DBErrorHandlingWithFallback"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBFindUser/result",
+      "name": "BenchmarkDBFindUser/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 82224,
+          "ns_op": 14939
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 76509,
+          "ns_op": 15423
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 79026,
+          "ns_op": 15041
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 81610,
+          "ns_op": 14848
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 80271,
+          "ns_op": 15067
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 76999,
+          "ns_op": 15453
+        }
+      ],
+      "variant": "result",
+      "workload": "DBFindUser"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBFindUser/traditional",
+      "name": "BenchmarkDBFindUser/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 77011,
+          "ns_op": 15023
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 78716,
+          "ns_op": 14914
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 79932,
+          "ns_op": 15010
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 79494,
+          "ns_op": 15045
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 78266,
+          "ns_op": 15037
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 80710,
+          "ns_op": 14837
+        }
+      ],
+      "variant": "traditional",
+      "workload": "DBFindUser"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBFindUserNotFound/result",
+      "name": "BenchmarkDBFindUserNotFound/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11005248
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10517637
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10331680
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10869464
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10828767
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10216308
+        }
+      ],
+      "variant": "result",
+      "workload": "DBFindUserNotFound"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBFindUserNotFound/traditional",
+      "name": "BenchmarkDBFindUserNotFound/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 30,
+          "bytes_op": 923,
+          "extra": {},
+          "iterations": 756,
+          "ns_op": 1488465
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 923,
+          "extra": {},
+          "iterations": 756,
+          "ns_op": 1505965
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 923,
+          "extra": {},
+          "iterations": 762,
+          "ns_op": 1514831
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 923,
+          "extra": {},
+          "iterations": 748,
+          "ns_op": 1524010
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 923,
+          "extra": {},
+          "iterations": 770,
+          "ns_op": 1539474
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 923,
+          "extra": {},
+          "iterations": 784,
+          "ns_op": 2209592
+        }
+      ],
+      "variant": "traditional",
+      "workload": "DBFindUserNotFound"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBGetOrCreateUser/result",
+      "name": "BenchmarkDBGetOrCreateUser/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 94,
+          "bytes_op": 2826,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 21138919
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2814,
+          "extra": {},
+          "iterations": 56,
+          "ns_op": 22138866
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2825,
+          "extra": {},
+          "iterations": 49,
+          "ns_op": 21925987
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2818,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20706159
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2829,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20459370
+        },
+        {
+          "allocs_op": 94,
+          "bytes_op": 2829,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 22470003
+        }
+      ],
+      "variant": "result",
+      "workload": "DBGetOrCreateUser"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBGetOrCreateUser/traditional",
+      "name": "BenchmarkDBGetOrCreateUser/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 92,
+          "bytes_op": 2747,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 20873191
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2739,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 24003367
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2752,
+          "extra": {},
+          "iterations": 49,
+          "ns_op": 21641557
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2738,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20841605
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2740,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20792415
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2742,
+          "extra": {},
+          "iterations": 56,
+          "ns_op": 22295235
+        }
+      ],
+      "variant": "traditional",
+      "workload": "DBGetOrCreateUser"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBUpdateUser/result",
+      "name": "BenchmarkDBUpdateUser/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10566266
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11327839
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10311875
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 240,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10142968
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 238,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10722129
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11188897
+        }
+      ],
+      "variant": "result",
+      "workload": "DBUpdateUser"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkDBUpdateUser/traditional",
+      "name": "BenchmarkDBUpdateUser/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 12,
+          "bytes_op": 240,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11303610
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 240,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10522215
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 240,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10201365
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10181788
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11023099
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10567553
+        }
+      ],
+      "variant": "traditional",
+      "workload": "DBUpdateUser"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkError/result",
+      "name": "BenchmarkError/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 71388992,
+          "ns_op": 15.27
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 76851062,
+          "ns_op": 15.71
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 80991092,
+          "ns_op": 15.22
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 75906796,
+          "ns_op": 15.17
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 80966780,
+          "ns_op": 16.31
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 80132490,
+          "ns_op": 15.23
+        }
+      ],
+      "variant": "result",
+      "workload": "Error"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkError/traditional",
+      "name": "BenchmarkError/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 1.193
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 1.173
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 1.171
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 1.171
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 983229625,
+          "ns_op": 1.199
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 995012713,
+          "ns_op": 1.206
+        }
+      ],
+      "variant": "traditional",
+      "workload": "Error"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkErrorHandling/result_with_and_then",
+      "name": "BenchmarkErrorHandling/result_with_and_then",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 92299426,
+          "ns_op": 13.13
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 91544101,
+          "ns_op": 13.21
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 94091182,
+          "ns_op": 13.12
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 93577159,
+          "ns_op": 13.1
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 93029154,
+          "ns_op": 12.9
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 93581874,
+          "ns_op": 12.68
+        }
+      ],
+      "variant": "result_with_and_then",
+      "workload": "ErrorHandling"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkErrorHandling/result_with_try",
+      "name": "BenchmarkErrorHandling/result_with_try",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 100000000,
+          "ns_op": 10.3
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 100000000,
+          "ns_op": 10.25
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 100000000,
+          "ns_op": 10.43
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 100000000,
+          "ns_op": 10.22
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 100000000,
+          "ns_op": 10.31
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 100000000,
+          "ns_op": 10.13
+        }
+      ],
+      "variant": "result_with_try",
+      "workload": "ErrorHandling"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkErrorHandling/traditional",
+      "name": "BenchmarkErrorHandling/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5331
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5487
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5268
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5416
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5288
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5358
+        }
+      ],
+      "variant": "traditional",
+      "workload": "ErrorHandling"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkSuccess/result",
+      "name": "BenchmarkSuccess/result",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 993411890,
+          "ns_op": 1.26
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 984374901,
+          "ns_op": 1.226
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 970834819,
+          "ns_op": 1.223
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 952402494,
+          "ns_op": 1.286
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 953600068,
+          "ns_op": 1.241
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 988437772,
+          "ns_op": 1.233
+        }
+      ],
+      "variant": "result",
+      "workload": "Success"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkSuccess/result_unwrap_or",
+      "name": "BenchmarkSuccess/result_unwrap_or",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 277054202,
+          "ns_op": 4.368
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 268195916,
+          "ns_op": 4.483
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 268379394,
+          "ns_op": 4.465
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 270201810,
+          "ns_op": 4.444
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 273007729,
+          "ns_op": 4.364
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 272475714,
+          "ns_op": 4.531
+        }
+      ],
+      "variant": "result_unwrap_or",
+      "workload": "Success"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/result.BenchmarkSuccess/traditional",
+      "name": "BenchmarkSuccess/traditional",
+      "package": "github.com/seyallius/goxide/rusty/result",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.848
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.8844
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.9212
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.8713
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.8744
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.9078
+        }
+      ],
+      "variant": "traditional",
+      "workload": "Success"
+    }
+  ],
+  "content_hash": "f1afc6807d3799e7799f05aa531f6e1d2480b657e9ccf0028588c20c8203f41d",
+  "created_at": "2026-10-02T10:57:26Z",
+  "forced": false,
+  "id": "m002",
+  "indicative_only": false,
+  "label": "inline Option storage",
+  "note": "Full Result and Option suite after inline storage optimization; compared against m001 with six samples per benchmark.",
+  "profiles": [
+    {
+      "kind": "cpu",
+      "meta": [
+        "File: option.test",
+        "Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7",
+        "Type: cpu",
+        "Time: 2026-10-02 14:29:04 +0330",
+        "Duration: 9.98s, Total samples = 9990ms (100.11%)",
+        "Showing nodes accounting for 9630ms, 96.40% of 9990ms total",
+        "Dropped 13 nodes (cum \u003c= 49.95ms)",
+        "Showing top 20 nodes out of 28"
+      ],
+      "rows": [
+        {
+          "cum": 2900000000,
+          "cum_pct": 29.03,
+          "flat": 2900000000,
+          "flat_pct": 29.03,
+          "name": "testing.(*B).Loop (inline)",
+          "sum_pct": 29.03
+        },
+        {
+          "cum": 1220000000,
+          "cum_pct": 12.21,
+          "flat": 1090000000,
+          "flat_pct": 10.91,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge",
+          "sum_pct": 39.94
+        },
+        {
+          "cum": 1310000000,
+          "cum_pct": 13.11,
+          "flat": 1000000000,
+          "flat_pct": 10.01,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapLarge",
+          "sum_pct": 49.95
+        },
+        {
+          "cum": 1800000000,
+          "cum_pct": 18.02,
+          "flat": 690000000,
+          "flat_pct": 6.91,
+          "name": "github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int]",
+          "sum_pct": 56.86
+        },
+        {
+          "cum": 1580000000,
+          "cum_pct": 15.82,
+          "flat": 630000000,
+          "flat_pct": 6.31,
+          "name": "github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.int]",
+          "sum_pct": 63.16
+        },
+        {
+          "cum": 1070000000,
+          "cum_pct": 10.71,
+          "flat": 410000000,
+          "flat_pct": 4.1,
+          "name": "github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }]",
+          "sum_pct": 67.27
+        },
+        {
+          "cum": 540000000,
+          "cum_pct": 5.41,
+          "flat": 360000000,
+          "flat_pct": 3.6,
+          "name": "github.com/seyallius/goxide/rusty/option.Option[go.shape.int].UnwrapOr",
+          "sum_pct": 70.87
+        },
+        {
+          "cum": 950000000,
+          "cum_pct": 9.51,
+          "flat": 320000000,
+          "flat_pct": 3.2,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.int] (inline)",
+          "sum_pct": 74.07
+        },
+        {
+          "cum": 310000000,
+          "cum_pct": 3.1,
+          "flat": 300000000,
+          "flat_pct": 3,
+          "name": "github.com/seyallius/goxide/rusty/option.Option[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }].Unwrap (inline)",
+          "sum_pct": 77.08
+        },
+        {
+          "cum": 520000000,
+          "cum_pct": 5.21,
+          "flat": 280000000,
+          "flat_pct": 2.8,
+          "name": "github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int }].func1 (inline)",
+          "sum_pct": 79.88
+        },
+        {
+          "cum": 660000000,
+          "cum_pct": 6.61,
+          "flat": 250000000,
+          "flat_pct": 2.5,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } },go.shape.int] (inline)",
+          "sum_pct": 82.38
+        },
+        {
+          "cum": 240000000,
+          "cum_pct": 2.4,
+          "flat": 240000000,
+          "flat_pct": 2.4,
+          "name": "github.com/seyallius/goxide/rusty/option_test.incrementOptionInt",
+          "sum_pct": 84.78
+        },
+        {
+          "cum": 230000000,
+          "cum_pct": 2.3,
+          "flat": 230000000,
+          "flat_pct": 2.3,
+          "name": "github.com/seyallius/goxide/rusty/option.Option[go.shape.int].Expect (inline)",
+          "sum_pct": 87.09
+        },
+        {
+          "cum": 170000000,
+          "cum_pct": 1.7,
+          "flat": 170000000,
+          "flat_pct": 1.7,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int] (inline)",
+          "sum_pct": 88.79
+        },
+        {
+          "cum": 150000000,
+          "cum_pct": 1.5,
+          "flat": 150000000,
+          "flat_pct": 1.5,
+          "name": "github.com/seyallius/goxide/rusty/option_test.someIncrementedOptionInt",
+          "sum_pct": 90.29
+        },
+        {
+          "cum": 290000000,
+          "cum_pct": 2.9,
+          "flat": 140000000,
+          "flat_pct": 1.4,
+          "name": "github.com/seyallius/goxide/rusty/types.Compose[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value go.shape.int } }].func1 (inline)",
+          "sum_pct": 91.69
+        },
+        {
+          "cum": 130000000,
+          "cum_pct": 1.3,
+          "flat": 130000000,
+          "flat_pct": 1.3,
+          "name": "github.com/seyallius/goxide/rusty/option.Some[go.shape.struct { github.com/seyallius/goxide/rusty/option_test.data [256]uint8 }] (inline)",
+          "sum_pct": 92.99
+        },
+        {
+          "cum": 1240000000,
+          "cum_pct": 12.41,
+          "flat": 130000000,
+          "flat_pct": 1.3,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionFlatMapNoneInt",
+          "sum_pct": 94.29
+        },
+        {
+          "cum": 1160000000,
+          "cum_pct": 11.61,
+          "flat": 110000000,
+          "flat_pct": 1.1,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionMapNoneInt",
+          "sum_pct": 95.4
+        },
+        {
+          "cum": 500000000,
+          "cum_pct": 5.01,
+          "flat": 100000000,
+          "flat_pct": 1,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeInt",
+          "sum_pct": 96.4
+        }
+      ],
+      "target": "full"
+    },
+    {
+      "kind": "mem_objects",
+      "meta": [
+        "File: option.test",
+        "Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7",
+        "Type: inuse_objects",
+        "Time: 2026-10-02 14:29:14 +0330",
+        "Showing nodes accounting for 94, 100% of 94 total",
+        "Showing top 20 nodes out of 117"
+      ],
+      "rows": [
+        {
+          "cum": 74,
+          "cum_pct": 78.72,
+          "flat": 67,
+          "flat_pct": 71.28,
+          "name": "runtime.mallocgc",
+          "sum_pct": 71.28
+        },
+        {
+          "cum": 7,
+          "cum_pct": 7.45,
+          "flat": 7,
+          "flat_pct": 7.45,
+          "name": "runtime.mallocgcSmallScanNoHeaderSC1",
+          "sum_pct": 78.72
+        },
+        {
+          "cum": 3,
+          "cum_pct": 3.19,
+          "flat": 3,
+          "flat_pct": 3.19,
+          "name": "os.newFile",
+          "sum_pct": 81.91
+        },
+        {
+          "cum": 2,
+          "cum_pct": 2.13,
+          "flat": 2,
+          "flat_pct": 2.13,
+          "name": "sync.(*Pool).pinSlow",
+          "sum_pct": 84.04
+        },
+        {
+          "cum": 2,
+          "cum_pct": 2.13,
+          "flat": 2,
+          "flat_pct": 2.13,
+          "name": "time.newTimer",
+          "sum_pct": 86.17
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "fmt.(*buffer).write (inline)",
+          "sum_pct": 87.23
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "fmt.init.func1",
+          "sum_pct": 88.3
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "hash/crc32.slicingMakeTable",
+          "sum_pct": 89.36
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "internal/cpu.Name",
+          "sum_pct": 90.43
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "internal/sync.newIndirectNode[go.shape.interface {},go.shape.interface {}]",
+          "sum_pct": 91.49
+        },
+        {
+          "cum": 4,
+          "cum_pct": 4.26,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "regexp.compile",
+          "sum_pct": 92.55
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "regexp/syntax.(*Regexp).CapNames",
+          "sum_pct": 93.62
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "regexp/syntax.(*compiler).init (inline)",
+          "sum_pct": 94.68
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "regexp/syntax.(*compiler).inst (inline)",
+          "sum_pct": 95.74
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "runtime/pprof.(*profileBuilder).emitLocation",
+          "sum_pct": 96.81
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "runtime/pprof.StartCPUProfile",
+          "sum_pct": 97.87
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "testing.(*B).run1",
+          "sum_pct": 98.94
+        },
+        {
+          "cum": 3,
+          "cum_pct": 3.19,
+          "flat": 1,
+          "flat_pct": 1.06,
+          "name": "testing.(*M).startAlarm",
+          "sum_pct": 100
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "compress/gzip.(*Writer).Write",
+          "sum_pct": 100
+        },
+        {
+          "cum": 1,
+          "cum_pct": 1.06,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "fmt.(*fmt).fmtInteger",
+          "sum_pct": 100
+        }
+      ],
+      "target": "full"
+    },
+    {
+      "kind": "mem_space",
+      "meta": [
+        "File: option.test",
+        "Build ID: 772b80ec3d82cab580108727b8e784d6fb94d2b7",
+        "Type: inuse_space",
+        "Time: 2026-10-02 14:29:14 +0330",
+        "Showing nodes accounting for 61.74kB, 97.97% of 63.02kB total",
+        "Dropped 57 nodes (cum \u003c= 0.31kB)",
+        "Showing top 20 nodes out of 60"
+      ],
+      "rows": [
+        {
+          "cum": 53125.12,
+          "cum_pct": 82.32,
+          "flat": 53073.92,
+          "flat_pct": 82.24,
+          "name": "runtime.mallocgc",
+          "sum_pct": 82.24
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 12.69,
+          "flat": 8192,
+          "flat_pct": 12.69,
+          "name": "hash/crc32.slicingMakeTable",
+          "sum_pct": 94.93
+        },
+        {
+          "cum": 1802.24,
+          "cum_pct": 2.79,
+          "flat": 1802.24,
+          "flat_pct": 2.79,
+          "name": "sync.(*Pool).pinSlow",
+          "sum_pct": 97.72
+        },
+        {
+          "cum": 389.12,
+          "cum_pct": 0.6,
+          "flat": 163.84,
+          "flat_pct": 0.25,
+          "name": "regexp.compile",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 12.69,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "compress/gzip.(*Writer).Write",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 2037.76,
+          "cum_pct": 3.16,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "fmt.Sprintf",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 1976.32,
+          "cum_pct": 3.06,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "fmt.newPrinter",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 2088.96,
+          "cum_pct": 3.24,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "github.com/seyallius/goxide/rusty/option_test.BenchmarkOption",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 12.69,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "hash/crc32.Update (inline)",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 12.69,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "hash/crc32.archInitIEEE (inline)",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 12.69,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "hash/crc32.init.func2",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 12.69,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "hash/crc32.update",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 1116.16,
+          "cum_pct": 1.72,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "main.main",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 389.12,
+          "cum_pct": 0.6,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "regexp.Compile (inline)",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 39290.88,
+          "cum_pct": 60.88,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.allocm",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 6369.28,
+          "cum_pct": 9.87,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.gcBgMarkWorker",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 10639.36,
+          "cum_pct": 16.49,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.gcStart.func4",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 16128,
+          "cum_pct": 24.99,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.mProfStackInit (inline)",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 1116.16,
+          "cum_pct": 1.72,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.main",
+          "sum_pct": 97.97
+        },
+        {
+          "cum": 16128,
+          "cum_pct": 24.99,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.makeProfStackFP (inline)",
+          "sum_pct": 97.97
+        }
+      ],
+      "target": "full"
+    }
+  ],
+  "provenance": {
+    "bench_args": "-run '^$' -bench=. -benchmem -count=6",
+    "cpu_cores": 12,
+    "cpu_model": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+    "git_branch": "codex/option-baseline",
+    "git_dirty": false,
+    "git_sha": "a5bd892b4058cd5633bd9e2589d5478cca3d0b47",
+    "go_version": "go1.27.1",
+    "goarch": "amd64",
+    "goos": "linux",
+    "hardware_fingerprint": "67d6ec7308d9a4b34eb0c3f140869b9c946f086d4177b754bbf81750eb2822a0",
+    "hostname": "",
+    "memory_bytes": 24921796608
+  },
+  "schema_version": 1,
+  "seq": 2
+}
