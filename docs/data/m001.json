@@ -1,6 +1,519 @@
 {
   "benchmarks": [
     {
+<<<<<<< HEAD
+=======
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/FlatMapNoneInt",
+      "name": "BenchmarkOption/FlatMapNoneInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 181444126,
+          "ns_op": 6.664
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 177046681,
+          "ns_op": 6.769
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 176063124,
+          "ns_op": 6.786
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 168853190,
+          "ns_op": 6.894
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 174602570,
+          "ns_op": 6.78
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 182606904,
+          "ns_op": 6.494
+        }
+      ],
+      "variant": "FlatMapNoneInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/FlatMapSomeInt",
+      "name": "BenchmarkOption/FlatMapSomeInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 2,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 38208829,
+          "ns_op": 30.41
+        },
+        {
+          "allocs_op": 2,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 39042639,
+          "ns_op": 30.54
+        },
+        {
+          "allocs_op": 2,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 39382314,
+          "ns_op": 31.19
+        },
+        {
+          "allocs_op": 2,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 39508990,
+          "ns_op": 30.27
+        },
+        {
+          "allocs_op": 2,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 38899821,
+          "ns_op": 30.38
+        },
+        {
+          "allocs_op": 2,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 40838654,
+          "ns_op": 30.4
+        }
+      ],
+      "variant": "FlatMapSomeInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/MapNoneInt",
+      "name": "BenchmarkOption/MapNoneInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 310870219,
+          "ns_op": 3.897
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 332074603,
+          "ns_op": 3.592
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 333691087,
+          "ns_op": 3.635
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 323665084,
+          "ns_op": 3.713
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 325823343,
+          "ns_op": 3.712
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 328050108,
+          "ns_op": 3.635
+        }
+      ],
+      "variant": "MapNoneInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/MapSomeInt",
+      "name": "BenchmarkOption/MapSomeInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 77883676,
+          "ns_op": 15.2
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 79003876,
+          "ns_op": 15.3
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 75809268,
+          "ns_op": 15.39
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 81183387,
+          "ns_op": 15.1
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 77352200,
+          "ns_op": 15.34
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 79917279,
+          "ns_op": 15.45
+        }
+      ],
+      "variant": "MapSomeInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/NoneInt",
+      "name": "BenchmarkOption/NoneInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.7787
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.7299
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.7664
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.811
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.7757
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.7969
+        }
+      ],
+      "variant": "NoneInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/SomeInt",
+      "name": "BenchmarkOption/SomeInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 100000000,
+          "ns_op": 10.38
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 130551504,
+          "ns_op": 9.16
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 129572172,
+          "ns_op": 9.196
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 133382436,
+          "ns_op": 9.007
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 134601907,
+          "ns_op": 8.908
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 135941811,
+          "ns_op": 9.039
+        }
+      ],
+      "variant": "SomeInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/SomeLarge",
+      "name": "BenchmarkOption/SomeLarge",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 1,
+          "bytes_op": 256,
+          "extra": {},
+          "iterations": 21720903,
+          "ns_op": 49.96
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 256,
+          "extra": {},
+          "iterations": 26276659,
+          "ns_op": 46.8
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 256,
+          "extra": {},
+          "iterations": 26043643,
+          "ns_op": 45.28
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 256,
+          "extra": {},
+          "iterations": 24816200,
+          "ns_op": 46
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 256,
+          "extra": {},
+          "iterations": 25147693,
+          "ns_op": 45.29
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 256,
+          "extra": {},
+          "iterations": 26106801,
+          "ns_op": 47.2
+        }
+      ],
+      "variant": "SomeLarge",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/UnwrapInt",
+      "name": "BenchmarkOption/UnwrapInt",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5072
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5692
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.527
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5318
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5534
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5394
+        }
+      ],
+      "variant": "UnwrapInt",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/UnwrapLarge",
+      "name": "BenchmarkOption/UnwrapLarge",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 186815352,
+          "ns_op": 6.336
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 177930702,
+          "ns_op": 6.633
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 173174875,
+          "ns_op": 6.851
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 182997756,
+          "ns_op": 6.587
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 167692312,
+          "ns_op": 7.129
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 180384046,
+          "ns_op": 6.618
+        }
+      ],
+      "variant": "UnwrapLarge",
+      "workload": "Option"
+    },
+    {
+      "id": "github.com/seyallius/goxide/rusty/option.BenchmarkOption/UnwrapOrNone",
+      "name": "BenchmarkOption/UnwrapOrNone",
+      "package": "github.com/seyallius/goxide/rusty/option",
+      "samples": [
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 359113597,
+          "ns_op": 3.24
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 369092514,
+          "ns_op": 3.156
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 365746992,
+          "ns_op": 3.247
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 349864615,
+          "ns_op": 3.266
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 365546594,
+          "ns_op": 3.38
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 346381558,
+          "ns_op": 3.405
+        }
+      ],
+      "variant": "UnwrapOrNone",
+      "workload": "Option"
+    },
+    {
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
       "id": "github.com/seyallius/goxide/rusty/result.BenchmarkChainedSuccess/result",
       "name": "BenchmarkChainedSuccess/result",
       "package": "github.com/seyallius/goxide/rusty/result",
@@ -9,22 +522,58 @@
           "allocs_op": 3,
           "bytes_op": 24,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 31242837,
           "ns_op": 41.4
+=======
+          "iterations": 32939380,
+          "ns_op": 36.72
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 3,
           "bytes_op": 24,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 31707374,
           "ns_op": 38.44
+=======
+          "iterations": 33810907,
+          "ns_op": 36.08
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 3,
           "bytes_op": 24,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 31428829,
           "ns_op": 39.15
+=======
+          "iterations": 33310047,
+          "ns_op": 36.11
+        },
+        {
+          "allocs_op": 3,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 33237418,
+          "ns_op": 37.59
+        },
+        {
+          "allocs_op": 3,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 27924802,
+          "ns_op": 38.41
+        },
+        {
+          "allocs_op": 3,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 31888194,
+          "ns_op": 36.66
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -39,22 +588,58 @@
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 749529898,
           "ns_op": 1.611
+=======
+          "iterations": 714731590,
+          "ns_op": 1.612
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 739938816,
           "ns_op": 1.591
+=======
+          "iterations": 746603842,
+          "ns_op": 1.618
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 751605927,
           "ns_op": 1.597
+=======
+          "iterations": 733510724,
+          "ns_op": 1.637
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 748798538,
+          "ns_op": 1.615
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 736828707,
+          "ns_op": 1.629
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 743404045,
+          "ns_op": 1.588
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -67,6 +652,7 @@
       "samples": [
         {
           "allocs_op": 82,
+<<<<<<< HEAD
           "bytes_op": 2200,
           "extra": {},
           "iterations": 38,
@@ -85,6 +671,47 @@
           "extra": {},
           "iterations": 37,
           "ns_op": 33252726
+=======
+          "bytes_op": 2206,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 31149746
+        },
+        {
+          "allocs_op": 82,
+          "bytes_op": 2216,
+          "extra": {},
+          "iterations": 39,
+          "ns_op": 34772228
+        },
+        {
+          "allocs_op": 82,
+          "bytes_op": 2225,
+          "extra": {},
+          "iterations": 34,
+          "ns_op": 32153207
+        },
+        {
+          "allocs_op": 82,
+          "bytes_op": 2211,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 30590683
+        },
+        {
+          "allocs_op": 82,
+          "bytes_op": 2210,
+          "extra": {},
+          "iterations": 39,
+          "ns_op": 31188254
+        },
+        {
+          "allocs_op": 82,
+          "bytes_op": 2223,
+          "extra": {},
+          "iterations": 34,
+          "ns_op": 32905486
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -97,16 +724,52 @@
       "samples": [
         {
           "allocs_op": 120,
+<<<<<<< HEAD
           "bytes_op": 3314,
           "extra": {},
           "iterations": 34,
           "ns_op": 34424801
+=======
+          "bytes_op": 3302,
+          "extra": {},
+          "iterations": 37,
+          "ns_op": 31110410
+        },
+        {
+          "allocs_op": 120,
+          "bytes_op": 3294,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 34162806
+        },
+        {
+          "allocs_op": 120,
+          "bytes_op": 3319,
+          "extra": {},
+          "iterations": 32,
+          "ns_op": 32096943
+        },
+        {
+          "allocs_op": 120,
+          "bytes_op": 3294,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 30433826
+        },
+        {
+          "allocs_op": 120,
+          "bytes_op": 3288,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 30643612
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 120,
           "bytes_op": 3300,
           "extra": {},
           "iterations": 38,
+<<<<<<< HEAD
           "ns_op": 30672106
         },
         {
@@ -115,6 +778,9 @@
           "extra": {},
           "iterations": 38,
           "ns_op": 32496549
+=======
+          "ns_op": 33695203
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result_bubble_up",
@@ -127,6 +793,7 @@
       "samples": [
         {
           "allocs_op": 115,
+<<<<<<< HEAD
           "bytes_op": 3280,
           "extra": {},
           "iterations": 34,
@@ -138,13 +805,51 @@
           "extra": {},
           "iterations": 38,
           "ns_op": 31690715
+=======
+          "bytes_op": 3272,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 30762026
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 115,
           "bytes_op": 3260,
           "extra": {},
           "iterations": 39,
+<<<<<<< HEAD
           "ns_op": 32704433
+=======
+          "ns_op": 35156169
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3272,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 31201303
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3272,
+          "extra": {},
+          "iterations": 38,
+          "ns_op": 31316368
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3280,
+          "extra": {},
+          "iterations": 34,
+          "ns_op": 32166568
+        },
+        {
+          "allocs_op": 115,
+          "bytes_op": 3269,
+          "extra": {},
+          "iterations": 33,
+          "ns_op": 33616815
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -156,25 +861,64 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
+<<<<<<< HEAD
           "allocs_op": 32,
           "bytes_op": 899,
           "extra": {},
           "iterations": 51,
           "ns_op": 22154988
+=======
+          "allocs_op": 33,
+          "bytes_op": 879,
+          "extra": {},
+          "iterations": 418,
+          "ns_op": 2866535
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 33,
           "bytes_op": 880,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 325,
           "ns_op": 3444097
+=======
+          "iterations": 421,
+          "ns_op": 2825400
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 33,
           "bytes_op": 879,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 398,
           "ns_op": 3262076
+=======
+          "iterations": 430,
+          "ns_op": 2881504
+        },
+        {
+          "allocs_op": 33,
+          "bytes_op": 879,
+          "extra": {},
+          "iterations": 409,
+          "ns_op": 2915253
+        },
+        {
+          "allocs_op": 33,
+          "bytes_op": 880,
+          "extra": {},
+          "iterations": 408,
+          "ns_op": 2881945
+        },
+        {
+          "allocs_op": 33,
+          "bytes_op": 883,
+          "extra": {},
+          "iterations": 152,
+          "ns_op": 13078304
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -186,6 +930,7 @@
       "package": "github.com/seyallius/goxide/rusty/result",
       "samples": [
         {
+<<<<<<< HEAD
           "allocs_op": 30,
           "bytes_op": 942,
           "extra": {},
@@ -205,6 +950,48 @@
           "extra": {},
           "iterations": 50,
           "ns_op": 24832892
+=======
+          "allocs_op": 31,
+          "bytes_op": 867,
+          "extra": {},
+          "iterations": 388,
+          "ns_op": 2985108
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 865,
+          "extra": {},
+          "iterations": 406,
+          "ns_op": 2897228
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 863,
+          "extra": {},
+          "iterations": 410,
+          "ns_op": 2950953
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 864,
+          "extra": {},
+          "iterations": 391,
+          "ns_op": 3111603
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 864,
+          "extra": {},
+          "iterations": 393,
+          "ns_op": 3075640
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 864,
+          "extra": {},
+          "iterations": 399,
+          "ns_op": 3078048
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -217,6 +1004,7 @@
       "samples": [
         {
           "allocs_op": 33,
+<<<<<<< HEAD
           "bytes_op": 907,
           "extra": {},
           "iterations": 57,
@@ -235,6 +1023,47 @@
           "extra": {},
           "iterations": 60,
           "ns_op": 20394971
+=======
+          "bytes_op": 909,
+          "extra": {},
+          "iterations": 54,
+          "ns_op": 21191083
+        },
+        {
+          "allocs_op": 33,
+          "bytes_op": 903,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20903090
+        },
+        {
+          "allocs_op": 33,
+          "bytes_op": 917,
+          "extra": {},
+          "iterations": 49,
+          "ns_op": 23325119
+        },
+        {
+          "allocs_op": 33,
+          "bytes_op": 914,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20832079
+        },
+        {
+          "allocs_op": 33,
+          "bytes_op": 911,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20499549
+        },
+        {
+          "allocs_op": 33,
+          "bytes_op": 916,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 21433186
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -247,6 +1076,7 @@
       "samples": [
         {
           "allocs_op": 32,
+<<<<<<< HEAD
           "bytes_op": 904,
           "extra": {},
           "iterations": 52,
@@ -265,6 +1095,47 @@
           "extra": {},
           "iterations": 51,
           "ns_op": 20855951
+=======
+          "bytes_op": 900,
+          "extra": {},
+          "iterations": 55,
+          "ns_op": 21514666
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 889,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 21569132
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 903,
+          "extra": {},
+          "iterations": 48,
+          "ns_op": 23066376
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 892,
+          "extra": {},
+          "iterations": 56,
+          "ns_op": 20870690
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 888,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20871249
+        },
+        {
+          "allocs_op": 32,
+          "bytes_op": 891,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 21519806
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -277,6 +1148,7 @@
       "samples": [
         {
           "allocs_op": 95,
+<<<<<<< HEAD
           "bytes_op": 2820,
           "extra": {},
           "iterations": 49,
@@ -295,6 +1167,47 @@
           "extra": {},
           "iterations": 55,
           "ns_op": 20744374
+=======
+          "bytes_op": 2812,
+          "extra": {},
+          "iterations": 52,
+          "ns_op": 20943116
+        },
+        {
+          "allocs_op": 95,
+          "bytes_op": 2799,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 21644672
+        },
+        {
+          "allocs_op": 95,
+          "bytes_op": 2803,
+          "extra": {},
+          "iterations": 51,
+          "ns_op": 22077355
+        },
+        {
+          "allocs_op": 95,
+          "bytes_op": 2819,
+          "extra": {},
+          "iterations": 50,
+          "ns_op": 20520109
+        },
+        {
+          "allocs_op": 95,
+          "bytes_op": 2812,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20407971
+        },
+        {
+          "allocs_op": 95,
+          "bytes_op": 2799,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 21903087
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -309,6 +1222,7 @@
           "allocs_op": 91,
           "bytes_op": 2672,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 57,
           "ns_op": 21475714
         },
@@ -318,13 +1232,49 @@
           "extra": {},
           "iterations": 54,
           "ns_op": 21673073
+=======
+          "iterations": 55,
+          "ns_op": 21028116
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 91,
           "bytes_op": 2672,
           "extra": {},
           "iterations": 57,
+<<<<<<< HEAD
           "ns_op": 20768862
+=======
+          "ns_op": 21750128
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 51,
+          "ns_op": 21889390
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20809158
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20433632
+        },
+        {
+          "allocs_op": 91,
+          "bytes_op": 2672,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 22134404
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -339,22 +1289,58 @@
           "allocs_op": 37,
           "bytes_op": 1072,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 73677,
           "ns_op": 15975
+=======
+          "iterations": 74306,
+          "ns_op": 16096
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 37,
           "bytes_op": 1072,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 80556,
           "ns_op": 15775
+=======
+          "iterations": 72181,
+          "ns_op": 16257
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 37,
           "bytes_op": 1072,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 77121,
           "ns_op": 15428
+=======
+          "iterations": 75540,
+          "ns_op": 16151
+        },
+        {
+          "allocs_op": 37,
+          "bytes_op": 1072,
+          "extra": {},
+          "iterations": 73856,
+          "ns_op": 16305
+        },
+        {
+          "allocs_op": 37,
+          "bytes_op": 1072,
+          "extra": {},
+          "iterations": 74076,
+          "ns_op": 16338
+        },
+        {
+          "allocs_op": 37,
+          "bytes_op": 1072,
+          "extra": {},
+          "iterations": 72402,
+          "ns_op": 15242
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -369,22 +1355,58 @@
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 80119,
           "ns_op": 15015
+=======
+          "iterations": 72013,
+          "ns_op": 16362
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 80623,
           "ns_op": 15275
+=======
+          "iterations": 72591,
+          "ns_op": 16181
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 36,
           "bytes_op": 1064,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 76663,
           "ns_op": 15408
+=======
+          "iterations": 74193,
+          "ns_op": 16003
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 75837,
+          "ns_op": 16157
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 73580,
+          "ns_op": 16016
+        },
+        {
+          "allocs_op": 36,
+          "bytes_op": 1064,
+          "extra": {},
+          "iterations": 73888,
+          "ns_op": 16132
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -397,6 +1419,7 @@
       "samples": [
         {
           "allocs_op": 30,
+<<<<<<< HEAD
           "bytes_op": 922,
           "extra": {},
           "iterations": 790,
@@ -415,6 +1438,47 @@
           "extra": {},
           "iterations": 778,
           "ns_op": 1533440
+=======
+          "bytes_op": 940,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10412634
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 943,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10370375
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10306611
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 940,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11092775
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 943,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10386963
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 943,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10576599
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -427,6 +1491,7 @@
       "samples": [
         {
           "allocs_op": 30,
+<<<<<<< HEAD
           "bytes_op": 923,
           "extra": {},
           "iterations": 729,
@@ -445,6 +1510,47 @@
           "extra": {},
           "iterations": 786,
           "ns_op": 1536104
+=======
+          "bytes_op": 944,
+          "extra": {},
+          "iterations": 108,
+          "ns_op": 10668985
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 946,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10369037
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11360942
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 943,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10891741
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 946,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10707013
+        },
+        {
+          "allocs_op": 30,
+          "bytes_op": 945,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11571086
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -457,6 +1563,7 @@
       "samples": [
         {
           "allocs_op": 96,
+<<<<<<< HEAD
           "bytes_op": 2850,
           "extra": {},
           "iterations": 55,
@@ -475,6 +1582,47 @@
           "extra": {},
           "iterations": 52,
           "ns_op": 22779497
+=======
+          "bytes_op": 2852,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20609649
+        },
+        {
+          "allocs_op": 96,
+          "bytes_op": 2851,
+          "extra": {},
+          "iterations": 52,
+          "ns_op": 23811448
+        },
+        {
+          "allocs_op": 96,
+          "bytes_op": 2847,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20843125
+        },
+        {
+          "allocs_op": 96,
+          "bytes_op": 2847,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20773092
+        },
+        {
+          "allocs_op": 96,
+          "bytes_op": 2852,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 21144456
+        },
+        {
+          "allocs_op": 96,
+          "bytes_op": 2854,
+          "extra": {},
+          "iterations": 54,
+          "ns_op": 21765327
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -487,6 +1635,7 @@
       "samples": [
         {
           "allocs_op": 92,
+<<<<<<< HEAD
           "bytes_op": 2715,
           "extra": {},
           "iterations": 370,
@@ -505,6 +1654,47 @@
           "extra": {},
           "iterations": 361,
           "ns_op": 13726045
+=======
+          "bytes_op": 2744,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 22730876
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2755,
+          "extra": {},
+          "iterations": 42,
+          "ns_op": 25059500
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2744,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 20576393
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2744,
+          "extra": {},
+          "iterations": 58,
+          "ns_op": 20940768
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2733,
+          "extra": {},
+          "iterations": 57,
+          "ns_op": 21638848
+        },
+        {
+          "allocs_op": 92,
+          "bytes_op": 2743,
+          "extra": {},
+          "iterations": 54,
+          "ns_op": 21655270
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -517,6 +1707,7 @@
       "samples": [
         {
           "allocs_op": 13,
+<<<<<<< HEAD
           "bytes_op": 229,
           "extra": {},
           "iterations": 795,
@@ -535,6 +1726,47 @@
           "extra": {},
           "iterations": 772,
           "ns_op": 1584860
+=======
+          "bytes_op": 236,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11275725
+        },
+        {
+          "allocs_op": 13,
+          "bytes_op": 236,
+          "extra": {},
+          "iterations": 97,
+          "ns_op": 10699266
+        },
+        {
+          "allocs_op": 13,
+          "bytes_op": 240,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10328291
+        },
+        {
+          "allocs_op": 13,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10321561
+        },
+        {
+          "allocs_op": 13,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10853821
+        },
+        {
+          "allocs_op": 13,
+          "bytes_op": 238,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10584220
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -547,6 +1779,7 @@
       "samples": [
         {
           "allocs_op": 12,
+<<<<<<< HEAD
           "bytes_op": 229,
           "extra": {},
           "iterations": 747,
@@ -565,6 +1798,47 @@
           "extra": {},
           "iterations": 817,
           "ns_op": 1516009
+=======
+          "bytes_op": 240,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 11220003
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 234,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10229373
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 236,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10405655
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 238,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10574185
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 236,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10838736
+        },
+        {
+          "allocs_op": 12,
+          "bytes_op": 240,
+          "extra": {},
+          "iterations": 100,
+          "ns_op": 10209906
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -579,22 +1853,58 @@
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 67687430,
           "ns_op": 16.06
+=======
+          "iterations": 70408238,
+          "ns_op": 16.46
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 75781582,
           "ns_op": 16.06
+=======
+          "iterations": 71459953,
+          "ns_op": 15.65
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 1,
           "bytes_op": 16,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 74731689,
           "ns_op": 17.33
+=======
+          "iterations": 73298239,
+          "ns_op": 15.94
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 70899865,
+          "ns_op": 16.36
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 74635772,
+          "ns_op": 16.71
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 16,
+          "extra": {},
+          "iterations": 76865905,
+          "ns_op": 15.89
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -610,21 +1920,55 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
+<<<<<<< HEAD
           "ns_op": 1.136
+=======
+          "ns_op": 1.172
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
+<<<<<<< HEAD
           "ns_op": 1.191
+=======
+          "ns_op": 1.17
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 998540740,
           "ns_op": 1.185
+=======
+          "iterations": 1000000000,
+          "ns_op": 1.159
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 999369805,
+          "ns_op": 1.175
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 1.174
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 1.169
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -639,22 +1983,58 @@
           "allocs_op": 3,
           "bytes_op": 24,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 28995487,
           "ns_op": 40.17
+=======
+          "iterations": 30388059,
+          "ns_op": 39.8
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 3,
           "bytes_op": 24,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 29839227,
           "ns_op": 40.13
+=======
+          "iterations": 31086860,
+          "ns_op": 39.88
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 3,
           "bytes_op": 24,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 28952658,
           "ns_op": 44.01
+=======
+          "iterations": 30323506,
+          "ns_op": 39.98
+        },
+        {
+          "allocs_op": 3,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 31214118,
+          "ns_op": 38.11
+        },
+        {
+          "allocs_op": 3,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 29960204,
+          "ns_op": 41.54
+        },
+        {
+          "allocs_op": 3,
+          "bytes_op": 24,
+          "extra": {},
+          "iterations": 29985534,
+          "ns_op": 40.47
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result_with_and_then",
@@ -669,22 +2049,58 @@
           "allocs_op": 4,
           "bytes_op": 32,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 25310823,
           "ns_op": 47.29
+=======
+          "iterations": 25017552,
+          "ns_op": 45.75
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 4,
           "bytes_op": 32,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 24846482,
           "ns_op": 49.8
+=======
+          "iterations": 26649484,
+          "ns_op": 45.49
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 4,
           "bytes_op": 32,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 24790035,
           "ns_op": 47.07
+=======
+          "iterations": 26488617,
+          "ns_op": 45.88
+        },
+        {
+          "allocs_op": 4,
+          "bytes_op": 32,
+          "extra": {},
+          "iterations": 26507587,
+          "ns_op": 44.09
+        },
+        {
+          "allocs_op": 4,
+          "bytes_op": 32,
+          "extra": {},
+          "iterations": 27257731,
+          "ns_op": 46.85
+        },
+        {
+          "allocs_op": 4,
+          "bytes_op": 32,
+          "extra": {},
+          "iterations": 25881760,
+          "ns_op": 46.47
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result_with_try",
@@ -700,21 +2116,54 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
+<<<<<<< HEAD
           "ns_op": 0.5454
+=======
+          "ns_op": 0.5534
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
+<<<<<<< HEAD
           "ns_op": 0.5853
+=======
+          "ns_op": 0.5475
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
+<<<<<<< HEAD
           "ns_op": 0.5367
+=======
+          "ns_op": 0.5331
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.533
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5306
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.5347
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
@@ -729,6 +2178,7 @@
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 839532276,
           "ns_op": 1.466
         },
@@ -745,6 +2195,45 @@
           "extra": {},
           "iterations": 675827914,
           "ns_op": 1.826
+=======
+          "iterations": 687219645,
+          "ns_op": 1.771
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 856556139,
+          "ns_op": 1.464
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 845923506,
+          "ns_op": 1.43
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 856070671,
+          "ns_op": 1.416
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 808966939,
+          "ns_op": 1.479
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 844808763,
+          "ns_op": 1.466
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result",
@@ -759,22 +2248,58 @@
           "allocs_op": 1,
           "bytes_op": 8,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 81414279,
           "ns_op": 14.41
+=======
+          "iterations": 77960880,
+          "ns_op": 15.05
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 1,
           "bytes_op": 8,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 83583782,
           "ns_op": 15.31
+=======
+          "iterations": 67482685,
+          "ns_op": 14.96
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 1,
           "bytes_op": 8,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 78002145,
           "ns_op": 14.56
+=======
+          "iterations": 75482050,
+          "ns_op": 15.99
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 76658658,
+          "ns_op": 16
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 72689377,
+          "ns_op": 15.7
+        },
+        {
+          "allocs_op": 1,
+          "bytes_op": 8,
+          "extra": {},
+          "iterations": 81983440,
+          "ns_op": 14.72
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "result_unwrap_or",
@@ -790,27 +2315,62 @@
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
+<<<<<<< HEAD
           "ns_op": 0.878
+=======
+          "ns_op": 0.8891
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
           "iterations": 1000000000,
+<<<<<<< HEAD
           "ns_op": 0.8877
+=======
+          "ns_op": 0.9098
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "allocs_op": 0,
           "bytes_op": 0,
           "extra": {},
+<<<<<<< HEAD
           "iterations": 991650517,
           "ns_op": 1.23
+=======
+          "iterations": 998760886,
+          "ns_op": 1.238
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.8745
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 953455345,
+          "ns_op": 1.238
+        },
+        {
+          "allocs_op": 0,
+          "bytes_op": 0,
+          "extra": {},
+          "iterations": 1000000000,
+          "ns_op": 0.8527
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "variant": "traditional",
       "workload": "Success"
     }
   ],
+<<<<<<< HEAD
   "content_hash": "4699e2b2fa6f890339d65fc794552fe0cee71f6ee9e5d5067af12be8fc691583",
   "created_at": "2026-09-30T19:30:26Z",
   "forced": true,
@@ -818,10 +2378,20 @@
   "indicative_only": false,
   "label": "baseline",
   "note": "Initial full-suite reference run; collect six-sample follow-up before making fine-grained performance claims.",
+=======
+  "content_hash": "f81e0fb992e1ddb14cd17bc6f8095eadf18b7112554f9ed862281141cceb9ae9",
+  "created_at": "2026-10-02T10:46:00Z",
+  "forced": false,
+  "id": "m001",
+  "indicative_only": false,
+  "label": "baseline",
+  "note": "Full Result and Option suite before inline Option storage; six samples per benchmark.",
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
   "profiles": [
     {
       "kind": "cpu",
       "meta": [
+<<<<<<< HEAD
         "File: result.test",
         "Build ID: 8aa5c4348b474ed1b76e8e66f46e3cbb27a30da3",
         "Type: cpu",
@@ -991,6 +2561,177 @@
           "flat_pct": 0.97,
           "name": "runtime.(*sweepLocked).sweep",
           "sum_pct": 81.91
+=======
+        "File: option.test",
+        "Build ID: 081e05f6035863cb22252f9e0e33c366e372289b",
+        "Type: cpu",
+        "Time: 2026-10-02 14:19:14 +0330",
+        "Duration: 11.23s, Total samples = 11920ms (106.19%)",
+        "Showing nodes accounting for 9460ms, 79.36% of 11920ms total",
+        "Dropped 79 nodes (cum \u003c= 59.60ms)",
+        "Showing top 20 nodes out of 77"
+      ],
+      "rows": [
+        {
+          "cum": 1460000000,
+          "cum_pct": 12.25,
+          "flat": 1460000000,
+          "flat_pct": 12.25,
+          "name": "runtime.(*mspan).specialFindSplicePoint (inline)",
+          "sum_pct": 12.25
+        },
+        {
+          "cum": 1320000000,
+          "cum_pct": 11.07,
+          "flat": 1320000000,
+          "flat_pct": 11.07,
+          "name": "testing.(*B).Loop (inline)",
+          "sum_pct": 23.32
+        },
+        {
+          "cum": 1210000000,
+          "cum_pct": 10.15,
+          "flat": 1130000000,
+          "flat_pct": 9.48,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapLarge",
+          "sum_pct": 32.8
+        },
+        {
+          "cum": 1300000000,
+          "cum_pct": 10.91,
+          "flat": 730000000,
+          "flat_pct": 6.12,
+          "name": "runtime.pcvalue",
+          "sum_pct": 38.93
+        },
+        {
+          "cum": 570000000,
+          "cum_pct": 4.78,
+          "flat": 500000000,
+          "flat_pct": 4.19,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int]",
+          "sum_pct": 43.12
+        },
+        {
+          "cum": 810000000,
+          "cum_pct": 6.8,
+          "flat": 450000000,
+          "flat_pct": 3.78,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionNoneInt",
+          "sum_pct": 46.9
+        },
+        {
+          "cum": 1970000000,
+          "cum_pct": 16.53,
+          "flat": 440000000,
+          "flat_pct": 3.69,
+          "name": "github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.int]",
+          "sum_pct": 50.59
+        },
+        {
+          "cum": 910000000,
+          "cum_pct": 7.63,
+          "flat": 340000000,
+          "flat_pct": 2.85,
+          "name": "github.com/seyallius/goxide/rusty/option.Option[go.shape.int].UnwrapOr",
+          "sum_pct": 53.44
+        },
+        {
+          "cum": 1630000000,
+          "cum_pct": 13.67,
+          "flat": 330000000,
+          "flat_pct": 2.77,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int } },go.shape.int]",
+          "sum_pct": 56.21
+        },
+        {
+          "cum": 370000000,
+          "cum_pct": 3.1,
+          "flat": 300000000,
+          "flat_pct": 2.52,
+          "name": "runtime.step",
+          "sum_pct": 58.72
+        },
+        {
+          "cum": 1440000000,
+          "cum_pct": 12.08,
+          "flat": 290000000,
+          "flat_pct": 2.43,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int },go.shape.int]",
+          "sum_pct": 61.16
+        },
+        {
+          "cum": 300000000,
+          "cum_pct": 2.52,
+          "flat": 290000000,
+          "flat_pct": 2.43,
+          "name": "runtime.unlock2",
+          "sum_pct": 63.59
+        },
+        {
+          "cum": 530000000,
+          "cum_pct": 4.45,
+          "flat": 270000000,
+          "flat_pct": 2.27,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapInt",
+          "sum_pct": 65.86
+        },
+        {
+          "cum": 950000000,
+          "cum_pct": 7.97,
+          "flat": 270000000,
+          "flat_pct": 2.27,
+          "name": "runtime.(*unwinder).resolveInternal",
+          "sum_pct": 68.12
+        },
+        {
+          "cum": 270000000,
+          "cum_pct": 2.27,
+          "flat": 250000000,
+          "flat_pct": 2.1,
+          "name": "runtime.findfunc",
+          "sum_pct": 70.22
+        },
+        {
+          "cum": 2320000000,
+          "cum_pct": 19.46,
+          "flat": 230000000,
+          "flat_pct": 1.93,
+          "name": "github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int]",
+          "sum_pct": 72.15
+        },
+        {
+          "cum": 230000000,
+          "cum_pct": 1.93,
+          "flat": 230000000,
+          "flat_pct": 1.93,
+          "name": "runtime.procyieldAsm",
+          "sum_pct": 74.08
+        },
+        {
+          "cum": 1890000000,
+          "cum_pct": 15.86,
+          "flat": 220000000,
+          "flat_pct": 1.85,
+          "name": "github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int }]",
+          "sum_pct": 75.92
+        },
+        {
+          "cum": 450000000,
+          "cum_pct": 3.78,
+          "flat": 210000000,
+          "flat_pct": 1.76,
+          "name": "runtime.lock2",
+          "sum_pct": 77.68
+        },
+        {
+          "cum": 200000000,
+          "cum_pct": 1.68,
+          "flat": 200000000,
+          "flat_pct": 1.68,
+          "name": "github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int }]",
+          "sum_pct": 79.36
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "target": "full"
@@ -998,6 +2739,7 @@
     {
       "kind": "mem_objects",
       "meta": [
+<<<<<<< HEAD
         "File: result.test",
         "Build ID: 8aa5c4348b474ed1b76e8e66f46e3cbb27a30da3",
         "Type: inuse_objects",
@@ -1165,6 +2907,175 @@
           "flat_pct": 0.73,
           "name": "github.com/seyallius/goxide/rusty/result_test.NewTraditionalUserRepo",
           "sum_pct": 91.97
+=======
+        "File: option.test",
+        "Build ID: 081e05f6035863cb22252f9e0e33c366e372289b",
+        "Type: inuse_objects",
+        "Time: 2026-10-02 14:19:25 +0330",
+        "Showing nodes accounting for 113, 100% of 113 total",
+        "Showing top 20 nodes out of 119"
+      ],
+      "rows": [
+        {
+          "cum": 91,
+          "cum_pct": 80.53,
+          "flat": 82,
+          "flat_pct": 72.57,
+          "name": "runtime.mallocgc",
+          "sum_pct": 72.57
+        },
+        {
+          "cum": 7,
+          "cum_pct": 6.19,
+          "flat": 7,
+          "flat_pct": 6.19,
+          "name": "runtime.mallocgcSmallScanNoHeaderSC1",
+          "sum_pct": 78.76
+        },
+        {
+          "cum": 3,
+          "cum_pct": 2.65,
+          "flat": 3,
+          "flat_pct": 2.65,
+          "name": "os.newFile",
+          "sum_pct": 81.42
+        },
+        {
+          "cum": 2,
+          "cum_pct": 1.77,
+          "flat": 2,
+          "flat_pct": 1.77,
+          "name": "runtime.mallocgcSmallScanNoHeaderSC2",
+          "sum_pct": 83.19
+        },
+        {
+          "cum": 2,
+          "cum_pct": 1.77,
+          "flat": 2,
+          "flat_pct": 1.77,
+          "name": "sync.(*Pool).pinSlow",
+          "sum_pct": 84.96
+        },
+        {
+          "cum": 2,
+          "cum_pct": 1.77,
+          "flat": 2,
+          "flat_pct": 1.77,
+          "name": "testing.(*B).run1",
+          "sum_pct": 86.73
+        },
+        {
+          "cum": 2,
+          "cum_pct": 1.77,
+          "flat": 2,
+          "flat_pct": 1.77,
+          "name": "time.newTimer",
+          "sum_pct": 88.5
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "fmt.(*buffer).write",
+          "sum_pct": 89.38
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "fmt.init.func1",
+          "sum_pct": 90.27
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge",
+          "sum_pct": 91.15
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "hash/crc32.slicingMakeTable",
+          "sum_pct": 92.04
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "internal/cpu.Name",
+          "sum_pct": 92.92
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "internal/sync.newIndirectNode[go.shape.interface {},go.shape.interface {}]",
+          "sum_pct": 93.81
+        },
+        {
+          "cum": 4,
+          "cum_pct": 3.54,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "regexp.compile",
+          "sum_pct": 94.69
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "regexp/syntax.(*Regexp).CapNames",
+          "sum_pct": 95.58
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "regexp/syntax.(*compiler).init (inline)",
+          "sum_pct": 96.46
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "regexp/syntax.(*compiler).inst (inline)",
+          "sum_pct": 97.35
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "runtime/pprof.StartCPUProfile",
+          "sum_pct": 98.23
+        },
+        {
+          "cum": 1,
+          "cum_pct": 0.88,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "runtime/pprof.allFrames",
+          "sum_pct": 99.12
+        },
+        {
+          "cum": 3,
+          "cum_pct": 2.65,
+          "flat": 1,
+          "flat_pct": 0.88,
+          "name": "testing.(*M).startAlarm",
+          "sum_pct": 100
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "target": "full"
@@ -1172,6 +3083,7 @@
     {
       "kind": "mem_space",
       "meta": [
+<<<<<<< HEAD
         "File: result.test",
         "Build ID: 8aa5c4348b474ed1b76e8e66f46e3cbb27a30da3",
         "Type: inuse_space",
@@ -1212,11 +3124,46 @@
           "flat_pct": 1.41,
           "name": "testing.(*B).run1",
           "sum_pct": 97.31
+=======
+        "File: option.test",
+        "Build ID: 081e05f6035863cb22252f9e0e33c366e372289b",
+        "Type: inuse_space",
+        "Time: 2026-10-02 14:19:25 +0330",
+        "Showing nodes accounting for 67.55kB, 97.58% of 69.22kB total",
+        "Dropped 54 nodes (cum \u003c= 0.35kB)",
+        "Showing top 20 nodes out of 65"
+      ],
+      "rows": [
+        {
+          "cum": 59105.28,
+          "cum_pct": 83.39,
+          "flat": 59013.12,
+          "flat_pct": 83.26,
+          "name": "runtime.mallocgc",
+          "sum_pct": 83.26
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 11.56,
+          "flat": 8192,
+          "flat_pct": 11.56,
+          "name": "hash/crc32.slicingMakeTable",
+          "sum_pct": 94.82
+        },
+        {
+          "cum": 1802.24,
+          "cum_pct": 2.54,
+          "flat": 1802.24,
+          "flat_pct": 2.54,
+          "name": "sync.(*Pool).pinSlow",
+          "sum_pct": 97.36
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         },
         {
           "cum": 389.12,
           "cum_pct": 0.54,
           "flat": 163.84,
+<<<<<<< HEAD
           "flat_pct": 0.22,
           "name": "regexp.compile",
           "sum_pct": 97.53
@@ -1340,24 +3287,170 @@
           "flat_pct": 0,
           "name": "github.com/seyallius/goxide/rusty/result_test.TestMain",
           "sum_pct": 97.76
+=======
+          "flat_pct": 0.23,
+          "name": "regexp.compile",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 11.56,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "compress/gzip.(*Writer).Write",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 2037.76,
+          "cum_pct": 2.88,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "fmt.Sprintf",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 1976.32,
+          "cum_pct": 2.79,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "fmt.newPrinter",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 2201.6,
+          "cum_pct": 3.1,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "github.com/seyallius/goxide/rusty/option_test.BenchmarkOption",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 11.56,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "hash/crc32.Update (inline)",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 11.56,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "hash/crc32.archInitIEEE (inline)",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 11.56,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "hash/crc32.init.func2",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 8192,
+          "cum_pct": 11.56,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "hash/crc32.update",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 1116.16,
+          "cum_pct": 1.57,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "main.main",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 389.12,
+          "cum_pct": 0.54,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "regexp.Compile (inline)",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 788.48,
+          "cum_pct": 1.11,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.acquireSudog",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 44605.44,
+          "cum_pct": 62.93,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.allocm",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 6932.48,
+          "cum_pct": 9.77,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.gcBgMarkWorker",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 788.48,
+          "cum_pct": 1.11,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.gcMarkDone",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 10639.36,
+          "cum_pct": 15.01,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.gcStart.func4",
+          "sum_pct": 97.58
+        },
+        {
+          "cum": 368.64,
+          "cum_pct": 0.52,
+          "flat": 0,
+          "flat_pct": 0,
+          "name": "runtime.growslice",
+          "sum_pct": 97.58
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
         }
       ],
       "target": "full"
     }
   ],
   "provenance": {
+<<<<<<< HEAD
     "bench_args": "-run '^$' -bench=. -benchmem -count=3",
     "cpu_cores": 12,
     "cpu_model": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
     "git_branch": "main",
     "git_dirty": true,
     "git_sha": "cc3a8ed7f00426b6ee210173c34bb4567ec4a4b3",
+=======
+    "bench_args": "-run '^$' -bench=. -benchmem -count=6",
+    "cpu_cores": 12,
+    "cpu_model": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+    "git_branch": "codex/option-baseline",
+    "git_dirty": false,
+    "git_sha": "69f2b383180cd7c77a5bbb60299b418cd7d0c2b0",
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
     "go_version": "go1.27.1",
     "goarch": "amd64",
     "goos": "linux",
     "hardware_fingerprint": "67d6ec7308d9a4b34eb0c3f140869b9c946f086d4177b754bbf81750eb2822a0",
     "hostname": "",
+<<<<<<< HEAD
     "memory_bytes": 24921800704
+=======
+    "memory_bytes": 24921796608
+>>>>>>> a1c8da8 (docs(benchbook): establish complete pre-optimization baseline)
   },
   "schema_version": 1,
   "seq": 1

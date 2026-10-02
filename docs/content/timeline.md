@@ -12,17 +12,21 @@ significance test plus a minimum effect, never from a bare percentage.
 
 | Milestone | Date | Label | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- | --- |
-| m001 | 2026-09-30 | baseline | — | — |
+| m001 | 2026-10-02 | baseline | — | — |
 
 #### Tracked benchmarks
 
 | Benchmark | Chain | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- |
-| Success/traditional | 0.888 ns | — | — |
-| Error/traditional | 1.19 ns | — | — |
-| ChainedSuccess/traditional | 1.6 ns | — | — |
-| ErrorHandling/result_with_try | 47.3 ns | — | — |
-| DBFindUser/result | 15.8 µs | — | — |
+| Success/traditional | 0.899 ns | — | — |
+| Error/traditional | 1.17 ns | — | — |
+| ChainedSuccess/traditional | 1.62 ns | — | — |
+| ErrorHandling/result_with_try | 45.8 ns | — | — |
+| DBFindUser/result | 16.2 µs | — | — |
+| Option/SomeInt | 9.1 ns | — | — |
+| Option/SomeLarge | 46.4 ns | — | — |
+| Option/MapSomeInt | 15.3 ns | — | — |
+| Option/FlatMapSomeInt | 30.4 ns | — | — |
 
 #### Index chart
 
@@ -54,6 +58,18 @@ significance test plus a minimum effect, never from a bare percentage.
 <polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-5, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-5, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-6, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-6, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-7, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-7, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-7, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-8, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-8, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-8, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-1, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
@@ -67,6 +83,14 @@ significance test plus a minimum effect, never from a bare percentage.
 <text class="bb-chart-legend-label" x="490" y="328" font-size="12.50" fill="currentColor">ErrorHandling/result_with_try</text>
 <rect class="bb-chart-swatch" x="64" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-5, currentColor)"/>
 <text class="bb-chart-legend-label" x="84" y="346" font-size="12.50" fill="currentColor">DBFindUser/result</text>
+<rect class="bb-chart-swatch" x="470" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-6, currentColor)"/>
+<text class="bb-chart-legend-label" x="490" y="346" font-size="12.50" fill="currentColor">Option/SomeInt</text>
+<rect class="bb-chart-swatch" x="64" y="356" width="10" height="10" rx="1" fill="var(--bb-chart-7, currentColor)"/>
+<text class="bb-chart-legend-label" x="84" y="364" font-size="12.50" fill="currentColor">Option/SomeLarge</text>
+<rect class="bb-chart-swatch" x="470" y="356" width="10" height="10" rx="1" fill="var(--bb-chart-8, currentColor)"/>
+<text class="bb-chart-legend-label" x="490" y="364" font-size="12.50" fill="currentColor">Option/MapSomeInt</text>
+<rect class="bb-chart-swatch" x="64" y="374" width="10" height="10" rx="1" fill="var(--bb-chart-1, currentColor)"/>
+<text class="bb-chart-legend-label" x="84" y="382" font-size="12.50" fill="currentColor">Option/FlatMapSomeInt</text>
 </svg>
 
 _The dotted final point is the unpromoted current run._
@@ -80,7 +104,7 @@ _The dotted final point is the unpromoted current run._
 
 | Milestone | Date | Label | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- | --- |
-| m001 | 2026-09-30 | baseline | — | — |
+| m001 | 2026-10-02 | baseline | — | — |
 
 #### Tracked benchmarks
 
@@ -91,6 +115,10 @@ _The dotted final point is the unpromoted current run._
 | ChainedSuccess/traditional | 0 B | — | — |
 | ErrorHandling/result_with_try | 32 B | — | — |
 | DBFindUser/result | 1072 B | — | — |
+| Option/SomeInt | 8 B | — | — |
+| Option/SomeLarge | 256 B | — | — |
+| Option/MapSomeInt | 8 B | — | — |
+| Option/FlatMapSomeInt | 24 B | — | — |
 
 #### Index chart
 
@@ -113,6 +141,18 @@ _The dotted final point is the unpromoted current run._
 <polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-2, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-2, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-3, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-3, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-4, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-4, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-5, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-5, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-6, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-6, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
@@ -120,6 +160,14 @@ _The dotted final point is the unpromoted current run._
 <text class="bb-chart-legend-label" x="84" y="310" font-size="12.50" fill="currentColor">ErrorHandling/result_with_try</text>
 <rect class="bb-chart-swatch" x="470" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-2, currentColor)"/>
 <text class="bb-chart-legend-label" x="490" y="310" font-size="12.50" fill="currentColor">DBFindUser/result</text>
+<rect class="bb-chart-swatch" x="64" y="320" width="10" height="10" rx="1" fill="var(--bb-chart-3, currentColor)"/>
+<text class="bb-chart-legend-label" x="84" y="328" font-size="12.50" fill="currentColor">Option/SomeInt</text>
+<rect class="bb-chart-swatch" x="470" y="320" width="10" height="10" rx="1" fill="var(--bb-chart-4, currentColor)"/>
+<text class="bb-chart-legend-label" x="490" y="328" font-size="12.50" fill="currentColor">Option/SomeLarge</text>
+<rect class="bb-chart-swatch" x="64" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-5, currentColor)"/>
+<text class="bb-chart-legend-label" x="84" y="346" font-size="12.50" fill="currentColor">Option/MapSomeInt</text>
+<rect class="bb-chart-swatch" x="470" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-6, currentColor)"/>
+<text class="bb-chart-legend-label" x="490" y="346" font-size="12.50" fill="currentColor">Option/FlatMapSomeInt</text>
 </svg>
 
 _The dotted final point is the unpromoted current run._
@@ -133,7 +181,7 @@ _The dotted final point is the unpromoted current run._
 
 | Milestone | Date | Label | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- | --- |
-| m001 | 2026-09-30 | baseline | — | — |
+| m001 | 2026-10-02 | baseline | — | — |
 
 #### Tracked benchmarks
 
@@ -144,6 +192,10 @@ _The dotted final point is the unpromoted current run._
 | ChainedSuccess/traditional | 0 allocs | — | — |
 | ErrorHandling/result_with_try | 4 allocs | — | — |
 | DBFindUser/result | 37 allocs | — | — |
+| Option/SomeInt | 1 alloc | — | — |
+| Option/SomeLarge | 1 alloc | — | — |
+| Option/MapSomeInt | 1 alloc | — | — |
+| Option/FlatMapSomeInt | 2 allocs | — | — |
 
 #### Index chart
 
@@ -166,6 +218,18 @@ _The dotted final point is the unpromoted current run._
 <polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-2, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-2, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-3, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-3, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-4, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-4, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-5, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-5, currentColor)"/>
+<polyline class="bb-chart-line bb-chart-current" points="64,148 876,148" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle class="bb-chart-dot" cx="64" cy="148" r="3" fill="var(--bb-chart-6, currentColor)"/>
+<circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="148" r="4" fill="var(--bb-chart-6, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
@@ -173,6 +237,14 @@ _The dotted final point is the unpromoted current run._
 <text class="bb-chart-legend-label" x="84" y="310" font-size="12.50" fill="currentColor">ErrorHandling/result_with_try</text>
 <rect class="bb-chart-swatch" x="470" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-2, currentColor)"/>
 <text class="bb-chart-legend-label" x="490" y="310" font-size="12.50" fill="currentColor">DBFindUser/result</text>
+<rect class="bb-chart-swatch" x="64" y="320" width="10" height="10" rx="1" fill="var(--bb-chart-3, currentColor)"/>
+<text class="bb-chart-legend-label" x="84" y="328" font-size="12.50" fill="currentColor">Option/SomeInt</text>
+<rect class="bb-chart-swatch" x="470" y="320" width="10" height="10" rx="1" fill="var(--bb-chart-4, currentColor)"/>
+<text class="bb-chart-legend-label" x="490" y="328" font-size="12.50" fill="currentColor">Option/SomeLarge</text>
+<rect class="bb-chart-swatch" x="64" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-5, currentColor)"/>
+<text class="bb-chart-legend-label" x="84" y="346" font-size="12.50" fill="currentColor">Option/MapSomeInt</text>
+<rect class="bb-chart-swatch" x="470" y="338" width="10" height="10" rx="1" fill="var(--bb-chart-6, currentColor)"/>
+<text class="bb-chart-legend-label" x="490" y="346" font-size="12.50" fill="currentColor">Option/FlatMapSomeInt</text>
 </svg>
 
 _The dotted final point is the unpromoted current run._
@@ -184,4 +256,4 @@ _The dotted final point is the unpromoted current run._
 
 | ID | Date | Label | Note | Commit | Badges | Headline vs previous |
 | --- | --- | --- | --- | --- | --- | --- |
-| m001 | 2026-09-30 | baseline | Initial full-suite reference run; collect six-sample follow-up before making fine-grained performance claims. | cc3a8ed7 | ⚠ dirty tree ⚠ forced | baseline |
+| m001 | 2026-10-02 | baseline | Full Result and Option suite before inline Option storage; six samples per benchmark. | 69f2b383 |  | baseline |

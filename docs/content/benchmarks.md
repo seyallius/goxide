@@ -2,7 +2,7 @@
 
 # Benchmarks — current run
 
-_2026-10-02_
+_2026-10-02 · compared with m001_
 
 ### How to read this
 
@@ -16,109 +16,109 @@ _2026-10-02_
 
 ### ChainedSuccess
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| ChainedSuccess/traditional | 714731590 | 1.62 ns ±1.5% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
-| ChainedSuccess/result | 32939380 | 36.7 ns ±3.2% | 24 B ±0.0% | 3 allocs ±0.0% | 🐢 2169.7% slower |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| ChainedSuccess/traditional | 714731590 | 1.62 ns ±1.5% | 0 B ±0.0% | 0 allocs ±0.0% | baseline | ~ |
+| ChainedSuccess/result | 32939380 | 36.7 ns ±3.2% | 24 B ±0.0% | 3 allocs ±0.0% | 🐢 2169.7% slower | ~ |
 
 ### DBChainedOperations
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| DBChainedOperations/traditional | 38 | 31.7 ms ±6.9% | 3272 B ±0.3% | 115 allocs ±0.0% | baseline |
-| DBChainedOperations/result | 38 | 31.7 ms ±6.6% | 2214 B ±0.4% | 82 allocs ±0.0% | ~ |
-| DBChainedOperations/result_bubble_up | 37 | 31.6 ms ±5.9% | 3297 B ±0.5% | 120 allocs ±0.0% | ~ |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| DBChainedOperations/traditional | 38 | 31.7 ms ±6.9% | 3272 B ±0.3% | 115 allocs ±0.0% | baseline | ~ |
+| DBChainedOperations/result | 38 | 31.7 ms ±6.6% | 2214 B ±0.4% | 82 allocs ±0.0% | ~ | ~ |
+| DBChainedOperations/result_bubble_up | 37 | 31.6 ms ±5.9% | 3297 B ±0.5% | 120 allocs ±0.0% | ~ | ~ |
 
 ## ⚡ Basic operations
 
 ### DBCreateUser
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| DBCreateUser/traditional | 388 | 3.03 ms ±3.5% | 864 B ±0.2% | 32 allocs ±1.6% | baseline |
-| DBCreateUser/result | 418 | 2.88 ms ±177.9% | 880 B ±0.2% | 33 allocs ±0.0% | ~ |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| DBCreateUser/traditional | 388 | 3.03 ms ±3.5% | 864 B ±0.2% | 32 allocs ±1.6% | baseline | ~ |
+| DBCreateUser/result | 418 | 2.88 ms ±177.9% | 880 B ±0.2% | 33 allocs ±0.0% | ~ | ~ |
 
 ### DBCreateUserAllocs
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| DBCreateUserAllocs/traditional | 55 | 21.5 ms ±5.1% | 892 B ±0.8% | 32 allocs ±0.0% | baseline |
-| DBCreateUserAllocs/result | 54 | 21 ms ±6.7% | 912 B ±0.8% | 33 allocs ±0.0% | ~ |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| DBCreateUserAllocs/traditional | 55 | 21.5 ms ±5.1% | 892 B ±0.8% | 32 allocs ±0.0% | baseline | ~ |
+| DBCreateUserAllocs/result | 54 | 21 ms ±6.7% | 912 B ±0.8% | 33 allocs ±0.0% | ~ | ~ |
 
 ### DBErrorHandlingWithFallback
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| DBErrorHandlingWithFallback/traditional | 55 | 21.4 ms ±4.0% | 2672 B ±0.0% | 91 allocs ±0.0% | baseline |
-| DBErrorHandlingWithFallback/result | 52 | 21.3 ms ±3.9% | 2808 B ±0.4% | 95 allocs ±0.0% | ~ |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| DBErrorHandlingWithFallback/traditional | 55 | 21.4 ms ±4.0% | 2672 B ±0.0% | 91 allocs ±0.0% | baseline | ~ |
+| DBErrorHandlingWithFallback/result | 52 | 21.3 ms ±3.9% | 2808 B ±0.4% | 95 allocs ±0.0% | ~ | ~ |
 
 ### DBFindUser
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| DBFindUser/traditional | 72013 | 16.1 µs ±1.1% | 1064 B ±0.0% | 36 allocs ±0.0% | baseline |
-| DBFindUser/result | 74306 | 16.2 µs ±3.4% | 1072 B ±0.0% | 37 allocs ±0.0% | ~ |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| DBFindUser/traditional | 72013 | 16.1 µs ±1.1% | 1064 B ±0.0% | 36 allocs ±0.0% | baseline | ~ |
+| DBFindUser/result | 74306 | 16.2 µs ±3.4% | 1072 B ±0.0% | 37 allocs ±0.0% | ~ | ~ |
 
 ### DBFindUserNotFound
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| DBFindUserNotFound/traditional | 108 | 10.8 ms ±5.6% | 945 B ±0.2% | 30 allocs ±0.0% | baseline |
-| DBFindUserNotFound/result | 100 | 10.4 ms ±3.8% | 943 B ±0.3% | 30 allocs ±0.0% | ~ |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| DBFindUserNotFound/traditional | 108 | 10.8 ms ±5.6% | 945 B ±0.2% | 30 allocs ±0.0% | baseline | ~ |
+| DBFindUserNotFound/result | 100 | 10.4 ms ±3.8% | 943 B ±0.3% | 30 allocs ±0.0% | ~ | ~ |
 
 ### DBGetOrCreateUser
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| DBGetOrCreateUser/traditional | 58 | 21.6 ms ±10.4% | 2744 B ±0.4% | 92 allocs ±0.0% | baseline |
-| DBGetOrCreateUser/result | 57 | 21 ms ±7.6% | 2852 B ±0.1% | 96 allocs ±0.0% | ~ |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| DBGetOrCreateUser/traditional | 58 | 21.6 ms ±10.4% | 2744 B ±0.4% | 92 allocs ±0.0% | baseline | ~ |
+| DBGetOrCreateUser/result | 57 | 21 ms ±7.6% | 2852 B ±0.1% | 96 allocs ±0.0% | ~ | ~ |
 
 ### DBUpdateUser
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| DBUpdateUser/traditional | 100 | 10.5 ms ±4.8% | 237 B ±1.3% | 12 allocs ±0.0% | baseline |
-| DBUpdateUser/result | 100 | 10.6 ms ±4.5% | 236 B ±1.3% | 13 allocs ±0.0% | ~ |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| DBUpdateUser/traditional | 100 | 10.5 ms ±4.8% | 237 B ±1.3% | 12 allocs ±0.0% | baseline | ~ |
+| DBUpdateUser/result | 100 | 10.6 ms ±4.5% | 236 B ±1.3% | 13 allocs ±0.0% | ~ | ~ |
 
 ### Error
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| Error/traditional | 1000000000 | 1.17 ns ±0.7% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
-| Error/result | 70408238 | 16.1 ns ±3.3% | 16 B ±0.0% | 1 alloc ±0.0% | 🐢 1279.2% slower |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| Error/traditional | 1000000000 | 1.17 ns ±0.7% | 0 B ±0.0% | 0 allocs ±0.0% | baseline | ~ |
+| Error/result | 70408238 | 16.1 ns ±3.3% | 16 B ±0.0% | 1 alloc ±0.0% | 🐢 1279.2% slower | ~ |
 
 ### ErrorHandling
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| ErrorHandling/traditional | 1000000000 | 0.534 ns ±2.1% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
-| ErrorHandling/result_with_and_then | 30388059 | 39.9 ns ±4.3% | 24 B ±0.0% | 3 allocs ±0.0% | 🐢 7378.9% slower |
-| ErrorHandling/result_with_try | 25017552 | 45.8 ns ±3.0% | 32 B ±0.0% | 4 allocs ±0.0% | 🐢 8481.2% slower |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| ErrorHandling/traditional | 1000000000 | 0.534 ns ±2.1% | 0 B ±0.0% | 0 allocs ±0.0% | baseline | ~ |
+| ErrorHandling/result_with_and_then | 30388059 | 39.9 ns ±4.3% | 24 B ±0.0% | 3 allocs ±0.0% | 🐢 7378.9% slower | ~ |
+| ErrorHandling/result_with_try | 25017552 | 45.8 ns ±3.0% | 32 B ±0.0% | 4 allocs ±0.0% | 🐢 8481.2% slower | ~ |
 
 ### Success
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
-| --- | --- | --- | --- | --- | --- |
-| Success/traditional | 1000000000 | 0.899 ns ±21.4% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
-| Success/result | 687219645 | 1.46 ns ±12.1% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 62.9% slower |
-| Success/result_unwrap_or | 77960880 | 15.4 ns ±4.2% | 8 B ±0.0% | 1 alloc ±0.0% | 🐢 1609.4% slower |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
+| --- | --- | --- | --- | --- | --- | --- |
+| Success/traditional | 1000000000 | 0.899 ns ±21.4% | 0 B ±0.0% | 0 allocs ±0.0% | baseline | ~ |
+| Success/result | 687219645 | 1.46 ns ±12.1% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 62.9% slower | ~ |
+| Success/result_unwrap_or | 77960880 | 15.4 ns ±4.2% | 8 B ±0.0% | 1 alloc ±0.0% | 🐢 1609.4% slower | ~ |
 
 ## 🔎 Option
 
 ### Option
 
-| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op |
-| --- | --- | --- | --- | --- |
-| Option/FlatMapNoneInt | 181444126 | 6.77 ns ±3.0% | 0 B ±0.0% | 0 allocs ±0.0% |
-| Option/FlatMapSomeInt | 38208829 | 30.4 ns ±1.5% | 24 B ±0.0% | 2 allocs ±0.0% |
-| Option/MapNoneInt | 310870219 | 3.67 ns ±4.2% | 0 B ±0.0% | 0 allocs ±0.0% |
-| Option/MapSomeInt | 77883676 | 15.3 ns ±1.1% | 8 B ±0.0% | 1 alloc ±0.0% |
-| Option/NoneInt | 1000000000 | 0.777 ns ±5.2% | 0 B ±0.0% | 0 allocs ±0.0% |
-| Option/SomeInt | 100000000 | 9.1 ns ±8.1% | 8 B ±0.0% | 1 alloc ±0.0% |
-| Option/SomeLarge | 21720903 | 46.4 ns ±5.0% | 256 B ±0.0% | 1 alloc ±0.0% |
-| Option/UnwrapInt | 1000000000 | 0.536 ns ±5.8% | 0 B ±0.0% | 0 allocs ±0.0% |
-| Option/UnwrapLarge | 186815352 | 6.63 ns ±6.0% | 0 B ±0.0% | 0 allocs ±0.0% |
-| Option/UnwrapOrNone | 359113597 | 3.26 ns ±3.8% | 0 B ±0.0% | 0 allocs ±0.0% |
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs last milestone |
+| --- | --- | --- | --- | --- | --- |
+| Option/FlatMapNoneInt | 181444126 | 6.77 ns ±3.0% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/FlatMapSomeInt | 38208829 | 30.4 ns ±1.5% | 24 B ±0.0% | 2 allocs ±0.0% | ~ |
+| Option/MapNoneInt | 310870219 | 3.67 ns ±4.2% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/MapSomeInt | 77883676 | 15.3 ns ±1.1% | 8 B ±0.0% | 1 alloc ±0.0% | ~ |
+| Option/NoneInt | 1000000000 | 0.777 ns ±5.2% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/SomeInt | 100000000 | 9.1 ns ±8.1% | 8 B ±0.0% | 1 alloc ±0.0% | ~ |
+| Option/SomeLarge | 21720903 | 46.4 ns ±5.0% | 256 B ±0.0% | 1 alloc ±0.0% | ~ |
+| Option/UnwrapInt | 1000000000 | 0.536 ns ±5.8% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/UnwrapLarge | 186815352 | 6.63 ns ±6.0% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/UnwrapOrNone | 359113597 | 3.26 ns ±3.8% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
 
 ## Profiles
 
