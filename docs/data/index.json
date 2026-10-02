@@ -24,25 +24,8 @@
   },
   "runs": [
     {
-      "badges": [
-        "dirty",
-        "forced"
-      ],
-      "date": "2026-09-30",
-      "file": "data/m001.json",
-      "headline": {},
-      "id": "m001",
-      "is_current": false,
-      "label": "baseline",
-      "seq": 1,
-      "sha": "cc3a8ed",
-      "title": "m001 · baseline"
-    },
-    {
-      "badges": [
-        "dirty"
-      ],
-      "date": "2026-09-30",
+      "badges": [],
+      "date": "2026-10-02",
       "file": "data/current.json",
       "headline": {
         "allocs_op": 0,
@@ -53,7 +36,7 @@
       "is_current": true,
       "label": "",
       "seq": 0,
-      "sha": "cc3a8ed",
+      "sha": "69f2b38",
       "title": "current"
     }
   ],
