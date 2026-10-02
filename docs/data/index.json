@@ -24,17 +24,15 @@
   },
   "runs": [
     {
-      "badges": [
-        "dirty"
-      ],
-      "date": "2026-09-30",
+      "badges": [],
+      "date": "2026-10-02",
       "file": "data/current.json",
       "headline": {},
       "id": "current",
       "is_current": true,
       "label": "",
       "seq": 0,
-      "sha": "cc3a8ed",
+      "sha": "69f2b38",
       "title": "current"
     }
   ],

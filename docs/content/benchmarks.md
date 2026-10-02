@@ -2,11 +2,11 @@
 
 # Benchmarks — current run
 
-_2026-09-30_
+_2026-10-02_
 
 ### How to read this
 
-- Values are medians over 3 samples; `±x%` is the half-range divided by the median.
+- Values are medians over 6 samples; `±x%` is the half-range divided by the median.
 - Lower is better for `ns/op`, `B/op` and `allocs/op`. Throughput metrics such as `MB/s` are the exception and are marked `↑`.
 - Fewer than 4 samples per side can never reach significance, so those cells read `⚠ few samples` instead of inventing a percentage.
 - A laptop is not a quiet machine: keep at least 6 samples per benchmark before promoting a milestone.
@@ -17,16 +17,16 @@ _2026-09-30_
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| ChainedSuccess/traditional | 749529898 | 1.6 ns ±0.6% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
-| ChainedSuccess/result | 31242837 | 39.1 ns ±3.8% | 24 B ±0.0% | 3 allocs ±0.0% | ⚠ few samples |
+| ChainedSuccess/traditional | 714731590 | 1.62 ns ±1.5% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
+| ChainedSuccess/result | 32939380 | 36.7 ns ±3.2% | 24 B ±0.0% | 3 allocs ±0.0% | 🐢 2169.7% slower |
 
 ### DBChainedOperations
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| DBChainedOperations/traditional | 34 | 32.7 ms ±3.9% | 3262 B ±0.3% | 115 allocs ±0.0% | baseline |
-| DBChainedOperations/result | 38 | 32.7 ms ±2.1% | 2208 B ±0.3% | 82 allocs ±0.0% | ⚠ few samples |
-| DBChainedOperations/result_bubble_up | 34 | 32.5 ms ±5.8% | 3306 B ±0.2% | 120 allocs ±0.0% | ⚠ few samples |
+| DBChainedOperations/traditional | 38 | 31.7 ms ±6.9% | 3272 B ±0.3% | 115 allocs ±0.0% | baseline |
+| DBChainedOperations/result | 38 | 31.7 ms ±6.6% | 2214 B ±0.4% | 82 allocs ±0.0% | ~ |
+| DBChainedOperations/result_bubble_up | 37 | 31.6 ms ±5.9% | 3297 B ±0.5% | 120 allocs ±0.0% | ~ |
 
 ## ⚡ Basic operations
 
@@ -34,81 +34,98 @@ _2026-09-30_
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| DBCreateUser/traditional | 54 | 23.3 ms ±5.6% | 889 B ±3.0% | 30 allocs ±1.7% | baseline |
-| DBCreateUser/result | 51 | 3.44 ms ±274.3% | 880 B ±1.1% | 33 allocs ±1.5% | ⚠ few samples |
+| DBCreateUser/traditional | 388 | 3.03 ms ±3.5% | 864 B ±0.2% | 32 allocs ±1.6% | baseline |
+| DBCreateUser/result | 418 | 2.88 ms ±177.9% | 880 B ±0.2% | 33 allocs ±0.0% | ~ |
 
 ### DBCreateUserAllocs
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| DBCreateUserAllocs/traditional | 52 | 21.7 ms ±3.0% | 904 B ±0.4% | 32 allocs ±0.0% | baseline |
-| DBCreateUserAllocs/result | 57 | 22.4 ms ±7.8% | 912 B ±0.4% | 33 allocs ±0.0% | ⚠ few samples |
+| DBCreateUserAllocs/traditional | 55 | 21.5 ms ±5.1% | 892 B ±0.8% | 32 allocs ±0.0% | baseline |
+| DBCreateUserAllocs/result | 54 | 21 ms ±6.7% | 912 B ±0.8% | 33 allocs ±0.0% | ~ |
 
 ### DBErrorHandlingWithFallback
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| DBErrorHandlingWithFallback/traditional | 57 | 21.5 ms ±2.1% | 2672 B ±0.0% | 91 allocs ±0.0% | baseline |
-| DBErrorHandlingWithFallback/result | 49 | 20.7 ms ±8.3% | 2815 B ±0.2% | 95 allocs ±0.0% | ⚠ few samples |
+| DBErrorHandlingWithFallback/traditional | 55 | 21.4 ms ±4.0% | 2672 B ±0.0% | 91 allocs ±0.0% | baseline |
+| DBErrorHandlingWithFallback/result | 52 | 21.3 ms ±3.9% | 2808 B ±0.4% | 95 allocs ±0.0% | ~ |
 
 ### DBFindUser
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| DBFindUser/traditional | 80119 | 15.3 µs ±1.3% | 1064 B ±0.0% | 36 allocs ±0.0% | baseline |
-| DBFindUser/result | 73677 | 15.8 µs ±1.7% | 1072 B ±0.0% | 37 allocs ±0.0% | ⚠ few samples |
+| DBFindUser/traditional | 72013 | 16.1 µs ±1.1% | 1064 B ±0.0% | 36 allocs ±0.0% | baseline |
+| DBFindUser/result | 74306 | 16.2 µs ±3.4% | 1072 B ±0.0% | 37 allocs ±0.0% | ~ |
 
 ### DBFindUserNotFound
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| DBFindUserNotFound/traditional | 729 | 1.54 ms ±6.3% | 923 B ±0.1% | 30 allocs ±0.0% | baseline |
-| DBFindUserNotFound/result | 790 | 1.54 ms ±5.8% | 922 B ±0.0% | 30 allocs ±0.0% | ⚠ few samples |
+| DBFindUserNotFound/traditional | 108 | 10.8 ms ±5.6% | 945 B ±0.2% | 30 allocs ±0.0% | baseline |
+| DBFindUserNotFound/result | 100 | 10.4 ms ±3.8% | 943 B ±0.3% | 30 allocs ±0.0% | ~ |
 
 ### DBGetOrCreateUser
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| DBGetOrCreateUser/traditional | 370 | 3.61 ms ±145.1% | 2715 B ±0.0% | 92 allocs ±0.0% | baseline |
-| DBGetOrCreateUser/result | 55 | 23.7 ms ±3.5% | 2850 B ±0.0% | 96 allocs ±0.0% | ⚠ few samples |
+| DBGetOrCreateUser/traditional | 58 | 21.6 ms ±10.4% | 2744 B ±0.4% | 92 allocs ±0.0% | baseline |
+| DBGetOrCreateUser/result | 57 | 21 ms ±7.6% | 2852 B ±0.1% | 96 allocs ±0.0% | ~ |
 
 ### DBUpdateUser
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| DBUpdateUser/traditional | 747 | 1.52 ms ±7.2% | 229 B ±0.0% | 12 allocs ±0.0% | baseline |
-| DBUpdateUser/result | 795 | 1.6 ms ±2.0% | 229 B ±0.0% | 13 allocs ±0.0% | ⚠ few samples |
+| DBUpdateUser/traditional | 100 | 10.5 ms ±4.8% | 237 B ±1.3% | 12 allocs ±0.0% | baseline |
+| DBUpdateUser/result | 100 | 10.6 ms ±4.5% | 236 B ±1.3% | 13 allocs ±0.0% | ~ |
 
 ### Error
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| Error/traditional | 1000000000 | 1.19 ns ±2.3% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
-| Error/result | 67687430 | 16.1 ns ±4.0% | 16 B ±0.0% | 1 alloc ±0.0% | ⚠ few samples |
+| Error/traditional | 1000000000 | 1.17 ns ±0.7% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
+| Error/result | 70408238 | 16.1 ns ±3.3% | 16 B ±0.0% | 1 alloc ±0.0% | 🐢 1279.2% slower |
 
 ### ErrorHandling
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| ErrorHandling/traditional | 1000000000 | 0.545 ns ±4.5% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
-| ErrorHandling/result_with_and_then | 28995487 | 40.2 ns ±4.8% | 24 B ±0.0% | 3 allocs ±0.0% | ⚠ few samples |
-| ErrorHandling/result_with_try | 25310823 | 47.3 ns ±2.9% | 32 B ±0.0% | 4 allocs ±0.0% | ⚠ few samples |
+| ErrorHandling/traditional | 1000000000 | 0.534 ns ±2.1% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
+| ErrorHandling/result_with_and_then | 30388059 | 39.9 ns ±4.3% | 24 B ±0.0% | 3 allocs ±0.0% | 🐢 7378.9% slower |
+| ErrorHandling/result_with_try | 25017552 | 45.8 ns ±3.0% | 32 B ±0.0% | 4 allocs ±0.0% | 🐢 8481.2% slower |
 
 ### Success
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional |
 | --- | --- | --- | --- | --- | --- |
-| Success/traditional | 1000000000 | 0.888 ns ±19.8% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
-| Success/result | 839532276 | 1.5 ns ±12.0% | 0 B ±0.0% | 0 allocs ±0.0% | ⚠ few samples |
-| Success/result_unwrap_or | 81414279 | 14.6 ns ±3.1% | 8 B ±0.0% | 1 alloc ±0.0% | ⚠ few samples |
+| Success/traditional | 1000000000 | 0.899 ns ±21.4% | 0 B ±0.0% | 0 allocs ±0.0% | baseline |
+| Success/result | 687219645 | 1.46 ns ±12.1% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 62.9% slower |
+| Success/result_unwrap_or | 77960880 | 15.4 ns ±4.2% | 8 B ±0.0% | 1 alloc ±0.0% | 🐢 1609.4% slower |
+
+## 🔎 Option
+
+### Option
+
+| Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op |
+| --- | --- | --- | --- | --- |
+| Option/FlatMapNoneInt | 181444126 | 6.77 ns ±3.0% | 0 B ±0.0% | 0 allocs ±0.0% |
+| Option/FlatMapSomeInt | 38208829 | 30.4 ns ±1.5% | 24 B ±0.0% | 2 allocs ±0.0% |
+| Option/MapNoneInt | 310870219 | 3.67 ns ±4.2% | 0 B ±0.0% | 0 allocs ±0.0% |
+| Option/MapSomeInt | 77883676 | 15.3 ns ±1.1% | 8 B ±0.0% | 1 alloc ±0.0% |
+| Option/NoneInt | 1000000000 | 0.777 ns ±5.2% | 0 B ±0.0% | 0 allocs ±0.0% |
+| Option/SomeInt | 100000000 | 9.1 ns ±8.1% | 8 B ±0.0% | 1 alloc ±0.0% |
+| Option/SomeLarge | 21720903 | 46.4 ns ±5.0% | 256 B ±0.0% | 1 alloc ±0.0% |
+| Option/UnwrapInt | 1000000000 | 0.536 ns ±5.8% | 0 B ±0.0% | 0 allocs ±0.0% |
+| Option/UnwrapLarge | 186815352 | 6.63 ns ±6.0% | 0 B ±0.0% | 0 allocs ±0.0% |
+| Option/UnwrapOrNone | 359113597 | 3.26 ns ±3.8% | 0 B ±0.0% | 0 allocs ±0.0% |
 
 ## Profiles
 
 Full tables live on the [profiling page](#/content/profiling.md); the digest is:
 
-- cpu/full: 20 rows, 12.7 s flat
-- mem_objects/full: 20 rows, 126 flat
-- mem_space/full: 20 rows, 68.1 kB flat
+- cpu/full: 20 rows, 9.46 s flat
+- mem_objects/full: 20 rows, 113 flat
+- mem_space/full: 20 rows, 67.5 kB flat
 
 ## Hardware & toolchain
 
@@ -120,7 +137,7 @@ Full tables live on the [profiling page](#/content/profiling.md); the digest is:
 | CPU cores | 12 |
 | Memory | 23.2 GB |
 | Hardware fingerprint | `67d6ec7308d9a4b34eb0c3f140869b9c946f086d4177b754bbf81750eb2822a0` |
-| Benchmark flags | `-run '^$' -bench=. -benchmem -count=3` |
-| Git commit | `cc3a8ed7` |
-| Git branch | main |
-| Working tree | dirty ⚠ |
+| Benchmark flags | `-run '^$' -bench=. -benchmem -count=6` |
+| Git commit | `69f2b383` |
+| Git branch | codex/option-baseline |
+| Working tree | clean |

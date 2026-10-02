@@ -10,38 +10,38 @@ Values are printed in the unit of the profile: nanoseconds for CPU, bytes for he
 <summary><strong>CPU — full</strong> (20 rows)</summary>
 
 ````
-File: result.test
-Build ID: 8aa5c4348b474ed1b76e8e66f46e3cbb27a30da3
+File: option.test
+Build ID: 081e05f6035863cb22252f9e0e33c366e372289b
 Type: cpu
-Time: 2026-09-30 23:03:12 +0330
-Duration: 31.54s, Total samples = 15.48s (49.08%)
-Showing nodes accounting for 12.68s, 81.91% of 15.48s total
-Dropped 244 nodes (cum <= 0.08s)
-Showing top 20 nodes out of 204
+Time: 2026-10-02 14:19:14 +0330
+Duration: 11.23s, Total samples = 11920ms (106.19%)
+Showing nodes accounting for 9460ms, 79.36% of 11920ms total
+Dropped 79 nodes (cum <= 59.60ms)
+Showing top 20 nodes out of 77
 ````
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.(*mspan).specialFindSplicePoint (inline) | 2.86 s | 18.48% | 2.86 s | 18.48% | — |
-| testing.(*B).Loop (inline) | 1.56 s | 10.08% | 1.56 s | 10.08% | — |
-| runtime.pcvalue | 1.33 s | 8.59% | 2.62 s | 16.93% | — |
-| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalChainedSuccess | 960 ms | 6.20% | 1.19 s | 7.69% | — |
-| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalError | 790 ms | 5.10% | 1.17 s | 7.56% | — |
-| runtime.step | 660 ms | 4.26% | 740 ms | 4.78% | — |
-| github.com/seyallius/goxide/rusty/result_test.benchmarkResultSuccess | 630 ms | 4.07% | 1.07 s | 6.91% | — |
-| internal/runtime/syscall/linux.Syscall6 | 590 ms | 3.81% | 590 ms | 3.81% | — |
-| runtime.findfunc | 430 ms | 2.78% | 490 ms | 3.17% | — |
-| github.com/seyallius/goxide/rusty/result_test.benchmarkTraditionalSuccess | 420 ms | 2.71% | 850 ms | 5.49% | — |
-| runtime.tracebackPCs | 380 ms | 2.45% | 4.51 s | 29.13% | — |
-| runtime.(*unwinder).resolveInternal | 300 ms | 1.94% | 1.4 s | 9.04% | — |
-| runtime.(*moduledata).textAddr | 280 ms | 1.81% | 280 ms | 1.81% | — |
-| runtime.markrootSpans | 270 ms | 1.74% | 270 ms | 1.74% | — |
-| runtime.(*fixalloc).alloc | 260 ms | 1.68% | 260 ms | 1.68% | — |
-| runtime.unlock2 | 250 ms | 1.61% | 270 ms | 1.74% | — |
-| runtime.addspecial | 210 ms | 1.36% | 3.16 s | 20.41% | — |
-| runtime.(*unwinder).next | 180 ms | 1.16% | 2.01 s | 12.98% | — |
-| runtime.funcInfo.entry (inline) | 170 ms | 1.10% | 450 ms | 2.91% | — |
-| runtime.(*sweepLocked).sweep | 150 ms | 0.97% | 480 ms | 3.10% | — |
+| runtime.(*mspan).specialFindSplicePoint (inline) | 1.46 s | 12.25% | 1.46 s | 12.25% | — |
+| testing.(*B).Loop (inline) | 1.32 s | 11.07% | 1.32 s | 11.07% | — |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapLarge | 1.13 s | 9.48% | 1.21 s | 10.15% | — |
+| runtime.pcvalue | 730 ms | 6.12% | 1.3 s | 10.91% | — |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.int,go.shape.int] | 500 ms | 4.19% | 570 ms | 4.78% | — |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionNoneInt | 450 ms | 3.78% | 810 ms | 6.80% | — |
+| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.int] | 440 ms | 3.69% | 1.97 s | 16.53% | — |
+| github.com/seyallius/goxide/rusty/option.Option[go.shape.int].UnwrapOr | 340 ms | 2.85% | 910 ms | 7.63% | — |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int } },go.shape.int] | 330 ms | 2.77% | 1.63 s | 13.67% | — |
+| runtime.step | 300 ms | 2.52% | 370 ms | 3.10% | — |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int },go.shape.int] | 290 ms | 2.43% | 1.44 s | 12.08% | — |
+| runtime.unlock2 | 290 ms | 2.43% | 300 ms | 2.52% | — |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionUnwrapInt | 270 ms | 2.27% | 530 ms | 4.45% | — |
+| runtime.(*unwinder).resolveInternal | 270 ms | 2.27% | 950 ms | 7.97% | — |
+| runtime.findfunc | 250 ms | 2.10% | 270 ms | 2.27% | — |
+| github.com/seyallius/goxide/rusty/option.FlatMap[go.shape.int,go.shape.int] | 230 ms | 1.93% | 2.32 s | 19.46% | — |
+| runtime.procyieldAsm | 230 ms | 1.93% | 230 ms | 1.93% | — |
+| github.com/seyallius/goxide/rusty/option.Map[go.shape.int,go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int }] | 220 ms | 1.85% | 1.89 s | 15.86% | — |
+| runtime.lock2 | 210 ms | 1.76% | 450 ms | 3.78% | — |
+| github.com/seyallius/goxide/rusty/option.If[go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int },go.shape.struct { github.com/seyallius/goxide/rusty/option.isSome bool; github.com/seyallius/goxide/rusty/option.value *go.shape.int }] | 200 ms | 1.68% | 200 ms | 1.68% | — |
 
 </details>
 
@@ -49,36 +49,36 @@ Showing top 20 nodes out of 204
 <summary><strong>Heap — objects — full</strong> (20 rows)</summary>
 
 ````
-File: result.test
-Build ID: 8aa5c4348b474ed1b76e8e66f46e3cbb27a30da3
+File: option.test
+Build ID: 081e05f6035863cb22252f9e0e33c366e372289b
 Type: inuse_objects
-Time: 2026-09-30 23:03:43 +0330
-Showing nodes accounting for 126, 91.97% of 137 total
-Showing top 20 nodes out of 165
+Time: 2026-10-02 14:19:25 +0330
+Showing nodes accounting for 113, 100% of 113 total
+Showing top 20 nodes out of 119
 ````
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.mallocgc | 84 | 61.31% | 95 | 69.34% | — |
-| testing.(*B).run1 | 9 | 6.57% | 9 | 6.57% | — |
-| runtime.mallocgcSmallScanNoHeaderSC1 | 7 | 5.11% | 7 | 5.11% | — |
-| runtime.mallocgcSmallScanNoHeaderSC2 | 4 | 2.92% | 4 | 2.92% | — |
-| os.newFile | 3 | 2.19% | 3 | 2.19% | — |
-| database/sql.convertAssignRows | 2 | 1.46% | 2 | 1.46% | — |
-| time.LoadLocationFromTZData | 2 | 1.46% | 4 | 2.92% | — |
-| time.byteString (inline) | 2 | 1.46% | 2 | 1.46% | — |
-| time.newTimer | 2 | 1.46% | 2 | 1.46% | — |
-| database/sql.(*DB).execDC | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql.(*DB).queryDC | 1 | 0.73% | 9 | 6.57% | — |
-| database/sql.(*Rows).nextLocked | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql.(*Rows).scanLocked | 1 | 0.73% | 3 | 2.19% | — |
-| database/sql.(*driverConn).resetSession | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql.(*driverConn).validateConnection | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql.driverArgsConnLocked | 1 | 0.73% | 3 | 2.19% | — |
-| database/sql/driver.IsValue (inline) | 1 | 0.73% | 1 | 0.73% | — |
-| database/sql/driver.defaultConverter.ConvertValue | 1 | 0.73% | 2 | 1.46% | — |
-| github.com/seyallius/goxide/rusty/result_test.NewResultUserRepo | 1 | 0.73% | 1 | 0.73% | — |
-| github.com/seyallius/goxide/rusty/result_test.NewTraditionalUserRepo | 1 | 0.73% | 1 | 0.73% | — |
+| runtime.mallocgc | 82 | 72.57% | 91 | 80.53% | — |
+| runtime.mallocgcSmallScanNoHeaderSC1 | 7 | 6.19% | 7 | 6.19% | — |
+| os.newFile | 3 | 2.65% | 3 | 2.65% | — |
+| runtime.mallocgcSmallScanNoHeaderSC2 | 2 | 1.77% | 2 | 1.77% | — |
+| sync.(*Pool).pinSlow | 2 | 1.77% | 2 | 1.77% | — |
+| testing.(*B).run1 | 2 | 1.77% | 2 | 1.77% | — |
+| time.newTimer | 2 | 1.77% | 2 | 1.77% | — |
+| fmt.(*buffer).write | 1 | 0.88% | 1 | 0.88% | — |
+| fmt.init.func1 | 1 | 0.88% | 1 | 0.88% | — |
+| github.com/seyallius/goxide/rusty/option_test.benchmarkOptionSomeLarge | 1 | 0.88% | 1 | 0.88% | — |
+| hash/crc32.slicingMakeTable | 1 | 0.88% | 1 | 0.88% | — |
+| internal/cpu.Name | 1 | 0.88% | 1 | 0.88% | — |
+| internal/sync.newIndirectNode[go.shape.interface {},go.shape.interface {}] | 1 | 0.88% | 1 | 0.88% | — |
+| regexp.compile | 1 | 0.88% | 4 | 3.54% | — |
+| regexp/syntax.(*Regexp).CapNames | 1 | 0.88% | 1 | 0.88% | — |
+| regexp/syntax.(*compiler).init (inline) | 1 | 0.88% | 1 | 0.88% | — |
+| regexp/syntax.(*compiler).inst (inline) | 1 | 0.88% | 1 | 0.88% | — |
+| runtime/pprof.StartCPUProfile | 1 | 0.88% | 1 | 0.88% | — |
+| runtime/pprof.allFrames | 1 | 0.88% | 1 | 0.88% | — |
+| testing.(*M).startAlarm | 1 | 0.88% | 3 | 2.65% | — |
 
 </details>
 
@@ -86,37 +86,37 @@ Showing top 20 nodes out of 165
 <summary><strong>Heap — space — full</strong> (20 rows)</summary>
 
 ````
-File: result.test
-Build ID: 8aa5c4348b474ed1b76e8e66f46e3cbb27a30da3
+File: option.test
+Build ID: 081e05f6035863cb22252f9e0e33c366e372289b
 Type: inuse_space
-Time: 2026-09-30 23:03:43 +0330
-Showing nodes accounting for 68.09kB, 97.76% of 69.66kB total
-Dropped 82 nodes (cum <= 0.35kB)
-Showing top 20 nodes out of 83
+Time: 2026-10-02 14:19:25 +0330
+Showing nodes accounting for 67.55kB, 97.58% of 69.22kB total
+Dropped 54 nodes (cum <= 0.35kB)
+Showing top 20 nodes out of 65
 ````
 
 | Function | flat | flat% | cum | cum% | vs previous |
 | --- | --- | --- | --- | --- | --- |
-| runtime.mallocgc | 57.4 kB | 82.44% | 57.5 kB | 82.60% | — |
-| hash/crc32.slicingMakeTable | 8 kB | 11.48% | 8 kB | 11.48% | — |
-| time.LoadLocationFromTZData | 1.38 kB | 1.97% | 1.41 kB | 2.02% | — |
-| testing.(*B).run1 | 1004 B | 1.41% | 1004 B | 1.41% | — |
-| regexp.compile | 164 B | 0.22% | 389 B | 0.54% | — |
-| testing.(*B).runN | 113 B | 0.16% | 3.14 kB | 4.51% | — |
-| database/sql.(*DB).queryDC | 51.2 B | 0.07% | 1.64 kB | 2.36% | — |
-| compress/gzip.(*Writer).Write | 0 B | 0.00% | 8 kB | 11.48% | — |
-| database/sql.(*DB).QueryContext | 0 B | 0.00% | 1.69 kB | 2.42% | — |
-| database/sql.(*DB).QueryContext.func1 | 0 B | 0.00% | 1.69 kB | 2.42% | — |
-| database/sql.(*DB).QueryRowContext (inline) | 0 B | 0.00% | 1.69 kB | 2.42% | — |
-| database/sql.(*DB).query | 0 B | 0.00% | 1.69 kB | 2.42% | — |
-| database/sql.(*DB).queryDC.func1 | 0 B | 0.00% | 1.59 kB | 2.29% | — |
-| database/sql.(*DB).retry | 0 B | 0.00% | 1.73 kB | 2.49% | — |
-| database/sql.ctxDriverQuery | 0 B | 0.00% | 1.42 kB | 2.04% | — |
-| database/sql.withLock | 0 B | 0.00% | 1.59 kB | 2.29% | — |
-| github.com/seyallius/goxide/internal/tests.RunGoxideTestMain | 0 B | 0.00% | 1.09 kB | 1.56% | — |
-| github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).CreateUser | 0 B | 0.00% | 1.42 kB | 2.04% | — |
-| github.com/seyallius/goxide/rusty/result_test.(*TraditionalUserRepo).FindUserByID | 0 B | 0.00% | 532 B | 0.74% | — |
-| github.com/seyallius/goxide/rusty/result_test.TestMain | 0 B | 0.00% | 1.09 kB | 1.56% | — |
+| runtime.mallocgc | 57.6 kB | 83.26% | 57.7 kB | 83.39% | — |
+| hash/crc32.slicingMakeTable | 8 kB | 11.56% | 8 kB | 11.56% | — |
+| sync.(*Pool).pinSlow | 1.76 kB | 2.54% | 1.76 kB | 2.54% | — |
+| regexp.compile | 164 B | 0.23% | 389 B | 0.54% | — |
+| compress/gzip.(*Writer).Write | 0 B | 0.00% | 8 kB | 11.56% | — |
+| fmt.Sprintf | 0 B | 0.00% | 1.99 kB | 2.88% | — |
+| fmt.newPrinter | 0 B | 0.00% | 1.93 kB | 2.79% | — |
+| github.com/seyallius/goxide/rusty/option_test.BenchmarkOption | 0 B | 0.00% | 2.15 kB | 3.10% | — |
+| hash/crc32.Update (inline) | 0 B | 0.00% | 8 kB | 11.56% | — |
+| hash/crc32.archInitIEEE (inline) | 0 B | 0.00% | 8 kB | 11.56% | — |
+| hash/crc32.init.func2 | 0 B | 0.00% | 8 kB | 11.56% | — |
+| hash/crc32.update | 0 B | 0.00% | 8 kB | 11.56% | — |
+| main.main | 0 B | 0.00% | 1.09 kB | 1.57% | — |
+| regexp.Compile (inline) | 0 B | 0.00% | 389 B | 0.54% | — |
+| runtime.acquireSudog | 0 B | 0.00% | 788 B | 1.11% | — |
+| runtime.allocm | 0 B | 0.00% | 43.6 kB | 62.93% | — |
+| runtime.gcBgMarkWorker | 0 B | 0.00% | 6.77 kB | 9.77% | — |
+| runtime.gcMarkDone | 0 B | 0.00% | 788 B | 1.11% | — |
+| runtime.gcStart.func4 | 0 B | 0.00% | 10.4 kB | 15.01% | — |
+| runtime.growslice | 0 B | 0.00% | 369 B | 0.52% | — |
 
 </details>
 
@@ -134,7 +134,7 @@ _none recorded_
 | CPU cores | 12 |
 | Memory | 23.2 GB |
 | Hardware fingerprint | `67d6ec7308d9a4b34eb0c3f140869b9c946f086d4177b754bbf81750eb2822a0` |
-| Benchmark flags | `-run '^$' -bench=. -benchmem -count=3` |
-| Git commit | `cc3a8ed7` |
-| Git branch | main |
-| Working tree | dirty ⚠ |
+| Benchmark flags | `-run '^$' -bench=. -benchmem -count=6` |
+| Git commit | `69f2b383` |
+| Git branch | codex/option-baseline |
+| Working tree | clean |
