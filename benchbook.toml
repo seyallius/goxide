@@ -41,11 +41,15 @@ title = "⚡ Basic operations"
 
 [tracked]
 benchmarks = [
-  "Success",
-  "Error",
-  "ChainedSuccess",
+  "Success/traditional",
+  "Error/traditional",
+  "ChainedSuccess/traditional",
   "ErrorHandling/result_with_try",
   "DBFindUser/result",
+  "Option/SomeInt",
+  "Option/SomeLarge",
+  "Option/MapSomeInt",
+  "Option/FlatMapSomeInt",
 ]
 
 [profile]
