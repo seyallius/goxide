@@ -6,27 +6,28 @@ Milestones are deliberate, immutable checkpoints. Every figure below comes from 
 significance test plus a minimum effect, never from a bare percentage.
 
 <details open>
-<summary><strong>ns/op (time per operation)</strong> — m001 baseline baseline</summary>
+<summary><strong>ns/op (time per operation)</strong> — m001 baseline baseline → m002 inline Option storage (−36.8%)   ·   cumulative −36.8%</summary>
 
 #### Headline (geometric mean of the median ratios)
 
 | Milestone | Date | Label | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- | --- |
 | m001 | 2026-10-02 | baseline | — | — |
+| m002 | 2026-10-02 | inline Option storage | −36.8% over 37 benchmarks | −36.8% |
 
 #### Tracked benchmarks
 
 | Benchmark | Chain | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- |
-| Success/traditional | 0.899 ns | — | — |
-| Error/traditional | 1.17 ns | — | — |
-| ChainedSuccess/traditional | 1.62 ns | — | — |
-| ErrorHandling/result_with_try | 45.8 ns | — | — |
-| DBFindUser/result | 16.2 µs | — | — |
-| Option/SomeInt | 9.1 ns | — | — |
-| Option/SomeLarge | 46.4 ns | — | — |
-| Option/MapSomeInt | 15.3 ns | — | — |
-| Option/FlatMapSomeInt | 30.4 ns | — | — |
+| Success/traditional | 0.899 ns → 0.879 ns | −2.2% | −2.2% |
+| Error/traditional | 1.17 ns → 1.18 ns | +1.0% | +1.0% |
+| ChainedSuccess/traditional | 1.62 ns → 1.64 ns | +1.6% | +1.6% |
+| ErrorHandling/result_with_try | 45.8 ns → 10.3 ns | −77.6% | −77.6% |
+| DBFindUser/result | 16.2 µs → 15.1 µs | −7.1% | −7.1% |
+| Option/SomeInt | 9.1 ns → 0.543 ns | −94.0% | −94.0% |
+| Option/SomeLarge | 46.4 ns → 23 ns | −50.4% | −50.4% |
+| Option/MapSomeInt | 15.3 ns → 2.49 ns | −83.8% | −83.8% |
+| Option/FlatMapSomeInt | 30.4 ns → 3.8 ns | −87.5% | −87.5% |
 
 #### Index chart
 
@@ -43,34 +44,53 @@ significance test plus a minimum effect, never from a bare percentage.
 <text class="bb-chart-axis-label" x="54" y="103.69" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">75</text>
 <line class="bb-chart-grid" x1="64" y1="51.43" x2="876" y2="51.43" stroke="currentColor" stroke-opacity="0.18"/>
 <text class="bb-chart-axis-label" x="54" y="51.43" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,56.09" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,56.09" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,56.09 876,56.09" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="56.09" r="3" fill="var(--bb-chart-1, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="56.09" r="4" fill="var(--bb-chart-1, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,49.28" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,49.28" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,49.28 876,49.28" fill="none" stroke="var(--bb-chart-2, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-2, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="49.28" r="3" fill="var(--bb-chart-2, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="49.28" r="4" fill="var(--bb-chart-2, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,48" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,48" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,48 876,48" fill="none" stroke="var(--bb-chart-3, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-3, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="48" r="3" fill="var(--bb-chart-3, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="48" r="4" fill="var(--bb-chart-3, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,213.59" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,213.59" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,213.59 876,213.59" fill="none" stroke="var(--bb-chart-4, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-4, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="213.59" r="3" fill="var(--bb-chart-4, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="213.59" r="4" fill="var(--bb-chart-4, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,66.26" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,66.26" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,66.26 876,66.26" fill="none" stroke="var(--bb-chart-5, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-5, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="66.26" r="3" fill="var(--bb-chart-5, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="66.26" r="4" fill="var(--bb-chart-5, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,248" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,248" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,248 876,248" fill="none" stroke="var(--bb-chart-6, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-6, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="248" r="3" fill="var(--bb-chart-6, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="248" r="4" fill="var(--bb-chart-6, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,156.85" fill="none" stroke="var(--bb-chart-7, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,156.85" fill="none" stroke="var(--bb-chart-7, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,156.85 876,156.85" fill="none" stroke="var(--bb-chart-7, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-7, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="156.85" r="3" fill="var(--bb-chart-7, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="156.85" r="4" fill="var(--bb-chart-7, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,226.56" fill="none" stroke="var(--bb-chart-8, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,226.56" fill="none" stroke="var(--bb-chart-8, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,226.56 876,226.56" fill="none" stroke="var(--bb-chart-8, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-8, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="226.56" r="3" fill="var(--bb-chart-8, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="226.56" r="4" fill="var(--bb-chart-8, currentColor)"/>
-<polyline class="bb-chart-line bb-chart-current" points="64,51.43 876,234.31" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,51.43 470,234.31" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,234.31 876,234.31" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="51.43" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="234.31" r="3" fill="var(--bb-chart-1, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="234.31" r="4" fill="var(--bb-chart-1, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
+<text class="bb-chart-axis-label" x="470" y="292" font-size="12" fill="currentColor" text-anchor="middle">m002</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
 <rect class="bb-chart-swatch" x="64" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-1, currentColor)"/>
@@ -98,27 +118,28 @@ _The dotted final point is the unpromoted current run._
 </details>
 
 <details open>
-<summary><strong>B/op (bytes allocated)</strong> — m001 baseline baseline</summary>
+<summary><strong>B/op (bytes allocated)</strong> — m001 baseline baseline → m002 inline Option storage (−0.6%)   ·   cumulative −0.6%</summary>
 
 #### Headline (geometric mean of the median ratios)
 
 | Milestone | Date | Label | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- | --- |
 | m001 | 2026-10-02 | baseline | — | — |
+| m002 | 2026-10-02 | inline Option storage | −0.6% over 18 benchmarks | −0.6% |
 
 #### Tracked benchmarks
 
 | Benchmark | Chain | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- |
-| Success/traditional | 0 B | — | — |
-| Error/traditional | 0 B | — | — |
-| ChainedSuccess/traditional | 0 B | — | — |
-| ErrorHandling/result_with_try | 32 B | — | — |
-| DBFindUser/result | 1072 B | — | — |
-| Option/SomeInt | 8 B | — | — |
-| Option/SomeLarge | 256 B | — | — |
-| Option/MapSomeInt | 8 B | — | — |
-| Option/FlatMapSomeInt | 24 B | — | — |
+| Success/traditional | 0 B → 0 B | 0.0% | 0.0% |
+| Error/traditional | 0 B → 0 B | 0.0% | 0.0% |
+| ChainedSuccess/traditional | 0 B → 0 B | 0.0% | 0.0% |
+| ErrorHandling/result_with_try | 32 B → 0 B | −100.0% | −100.0% |
+| DBFindUser/result | 1072 B → 1064 B | −0.7% | −0.7% |
+| Option/SomeInt | 8 B → 0 B | −100.0% | −100.0% |
+| Option/SomeLarge | 256 B → 0 B | −100.0% | −100.0% |
+| Option/MapSomeInt | 8 B → 0 B | −100.0% | −100.0% |
+| Option/FlatMapSomeInt | 24 B → 0 B | −100.0% | −100.0% |
 
 #### Index chart
 
@@ -135,10 +156,13 @@ _The dotted final point is the unpromoted current run._
 <text class="bb-chart-axis-label" x="54" y="101.60" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
 <line class="bb-chart-grid" x1="64" y1="48" x2="876" y2="48" stroke="currentColor" stroke-opacity="0.18"/>
 <text class="bb-chart-axis-label" x="54" y="48" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
-<polyline class="bb-chart-line bb-chart-current" points="64,48 876,248" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,48 470,248" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,248 876,248" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="48" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="248" r="3" fill="var(--bb-chart-1, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="248" r="4" fill="var(--bb-chart-1, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
+<text class="bb-chart-axis-label" x="470" y="292" font-size="12" fill="currentColor" text-anchor="middle">m002</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
 <rect class="bb-chart-swatch" x="64" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-1, currentColor)"/>
@@ -150,27 +174,28 @@ _The dotted final point is the unpromoted current run._
 </details>
 
 <details open>
-<summary><strong>allocs/op (allocations)</strong> — m001 baseline baseline</summary>
+<summary><strong>allocs/op (allocations)</strong> — m001 baseline baseline → m002 inline Option storage (−1.6%)   ·   cumulative −1.6%</summary>
 
 #### Headline (geometric mean of the median ratios)
 
 | Milestone | Date | Label | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- | --- |
 | m001 | 2026-10-02 | baseline | — | — |
+| m002 | 2026-10-02 | inline Option storage | −1.6% over 18 benchmarks | −1.6% |
 
 #### Tracked benchmarks
 
 | Benchmark | Chain | Step Δ | Cumulative Δ |
 | --- | --- | --- | --- |
-| Success/traditional | 0 allocs | — | — |
-| Error/traditional | 0 allocs | — | — |
-| ChainedSuccess/traditional | 0 allocs | — | — |
-| ErrorHandling/result_with_try | 4 allocs | — | — |
-| DBFindUser/result | 37 allocs | — | — |
-| Option/SomeInt | 1 alloc | — | — |
-| Option/SomeLarge | 1 alloc | — | — |
-| Option/MapSomeInt | 1 alloc | — | — |
-| Option/FlatMapSomeInt | 2 allocs | — | — |
+| Success/traditional | 0 allocs → 0 allocs | 0.0% | 0.0% |
+| Error/traditional | 0 allocs → 0 allocs | 0.0% | 0.0% |
+| ChainedSuccess/traditional | 0 allocs → 0 allocs | 0.0% | 0.0% |
+| ErrorHandling/result_with_try | 4 allocs → 0 allocs | −100.0% | −100.0% |
+| DBFindUser/result | 37 allocs → 36 allocs | −2.7% | −2.7% |
+| Option/SomeInt | 1 alloc → 0 allocs | −100.0% | −100.0% |
+| Option/SomeLarge | 1 alloc → 0 allocs | −100.0% | −100.0% |
+| Option/MapSomeInt | 1 alloc → 0 allocs | −100.0% | −100.0% |
+| Option/FlatMapSomeInt | 2 allocs → 0 allocs | −100.0% | −100.0% |
 
 #### Index chart
 
@@ -185,10 +210,13 @@ _The dotted final point is the unpromoted current run._
 <text class="bb-chart-axis-label" x="54" y="122" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">99</text>
 <line class="bb-chart-grid" x1="64" y1="48" x2="876" y2="48" stroke="currentColor" stroke-opacity="0.18"/>
 <text class="bb-chart-axis-label" x="54" y="48" font-size="12" fill="currentColor" text-anchor="end" dominant-baseline="middle">100</text>
-<polyline class="bb-chart-line bb-chart-current" points="64,48 876,248" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polyline class="bb-chart-line" points="64,48 470,248" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline class="bb-chart-line bb-chart-current" points="470,248 876,248" fill="none" stroke="var(--bb-chart-1, currentColor)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
 <circle class="bb-chart-dot" cx="64" cy="48" r="3" fill="var(--bb-chart-1, currentColor)"/>
+<circle class="bb-chart-dot" cx="470" cy="248" r="3" fill="var(--bb-chart-1, currentColor)"/>
 <circle class="bb-chart-dot bb-chart-current-dot" cx="876" cy="248" r="4" fill="var(--bb-chart-1, currentColor)"/>
 <text class="bb-chart-axis-label" x="64" y="292" font-size="12" fill="currentColor" text-anchor="middle">m001</text>
+<text class="bb-chart-axis-label" x="470" y="292" font-size="12" fill="currentColor" text-anchor="middle">m002</text>
 <text class="bb-chart-axis-label" x="876" y="292" font-size="12" fill="currentColor" text-anchor="middle">current</text>
 <text class="bb-chart-axis-title" x="64" y="14" font-size="12" fill="currentColor" text-anchor="start">index, first milestone = 100</text>
 <rect class="bb-chart-swatch" x="64" y="302" width="10" height="10" rx="1" fill="var(--bb-chart-1, currentColor)"/>
@@ -205,3 +233,4 @@ _The dotted final point is the unpromoted current run._
 | ID | Date | Label | Note | Commit | Badges | Headline vs previous |
 | --- | --- | --- | --- | --- | --- | --- |
 | m001 | 2026-10-02 | baseline | Full Result and Option suite before inline Option storage; six samples per benchmark. | 69f2b383 |  | baseline |
+| m002 | 2026-10-02 | inline Option storage | Full Result and Option suite after inline storage optimization; compared against m001 with six samples per benchmark. | a5bd892b |  | −36.8% ns_op, −0.6% bytes_op, −1.6% allocs_op |

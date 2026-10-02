@@ -2,7 +2,7 @@
 
 # Benchmarks — current run
 
-_2026-10-02 · compared with m001_
+_2026-10-02 · compared with m002_
 
 ### How to read this
 
@@ -19,7 +19,7 @@ _2026-10-02 · compared with m001_
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
 | --- | --- | --- | --- | --- | --- | --- |
 | ChainedSuccess/traditional | 735999265 | 1.64 ns ±1.7% | 0 B ±0.0% | 0 allocs ±0.0% | baseline | ~ |
-| ChainedSuccess/result | 129007280 | 7.98 ns ±11.7% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 385.6% slower | ⚡ 78.3% faster |
+| ChainedSuccess/result | 129007280 | 7.98 ns ±11.7% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 385.6% slower | ~ |
 
 ### DBChainedOperations
 
@@ -56,14 +56,14 @@ _2026-10-02 · compared with m001_
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
 | --- | --- | --- | --- | --- | --- | --- |
-| DBFindUser/traditional | 77011 | 15 µs ±0.7% | 1064 B ±0.0% | 36 allocs ±0.0% | baseline | ⚡ 7.0% faster |
-| DBFindUser/result | 82224 | 15.1 µs ±2.0% | 1064 B ±0.0% | 36 allocs ±0.0% | ~ | ⚡ 7.1% faster |
+| DBFindUser/traditional | 77011 | 15 µs ±0.7% | 1064 B ±0.0% | 36 allocs ±0.0% | baseline | ~ |
+| DBFindUser/result | 82224 | 15.1 µs ±2.0% | 1064 B ±0.0% | 36 allocs ±0.0% | ~ | ~ |
 
 ### DBFindUserNotFound
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
 | --- | --- | --- | --- | --- | --- | --- |
-| DBFindUserNotFound/traditional | 756 | 1.52 ms ±23.7% | 923 B ±0.0% | 30 allocs ±0.0% | baseline | ⚡ 85.9% faster |
+| DBFindUserNotFound/traditional | 756 | 1.52 ms ±23.7% | 923 B ±0.0% | 30 allocs ±0.0% | baseline | ~ |
 | DBFindUserNotFound/result | 100 | 10.7 ms ±3.7% | 945 B ±0.0% | 30 allocs ±0.0% | 🐢 602.5% slower | ~ |
 
 ### DBGetOrCreateUser
@@ -85,23 +85,23 @@ _2026-10-02 · compared with m001_
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
 | --- | --- | --- | --- | --- | --- | --- |
 | Error/traditional | 1000000000 | 1.18 ns ±1.5% | 0 B ±0.0% | 0 allocs ±0.0% | baseline | ~ |
-| Error/result | 71388992 | 15.2 ns ±3.7% | 16 B ±0.0% | 1 alloc ±0.0% | 🐢 1189.1% slower | ⚡ 5.6% faster |
+| Error/result | 71388992 | 15.2 ns ±3.7% | 16 B ±0.0% | 1 alloc ±0.0% | 🐢 1189.1% slower | ~ |
 
 ### ErrorHandling
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
 | --- | --- | --- | --- | --- | --- | --- |
 | ErrorHandling/traditional | 1000000000 | 0.534 ns ±2.0% | 0 B ±0.0% | 0 allocs ±0.0% | baseline | ~ |
-| ErrorHandling/result_with_and_then | 92299426 | 13.1 ns ±2.0% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 2353.0% slower | ⚡ 67.2% faster |
-| ErrorHandling/result_with_try | 100000000 | 10.3 ns ±1.5% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 1822.5% slower | ⚡ 77.6% faster |
+| ErrorHandling/result_with_and_then | 92299426 | 13.1 ns ±2.0% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 2353.0% slower | ~ |
+| ErrorHandling/result_with_try | 100000000 | 10.3 ns ±1.5% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 1822.5% slower | ~ |
 
 ### Success
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs traditional | vs last milestone |
 | --- | --- | --- | --- | --- | --- | --- |
 | Success/traditional | 1000000000 | 0.879 ns ±4.2% | 0 B ±0.0% | 0 allocs ±0.0% | baseline | ~ |
-| Success/result | 993411890 | 1.24 ns ±2.5% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 40.7% slower | ⚡ 15.6% faster |
-| Success/result_unwrap_or | 277054202 | 4.45 ns ±1.9% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 406.5% slower | ⚡ 71.0% faster |
+| Success/result | 993411890 | 1.24 ns ±2.5% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 40.7% slower | ~ |
+| Success/result_unwrap_or | 277054202 | 4.45 ns ±1.9% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 406.5% slower | ~ |
 
 ## 🔎 Option
 
@@ -109,16 +109,16 @@ _2026-10-02 · compared with m001_
 
 | Variant | Iterations | ns/op (median ±spread) | B/op | allocs/op | vs last milestone |
 | --- | --- | --- | --- | --- | --- |
-| Option/FlatMapNoneInt | 391472172 | 3.04 ns ±1.5% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 55.1% faster |
-| Option/FlatMapSomeInt | 311043057 | 3.8 ns ±0.7% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 87.5% faster |
-| Option/MapNoneInt | 600481579 | 1.86 ns ±3.4% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 49.3% faster |
-| Option/MapSomeInt | 483255457 | 2.49 ns ±3.8% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 83.8% faster |
-| Option/NoneInt | 1000000000 | 0.551 ns ±3.5% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 29.1% faster |
-| Option/SomeInt | 1000000000 | 0.543 ns ±6.1% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 94.0% faster |
-| Option/SomeLarge | 53500573 | 23 ns ±0.4% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 50.4% faster |
-| Option/UnwrapInt | 1000000000 | 0.513 ns ±3.2% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 4.2% faster |
-| Option/UnwrapLarge | 76508845 | 15.8 ns ±4.5% | 0 B ±0.0% | 0 allocs ±0.0% | 🐢 139.0% slower |
-| Option/UnwrapOrNone | 969069771 | 1.28 ns ±6.0% | 0 B ±0.0% | 0 allocs ±0.0% | ⚡ 60.8% faster |
+| Option/FlatMapNoneInt | 391472172 | 3.04 ns ±1.5% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/FlatMapSomeInt | 311043057 | 3.8 ns ±0.7% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/MapNoneInt | 600481579 | 1.86 ns ±3.4% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/MapSomeInt | 483255457 | 2.49 ns ±3.8% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/NoneInt | 1000000000 | 0.551 ns ±3.5% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/SomeInt | 1000000000 | 0.543 ns ±6.1% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/SomeLarge | 53500573 | 23 ns ±0.4% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/UnwrapInt | 1000000000 | 0.513 ns ±3.2% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/UnwrapLarge | 76508845 | 15.8 ns ±4.5% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
+| Option/UnwrapOrNone | 969069771 | 1.28 ns ±6.0% | 0 B ±0.0% | 0 allocs ±0.0% | ~ |
 
 ## Profiles
 

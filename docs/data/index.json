@@ -38,11 +38,27 @@
     {
       "badges": [],
       "date": "2026-10-02",
-      "file": "data/current.json",
+      "file": "data/m002.json",
       "headline": {
         "allocs_op": -1.6044713109489739,
         "bytes_op": -0.563808732989568,
         "ns_op": -36.846006073571914
+      },
+      "id": "m002",
+      "is_current": false,
+      "label": "inline Option storage",
+      "seq": 2,
+      "sha": "a5bd892",
+      "title": "m002 · inline Option storage"
+    },
+    {
+      "badges": [],
+      "date": "2026-10-02",
+      "file": "data/current.json",
+      "headline": {
+        "allocs_op": 0,
+        "bytes_op": 0,
+        "ns_op": 0
       },
       "id": "current",
       "is_current": true,

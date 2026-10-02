@@ -94,6 +94,10 @@
       "expanded": false,
       "pages": [
         {
+          "path": "content/milestones/m002.md",
+          "title": "m002 · inline Option storage"
+        },
+        {
           "path": "content/milestones/m001.md",
           "title": "m001 · baseline"
         }
